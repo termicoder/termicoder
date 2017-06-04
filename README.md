@@ -1,6 +1,6 @@
 # Termicoder  
 View, Code, Submit, Debug, Learn directly from terminal on competetive platforms.  
-Made with <3 from Divesh Uttamchandani
+Made with :heart: by Divesh Uttamchandani
   
 Currently supported Platforms:   
 [CodeChef](www.codechef.com)  
