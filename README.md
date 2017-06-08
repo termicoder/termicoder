@@ -52,12 +52,14 @@ general format : code problem_name.lxx
 1) easy submit directly from terminal
 2) retrive status after submit
 3) confirm password on submit  
+4) first compile and check against sample test case before submit.... Confirm again if error
 
 general format : submit a.cpp
 
 ## Learn
 1) assign/retrive categories of problems , open resources related to them
 2) Link for editiorial/resources/google search the uncommon words in the problem statement etc.
+3) show suggestions to remove errors found using submit status
 
 # Future Ideas (The feasiblity of ideas hasn't been verified and most ideas are vague/in budding stage)
 1) Save encrypted passwords confirm a common master password on submit  
