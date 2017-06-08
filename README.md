@@ -17,15 +17,15 @@ Python
 Java  
 
 # Basic things to keep in mind
-## This should be designed so that it can be made availible as a package in pip etc.
-## This should be able to be extended to other judges easily so modularity is a priority
+### This should be designed so that it can be later made availible as a package in pip etc.
+### This should be able to be extended to other judges easily so modularity is a priority
   
 # Current Ideas 
 ## Setup
 format:  
 setup judge problem code  
 setup judge contest code  
-setup url
+setup url  
 1) Creates a folder for each problem with data of that problem (url, problem statement(try pdf, html, txt etc), sample I/O, submit status/last time errors)
 2) add support for listing all problem folder and status(custom ls), quickly changeing to a unsolved problem folder
 3) use git like hidden file approach
