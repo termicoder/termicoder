@@ -1,10 +1,11 @@
 # Termicoder  
-View, Code, Debug, Submit, Learn directly from terminal
+View, Code, Debug, Submit, Learn directly from terminal  
 Made with :heart: by Divesh Uttamchandani
   
 Planned Platform support(in order of priority):   
 [CodeChef](www.codechef.com)  
-[Iarcs Opc](http://opc.iarcs.org.in/index.php/problems/)  
+[Iarcs Opc](http://opc.iarcs.org.in/index.php/problems/)
+Google Codejam  
 Codeforces  
 Hackerrank  
 Hackerearth  
@@ -33,8 +34,10 @@ context based shorter format if in a contest view
   
 
 ## Code
-1) most used predesigned but modifiable templates in the supported languages
-2) Incorporate compile/build commands.. and autobuild on leaving editor (might need configure a default editor variable (ex. code abc.c executes vim abc.py directly loaded with the defaylt template etc.))  
+1) most used predesigned but modifiable templates in the supported languages  
+2) templates correspnding to various most used algos/functions/tricks.
+3) Incorporate compile/build commands.. and autobuild on leaving editor (might need configure a default editor variable (ex. code abc.c executes vim abc.py directly loaded with the defaylt template etc.))  
+4) Add author name,problem url and other info to every file
 
 general format : code problem_name.lxx  
 
@@ -70,7 +73,7 @@ general format : submit a.cpp
 11) make a good website and improving markdowns
 12) Somewhere in the future try integrating this with github repositories.... Private repository for current contest Public for old contests etc.
 13) Try incorporating a settings webpage run on a local server
-14) Incorporate machine learning/AI to test case generator, problem categoriser, problem template(input output variables, loops etc and to a greator extent)
+14) Incorporate ML/AI to test case generator, problem categoriser, problem template(input output variables, loops etc)
 15) Integrating with stopstalk- trending problems, friends etc.
 16) Try integrating this with other applications that programmers use.
   
