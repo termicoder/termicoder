@@ -4,8 +4,8 @@ Made with :heart: by Divesh Uttamchandani
   
 Planned Platform support(in order of priority):   
 [CodeChef](www.codechef.com)  
-[Iarcs Opc](http://opc.iarcs.org.in/index.php/problems/)
-Google Codejam  
+[Iarcs Opc](http://opc.iarcs.org.in/index.php/problems/)  
+Google Codejam   
 Codeforces  
 Hackerrank  
 Hackerearth  
@@ -15,8 +15,24 @@ Planned Language Support(in order of priority):
 c/c++  
 Python  
 Java  
+
+# Basic things to keep in mind
+## This should be designed so that it can be made availible as a package in pip etc.
+## This should be able to be extended to other judges easily so modularity is a priority
   
 # Current Ideas 
+## Setup
+format:  
+setup judge problem code  
+setup judge contest code  
+setup url
+1) Creates a folder for each problem with data of that problem (url, problem statement(try pdf, html, txt etc), sample I/O, submit status/last time errors)
+2) add support for listing all problem folder and status(custom ls), quickly changeing to a unsolved problem folder
+3) use git like hidden file approach
+
+### All the following commands work based on folder i am in so no need to remember/type problem code again and again 
+  
+  
 ## View  
 1) Current contests, trending problems, live problems etc. (Coders Calender)
 2) Generating url corresponding to a problem code/name in an easy way for all the supported platform
@@ -26,11 +42,11 @@ Java
     3.2) open the page in a browser (directly from terminal)   
     3.3) display as text on terminal  
     3.4) display a modified webpage on text based browser 
-4) also open the links given in problem discription
+4) also open the links given in problem description
 5) Reminders about contests
   
-general format : view judge problemcode  
-context based shorter format if in a contest view  
+general format : view --options  
+it displays the problem if exist in current folder if more than one than displays a list.
   
 
 ## Code
@@ -38,9 +54,11 @@ context based shorter format if in a contest view
 2) templates correspnding to various most used algos/functions/tricks.
 3) Incorporate compile/build commands.. and autobuild on leaving editor (might need configure a default editor variable (ex. code abc.c executes vim abc.py directly loaded with the defaylt template etc.))  
 4) Add author name,problem url and other info to every file
+5) Make a generalized file naming schheme
+6) Also try version control the code with git
 
-general format : code problem_name.lxx  
-
+general format : code --options
+  
 ## Debug
 1) Check I/O corressponding to sample test cases
 2) Test case generator
@@ -54,7 +72,7 @@ general format : code problem_name.lxx
 3) confirm password on submit  
 4) first compile and check against sample test case before submit.... Confirm again if error
 
-general format : submit a.cpp
+general format : submit --options  
 
 ## Learn
 1) assign/retrive categories of problems , open resources related to them
