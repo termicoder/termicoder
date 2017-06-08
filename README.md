@@ -5,8 +5,8 @@ Made with :heart: by Divesh Uttamchandani
 Planned Platform support(in order of priority):   
 [CodeChef](www.codechef.com)  
 [Iarcs Opc](http://opc.iarcs.org.in/index.php/problems/)  
-Google Codejam   
 Codeforces  
+Google Codejam   
 Hackerrank  
 Hackerearth  
 
