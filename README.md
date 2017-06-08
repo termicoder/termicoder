@@ -64,7 +64,7 @@ general format : code --options
 2) Test case generator
 3) brute force generator for small values
 4) calculation of time
-5) Integration with existing debuggers (gdb etc.)
+5) Integration with existing tools (gdb,, valgrind etc.)
 
 ## Submit
 1) easy submit directly from terminal
@@ -78,6 +78,8 @@ general format : submit --options
 1) assign/retrive categories of problems , open resources related to them
 2) Link for editiorial/resources/google search the uncommon words in the problem statement etc.
 3) show suggestions to remove errors found using submit status
+4) Support for commonly encountered errors
+  
 
 # Future Ideas (The feasiblity of ideas hasn't been verified and most ideas are vague/in budding stage)
 1) Save encrypted passwords confirm a common master password on submit  
