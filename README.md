@@ -15,10 +15,11 @@ Planned Language Support(in order of priority):
 c/c++  
 Python  
 Java  
-
-# Basic things to keep in mind
+## NOTE TO SELF:
+### Basic things to keep in mind
 ### This should be designed so that it can be later made availible as a package in pip etc.
 ### This should be able to be extended to other judges easily so modularity is a priority
+### The cli should be on similar grounds as git use commands, arguments and optional arguments judiciously
   
 # Current Ideas 
 ## Setup
