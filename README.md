@@ -10,6 +10,7 @@ Planned Platform support(in order of priority):
 Codeforces  
 Google Codejam   
 Hackerrank  
+Facebook Hacker Cup  
 Hackerearth  
 
 
@@ -21,7 +22,7 @@ Java
 ### Basic things to keep in mind
 ### This should be designed so that it can be later made availible as a package in pip etc.
 ### This should be able to be extended to other judges easily so modularity is a priority
-### The cli should be on similar grounds as git use commands, arguments and optional arguments judiciously
+### The cli should be on similar grounds as git so use commands, arguments and optional arguments judiciously
   
 # Current Ideas 
 ## Setup
@@ -82,6 +83,7 @@ general format : submit --options
 2) Link for editiorial/resources/google search the uncommon words in the problem statement etc.
 3) show suggestions to remove errors found using submit status
 4) Support for commonly encountered errors
+5) using a TODO list, notify users if editorials are out remind them in post solving the questions
   
 
 # Future Ideas (The feasiblity of ideas hasn't been verified and most ideas are vague/in budding stage)
