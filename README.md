@@ -1,6 +1,8 @@
 # Termicoder  
 View, Code, Debug, Submit, Learn directly from terminal  
 Made with :heart: by Divesh Uttamchandani
+
+### The repo will remain private till beta version is completed and released. The repo will then be transfered to termicoder organization account and developement will be carried out from there
   
 Planned Platform support(in order of priority):   
 [CodeChef](www.codechef.com)  
