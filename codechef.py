@@ -4,7 +4,21 @@ from bs4 import BeautifulSoup
 import json
 from time import strptime,strftime,mktime,gmtime,localtime
 import sys
-#sys.stdout = open('logs.txt', 'w')
+sys.stdout = open('logs.txt', 'w')
+
+def get_duration(duration):
+    days = duration/(60*24)
+    duration %= 60*24
+    hours = duration/60
+    duration %= 60
+    minutes = duration
+    ans=""
+    if days==1: ans+=str(days)+" day "
+    elif days!=0: ans+=str(days)+" days "
+    if hours!=0:ans+=str(hours)+"h "
+    if minutes!=0:ans+=str(minutes)+"m"
+    return ans.strip()
+
 def get_problem(contest_code,problem_code):
     #works on the fact that sample io will be inside pre tag and if more than 1 sample than more than 1 pre tag
     url="https://www.codechef.com/api/contests/"+contest_code+"/problems/"+problem_code
@@ -33,6 +47,7 @@ def get_problem(contest_code,problem_code):
                 #TODO create a log of the exception
                 print("error get testcase")
                 continue
+    sys.stdout.flush()
 
 '''
 exceptions to above
@@ -56,12 +71,11 @@ def get_contest(contest_code):
                 print("error geting problem",problems[problem]["code"])
 
 
-'''
-The following function is derived from codercalender
+#The following function is derived from codercalender
 #TODO include links of licence and author etc.
-functionality for past contests is added.
-now using problem code instead of url
-'''
+#functionality for past contests is added.
+#now using problem code instead of url
+
 
 def  get_contest_list():
     url="http://www.codechef.com/contests"

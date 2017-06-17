@@ -7,11 +7,11 @@ Made with :heart: by Divesh Uttamchandani
 Planned Platform support(in order of priority):   
 [CodeChef](www.codechef.com)  
 [Iarcs Opc](http://opc.iarcs.org.in/index.php/problems/)  
-Codeforces  
-Google Codejam   
-Hackerrank  
-Facebook Hacker Cup  
-Hackerearth  
+[Codeforces](http://codeforces.com/)   
+[Google Codejam](https://code.google.com/codejam)    
+[Facebook Hacker Cup](https://www.facebook.com/hackercup/)  
+[Hackerrank](https://www.hackerrank.com/)  
+[Hackerearth](https://www.hackerearth.com)  
 
 
 Planned Language Support(in order of priority):  
@@ -38,7 +38,7 @@ setup url
   
   
 ## View  
-1) Current contests, trending problems, live problems etc. (Coders Calender)
+1) Current contests, trending problems, live problems etc. (take help from [Coders Calender](https://github.com/nishanthvijayan/CoderCalendar) , [StopStalk](https://github.com/stopstalk/))
 2) Generating url corresponding to a problem code/name in an easy way for all the supported platform
 3) Display the problem in best way possible, try not to leave terminal also be sure to somehow display the important images  
     options:  
@@ -47,7 +47,7 @@ setup url
     3.3) display as text on terminal  
     3.4) display a modified webpage on text based browser 
 4) also open the links given in problem description
-5) Reminders about contests
+5) Reminders about contests ( take help from [dhruvagarwal/codeforces_desktop_notifier](https://github.com/dhruvagarwal/codeforces_desktop_notifier))
   
 general format : view --options  
 it displays the problem if exist in current folder if more than one than displays a list.
@@ -65,13 +65,13 @@ general format : code --options
   
 ## Debug
 1) Check I/O corressponding to sample test cases
-2) Test case generator
+2) Test case generator (take help from [likecs/Test-case-generators](https://github.com/likecs/Test-case-generators))
 3) brute force generator for small values
 4) calculation of time
 5) Integration with existing tools (gdb,, valgrind etc.)
 
 ## Submit
-1) easy submit directly from terminal
+1) easy submit directly from terminal (take help from [architv/fastsubmit_codechef](https://github.com/architv/fastsubmit_codechef) )
 2) retrive status after submit
 3) confirm password on submit  
 4) first compile and check against sample test case before submit.... Confirm again if error
