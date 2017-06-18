@@ -3,8 +3,8 @@ from bs4 import BeautifulSoup
 import json
 from time import strptime,strftime,mktime,gmtime,localtime
 import sys
-sys.stdout = open('codecheflogs.txt', 'w')
-
+#sys.stdout = open('codecheflogs.txt', 'w')
+count={0:[], 1:[], 2:[], 3:[],"others":[] }
 def get_problem(contest_code,problem_code):
     #works on the fact that sample io will be inside pre tag and if more than 1 sample than more than 1 pre tag
     url="https://www.codechef.com/api/contests/"+contest_code+"/problems/"+problem_code
@@ -15,24 +15,21 @@ def get_problem(contest_code,problem_code):
     except:
          print("error in fetching url "+url)
     else:
-        #loop because there can be others pre in a problem example https://www.codechef.com/JUNE17/problems/PRMQ or multiple pre for multiple test cases
-        for sampleio in soup.find_all('pre'):
-            try:
-                sample_input=str(sampleio.b.next_sibling).strip()+"\n"
-                sample_output=str(sampleio.b.next_sibling.next_sibling.next_sibling).strip()+"\n"
-
-                #fix for problems like https://www.codechef.com/JUNE17/problems/XENRANK
-                if(sample_input[0] is ":"):
-                    sample_input=sample_input[1:].strip()+"\n"
-                if(sample_output[0] is ":"):
-                    sample_output=sample_output[1:].strip()+"\n"
-                print("input\n"+sample_input)
-                print("output\n"+sample_output)
-                #endfix
-            except:
-                #TODO create a log of the exception
-                print("error get testcase")
-                continue
+        try:
+            count[len(soup.find_all('pre'))].append(contest_code+"/"+problem_code)
+        except:
+            count["others"].append(contest_code+"/"+problem_code)
+            # sample_input=str(sampleio.b.next_sibling).strip()+"\n"
+            # sample_output=str(sampleio.b.next_sibling.next_sibling.next_sibling).strip()+"\n"
+            # if(sample_input[0] is ":"):
+            #     sample_input=sample_input[1:].strip()+"\n"
+            # if(sample_output[0] is ":"):
+            #     sample_output=sample_output[1:].strip()+"\n"
+            # print("input\n"+sample_input)
+            # print("output\n"+sample_output)
+            # #TODO create a log of the exception
+            # print("error get testcase")
+            # continue
     sys.stdout.flush()
 
 '''
@@ -141,3 +138,10 @@ def  get_contest_list():
         #print(posts["past"])
 
 get_contest_list()
+print("0 count\n",count[0])
+print("1 count\n",count[1])
+print("2 count\n",count[2])
+print("3 count\n",count[3])
+print("rest\n",count["others"])
+sys.stdout.flush()
+time.sleep(100)
