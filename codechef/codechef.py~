@@ -15,20 +15,24 @@ def get_problem(contest_code,problem_code):
     except:
          print("error in fetching url "+url)
     else:
-        if(len(soup.find_all('pre')) <= 1):
-        	print("len error for ",url)  
+        #loop because there can be others pre in a problem example https://www.codechef.com/JUNE17/problems/PRMQ or multiple pre for multiple test cases
+        for sampleio in soup.find_all('pre'):
+            try:
+                sample_input=str(sampleio.b.next_sibling).strip()+"\n"
+                sample_output=str(sampleio.b.next_sibling.next_sibling.next_sibling).strip()+"\n"
 
-            # sample_input=str(sampleio.b.next_sibling).strip()+"\n"
-            # sample_output=str(sampleio.b.next_sibling.next_sibling.next_sibling).strip()+"\n"
-            # if(sample_input[0] is ":"):
-            #     sample_input=sample_input[1:].strip()+"\n"
-            # if(sample_output[0] is ":"):
-            #     sample_output=sample_output[1:].strip()+"\n"
-            # print("input\n"+sample_input)
-            # print("output\n"+sample_output)
-            # #TODO create a log of the exception
-            # print("error get testcase")
-            # continue
+                #fix for problems like https://www.codechef.com/JUNE17/problems/XENRANK
+                if(sample_input[0] is ":"):
+                    sample_input=sample_input[1:].strip()+"\n"
+                if(sample_output[0] is ":"):
+                    sample_output=sample_output[1:].strip()+"\n"
+                print("input\n"+sample_input)
+                print("output\n"+sample_output)
+                #endfix
+            except:
+                #TODO create a log of the exception
+                print("error get testcase")
+                continue
     sys.stdout.flush()
 
 '''

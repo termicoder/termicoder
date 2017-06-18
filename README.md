@@ -5,7 +5,7 @@ Made with :heart: by Divesh Uttamchandani
 ### The repo will remain private till beta version is completed and released. The repo will then be transfered to termicoder organization account and developement will be carried out from there
   
 Planned Platform support(in order of priority):   
-[CodeChef](www.codechef.com)  
+[CodeChef](http://www.codechef.com)  
 [Iarcs Opc](http://opc.iarcs.org.in/index.php/problems/)  
 [Codeforces](http://codeforces.com/)   
 [Google Codejam](https://code.google.com/codejam)    
