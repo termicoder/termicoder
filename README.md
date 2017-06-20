@@ -8,6 +8,7 @@ Planned Platform support(in order of priority):
 [CodeChef](http://www.codechef.com)  
 [Iarcs Opc](http://opc.iarcs.org.in/index.php/problems/)  
 [Codeforces](http://codeforces.com/)   
+[SPOJ](http://www.spoj.com)  
 [Google Codejam](https://code.google.com/codejam)    
 [Facebook Hacker Cup](https://www.facebook.com/hackercup/)  
 [Hackerrank](https://www.hackerrank.com/)  
@@ -23,6 +24,7 @@ Java
 ### This should be designed so that it can be later made availible as a package in pip etc.
 ### This should be able to be extended to other judges easily so modularity is a priority
 ### The cli should be on similar grounds as git so use commands, arguments and optional arguments judiciously
+### Since being made in python ensure that it is cross platform (windows ,linux, mac) also try to be compactible with both on python 2 and 3
   
 # Current Ideas 
 ## Setup
@@ -40,23 +42,23 @@ setup url
 ## View  
 1) Current contests, trending problems, live problems etc. (take help from [Coders Calender](https://github.com/nishanthvijayan/CoderCalendar) , [StopStalk](https://github.com/stopstalk/))
 2) Generating url corresponding to a problem code/name in an easy way for all the supported platform
-3) Display the problem in best way possible, try not to leave terminal also be sure to somehow display the important images  
-    options:  
-    3.1) Use a terminal based browser such as w3m/elinks etc.   
-    3.2) open the page in a browser (directly from terminal)   
-    3.3) display as text on terminal  
+3) Display the problem in best way possible, try not to leave terminal also be sure to somehow display the important images
+    options:
+    3.1) Use a terminal based browser such as w3m/elinks etc.
+    3.2) open the page in a browser (directly from terminal)
+    3.3) display as text on terminal
     3.4) display a modified webpage on text based browser 
 4) also open the links given in problem description
 5) Reminders about contests ( take help from [dhruvagarwal/codeforces_desktop_notifier](https://github.com/dhruvagarwal/codeforces_desktop_notifier))
   
-general format : view --options  
+general format : view --options
 it displays the problem if exist in current folder if more than one than displays a list.
   
 
 ## Code
-1) most used predesigned but modifiable templates in the supported languages  
+1) most used predesigned but modifiable templates in the supported languages
 2) templates correspnding to various most used algos/functions/tricks.
-3) Incorporate compile/build commands.. and autobuild on leaving editor (might need configure a default editor variable (ex. code abc.c executes vim abc.py directly loaded with the defaylt template etc.))  
+3) Incorporate compile/build commands.. and autobuild on leaving editor (might need configure a default editor variable (ex. code abc.c executes vim abc.py directly loaded with the defaylt template etc.))
 4) Add author name,problem url and other info to every file
 5) Make a generalized file naming schheme
 6) Also try version control the code with git
@@ -65,7 +67,7 @@ general format : code --options
   
 ## Debug
 1) Check I/O corressponding to sample test cases
-2) Test case generator (take help from [likecs/Test-case-generators](https://github.com/likecs/Test-case-generators))
+2) Test case generator (take help from [likecs/Test-case-generators](https://github.com/likecs/Test-case-generators) and [MikeMirzayanov/testlib](https://github.com/MikeMirzayanov/testlib))
 3) brute force generator for small values
 4) calculation of time
 5) Integration with existing tools (gdb,, valgrind etc.)
@@ -73,8 +75,9 @@ general format : code --options
 ## Submit
 1) easy submit directly from terminal (take help from [architv/fastsubmit_codechef](https://github.com/architv/fastsubmit_codechef) )
 2) retrive status after submit
-3) confirm password on submit  
+3) confirm password on submit
 4) first compile and check against sample test case before submit.... Confirm again if error
+5) Add a utility command to copy code directly to clipboard for submitting to unrecognized platform
 
 general format : submit --options  
 
@@ -87,14 +90,14 @@ general format : submit --options
   
 
 # Future Ideas (The feasiblity of ideas hasn't been verified and most ideas are vague/in budding stage)
-1) Save encrypted passwords confirm a common master password on submit  
-2) Make it advanced enough to handle multiple profiles for the same site . May be by implementing user interface.  
-3) Should be a complete guide and reference  
-4) Should be simple enough for beginners but compelling enough for advanced users  
-5) It should be a learning resource for beginners as well as a great reference for advanced coders  
-6) Make user learn new things (but in first version start with only c/c++/stl/linux basics)  
-7) Make it availible as a bundle which incorporates various tools such as vim plugins but they should be minimum so work them out   
-8) Make Users use good techniques that I have learned also ask competetive coders for suggestions.  
+1) Save encrypted passwords confirm a common master password on submit
+2) Make it advanced enough to handle multiple profiles for the same site . May be by implementing user interface.
+3) Should be a complete guide and reference
+4) Should be simple enough for beginners but compelling enough for advanced users
+5) It should be a learning resource for beginners as well as a great reference for advanced coders
+6) Make user learn new things (but in first version start with only c/c++/stl/linux basics)
+7) Make it availible as a bundle which incorporates various tools such as vim plugins but they should be minimum so work them out
+8) Make Users use good techniques that I have learned also ask competetive coders for suggestions.
 9) It should improve with the user progress. Refer to his profiles and code for the type of coder he is(which language he codes in). Ask him ques like which language he uses does he have knowledge of vim etc. If he is a begginer make him use best tools if advanced user suggest him the tools but try also to support his tools. also ask him to start from basics and then introduce complexity like code templates etc. 
 10) Make it as good as a practical guide book for everyone it is a road with check points. One could start form check point confirming to his abilities.
 11) make a good website and improving markdowns
