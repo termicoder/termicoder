@@ -83,7 +83,7 @@ def get_problem(contest_code,problem_code):
             if(len(sample_inputs)!=len(sample_outputs)):
                 eprint(url,"len of sampleio not equal")
             elif(len(sample_inputs)==0 or len(sample_outputs)==0):
-                eprint(url,"atleast one of input array or output array is empty")
+                eprint(url,"atleast one of input array orr output array is empty")
             else:
                 print("problem",problem_code,url)
                 correct_count+=1
