@@ -1,0 +1,8868 @@
+got the list
+contest LTIME49
+contest LOCJUN17
+contest IOIPRAC
+problem INOI1401 https://www.codechef.com/api/contests/IOIPRAC/problems/INOI1401
+sample input 1 :
+3 4 2
+1 1 1 10 1 1 11 1 1 1
+
+sample output 1 :
+5
+
+problem INOI1501 https://www.codechef.com/api/contests/IOIPRAC/problems/INOI1501
+sample input 1 :
+52 3 2 3 13 4 4 6 3
+
+sample output 1 :
+18
+
+problem INOI1302 https://www.codechef.com/api/contests/IOIPRAC/problems/INOI1302
+sample input 1 :
+4 2
+4 4 6 7 84 8 3 0 42 0 106 1 2 3 0 5 8
+
+sample output 1 :
+3
+
+problem INOI1602 https://www.codechef.com/api/contests/IOIPRAC/problems/INOI1602
+sample input 1 :
+6 3 4 5 -2 1 1 6 1 3 4 2 5 6
+
+sample output 1 :
+13
+
+problem INOI1601 https://www.codechef.com/api/contests/IOIPRAC/problems/INOI1601
+sample input 1 :
+4 5 10 6 12 2 -1 4 2
+
+sample output 1 :
+6
+
+problem INOI1502 https://www.codechef.com/api/contests/IOIPRAC/problems/INOI1502
+sample input 1 :
+3 176
+
+sample output 1 :
+6
+
+problem INOI1201 https://www.codechef.com/api/contests/IOIPRAC/problems/INOI1201
+sample input 1 :
+3
+18 7 6 
+23 10 27
+20 9 14
+
+sample output 1 :
+74
+
+problem INOI1301 https://www.codechef.com/api/contests/IOIPRAC/problems/INOI1301
+sample input 1 :
+5 2
+5 3 -2 1 1
+
+sample output 1 :
+11
+
+problem INOI1402 https://www.codechef.com/api/contests/IOIPRAC/problems/INOI1402
+sample input 1 :
+4 51 2 101 3 242 3 22 4 153 4 7
+
+sample output 1 :
+19
+
+contest ZCOPRAC
+problem ZCO12002 https://www.codechef.com/api/contests/ZCOPRAC/problems/ZCO12002
+sample input 1 :
+3 4 2
+15 21
+5 10
+7 25
+4 14 25 2
+13 21
+
+sample output 1 :
+8
+
+problem ZCO12001 https://www.codechef.com/api/contests/ZCOPRAC/problems/ZCO12001
+sample input 1 :
+20
+1 2 1 1 2 2 1 2 1 1 2 1 2 2 1 1 2 1 2 2
+
+sample output 1 :
+2 4 6 9
+
+problem ZCO12003 https://www.codechef.com/api/contests/ZCOPRAC/problems/ZCO12003
+sample input 1 :
+14
+1 1 3 4 2 2 3 3 3 1 2 4 4 4
+
+sample output 1 :
+2 6 8
+
+problem ZCO15002 https://www.codechef.com/api/contests/ZCOPRAC/problems/ZCO15002
+sample input 1 :
+3 1 
+3 1 3
+
+sample output 1 :
+2
+
+problem ZCO14003 https://www.codechef.com/api/contests/ZCOPRAC/problems/ZCO14003
+sample input 1 :
+4
+30
+20
+53
+14
+
+sample output 1 :
+60
+
+sample input 2 :
+5
+40
+3
+65
+33
+21
+
+sample output 2 :
+99
+
+problem ZCO15004 https://www.codechef.com/api/contests/ZCOPRAC/problems/ZCO15004
+sample input 1 :
+5 
+1 4 
+2 3
+3 2
+5 1
+5 2
+
+sample output 1 :
+49997500
+
+problem ZCO13001 https://www.codechef.com/api/contests/ZCOPRAC/problems/ZCO13001
+sample input 1 :
+4
+3 10 3 5
+
+sample output 1 :
+23
+
+problem ZCO13004 https://www.codechef.com/api/contests/ZCOPRAC/problems/ZCO13004
+sample input 1 :
+4 4 1
+3 2 1 3
+
+sample output 1 :
+YES
+6
+
+sample input 2 :
+5 5 2
+5 1 1 2
+4 4 1 2
+
+sample output 2 :
+YES
+8
+
+problem ZCO16002 https://www.codechef.com/api/contests/ZCOPRAC/problems/ZCO16002
+sample input 1 :
+7 15 8 10 20 17 13 5
+
+sample output 1 :
+4
+
+problem ZCO13003 https://www.codechef.com/api/contests/ZCOPRAC/problems/ZCO13003
+sample input 1 :
+7 4
+10 1 3 1 5 5 0
+
+sample output 1 :
+4
+
+problem ZCO14001 https://www.codechef.com/api/contests/ZCOPRAC/problems/ZCO14001
+sample input 1 :
+7 4
+3 1 2 1 4 0 1
+3 2 2 2 2 4 1 3 1 4 0
+
+sample output 1 :
+2 1 3 1 4 0 1
+
+sample input 2 :
+3 5
+2 5 2
+3 2 4 2 2 2 1 4 1 1 1 1 0
+
+sample output 2 :
+1 5 2
+
+problem ZCO15003 https://www.codechef.com/api/contests/ZCOPRAC/problems/ZCO15003
+sample input 1 :
+2 
+3 5 
+3 3
+
+sample output 1 :
+1
+
+sample input 2 :
+3 
+6 9 
+3 5 
+4 8
+
+sample output 2 :
+2
+
+problem ZCO16001 https://www.codechef.com/api/contests/ZCOPRAC/problems/ZCO16001
+sample input 1 :
+5 1 3 5 2 7 1 14 2 3 10 4
+
+sample output 1 :
+19
+
+problem ZCO14002 https://www.codechef.com/api/contests/ZCOPRAC/problems/ZCO14002
+sample input 1 :
+10
+3 2 1 1 2 3 1 3 2 1
+
+sample output 1 :
+4
+
+sample input 2 :
+8
+3 2 3 2 3 5 1 3
+
+sample output 2 :
+5
+
+problem ZCO12004 https://www.codechef.com/api/contests/ZCOPRAC/problems/ZCO12004
+sample input 1 :
+5
+1 2 1 2 2
+
+sample output 1 :
+4
+
+problem ZCO15001 https://www.codechef.com/api/contests/ZCOPRAC/problems/ZCO15001
+sample input 1 :
+5
+34 45 34 56 34
+
+sample output 1 :
+3
+
+problem ZCO13002 https://www.codechef.com/api/contests/ZCOPRAC/problems/ZCO13002
+sample input 1 :
+5 3
+3 3 2 4 3 
+2 1 -1 -2 2  
+-1 2 4 3 -3  
+-2 2 3 2 1  
+3 -1 2 -1 2  
+1 2 2
+4 5 2
+4 2 1
+
+sample output 1 :
+YES
+19
+
+problem ZCO14004 https://www.codechef.com/api/contests/ZCOPRAC/problems/ZCO14004
+sample input 1 :
+5 
+10 3 5 7 3
+
+sample output 1 :
+23
+
+sample input 2 :
+8
+3 2 3 2 3 5 1 3
+
+sample output 2 :
+17
+
+contest COOK83
+problem ADADET https://www.codechef.com/api/contests/COOK83/problems/ADADET
+sample input 1 :
+1
+7
+1 130
+65 110
+120 40
+160 60
+240 100
+280 65
+320 30
+
+sample output 1 :
+5 5 -1 -1 7 7 -1
+
+problem CENTREE https://www.codechef.com/api/contests/COOK83/problems/CENTREE
+sample input 1 :
+1
+4 0
+
+sample output 1 :
+YES
+1 2
+1 3
+1 4
+
+problem SNACKUP https://www.codechef.com/api/contests/COOK83/problems/SNACKUP
+sample input 1 :
+1
+2
+
+sample output 1 :
+2
+2
+1 1 2
+2 1 2
+2
+1 1 2
+2 1 2
+
+problem KNICOV https://www.codechef.com/api/contests/COOK83/problems/KNICOV
+sample input 1 :
+1
+2 4
+
+sample output 1 :
+4
+
+contest JUNE17
+problem OAK https://www.codechef.com/api/contests/JUNE17/problems/OAK
+sample input 1 :
+1
+5 6
+0 5
+1 3
+0 2
+3 1
+3 4
+0 1 5 5
+0 1 4 1
+2 1 5 2
+2 2 3
+4 1 5 2
+3 1 1 7
+
+sample output 1 :
+5
+0
+3
+1
+0
+1
+
+problem CLONEME https://www.codechef.com/api/contests/JUNE17/problems/CLONEME
+sample input 1 :
+1
+6 3
+1 3 4 2 3 4
+1 3 4 6
+1 2 5 6
+3 5 2 4
+
+sample output 1 :
+YES
+NO
+YES
+
+problem UNIONSET https://www.codechef.com/api/contests/JUNE17/problems/UNIONSET
+sample input 1 :
+3
+2 2
+1 1
+1 1
+3 2
+2 1 2
+2 1 2
+2 1 2
+3 4
+3 1 2 3
+4 1 2 3 4
+3 2 3 4
+
+sample output 1 :
+0
+3
+3
+
+problem ES https://www.codechef.com/api/contests/JUNE17/problems/ES
+sample input 1 :
+3
+
+sample output 1 :
+15
+
+problem SUMQ https://www.codechef.com/api/contests/JUNE17/problems/SUMQ
+sample input 1 :
+1 
+3 1 3
+1 2 3
+5
+4 5 6
+
+sample output 1 :
+399
+
+problem NEO01 https://www.codechef.com/api/contests/JUNE17/problems/NEO01
+sample input 1 :
+1
+3
+-8 0 -2
+
+sample output 1 :
+-10
+
+sample input 2 :
+1
+3
+1 2 3
+
+sample output 2 :
+18
+
+problem XENRANK https://www.codechef.com/api/contests/JUNE17/problems/XENRANK
+sample input 1 :
+1
+1 2
+
+sample output 1 :
+8
+
+problem GOODSET https://www.codechef.com/api/contests/JUNE17/problems/GOODSET
+sample input 1 :
+5
+1
+2
+3
+4
+5
+
+sample output 1 :
+7
+1 2
+1 2 4
+1 2 4 16
+3 2 15 6 10
+
+contest SNEL17RP
+problem BLACKCOM https://www.codechef.com/api/contests/SNEL17RP/problems/BLACKCOM
+sample input 1 :
+1
+9 4
+4 1
+1 5
+1 2
+3 2
+3 6
+6 7
+6 8
+9 6
+0 1 0 1 0 0 1 0 1
+3 2
+7 3
+4 0
+9 5
+
+sample output 1 :
+Yes
+Yes
+No
+No
+
+problem PLUSMUL https://www.codechef.com/api/contests/SNEL17RP/problems/PLUSMUL
+sample input 1 :
+2
+3
+1 2 4
+4
+1 1 1 1
+
+sample output 1 :
+30
+20
+
+problem PREFIXOR https://www.codechef.com/api/contests/SNEL17RP/problems/PREFIXOR
+sample input 1 :
+4 
+1 2 3 4
+3
+1 3
+0 3
+3 1
+
+sample output 1 :
+4
+6
+4
+
+problem GQUERY https://www.codechef.com/api/contests/SNEL17RP/problems/GQUERY
+sample input 1 :
+1
+5 7 3
+1 2
+1 3
+2 3
+3 5
+1 5
+4 5
+1 4
+5 6
+3 4
+7 4
+
+sample output 1 :
+5
+5
+4
+
+problem CHEFPRAD https://www.codechef.com/api/contests/SNEL17RP/problems/CHEFPRAD
+sample input 1 :
+1
+5 7 1
+8 9 18 13 19
+1 3 7 20 17 18 11
+
+sample output 1 :
+4
+
+problem ROBOTDAG https://www.codechef.com/api/contests/SNEL17RP/problems/ROBOTDAG
+sample input 1 :
+3
+8 11 1
+1 2
+1 3
+1 4
+6 7
+2 5
+3 6
+3 2
+4 6
+5 7
+7 8
+2 7
+8 11 2
+1 2
+1 3
+1 4
+6 7
+2 5
+3 6
+3 2
+4 6
+5 7
+7 8
+2 7
+8 11 3
+1 2
+1 3
+1 4
+6 7
+2 5
+3 6
+3 2
+4 6
+5 7
+7 8
+2 7
+
+sample output 1 :
+3
+4
+5
+
+problem WIQ https://www.codechef.com/api/contests/SNEL17RP/problems/WIQ
+sample input 1 :
+1
+2
+3 2
+2 2
+
+sample output 1 :
+8 4
+
+problem FOURPTS https://www.codechef.com/api/contests/SNEL17RP/problems/FOURPTS
+sample input 1 :
+2
+1 1 1 3 1 2 2 1
+1 1 2 2 2 0 1 0
+
+sample output 1 :
+YES 1.000 1.000 1.000 4.000 3.000 1.000
+YES 0.000 0.000 3.000 3.000 3.000 0.000
+
+problem ANCESTOR https://www.codechef.com/api/contests/SNEL17RP/problems/ANCESTOR
+sample input 1 :
+1
+5
+1 3
+1 2
+3 5
+3 4
+1 5
+1 2
+2 3
+3 4
+
+sample output 1 :
+0 1 1 2 1
+
+problem MEXDIV https://www.codechef.com/api/contests/SNEL17RP/problems/MEXDIV
+sample input 1 :
+3 1
+0 1 2
+
+sample output 1 :
+2
+
+sample input 2 :
+10 3
+0 1 2 3 4 0 1 2 5 3
+
+sample output 2 :
+379
+
+contest SNCKEL17
+problem BLACKCOM https://www.codechef.com/api/contests/SNCKEL17/problems/BLACKCOM
+sample input 1 :
+1
+9 4
+4 1
+1 5
+1 2
+3 2
+3 6
+6 7
+6 8
+9 6
+0 1 0 1 0 0 1 0 1
+3 2
+7 3
+4 0
+9 5
+
+sample output 1 :
+Yes
+Yes
+No
+No
+
+problem PLUSMUL https://www.codechef.com/api/contests/SNCKEL17/problems/PLUSMUL
+sample input 1 :
+2
+3
+1 2 4
+4
+1 1 1 1
+
+sample output 1 :
+30
+20
+
+problem PREFIXOR https://www.codechef.com/api/contests/SNCKEL17/problems/PREFIXOR
+sample input 1 :
+4 
+1 2 3 4
+3
+1 3
+0 3
+3 1
+
+sample output 1 :
+4
+6
+4
+
+problem GQUERY https://www.codechef.com/api/contests/SNCKEL17/problems/GQUERY
+sample input 1 :
+1
+5 7 3
+1 2
+1 3
+2 3
+3 5
+1 5
+4 5
+1 4
+5 6
+3 4
+7 4
+
+sample output 1 :
+5
+5
+4
+
+problem CHEFPRAD https://www.codechef.com/api/contests/SNCKEL17/problems/CHEFPRAD
+sample input 1 :
+1
+5 7 1
+8 9 18 13 19
+1 3 7 20 17 18 11
+
+sample output 1 :
+4
+
+problem ROBOTDAG https://www.codechef.com/api/contests/SNCKEL17/problems/ROBOTDAG
+sample input 1 :
+3
+8 11 1
+1 2
+1 3
+1 4
+6 7
+2 5
+3 6
+3 2
+4 6
+5 7
+7 8
+2 7
+8 11 2
+1 2
+1 3
+1 4
+6 7
+2 5
+3 6
+3 2
+4 6
+5 7
+7 8
+2 7
+8 11 3
+1 2
+1 3
+1 4
+6 7
+2 5
+3 6
+3 2
+4 6
+5 7
+7 8
+2 7
+
+sample output 1 :
+3
+4
+5
+
+problem WIQ https://www.codechef.com/api/contests/SNCKEL17/problems/WIQ
+sample input 1 :
+1
+2
+3 2
+2 2
+
+sample output 1 :
+8 4
+
+problem SPCLN https://www.codechef.com/api/contests/SNCKEL17/problems/SPCLN
+sample input 1 :
+3 3 
+10 70 100 
+80 50 40 
+80 20 40 
+2 
+1 2 
+1 3
+
+sample output 1 :
+50.00
+
+problem FOURPTS https://www.codechef.com/api/contests/SNCKEL17/problems/FOURPTS
+sample input 1 :
+2
+1 1 1 3 1 2 2 1
+1 1 2 2 2 0 1 0
+
+sample output 1 :
+YES 1.000 1.000 1.000 4.000 3.000 1.000
+YES 0.000 0.000 3.000 3.000 3.000 0.000
+
+problem ANCESTOR https://www.codechef.com/api/contests/SNCKEL17/problems/ANCESTOR
+sample input 1 :
+1
+5
+1 3
+1 2
+3 5
+3 4
+1 5
+1 2
+2 3
+3 4
+
+sample output 1 :
+0 1 1 2 1
+
+problem MEXDIV https://www.codechef.com/api/contests/SNCKEL17/problems/MEXDIV
+sample input 1 :
+3 1
+0 1 2
+
+sample output 1 :
+2
+
+sample input 2 :
+10 3
+0 1 2 3 4 0 1 2 5 3
+
+sample output 2 :
+379
+
+contest SNCKPB17
+problem SNCOUP https://www.codechef.com/api/contests/SNCKPB17/problems/SNCOUP
+sample input 1 :
+
+
+sample output 1 :
+
+
+problem SNDISCUS https://www.codechef.com/api/contests/SNCKPB17/problems/SNDISCUS
+sample input 1 :
+3
+2
+1 1 1 3
+1 1 3 1
+2
+1 1 1 3
+2 1 3 1
+3
+1 1 1 3
+2 1 3 1
+2 2 2 2
+
+sample output 1 :
+0
+1
+1
+
+problem SNGRAPH https://www.codechef.com/api/contests/SNCKPB17/problems/SNGRAPH
+sample input 1 :
+1
+5 4
+1 2
+2 3
+2 4
+4 5
+
+sample output 1 :
+0 3 4 4 4
+
+problem SNSOCIAL https://www.codechef.com/api/contests/SNCKPB17/problems/SNSOCIAL
+sample input 1 :
+3
+2 2
+1 1
+1 1
+2 2
+1 1
+1 2
+3 4
+1 2 1 2
+1 1 1 2
+1 1 2 2
+
+sample output 1 :
+0
+1
+2
+
+problem CAPTCITI https://www.codechef.com/api/contests/SNCKPB17/problems/CAPTCITI
+sample input 1 :
+1
+8
+1 2
+1 3
+4 2
+6 5
+2 5
+7 5
+5 8
+2 8 10 5 200 4 100 1
+2 1 1 1 3 1 1 1
+
+sample output 1 :
+7
+
+problem SNELECT https://www.codechef.com/api/contests/SNCKPB17/problems/SNELECT
+sample input 1 :
+4
+sm
+ssm
+sms
+ssmmmssss
+
+sample output 1 :
+mongooses
+tie
+tie
+snakes
+
+contest LOCMAY17
+problem BONDFOND https://www.codechef.com/api/contests/LOCMAY17/problems/BONDFOND
+sample input 1 :
+3
+1
+2
+3
+
+sample output 1 :
+0
+0
+1
+
+problem ARGCD https://www.codechef.com/api/contests/LOCMAY17/problems/ARGCD
+sample input 1 :
+3 3
+1 3 6 
+1
+5
+6
+
+sample output 1 :
+1
+3
+6
+
+problem VTREE https://www.codechef.com/api/contests/LOCMAY17/problems/VTREE
+sample input 1 :
+2
+10 2
+sm
+s 0
+s 1
+m 2
+s 3
+m 4
+s 5
+m 6
+m 7
+s 8
+m 9
+10 1
+y
+y 0
+y 1
+y 2
+y 3
+y 4
+y 5
+y 6
+y 7
+y 8
+y 9
+
+sample output 1 :
+4 4 4 3 3 2 2 1 1 1 
+10 9 8 7 6 5 4 3 2 1
+
+problem DTREE https://www.codechef.com/api/contests/LOCMAY17/problems/DTREE
+sample input 1 :
+1
+5
+1 2
+1 3
+3 4
+3 5
+
+sample output 1 :
+2 2 1 3 3
+
+problem LOC172 https://www.codechef.com/api/contests/LOCMAY17/problems/LOC172
+sample input 1 :
+5 5
+3
+1 1 1 
+2 2 2
+3 3 3 
+5 10
+2
+1 1 1
+5 5 1
+-1 -1
+
+sample output 1 :
+3
+1
+
+contest SNCKPA17
+problem TEAMFORM https://www.codechef.com/api/contests/SNCKPA17/problems/TEAMFORM
+sample input 1 :
+4
+2 1
+1 2
+4 1
+1 3
+5 2
+1 2
+4 5
+5 1
+1 4
+
+sample output 1 :
+yes
+yes
+no
+no
+
+problem SNTEMPLE https://www.codechef.com/api/contests/SNCKPA17/problems/SNTEMPLE
+sample input 1 :
+3
+3
+1 2 1
+4
+1 1 2 1
+5
+1 2 6 2 1
+
+sample output 1 :
+0
+1
+3
+
+problem PROTEPOI https://www.codechef.com/api/contests/SNCKPA17/problems/PROTEPOI
+sample input 1 :
+2
+7 3 7
+1 1 6 1
+1 2 3 2
+5 2 5 2
+2 4 2 6
+6 2 6 4
+5 6 5 7
+7 1 7 4
+7 3 7
+1 1 6 1
+1 2 3 2
+5 2 5 2
+2 6 2 6
+6 2 6 4
+5 6 5 7
+7 1 7 4
+
+sample output 1 :
+3
+-1
+
+problem CONSESNK https://www.codechef.com/api/contests/SNCKPA17/problems/CONSESNK
+sample input 1 :
+2
+3 4 11 23
+10 11 30
+3 4 11 40
+10 11 30
+
+sample output 1 :
+16
+16
+
+problem GAMEBALL https://www.codechef.com/api/contests/SNCKPA17/problems/GAMEBALL
+sample input 1 :
+1
+2 3
+
+sample output 1 :
+
+
+problem ISSNAKE https://www.codechef.com/api/contests/SNCKPA17/problems/ISSNAKE
+sample input 1 :
+6
+2
+##
+..
+2
+##
+.#
+2
+#.
+.#
+7
+#.###..
+#######
+6
+##.#..
+.###..
+5
+##.##
+.#.#.
+
+sample output 1 :
+yes
+yes
+no
+no
+yes
+no
+
+contest LTIME48
+problem POSTTREE https://www.codechef.com/api/contests/LTIME48/problems/POSTTREE
+sample input 1 :
+8
+1 1 1 1 5 8 6
+1 2 3 4 5 15 70 10
+
+sample output 1 :
+1 3 4 5 6 21 96 26
+
+problem PREFINVS https://www.codechef.com/api/contests/LTIME48/problems/PREFINVS
+sample input 1 :
+01001001
+
+sample output 1 :
+6
+
+problem SUBINVER https://www.codechef.com/api/contests/LTIME48/problems/SUBINVER
+sample input 1 :
+10 10
+9 10
+6 10
+9 10
+1 8
+3 5
+3 3
+3 4
+3 9
+4 8
+7 7
+
+sample output 1 :
+1111100011
+
+problem TELEPORT https://www.codechef.com/api/contests/LTIME48/problems/TELEPORT
+sample input 1 :
+5 1
++ 2 2
++ 3 3
+? 1 2
++ 100 3
+? 2 4
+
+sample output 1 :
+DA 
+NET
+
+contest SNCKQL17
+problem SAMESNAK https://www.codechef.com/api/contests/SNCKQL17/problems/SAMESNAK
+sample input 1 :
+4
+2 1 8 1
+11 1 7 1
+2 1 8 1
+11 1 9 1
+2 1 8 1
+3 1 3 -2
+2 1 8 1
+2 1 2 -2
+
+sample output 1 :
+yes
+no
+no
+yes
+
+problem SNAKPROC https://www.codechef.com/api/contests/SNCKQL17/problems/SNAKPROC
+sample input 1 :
+6
+18
+..H..T...HTH....T.
+3
+...
+10
+H..H..T..T
+2
+HT
+11
+.T...H..H.T
+7
+H..T..H
+
+sample output 1 :
+Valid
+Valid
+Invalid
+Valid
+Invalid
+Invalid
+
+problem SNAKEEAT https://www.codechef.com/api/contests/SNCKQL17/problems/SNAKEEAT
+sample input 1 :
+2
+5 2
+21 9 5 8 10
+10
+15
+5 1
+1 2 3 4 5
+100
+
+sample output 1 :
+3
+1
+0
+
+problem TEMPLELA https://www.codechef.com/api/contests/SNCKQL17/problems/TEMPLELA
+sample input 1 :
+7
+5
+1 2 3 2 1
+7
+2 3 4 5 4 3 2
+5
+1 2 3 4 3
+5
+1 3 5 3 1
+7
+1 2 3 4 3 2 1
+4
+1 2 3 2
+4
+1 2 2 1
+
+sample output 1 :
+yes
+no
+no
+no
+yes
+no
+no
+
+contest COOK82
+problem COOK82A https://www.codechef.com/api/contests/COOK82/problems/COOK82A
+sample input 1 :
+2
+Barcelona 2
+Malaga 1
+RealMadrid 1
+Eibar 0
+Malaga 3
+RealMadrid 2
+Barcelona 8
+Eibar 6
+
+sample output 1 :
+RealMadrid
+Barcelona
+
+problem COOK82D https://www.codechef.com/api/contests/COOK82/problems/COOK82D
+sample input 1 :
+4 6
+1 2
+3 1
+2 3
+4 1
+2 4
+1 2
+3
+1 3
+2 4
+1 6
+
+sample output 1 :
+Yes
+No
+Yes
+
+problem COOK82B https://www.codechef.com/api/contests/COOK82/problems/COOK82B
+sample input 1 :
+3
+4 6 14
+
+sample output 1 :
+9261
+
+sample input 2 :
+4
+25 15 5 27
+
+sample output 2 :
+justdoit
+
+problem COOK82E https://www.codechef.com/api/contests/COOK82/problems/COOK82E
+sample input 1 :
+2
+6
+1 1
+2 L
+1 1
+2 R
+1 1
+1 1
+3
+1 3
+2 LR
+2 RRR
+
+sample output 1 :
+3
+2
+5
+2
+5
+11
+15
+12
+11
+
+problem COOK82C https://www.codechef.com/api/contests/COOK82/problems/COOK82C
+sample input 1 :
+4 6
+8 5 3 1
+1
+2
+3
+4
+6
+8
+
+sample output 1 :
+8
+5
+4
+3
+2
+1
+
+contest MAY17
+problem UNICOURS https://www.codechef.com/api/contests/MAY17/problems/UNICOURS
+sample input 1 :
+2
+3
+0 1 1
+3
+0 1 2
+
+sample output 1 :
+2
+1
+
+problem MXMEDIAN https://www.codechef.com/api/contests/MAY17/problems/MXMEDIAN
+sample input 1 :
+3
+1
+1 2
+3
+1 2 3 4 5 6
+3
+1 3 3 3 2 2
+
+sample output 1 :
+2
+1 2
+5
+1 3 2 5 4 6
+3
+1 3 3 3 2 2
+
+problem CHEFSUBA https://www.codechef.com/api/contests/MAY17/problems/CHEFSUBA
+sample input 1 :
+5 3 4
+1 0 0 1 1
+?!!?
+
+sample output 1 :
+2
+3
+
+problem CHEFROUT https://www.codechef.com/api/contests/MAY17/problems/CHEFROUT
+sample input 1 :
+5
+CES
+CS
+CCC
+SC
+ECCC
+
+sample output 1 :
+yes
+yes
+yes
+no
+no
+
+problem CHEFCODE https://www.codechef.com/api/contests/MAY17/problems/CHEFCODE
+sample input 1 :
+3 4
+1 2 3
+
+sample output 1 :
+5
+
+problem KILLER https://www.codechef.com/api/contests/MAY17/problems/KILLER
+sample input 1 :
+2
+3
+4 5
+2 3
+2 2
+1 2
+1 3
+6
+1 10
+1 8
+10 1
+1 5
+9 3
+8 2
+1 2
+1 6
+2 3
+2 4
+4 5
+
+sample output 1 :
+15
+11
+
+problem SANDWICH https://www.codechef.com/api/contests/MAY17/problems/SANDWICH
+sample input 1 :
+2
+7 3 500
+10 2 1000
+
+sample output 1 :
+3 6
+5 1
+
+problem WSITES01 https://www.codechef.com/api/contests/MAY17/problems/WSITES01
+sample input 1 :
+4
+- codeforces
++ codechef
+- youtube
++ google
+
+sample output 1 :
+2
+codef
+y
+
+problem GPD https://www.codechef.com/api/contests/MAY17/problems/GPD
+sample input 1 :
+6 4
+1 2
+5 1 3
+2 1 4
+3 2 5
+4 2 1
+6 3 3
+1 4 2
+6 0 12 0
+7 12 7
+4 0 7
+
+sample output 1 :
+0 6
+2 7
+0 1
+
+contest BITM2017
+problem BITMASK2 https://www.codechef.com/api/contests/BITM2017/problems/BITMASK2
+sample input 1 :
+2
+3
+1 3 -5
+-2 4 1
+5
+1 2 3 4 5
+1 0 1 0 1
+
+sample output 1 :
+-25
+6
+
+problem BITMASK5 https://www.codechef.com/api/contests/BITM2017/problems/BITMASK5
+sample input 1 :
+4 7
+1 0 3
+0 1 2
+1 0 1
+1 0 0
+0 0 3
+1 0 3 
+1 3 3
+
+sample output 1 :
+0
+1
+0
+2
+1
+
+problem BITMASK4 https://www.codechef.com/api/contests/BITM2017/problems/BITMASK4
+sample input 1 :
+1
+5
+1 0 0
+1 2 3
+3 4 5
+30 40 0
+30 40 50
+
+sample output 1 :
+2
+
+problem BITMASK1 https://www.codechef.com/api/contests/BITM2017/problems/BITMASK1
+sample input 1 :
+1
+4 3
+1 2 3
+2 4 7
+8 5 1
+2 8 6
+
+sample output 1 :
+6
+
+problem BITMASK3 https://www.codechef.com/api/contests/BITM2017/problems/BITMASK3
+sample input 1 :
+3
+3
+6
+4
+
+sample output 1 :
+2
+3
+3
+
+contest LOCAPR17
+problem LOC171 https://www.codechef.com/api/contests/LOCAPR17/problems/LOC171
+sample input 1 :
+2
+3
+2 3 4
+3
+4 4 5
+
+sample output 1 :
+3
+4
+
+problem ABHIAMBI https://www.codechef.com/api/contests/LOCAPR17/problems/ABHIAMBI
+sample input 1 :
+2
+1 2
+2 2
+
+sample output 1 :
+Abhi
+Ambi
+
+problem DRS https://www.codechef.com/api/contests/LOCAPR17/problems/DRS
+sample input 1 :
+2
+2
+10.5
+19.6
+3
+0.5
+75.6
+83.4
+
+sample output 1 :
+2
+3
+
+problem JMBOOK https://www.codechef.com/api/contests/LOCAPR17/problems/JMBOOK
+sample input 1 :
+1
+2
+
+sample output 1 :
+4
+
+problem SANBAN https://www.codechef.com/api/contests/LOCAPR17/problems/SANBAN
+sample input 1 :
+3
+1
+2
+4
+
+sample output 1 :
+None
+
+problem CHEFTOUR https://www.codechef.com/api/contests/LOCAPR17/problems/CHEFTOUR
+sample input 1 :
+
+
+sample output 1 :
+
+
+contest IEMCO17
+problem DDLJR https://www.codechef.com/api/contests/IEMCO17/problems/DDLJR
+sample input 1 :
+2
+5 3 1
+4 3 0
+
+sample output 1 :
+18
+12
+
+problem SMRITI https://www.codechef.com/api/contests/IEMCO17/problems/SMRITI
+sample input 1 :
+2
+sabs
+2
+smriti
+6
+
+sample output 1 :
+NO
+YES
+
+problem FCRYPT https://www.codechef.com/api/contests/IEMCO17/problems/FCRYPT
+sample input 1 :
+3
+2
+23
+2
+32
+3
+211
+
+sample output 1 :
+12
+111
+23
+
+problem YUMMYPIE https://www.codechef.com/api/contests/IEMCO17/problems/YUMMYPIE
+sample input 1 :
+3
+2 1
+3 2
+10 4
+
+sample output 1 :
+3
+11
+157773
+
+problem ITSMAGIC https://www.codechef.com/api/contests/IEMCO17/problems/ITSMAGIC
+sample input 1 :
+2
+21 5
+1 4 10
+2 10
+1 5 13
+2 12
+1 9 22
+25 4
+2 13
+2 18
+2 25
+1 1 25
+
+sample output 1 :
+7 42
+8 72
+6 199
+happy
+16 303
+happy
+
+problem PHEONIX https://www.codechef.com/api/contests/IEMCO17/problems/PHEONIX
+sample input 1 :
+4
+5
+1 1 1 1 6
+12 10 5 20 25
+4
+5 5 5 5
+20 96 120 16
+2
+8 8
+50 55
+10
+5 4 4 4 4 4 4 4 5 5
+50 20 30 55 59 520 699 18 33 333
+
+sample output 1 :
+No Party
+Party
+Party
+No Party
+
+contest LTIME47
+problem DIGVIRUS https://www.codechef.com/api/contests/LTIME47/problems/DIGVIRUS
+sample input 1 :
+3
+555755555
+311110000000000
+07788000744
+
+sample output 1 :
+3
+6
+4
+
+problem CLOSESTQ https://www.codechef.com/api/contests/LTIME47/problems/CLOSESTQ
+sample input 1 :
+6
++ 1 1
++ 2 2
++ 3 3
+- 2 2
++ 400 400
+- 1 1
+
+sample output 1 :
+0
+2
+2
+8
+8
+315218
+
+problem SEGM01 https://www.codechef.com/api/contests/LTIME47/problems/SEGM01
+sample input 1 :
+6
+001111110
+00110011
+000
+1111
+101010101
+101111111111
+
+sample output 1 :
+YES
+NO
+NO
+YES
+NO
+NO
+
+problem BEARSEG https://www.codechef.com/api/contests/LTIME47/problems/BEARSEG
+sample input 1 :
+4
+2 3
+1 2
+3 5
+2 4 3
+3 100
+1 3 5
+4 3
+1 2 3 4
+
+sample output 1 :
+2 1
+4 2
+9 1
+2 2
+
+contest COOK81
+problem XORSUMS https://www.codechef.com/api/contests/COOK81/problems/XORSUMS
+sample input 1 :
+3
+7 5 13
+
+sample output 1 :
+8
+
+problem CANDY123 https://www.codechef.com/api/contests/COOK81/problems/CANDY123
+sample input 1 :
+10
+3 2
+4 2
+1 1
+1 2
+1 3
+9 3
+9 11
+9 12
+9 1000
+8 11
+
+sample output 1 :
+Bob
+Limak
+Limak
+Bob
+Bob
+Limak
+Limak
+Bob
+Bob
+Bob
+
+problem SHOPTRIP https://www.codechef.com/api/contests/COOK81/problems/SHOPTRIP
+sample input 1 :
+5
+3 6
+100 100
+-50 100
+0 -100
+111110
+110011
+001111
+3 6
+100 100
+-50 100
+0 -100
+111110
+110011
+111111
+3 6
+100 100
+-50 100
+0 -210
+111110
+110011
+111111
+3 6
+100 100
+-50 100
+0 -210
+111010
+110011
+111011
+10 10
+763 77
+512 859
+494 362
+-986 -885
+-866 890
+128 553
+-879 981
+449 310
+-406 10
+-955 -475
+0000001000
+1000000000
+0000000100
+0001000000
+0000100000
+0010000000
+0000010000
+0000000001
+0100000000
+0000000010
+
+sample output 1 :
+403.2247551123
+200.0000000000
+403.2247551123
+-1
+6652.7837723893
+
+problem ABREPEAT https://www.codechef.com/api/contests/COOK81/problems/ABREPEAT
+sample input 1 :
+3
+4 2
+abcb
+7 1
+aayzbaa
+12 80123123
+abzbabzbazab
+
+sample output 1 :
+6
+2
+64197148392731290
+
+problem BESTTRI https://www.codechef.com/api/contests/COOK81/problems/BESTTRI
+sample input 1 :
+4 7
+1 1
+5 1
+3 3
+3 2
+
+sample output 1 :
+4
+
+sample input 2 :
+3 7
+1 1
+4 1
+1 4
+
+sample output 2 :
+-1
+
+sample input 3 :
+7 1234567890123
+1234567 7654321
+1111111 2222222
+1212121 2323232
+3333333 1122334
+9292929 2929292
+1234456 5654645
+5435733 2342134
+
+sample output 3 :
+755024295480
+
+contest IOPC2017
+problem IOPC17F https://www.codechef.com/api/contests/IOPC2017/problems/IOPC17F
+sample input 1 :
+2
+10.0121
+-81.0100
+
+sample output 1 :
+40554.011050
+-40554.011050
+
+problem IOPC17D https://www.codechef.com/api/contests/IOPC2017/problems/IOPC17D
+sample input 1 :
+2
+1 1
+3 1
+
+sample output 1 :
+1
+6
+
+problem IOPC17A https://www.codechef.com/api/contests/IOPC2017/problems/IOPC17A
+sample input 1 :
+2
+aacabbaa
+aab
+
+sample output 1 :
+2
+-1
+
+problem IOPC17G https://www.codechef.com/api/contests/IOPC2017/problems/IOPC17G
+sample input 1 :
+1
+40 43 11 13
+
+sample output 1 :
+6
+
+problem IOPC17C https://www.codechef.com/api/contests/IOPC2017/problems/IOPC17C
+sample input 1 :
+1
+2
+1 2
+
+sample output 1 :
+1
+
+contest APRIL17
+problem DISHLIFE https://www.codechef.com/api/contests/APRIL17/problems/DISHLIFE
+sample input 1 :
+3
+3 4
+3 1 2 3
+2 1 3
+2 1 2
+2 3
+3 1 2 3
+2 1 3
+2 3
+2 1 2
+2 1 3
+
+sample output 1 :
+sad
+some
+all
+
+problem CLIQUED https://www.codechef.com/api/contests/APRIL17/problems/CLIQUED
+sample input 1 :
+3
+5 4 100 2 3
+1 5 50
+5 3 160
+5 4 100 2 3
+1 5 50
+5 3 140
+8 3 15 7 5
+3 4 10
+4 5 20
+5 6 10
+6 1 7
+3 7 1000
+7 8 50
+3 5 1000000000
+
+sample output 1 :
+100 100 0 100 150 
+100 100 0 100 140 
+17 32 30 20 0 10 1030 1080
+
+problem RNDGRID https://www.codechef.com/api/contests/APRIL17/problems/RNDGRID
+sample input 1 :
+2
+3 4
+DDU
+#..#
+#...
+...#
+..#.
+10 4
+RLLRDDLUUL
+....
+.#..
+..#.
+.#.#
+
+sample output 1 :
+2
+3
+
+problem DGTCNT https://www.codechef.com/api/contests/APRIL17/problems/DGTCNT
+sample input 1 :
+2
+21 28
+5 4 3 2 1 1 2 3 4 5
+233 23333
+2 3 3 3 3 2 3 3 3 3
+
+sample output 1 :
+6
+19627
+
+problem CHEFDIV https://www.codechef.com/api/contests/APRIL17/problems/CHEFDIV
+sample input 1 :
+11 12
+
+sample output 1 :
+14
+
+sample input 2 :
+932451 935212
+
+sample output 2 :
+101245
+
+problem ROWSOLD https://www.codechef.com/api/contests/APRIL17/problems/ROWSOLD
+sample input 1 :
+4
+10100
+1100001
+000000000111
+001110100011010
+
+sample output 1 :
+8
+10
+0
+48
+
+problem SEABIL https://www.codechef.com/api/contests/APRIL17/problems/SEABIL
+sample input 1 :
+3
+3 3
+1 1 2
+2 2 2
+3 0 2
+100 1
+99 99 15
+100 2
+60 70 0
+90 15 -100
+
+sample output 1 :
+2
+2 2 -1 -1 4
+3 0 -1 1 4
+1
+99 99 1 1 50
+0
+
+problem HLD https://www.codechef.com/api/contests/APRIL17/problems/HLD
+sample input 1 :
+<tt>
+2
+12
+1 2
+2 4
+4 5
+5 6
+4 7
+1 3
+3 8
+8 9
+3 10
+10 11
+10 12
+2
+1 2
+</tt>
+
+sample output 1 :
+<b>Output:</b>
+
+problem SMARKET https://www.codechef.com/api/contests/APRIL17/problems/SMARKET
+sample input 1 :
+2
+8 5
+20 10 10 10 7 7 7 10
+2 6 2
+3 6 2
+3 6 3
+3 8 3
+3 8 1
+3 2
+27 27 27
+1 3 1
+2 2 1
+
+sample output 1 :
+2
+2
+0
+1
+3
+1
+1
+
+problem SIMDISH https://www.codechef.com/api/contests/APRIL17/problems/SIMDISH
+sample input 1 :
+5
+eggs sugar flour salt
+sugar eggs milk flour
+aa ab ac ad
+ac ad ae af
+cookies sugar grass lemon
+lemon meat chili wood
+one two three four
+one two three four
+gibberish jibberish lalalalala popopopopo
+jibberisz gibberisz popopopopu lalalalalu
+
+sample output 1 :
+similar
+similar
+dissimilar
+similar
+dissimilar
+
+contest EXCO1701
+contest ICL2017
+problem ICL1705 https://www.codechef.com/api/contests/ICL2017/problems/ICL1705
+sample input 1 :
+8 3
+1 2
+2 3
+2 4
+1 5
+5 6
+5 7
+7 8
+0 1 2
+1 0 -2
+2 -2 0
+3
+3 2
+3 6 4
+2 2
+2 3
+1 2
+8
+
+sample output 1 :
+-2
+2
+No
+
+problem ICL1704 https://www.codechef.com/api/contests/ICL2017/problems/ICL1704
+sample input 1 :
+2
+2
+3 4
+3
+4 3 4
+
+sample output 1 :
+6
+16
+
+problem ICL1701 https://www.codechef.com/api/contests/ICL2017/problems/ICL1701
+sample input 1 :
+3 4
+1 2 3
+
+sample output 1 :
+0
+
+sample input 2 :
+5 12
+4 -2 3 -1 5
+
+sample output 2 :
+2
+2 3
+
+problem ICL1702 https://www.codechef.com/api/contests/ICL2017/problems/ICL1702
+sample input 1 :
+3
+3 3 0 20 4 5
+3 3 1 20 4 5
+3 3 2 20 4 5
+
+sample output 1 :
+4 0 0
+0 0 0
+0 0 5
+
+4 4 0
+4 9 5
+0 5 5
+
+1 6 18
+6 16 8
+18 8 4
+
+problem ICL1703 https://www.codechef.com/api/contests/ICL2017/problems/ICL1703
+sample input 1 :
+2
+3
+1 2
+1 4
+2 5 4
+3
+1 3
+1 2
+2 1 3
+
+sample output 1 :
+5
+-1
+
+problem ICL1706 https://www.codechef.com/api/contests/ICL2017/problems/ICL1706
+sample input 1 :
+2
+3 1
+6 2
+
+sample output 1 :
+12
+1692
+
+contest LTIME46
+problem HAIRCUT https://www.codechef.com/api/contests/LTIME46/problems/HAIRCUT
+sample input 1 :
+6
+5 4 8
+2 3 6 8 9
+8 6 12
+8 9 12 13 15 17 18 25
+8 6 12
+8 9 12 13 15 17 18 24
+5 50000123 100000123
+700000123 710000123 770000123 780000123 790000123
+22 6 20
+3 9 12 22 24 25 34 46 47 51 53 62 64 66 68 73 79 92 93 95 96 98
+3 1 1000
+1 17 1000
+
+sample output 1 :
+3
+6
+5
+5
+20
+3
+
+problem ALMROW https://www.codechef.com/api/contests/LTIME46/problems/ALMROW
+sample input 1 :
+4
+4
+2
+1 3
+4 1
+5
+1
+2 5
+20
+3
+1 7
+3 12
+17 19
+1000000
+0
+
+sample output 1 :
+7
+16
+891
+166666666666500000
+
+problem BRLADDER https://www.codechef.com/api/contests/LTIME46/problems/BRLADDER
+sample input 1 :
+7
+1 4
+4 3
+5 4
+10 12
+1 3
+999999999 1000000000
+17 2384823
+
+sample output 1 :
+NO
+YES
+NO
+YES
+YES
+YES
+NO
+
+problem SPECIES https://www.codechef.com/api/contests/LTIME46/problems/SPECIES
+sample input 1 :
+
+
+sample output 1 :
+
+
+contest ALKH2017
+problem ARRQRS https://www.codechef.com/api/contests/ALKH2017/problems/ARRQRS
+sample input 1 :
+10
+1 5
+1 9
+1 2
+4 1 2 1
+4 1 2 2
+2 2
+3 1 10
+4 1 2 1
+4 1 2 2
+1 6
+
+sample output 1 :
+5
+9
+2
+10
+
+problem CHEFGRUP https://www.codechef.com/api/contests/ALKH2017/problems/CHEFGRUP
+sample input 1 :
+8
+2 5 13 9 7 25 21 6
+
+sample output 1 :
+3
+
+sample input 2 :
+9
+60 12 30 24 58 33 18 25 16
+
+sample output 2 :
+1
+
+problem TREEQRS https://www.codechef.com/api/contests/ALKH2017/problems/TREEQRS
+sample input 1 :
+8
+1 2
+5 6
+5 3
+4 3
+8 2
+3 1
+7 5
+3
+3 5 2 3 2
+5 8 12 8 7
+1 10 2 4 7
+
+sample output 1 :
+6
+80
+20
+
+contest COOK80
+problem INCXOR https://www.codechef.com/api/contests/COOK80/problems/INCXOR
+sample input 1 :
+4
+1
+42
+5
+5 4 3 2 1
+4
+1194533513 122420337 1448417648 120078455
+3
+31 2047 2147483647
+
+sample output 1 :
+147483634
+986095186
+0
+468598063
+
+problem CARDS777 https://www.codechef.com/api/contests/COOK80/problems/CARDS777
+sample input 1 :
+5
+3 1 2
+1 6 7
+2 3 4
+15 14 13
+100000 100000 0
+
+sample output 1 :
+2.0000000000
+1.0000000000
+2.2000000000
+14.4482758621
+100000.0000000000
+
+problem RAINBOW https://www.codechef.com/api/contests/COOK80/problems/RAINBOW
+sample input 1 :
+4
+3
+0 1 2
+1 0 3
+2 3 0
+3
+0 1 1
+1 0 3
+1 3 0
+2
+0 1
+1 0
+6
+0 9 2 4 7 8
+9 0 9 9 7 9
+2 9 0 3 7 6
+4 9 3 0 7 1
+7 7 7 7 0 7
+8 9 6 1 7 0
+
+sample output 1 :
+3
+0
+0
+4
+
+problem ROBOTG https://www.codechef.com/api/contests/COOK80/problems/ROBOTG
+sample input 1 :
+5
+1 1
+R
+2 3
+LLRU
+3 2
+LLRU
+4 3
+ULURUDRDLD
+3 6
+RURUR
+
+sample output 1 :
+unsafe
+safe
+unsafe
+safe
+safe
+
+contest PWCE2017
+problem INCPR03 https://www.codechef.com/api/contests/PWCE2017/problems/INCPR03
+sample input 1 :
+1
+2
+14 3
+3 4
+
+sample output 1 :
+23
+
+problem INCPR06 https://www.codechef.com/api/contests/PWCE2017/problems/INCPR06
+sample input 1 :
+2
+5 13
+1 2 3 4 9
+1 2 3 4 11
+3 15
+9 7 8
+60 28 31
+
+sample output 1 :
+
+
+problem INCPR02 https://www.codechef.com/api/contests/PWCE2017/problems/INCPR02
+sample input 1 :
+1
+5 2
+3 7 2 9 4
+3 5
+1 5
+
+sample output 1 :
+62
+233
+
+problem INCPR04 https://www.codechef.com/api/contests/PWCE2017/problems/INCPR04
+sample input 1 :
+1
+5 5
+5 2 3 1 4
+
+sample output 1 :
+4
+
+problem INCPR05 https://www.codechef.com/api/contests/PWCE2017/problems/INCPR05
+sample input 1 :
+4
+2 2 1 0
+
+sample output 1 :
+3 1 1 0
+
+problem INCPR01 https://www.codechef.com/api/contests/PWCE2017/problems/INCPR01
+sample input 1 :
+2
+2 5
+3 7
+
+sample output 1 :
+2
+2
+
+contest PRCD1701
+problem CODB2017 https://www.codechef.com/api/contests/PRCD1701/problems/CODB2017
+sample input 1 :
+1
+3
+
+sample output 1 :
+VISHAL
+
+problem COD52017 https://www.codechef.com/api/contests/PRCD1701/problems/COD52017
+sample input 1 :
+8 5 3 3
+abacdaba
+0 2
+1 2
+0 0
+2 2
+1 2
+dab 1 4
+bac 2 3
+eeb 1 3
+
+sample output 1 :
+7
+3
+2
+
+problem COD82017 https://www.codechef.com/api/contests/PRCD1701/problems/COD82017
+sample input 1 :
+4 5
+2 1
+1 3
+2 3
+4 2
+4 3
+
+sample output 1 :
+4
+
+problem COD12017 https://www.codechef.com/api/contests/PRCD1701/problems/COD12017
+sample input 1 :
+5
+2 3 4 5 6
+
+sample output 1 :
+28
+
+problem CODC2017 https://www.codechef.com/api/contests/PRCD1701/problems/CODC2017
+sample input 1 :
+3
+2 3 1
+
+sample output 1 :
+2 3
+
+problem COD417 https://www.codechef.com/api/contests/PRCD1701/problems/COD417
+sample input 1 :
+2
+3
+1 2 3
+3
+1 1 2
+
+sample output 1 :
+0
+2
+
+problem COD22017 https://www.codechef.com/api/contests/PRCD1701/problems/COD22017
+sample input 1 :
+2
+2 0
+3 2
+2 1
+2 2
+
+sample output 1 :
+8
+0
+
+problem COD32017 https://www.codechef.com/api/contests/PRCD1701/problems/COD32017
+sample input 1 :
+2
+4
+30
+30
+1
+1
+3
+20
+20
+20
+
+sample output 1 :
+2
+1
+
+problem COD72017 https://www.codechef.com/api/contests/PRCD1701/problems/COD72017
+sample input 1 :
+2
+5 6 4
+1 2
+1 3
+2 3
+2 4
+3 4
+4 5
+4 6 3
+1 2
+1 3
+1 4
+2 3
+2 4
+3 4
+
+sample output 1 :
+YES
+NO
+
+problem CODA2017 https://www.codechef.com/api/contests/PRCD1701/problems/CODA2017
+sample input 1 :
+1
+4
+10 30 40 20
+
+sample output 1 :
+10 20 30 40
+27
+
+contest KJSC17
+contest ABCS2017
+problem ABCS05 https://www.codechef.com/api/contests/ABCS2017/problems/ABCS05
+sample input 1 :
+2 2
+
+sample output 1 :
+2
+
+problem ABCS02 https://www.codechef.com/api/contests/ABCS2017/problems/ABCS02
+sample input 1 :
+2
+5 4
+1 9 6 4 9
+3 2
+9 7 2
+
+sample output 1 :
+5
+2
+
+problem ABCS01 https://www.codechef.com/api/contests/ABCS2017/problems/ABCS01
+sample input 1 :
+5 2
+3 2
+3 1
+2 4
+2 5
+
+sample output 1 :
+5
+
+problem ABCS04 https://www.codechef.com/api/contests/ABCS2017/problems/ABCS04
+sample input 1 :
+2
+3 1
+2 4
+
+sample output 1 :
+IDLY
+VADA
+
+problem ABCS06 https://www.codechef.com/api/contests/ABCS2017/problems/ABCS06
+sample input 1 :
+aftqprej
+1
+
+sample output 1 :
+aftqprej
+
+sample input 2 :
+ab
+3
+
+sample output 2 :
+aaababbb
+
+sample input 3 :
+aftqprej
+2
+
+sample output 3 :
+aafataqaparaeajfftfqfpfrfefjttqtptrtetjqqpqrqeqjpprpepjrrerjeejj
+
+problem ABCS03 https://www.codechef.com/api/contests/ABCS2017/problems/ABCS03
+sample input 1 :
+2
+3
+5 2 7
+3
+4 4 6
+
+sample output 1 :
+0
+2
+
+contest COZI2017
+problem COZIC https://www.codechef.com/api/contests/COZI2017/problems/COZIC
+sample input 1 :
+3
+4
+2 6 3 11
+4
+1 2 3 4
+3
+4 9 15
+
+sample output 1 :
+1
+0
+4
+
+problem COZID https://www.codechef.com/api/contests/COZI2017/problems/COZID
+sample input 1 :
+1
+6
+1 2 1
+1 3 2
+1 4 3
+4 5 4
+4 6 2
+
+sample output 1 :
+None
+
+problem HOGON https://www.codechef.com/api/contests/COZI2017/problems/HOGON
+sample input 1 :
+3 1
+2 7 6
+9 5 1
+4 3 8
+
+sample output 1 :
+31
+
+problem COZIA https://www.codechef.com/api/contests/COZI2017/problems/COZIA
+sample input 1 :
+2
+2
+2 3
+2
+3 2
+
+sample output 1 :
+YES
+NO
+
+problem COZIB https://www.codechef.com/api/contests/COZI2017/problems/COZIB
+sample input 1 :
+4 2
+0010
+0010
+1100
+0000
+
+sample output 1 :
+7
+
+problem COZIE https://www.codechef.com/api/contests/COZI2017/problems/COZIE
+sample input 1 :
+3 2
+3 2 1
+1 2
+2 3
+
+sample output 1 :
+1
+0
+
+contest MARCH17
+problem FAVGAME https://www.codechef.com/api/contests/MARCH17/problems/FAVGAME
+sample input 1 :
+
+
+sample output 1 :
+
+
+problem PSHTBRTH https://www.codechef.com/api/contests/MARCH17/problems/PSHTBRTH
+sample input 1 :
+
+
+sample output 1 :
+
+
+problem BANDMATR https://www.codechef.com/api/contests/MARCH17/problems/BANDMATR
+sample input 1 :
+6
+2
+0 0
+0 0
+2
+1 0
+0 1
+2
+1 0
+1 0
+2
+1 0
+1 1
+3
+1 0 0
+0 1 1
+1 1 0
+4
+1 1 1 1
+1 1 1 1
+1 1 1 1
+1 1 1 1
+
+sample output 1 :
+0
+0
+0
+1
+1
+3
+
+problem XENTASK https://www.codechef.com/api/contests/MARCH17/problems/XENTASK
+sample input 1 :
+
+
+sample output 1 :
+
+
+problem SUMDIS https://www.codechef.com/api/contests/MARCH17/problems/SUMDIS
+sample input 1 :
+
+
+sample output 1 :
+
+
+problem SCHEDULE https://www.codechef.com/api/contests/MARCH17/problems/SCHEDULE
+sample input 1 :
+
+
+sample output 1 :
+
+
+problem SORTROW https://www.codechef.com/api/contests/MARCH17/problems/SORTROW
+sample input 1 :
+4
+2 8 12 14
+5 13 1 10
+16 7 6 4
+3 15 11 9
+
+sample output 1 :
+2 8 12 14
+1 5 7 10
+16 13 6 4
+3 9 11 15
+
+problem EXTRAN https://www.codechef.com/api/contests/MARCH17/problems/EXTRAN
+sample input 1 :
+
+
+sample output 1 :
+
+
+problem TUPLES2 https://www.codechef.com/api/contests/MARCH17/problems/TUPLES2
+sample input 1 :
+
+
+sample output 1 :
+
+
+contest BYCO2017
+problem BYCO17E https://www.codechef.com/api/contests/BYCO2017/problems/BYCO17E
+sample input 1 :
+3
+1
+2
+3
+
+sample output 1 :
+0
+1
+3
+
+problem BYCO17F https://www.codechef.com/api/contests/BYCO2017/problems/BYCO17F
+sample input 1 :
+7 3
+2 7 1 9 2 2 90
+1 3
+3 6
+1 5
+
+sample output 1 :
+1
+2
+2
+
+problem BYCO17H https://www.codechef.com/api/contests/BYCO2017/problems/BYCO17H
+sample input 1 :
+2
+2
+1 1
+1 1
+20
+2
+0 0
+2 2
+10
+
+sample output 1 :
+0 6765
+2 256
+
+problem BYCO17B https://www.codechef.com/api/contests/BYCO2017/problems/BYCO17B
+sample input 1 :
+1
+1 1 1
+
+sample output 1 :
+Alice
+
+problem BYCO17D https://www.codechef.com/api/contests/BYCO2017/problems/BYCO17D
+sample input 1 :
+1
+3 3
+1 2
+1 4
+1 2 3
+2 1 6
+1 2 3
+
+sample output 1 :
+6
+10
+
+problem BYCO17G https://www.codechef.com/api/contests/BYCO2017/problems/BYCO17G
+sample input 1 :
+thisisbytecode
+1
+
+sample output 1 :
+edocetybsisiht
+
+problem BYCO17A https://www.codechef.com/api/contests/BYCO2017/problems/BYCO17A
+sample input 1 :
+8 4 4
+1 2 3 4 5 6 7 8
+4 8
+3 8
+3 7
+1 6
+
+sample output 1 :
+26
+26
+22
+18
+
+problem BYCO17C https://www.codechef.com/api/contests/BYCO2017/problems/BYCO17C
+sample input 1 :
+4 2
+
+sample output 1 :
+7 13
+
+problem BYCO17I https://www.codechef.com/api/contests/BYCO2017/problems/BYCO17I
+sample input 1 :
+4 4 
+1 0 0 0
+0 1 0 0
+0 0 1 0
+0 0 0 1
+
+sample output 1 :
+6
+
+contest NCL2017
+problem NCL1701 https://www.codechef.com/api/contests/NCL2017/problems/NCL1701
+sample input 1 :
+3
+5
+abcde
+10
+abcdefghia
+7
+pqabpcd
+
+sample output 1 :
+abcde
+aabcdefghi
+abcdppq
+
+problem NCL1706 https://www.codechef.com/api/contests/NCL2017/problems/NCL1706
+sample input 1 :
+3
+4
+6
+16
+
+sample output 1 :
+-1
+555555
+5555553333333333
+
+problem NCL1702 https://www.codechef.com/api/contests/NCL2017/problems/NCL1702
+sample input 1 :
+2
+4 3
+1 1 1
+2 -1 2
+6 6 6
+9 9 9
+4 3
+32 32 32
+40 -1 40
+20 -1 20
+40 40 40
+
+sample output 1 :
+225
+660
+
+problem NCL1705 https://www.codechef.com/api/contests/NCL2017/problems/NCL1705
+sample input 1 :
+2
+3
+1 2 3
+7
+1 3 5 1 1 1 1
+
+sample output 1 :
+Ram
+Shayam
+
+problem NCL21704 https://www.codechef.com/api/contests/NCL2017/problems/NCL21704
+sample input 1 :
+2
+5 
+15 18 20 13 14
+1 2
+1 5
+2 4
+2 3
+6 
+18 14 20 16 10 12
+1 2
+1 4
+2 3
+4 5
+4 6
+
+sample output 1 :
+16
+21
+
+contest NCC2017
+problem ABIBST https://www.codechef.com/api/contests/NCC2017/problems/ABIBST
+sample input 1 :
+1
+6 3
+30 20 40 35 10 25
+1
+3
+4
+
+sample output 1 :
+10
+90
+40
+
+problem BXDIST https://www.codechef.com/api/contests/NCC2017/problems/BXDIST
+sample input 1 :
+1
+4
+
+sample output 1 :
+None
+
+problem GRHARSH https://www.codechef.com/api/contests/NCC2017/problems/GRHARSH
+sample input 1 :
+1
+5
+1 2 3 4 5
+
+sample output 1 :
+55
+
+problem WANBASE https://www.codechef.com/api/contests/NCC2017/problems/WANBASE
+sample input 1 :
+1
+3 4
+11 22 33
+
+sample output 1 :
+33 8
+
+problem VARGAME https://www.codechef.com/api/contests/NCC2017/problems/VARGAME
+sample input 1 :
+2
+8
+10
+
+sample output 1 :
+Abizer
+Varad
+
+problem GKYLOVE https://www.codechef.com/api/contests/NCC2017/problems/GKYLOVE
+sample input 1 :
+1
+2
+2
+6
+
+sample output 1 :
+16
+
+contest ALGR2017
+problem ALGOD https://www.codechef.com/api/contests/ALGR2017/problems/ALGOD
+sample input 1 :
+2
+5
+1 2 2 1 3
+4
+1 2 3 4
+
+sample output 1 :
+None
+
+problem ALGOA https://www.codechef.com/api/contests/ALGR2017/problems/ALGOA
+sample input 1 :
+1
+10
+5 1 1 1 6 -1 1 1 1 1
+
+sample output 1 :
+3
+
+problem ALGOC https://www.codechef.com/api/contests/ALGR2017/problems/ALGOC
+sample input 1 :
+2
+8
+5 2 2 6 3 9 5 3
+4
+2 2 2 2
+
+sample output 1 :
+5
+2
+
+problem ALGOE https://www.codechef.com/api/contests/ALGR2017/problems/ALGOE
+sample input 1 :
+2
+2 1 1
+2 1 2
+
+sample output 1 :
+None
+
+problem ALGOB https://www.codechef.com/api/contests/ALGR2017/problems/ALGOB
+sample input 1 :
+2
+bhinab
+abhinavjha
+10
+litlebaju
+littlebajju
+1
+
+sample output 1 :
+TO ERR IS HUMAN
+TO ERR TOO MUCH IS DEVIL
+
+contest COLG2017
+problem CLTRTS https://www.codechef.com/api/contests/COLG2017/problems/CLTRTS
+sample input 1 :
+6
+6 5 4 3 2 1
+1 2
+2 3
+2 4
+4 5
+4 6
+
+sample output 1 :
+16
+11
+15
+14
+16
+15
+
+problem CLNUMG https://www.codechef.com/api/contests/COLG2017/problems/CLNUMG
+sample input 1 :
+4
+1 1
+3 2
+1 0
+4 4
+
+sample output 1 :
+2
+19
+1
+135
+
+problem CLSTRN https://www.codechef.com/api/contests/COLG2017/problems/CLSTRN
+sample input 1 :
+2
+TIGER
+GTIGETIGERRERTIGTTIGERIGERER
+HELO
+HELHELLOO
+
+sample output 1 :
+5
+0
+
+problem CLVSTR https://www.codechef.com/api/contests/COLG2017/problems/CLVSTR
+sample input 1 :
+2
+5
+0 1 1 0 1
+9
+0 1 0 1 0 1 0 1 1
+
+sample output 1 :
+1
+5
+
+problem CLHMSG https://www.codechef.com/api/contests/COLG2017/problems/CLHMSG
+sample input 1 :
+3
+10001001
+h
+100001000100001000100001000
+phph
+10001001100111101111000101110
+chef
+
+sample output 1 :
+2
+2
+68
+
+problem CLWALL https://www.codechef.com/api/contests/COLG2017/problems/CLWALL
+sample input 1 :
+5 5
+3
+1 1 3 3 R
+3 3 5 5 B
+2 2 4 4 K
+
+sample output 1 :
+6 5 5 9
+
+problem CLSAVE https://www.codechef.com/api/contests/COLG2017/problems/CLSAVE
+sample input 1 :
+3
+3 9
+1 2 3
+4 35
+2 7 8 1
+2 20
+2 6
+
+sample output 1 :
+No
+No
+Yes
+
+problem CLPLCS https://www.codechef.com/api/contests/COLG2017/problems/CLPLCS
+sample input 1 :
+6
+DELHI
+AHMEDABAD
+HOWRAH
+KOLKATA
+HYDERABAD
+INDIA
+
+sample output 1 :
+5
+
+contest LTIME45
+problem COOMILK https://www.codechef.com/api/contests/LTIME45/problems/COOMILK
+sample input 1 :
+4
+7
+cookie milk milk cookie milk cookie milk
+5
+cookie cookie milk milk milk
+4
+milk milk milk milk
+1
+cookie
+
+sample output 1 :
+YES
+NO
+YES
+NO
+
+problem OVERPNT https://www.codechef.com/api/contests/LTIME45/problems/OVERPNT
+sample input 1 :
+3
+
+sample output 1 :
+106732 139820
+210379 490375
+42 483426
+
+problem BRIBETR https://www.codechef.com/api/contests/LTIME45/problems/BRIBETR
+sample input 1 :
+3
+2 10
+70 78 67 75
+3 10
+18 2 19 21 33 40 26 25
+2 7
+4 9 8 16
+
+sample output 1 :
+2
+4
+-1
+
+contest DEAD2017
+contest CRES2017
+problem CRES02 https://www.codechef.com/api/contests/CRES2017/problems/CRES02
+sample input 1 :
+
+
+sample output 1 :
+
+
+problem CRES05 https://www.codechef.com/api/contests/CRES2017/problems/CRES05
+sample input 1 :
+1
+3
+3 4 5
+2 3 1
+
+sample output 1 :
+11
+
+problem CRES03 https://www.codechef.com/api/contests/CRES2017/problems/CRES03
+sample input 1 :
+11
+middle-Outz
+2
+
+sample output 1 :
+okffng-Qwvb
+
+problem CRES01 https://www.codechef.com/api/contests/CRES2017/problems/CRES01
+sample input 1 :
+2
+6
+3 0 0 2 0 4
+6
+3 0 3 3 3 3
+
+sample output 1 :
+10
+3
+
+problem CRES04 https://www.codechef.com/api/contests/CRES2017/problems/CRES04
+sample input 1 :
+4
+ReEfr
+Codec
+mom
+Lindro
+
+sample output 1 :
+Yes
+No
+Yes
+No
+
+contest COMA2017
+problem CDMN17B https://www.codechef.com/api/contests/COMA2017/problems/CDMN17B
+sample input 1 :
+3
+6 5 2
+3 3 1
+4 4 1
+
+sample output 1 :
+5
+1
+9
+
+problem CDMN17A https://www.codechef.com/api/contests/COMA2017/problems/CDMN17A
+sample input 1 :
+1
+5 7
+7 11 14 10 2
+
+sample output 1 :
+11
+
+problem CDMN17E https://www.codechef.com/api/contests/COMA2017/problems/CDMN17E
+sample input 1 :
+4 1
+1 2 3
+1 3 4
+1 4 2
+
+sample output 1 :
+30
+
+problem CDMN17D https://www.codechef.com/api/contests/COMA2017/problems/CDMN17D
+sample input 1 :
+5 5
+1 2 3 4 5 
+2
+1 2 3
+2
+1 4 3
+2
+
+sample output 1 :
+
+
+problem CDMN17C https://www.codechef.com/api/contests/COMA2017/problems/CDMN17C
+sample input 1 :
+3
+1 1 1 1
+1 2 0 0
+1 3 0 0
+
+sample output 1 :
+0
+2
+12
+
+problem CDMN17F https://www.codechef.com/api/contests/COMA2017/problems/CDMN17F
+sample input 1 :
+5
+a
+a
+a
+b
+a
+
+sample output 1 :
+1
+2
+3
+7
+11
+
+contest COOK79
+problem COOKGAME https://www.codechef.com/api/contests/COOK79/problems/COOKGAME
+sample input 1 :
+1
+6
+1 1 2 -1 -1 2
+
+sample output 1 :
+2
+
+problem MIXFLVOR https://www.codechef.com/api/contests/COOK79/problems/MIXFLVOR
+sample input 1 :
+2
+5 15
+2 4
+7 1
+5 9
+15 6
+3 12
+3 1000
+123 8
+99999 1
+80 7
+
+sample output 1 :
+13
+8
+
+problem CHAIRS https://www.codechef.com/api/contests/COOK79/problems/CHAIRS
+sample input 1 :
+1
+8
+10001010
+
+sample output 1 :
+2
+
+problem DWNLD https://www.codechef.com/api/contests/COOK79/problems/DWNLD
+sample input 1 :
+3
+2 2
+2 1
+2 3
+2 2
+1 2
+2 3
+3 0
+1 2
+2 4
+10 10
+
+sample output 1 :
+6
+3
+110
+
+problem ADDMULT https://www.codechef.com/api/contests/COOK79/problems/ADDMULT
+sample input 1 :
+2
+1 Chef
+8
+3 Chef
+1 2 3
+
+sample output 1 :
+Chef
+Chefu
+
+contest FEB17
+contest BYTR2017
+problem BATGRAPH https://www.codechef.com/api/contests/BYTR2017/problems/BATGRAPH
+sample input 1 :
+2
+4 4
+1 2
+2 3
+3 4
+4 1
+2 1
+1 2
+
+sample output 1 :
+0
+1500
+
+problem CHARR https://www.codechef.com/api/contests/BYTR2017/problems/CHARR
+sample input 1 :
+3
+3
+1 2 3
+4
+4 4 2 2
+2
+2 1
+
+sample output 1 :
+1
+2
+2
+
+problem ADWAR https://www.codechef.com/api/contests/BYTR2017/problems/ADWAR
+sample input 1 :
+3 4
+1
+2
+3
+2 5
+3 3
+1 3
+3 4
+
+sample output 1 :
+3
+1
+1
+2
+
+problem DIVIS https://www.codechef.com/api/contests/BYTR2017/problems/DIVIS
+sample input 1 :
+2 6
+123
+12
+3
+2 0
+3 0
+5 0
+
+sample output 1 :
+3
+2
+1
+
+problem MODNIM https://www.codechef.com/api/contests/BYTR2017/problems/MODNIM
+sample input 1 :
+3
+Obama
+1
+1
+Meliana
+3
+1 1 1
+Trump
+2
+4 4
+
+sample output 1 :
+None
+
+contest DECA2017
+problem ARH1703 https://www.codechef.com/api/contests/DECA2017/problems/ARH1703
+sample input 1 :
+2
+1 2 3
+4 5 6
+7 8 9
+2
+0 2 0
+0 0 2
+0 0 0
+2
+
+sample output 1 :
+None
+
+problem ARH1704 https://www.codechef.com/api/contests/DECA2017/problems/ARH1704
+sample input 1 :
+3
+3 5 2
+SbcaT
+acbab
+acccb	
+1 4 1
+SxyT	
+3 4 2	
+Sbbb
+aabT
+abbc
+
+sample output 1 :
+
+
+problem ARH1702 https://www.codechef.com/api/contests/DECA2017/problems/ARH1702
+sample input 1 :
+2
+abaca
+bcadz
+
+sample output 1 :
+
+
+problem ARH1701 https://www.codechef.com/api/contests/DECA2017/problems/ARH1701
+sample input 1 :
+2
+2
+6
+
+sample output 1 :
+
+
+contest CDVA17
+problem CDVA1708 https://www.codechef.com/api/contests/CDVA17/problems/CDVA1708
+sample input 1 :
+3 3
+1 2
+2 1
+2 3
+
+sample output 1 :
+1
+
+problem CDVA1701 https://www.codechef.com/api/contests/CDVA17/problems/CDVA1701
+sample input 1 :
+4 3
+4 2 1 3
+1 3
+1 4
+3 4
+
+sample output 1 :
+3
+2
+2
+
+problem CDVA1705 https://www.codechef.com/api/contests/CDVA17/problems/CDVA1705
+sample input 1 :
+2
+1
+2
+
+sample output 1 :
+0
+1
+
+problem CDVA1702 https://www.codechef.com/api/contests/CDVA17/problems/CDVA1702
+sample input 1 :
+2
+5
+8
+
+sample output 1 :
+1
+6
+2
+14
+
+problem CDVA1709 https://www.codechef.com/api/contests/CDVA17/problems/CDVA1709
+sample input 1 :
+3 4 5
+ 1 2 3 4
+ 4 3 2 1
+ 7 8 9 10
+ 1 1
+ 2 3
+ 3 2
+ 3 4
+ 3 3
+
+sample output 1 :
+0
+18
+42
+108
+72
+
+problem CDVA1703 https://www.codechef.com/api/contests/CDVA17/problems/CDVA1703
+sample input 1 :
+1
+10 3
+
+sample output 1 :
+1
+
+problem CDVA1710 https://www.codechef.com/api/contests/CDVA17/problems/CDVA1710
+sample input 1 :
+7 4
+1 2 2
+2 3 3
+2 4 1
+4 5 2
+1 6 1
+6 7 2
+2 1
+2 7
+1 6
+2 7
+
+sample output 1 :
+0
+3
+2
+
+problem CDVA1704 https://www.codechef.com/api/contests/CDVA17/problems/CDVA1704
+sample input 1 :
+3 3
+1 2 5
+2 3 7
+3 1 5
+
+sample output 1 :
+POSSIBLE
+12
+
+problem CDVA1706 https://www.codechef.com/api/contests/CDVA17/problems/CDVA1706
+sample input 1 :
+cddabcabdcd
+abcab
+
+sample output 1 :
+3
+
+contest COSU2017
+problem VORTEX3 https://www.codechef.com/api/contests/COSU2017/problems/VORTEX3
+sample input 1 :
+5
+1 2
+2 1
+3 3
+2 2
+3 2
+
+sample output 1 :
+None
+
+problem VORTEX1 https://www.codechef.com/api/contests/COSU2017/problems/VORTEX1
+sample input 1 :
+2
+7
+9
+
+sample output 1 :
+None
+
+problem VORTEX5 https://www.codechef.com/api/contests/COSU2017/problems/VORTEX5
+sample input 1 :
+4
+8 7 13 2
+
+sample output 1 :
+None
+
+problem VORTEX6 https://www.codechef.com/api/contests/COSU2017/problems/VORTEX6
+sample input 1 :
+3 3
+
+1 0 0
+
+0 1 0
+
+0 0 1
+
+sample output 1 :
+None
+
+contest AGOF2017
+problem ALGFLXQH https://www.codechef.com/api/contests/AGOF2017/problems/ALGFLXQH
+sample input 1 :
+2
+1
+2
+
+sample output 1 :
+1
+4
+
+problem ALGFLXQF https://www.codechef.com/api/contests/AGOF2017/problems/ALGFLXQF
+sample input 1 :
+5 5
+1 2 3 4 15
+1 5 1
+1 5 2
+2 4 1
+3 5 3
+1 5 10
+
+sample output 1 :
+61
+49
+21
+40
+0
+
+problem ALGFLXQD https://www.codechef.com/api/contests/AGOF2017/problems/ALGFLXQD
+sample input 1 :
+2
+4 1 1
+1 1 2 2
+3 2 1
+1 1 1
+
+sample output 1 :
+8
+-1
+
+problem ALGFLXQE https://www.codechef.com/api/contests/AGOF2017/problems/ALGFLXQE
+sample input 1 :
+7 7 7 1
+
+sample output 1 :
+0
+
+sample input 2 :
+2 2 1 1
+
+sample output 2 :
+3
+
+problem ALGFLXQB https://www.codechef.com/api/contests/AGOF2017/problems/ALGFLXQB
+sample input 1 :
+2
+10011110111011
+111110001110
+
+sample output 1 :
+4 
+5
+
+problem ALGFLXQA https://www.codechef.com/api/contests/AGOF2017/problems/ALGFLXQA
+sample input 1 :
+2
+4
+9
+
+sample output 1 :
+650
+7893600
+
+problem ALGFLXQG https://www.codechef.com/api/contests/AGOF2017/problems/ALGFLXQG
+sample input 1 :
+2
+1 6
+3 4 2
+2 5
+5 10 3
+6 7 4
+
+sample output 1 :
+1
+2
+
+contest LTIME44
+problem NOTINCOM https://www.codechef.com/api/contests/LTIME44/problems/NOTINCOM
+sample input 1 :
+
+
+sample output 1 :
+
+
+problem SEALUP https://www.codechef.com/api/contests/LTIME44/problems/SEALUP
+sample input 1 :
+
+
+sample output 1 :
+
+
+problem IMPROVE https://www.codechef.com/api/contests/LTIME44/problems/IMPROVE
+sample input 1 :
+
+
+sample output 1 :
+
+
+problem SEGMENTQ https://www.codechef.com/api/contests/LTIME44/problems/SEGMENTQ
+sample input 1 :
+
+
+sample output 1 :
+
+
+contest COOK78
+problem DIGITLIS https://www.codechef.com/api/contests/COOK78/problems/DIGITLIS
+sample input 1 :
+4
+1 
+1
+2 
+1 2
+2 
+1 1
+3 
+1 2 3
+
+sample output 1 :
+10
+36
+54
+84
+
+problem LISDIGIT https://www.codechef.com/api/contests/COOK78/problems/LISDIGIT
+sample input 1 :
+5
+1 
+1
+2 
+1 2
+2 
+1 1
+4
+1 2 2 1
+7 
+1 2 2 1 3 2 4
+
+sample output 1 :
+7
+36
+54
+1531
+1730418
+
+problem XRGRD https://www.codechef.com/api/contests/COOK78/problems/XRGRD
+sample input 1 :
+5
+1 1 71 93
+23959042 23959042 1 1
+1 2 1 2
+2 7 3 6
+5 8 5 8
+
+sample output 1 :
+1
+23959042
+1
+6
+4
+
+problem MTRNSFRM https://www.codechef.com/api/contests/COOK78/problems/MTRNSFRM
+sample input 1 :
+3
+2 2
+1 1
+1 1
+1 2
+3 4
+2 2
+1 9
+9 1
+9 1
+1 9
+1 4
+4 5 7 1
+2 3 4 5
+
+sample output 1 :
+3
+-1
+9
+
+problem UNGAME https://www.codechef.com/api/contests/COOK78/problems/UNGAME
+sample input 1 :
+2
+3 2
+2 3
+4 2
+2 4
+
+sample output 1 :
+2 1
+1 1
+
+contest JAN17
+problem CHEFCIRC https://www.codechef.com/api/contests/JAN17/problems/CHEFCIRC
+sample input 1 :
+3 3
+-1 -1
+0 1
+1 -1
+
+sample output 1 :
+1.250000
+
+problem TOURISTS https://www.codechef.com/api/contests/JAN17/problems/TOURISTS
+sample input 1 :
+3 3
+1 2
+2 3
+3 1
+
+sample output 1 :
+YES
+1 2
+2 3
+3 1
+
+sample input 2 :
+3 2
+1 2
+2 3
+
+sample output 2 :
+NO
+
+sample input 3 :
+5 6
+1 2
+2 3
+3 4
+2 4
+2 5
+1 5
+
+sample output 3 :
+YES
+1 2
+2 3
+3 4
+4 2
+2 5
+5 1
+
+problem RESERVOI https://www.codechef.com/api/contests/JAN17/problems/RESERVOI
+sample input 1 :
+7
+2 2
+WW
+BB
+2 3
+BWB
+BBB
+2 3
+AWA
+BBB
+2 3
+BAA
+ABB
+3 5
+BWAAB
+BWBWB
+BBBBB
+3 3
+BBB
+BAB
+BBB
+BBB
+BWB
+BBB
+
+sample output 1 :
+no
+yes
+no
+no
+no
+no
+no
+
+problem SEABOX https://www.codechef.com/api/contests/JAN17/problems/SEABOX
+sample input 1 :
+2 0
+0 0
+0 0
+0 0
+0 0
+
+sample output 1 :
+1 1
+
+sample input 2 :
+2 1
+0 0
+0 0
+0 0
+0 0
+
+sample output 2 :
+1 8
+
+problem CAPIMOVE https://www.codechef.com/api/contests/JAN17/problems/CAPIMOVE
+sample input 1 :
+1
+6
+5 10 15 20 25 30
+1 3
+2 3
+3 4
+4 5
+4 6
+
+sample output 1 :
+6 6 6 2 6 5
+
+problem FOURSQ https://www.codechef.com/api/contests/JAN17/problems/FOURSQ
+sample input 1 :
+1
+5 4 100
+1 2 3 4 5
+2 1 5
+2 1 3
+1 1 4
+2 1 3
+
+sample output 1 :
+8 6 4 2
+0 1 1 2
+0 2 4 2
+
+problem CATSDOGS https://www.codechef.com/api/contests/JAN17/problems/CATSDOGS
+sample input 1 :
+3
+1 1 8
+1 1 4
+1 1 2
+
+sample output 1 :
+yes
+yes
+no
+
+problem TUPLES https://www.codechef.com/api/contests/JAN17/problems/TUPLES
+sample input 1 :
+
+
+sample output 1 :
+
+
+contest COSE2017
+problem GGBUNNY https://www.codechef.com/api/contests/COSE2017/problems/GGBUNNY
+sample input 1 :
+3
+5 2
+14 17 4 16 64
+3 9
+9 5 81
+4 7
+343 14 25 5764801
+
+sample output 1 :
+3
+2
+2
+
+problem GGSPAG https://www.codechef.com/api/contests/COSE2017/problems/GGSPAG
+sample input 1 :
+7 4
+4 2 7 8 3 9 11
+1 1 7
+1 2 5
+2 3 4
+1 2 5
+
+sample output 1 :
+4
+3
+2
+
+problem GGCURR https://www.codechef.com/api/contests/COSE2017/problems/GGCURR
+sample input 1 :
+2
+5 4 6
+16 20 36 22 15
+7 7 5
+7 25 14 27 45 34 41
+
+sample output 1 :
+4 1
+7 0
+
+problem GGBHAI https://www.codechef.com/api/contests/COSE2017/problems/GGBHAI
+sample input 1 :
+2
+5 2
+1 2
+1 3
+2 4
+3 5
+2 5
+7 4
+1 2
+1 4
+1 3
+4 5
+4 6
+4 7
+2 4 7 3
+
+sample output 1 :
+3.000000
+2.500000
+
+problem GGSQR https://www.codechef.com/api/contests/COSE2017/problems/GGSQR
+sample input 1 :
+3
+5
+7
+2
+
+sample output 1 :
+25
+49
+4
+
+contest LTC2017
+contest KQPM2017
+problem SUMALPHA https://www.codechef.com/api/contests/KQPM2017/problems/SUMALPHA
+sample input 1 :
+2
+aa
+baz
+
+sample output 1 :
+
+
+contest LTIME43
+problem FLYMODE https://www.codechef.com/api/contests/LTIME43/problems/FLYMODE
+sample input 1 :
+5
+1 2 3 2 3
+
+sample output 1 :
+3
+
+problem SUPVIL https://www.codechef.com/api/contests/LTIME43/problems/SUPVIL
+sample input 1 :
+3  
+2   
+kittywoman  
+wingman  
+6  
+hacker  
+beautywoman  
+blackjack  
+noname  
+watersnake  
+strongman  
+4  
+famousman  
+redsnake  
+tallwoman  
+tinythief
+
+sample output 1 :
+superheroes
+villains
+draw
+
+problem SBSWAP https://www.codechef.com/api/contests/LTIME43/problems/SBSWAP
+sample input 1 :
+10 5
+1 1 1 1 1 1 1 1 1 1
+1 2
+1 3
+1 8
+3 4
+8 9
+8 10
+4 5
+4 6
+4 7
+2 8 1
+1 3
+3 4 8
+1 3
+3 1 2
+
+sample output 1 :
+5
+7
+-1
+
+contest INF16MOS
+problem INF16K https://www.codechef.com/api/contests/INF16MOS/problems/INF16K
+sample input 1 :
+
+
+sample output 1 :
+
+
+problem INF16A https://www.codechef.com/api/contests/INF16MOS/problems/INF16A
+sample input 1 :
+
+
+sample output 1 :
+
+
+problem INF16E https://www.codechef.com/api/contests/INF16MOS/problems/INF16E
+sample input 1 :
+
+
+sample output 1 :
+
+
+problem INF16L https://www.codechef.com/api/contests/INF16MOS/problems/INF16L
+sample input 1 :
+2
+6
+0.0000 0.0000
+2.0000 0.0000
+2.0000 2.0000
+0.0000 2.0000
+1.0000 -10.0000
+1.0000 10.0000
+7
+0.0000 0.0000
+2.0000 0.0000
+2.0000 2.0000
+0.0000 2.0000
+1.0000 -10.0000
+1.0000 10.0000
+10.0000 1.0000
+
+sample output 1 :
+1.0000000000 0.0000000000 1.0000000000
+1.0000000000 1.0000000000 1.4142135624
+
+problem INF16C https://www.codechef.com/api/contests/INF16MOS/problems/INF16C
+sample input 1 :
+
+
+sample output 1 :
+
+
+problem INF16F https://www.codechef.com/api/contests/INF16MOS/problems/INF16F
+sample input 1 :
+
+
+sample output 1 :
+
+
+problem INF16H https://www.codechef.com/api/contests/INF16MOS/problems/INF16H
+sample input 1 :
+4
+pirate crook syco vampire
+5
+7 3
+monopolizers pirated phony sycophant syconess piracy vampires
+7 4
+monopolizers pirated phony sycophant syconess piracy vampires
+7 5
+monopolizers pirated phony sycophant syconess piracy vampires
+3 4
+crook crookedness vampire
+1 1
+crooked
+
+sample output 1 :
+3
+4
+-1
+-1
+2
+
+problem INF16J https://www.codechef.com/api/contests/INF16MOS/problems/INF16J
+sample input 1 :
+
+
+sample output 1 :
+
+
+problem INF16D https://www.codechef.com/api/contests/INF16MOS/problems/INF16D
+sample input 1 :
+
+
+sample output 1 :
+
+
+problem INF16B https://www.codechef.com/api/contests/INF16MOS/problems/INF16B
+sample input 1 :
+
+
+sample output 1 :
+
+
+contest KOL16MOS
+problem KOL16F https://www.codechef.com/api/contests/KOL16MOS/problems/KOL16F
+sample input 1 :
+
+
+sample output 1 :
+
+
+problem KOL16J https://www.codechef.com/api/contests/KOL16MOS/problems/KOL16J
+sample input 1 :
+4
+3
+2 3 1
+3
+1 5 3
+3
+1 2 3
+2
+1 1
+
+sample output 1 :
+yes
+no
+no
+no
+
+problem KOL16D https://www.codechef.com/api/contests/KOL16MOS/problems/KOL16D
+sample input 1 :
+70 2 1 5 10
+0 0 0 0 0
+
+sample output 1 :
+49/5
+
+problem KOL16B https://www.codechef.com/api/contests/KOL16MOS/problems/KOL16B
+sample input 1 :
+1
+4
+196613
+655370
+196620
+131079
+
+sample output 1 :
+Case 1:
+5 10 12 7
+3 10 3 2
+
+problem KOL16H https://www.codechef.com/api/contests/KOL16MOS/problems/KOL16H
+sample input 1 :
+2
+1
+2
+
+sample output 1 :
+Case 1: 1
+Case 2: 3
+
+problem KOL16C https://www.codechef.com/api/contests/KOL16MOS/problems/KOL16C
+sample input 1 :
+2
+10 20 1 5 3
+10 20 1 5 6
+
+sample output 1 :
+5
+3
+
+problem KOL16E https://www.codechef.com/api/contests/KOL16MOS/problems/KOL16E
+sample input 1 :
+
+
+sample output 1 :
+
+
+problem KOL16A https://www.codechef.com/api/contests/KOL16MOS/problems/KOL16A
+sample input 1 :
+2
+2
+0.8 0.9
+100 200
+1
+4
+0.28 0.62 0.92 0.96
+3 8 7 2
+0.05
+
+sample output 1 :
+Case 1: 300
+Case 2: 9
+
+problem KOL16I https://www.codechef.com/api/contests/KOL16MOS/problems/KOL16I
+sample input 1 :
+
+
+sample output 1 :
+
+
+problem KOL16L https://www.codechef.com/api/contests/KOL16MOS/problems/KOL16L
+sample input 1 :
+
+
+sample output 1 :
+
+
+problem KOL16G https://www.codechef.com/api/contests/KOL16MOS/problems/KOL16G
+sample input 1 :
+2
+100 20
+10 5
+
+sample output 1 :
+72.6679
+4.7114
+
+problem KOL16K https://www.codechef.com/api/contests/KOL16MOS/problems/KOL16K
+sample input 1 :
+3
+ 3
+ 1 1
+ 4 2
+ 9 3
+ 4
+ 1 1
+ 4 2
+ 5 2
+ 9 3
+ 4
+ 2 3
+ 4 1
+ 1 2
+ 3 2
+
+sample output 1 :
+3
+ 3
+ 4
+
+contest BITF2016
+contest SOPC2016
+problem SPC1604 https://www.codechef.com/api/contests/SOPC2016/problems/SPC1604
+sample input 1 :
+3
+
+sample output 1 :
+25830
+
+problem SPC1603 https://www.codechef.com/api/contests/SOPC2016/problems/SPC1603
+sample input 1 :
+<br/>
+
+sample output 1 :
+<h3> Output: </h3>
+
+contest AMR16MOS
+problem AMR16D https://www.codechef.com/api/contests/AMR16MOS/problems/AMR16D
+sample input 1 :
+2
+3 1
+6 3
+
+sample output 1 :
+yes
+no
+
+problem AMR16I https://www.codechef.com/api/contests/AMR16MOS/problems/AMR16I
+sample input 1 :
+2
+1 4 6
+1 2 4 2
+100 2 500
+51 749
+
+sample output 1 :
+yes
+no
+
+problem AMR16H https://www.codechef.com/api/contests/AMR16MOS/problems/AMR16H
+sample input 1 :
+1
+2
+1 2
+
+sample output 1 :
+4
+
+problem AMR16E https://www.codechef.com/api/contests/AMR16MOS/problems/AMR16E
+sample input 1 :
+
+
+sample output 1 :
+
+
+problem AMR16B https://www.codechef.com/api/contests/AMR16MOS/problems/AMR16B
+sample input 1 :
+1
+6
+
+sample output 1 :
+3
+1 2 3 4 5 6
+1 2 4 3 5 6
+1 4 5 2 3 6
+
+problem AMR16C https://www.codechef.com/api/contests/AMR16MOS/problems/AMR16C
+sample input 1 :
+2
+2
+1 3
+2
+13 9
+
+sample output 1 :
+No supporter found.
+2
+
+problem AMR16G https://www.codechef.com/api/contests/AMR16MOS/problems/AMR16G
+sample input 1 :
+
+
+sample output 1 :
+
+
+problem AMR16A https://www.codechef.com/api/contests/AMR16MOS/problems/AMR16A
+sample input 1 :
+
+
+sample output 1 :
+
+
+problem AMR16K https://www.codechef.com/api/contests/AMR16MOS/problems/AMR16K
+sample input 1 :
+
+
+sample output 1 :
+
+
+contest CHN16MOS
+problem CHN16D https://www.codechef.com/api/contests/CHN16MOS/problems/CHN16D
+sample input 1 :
+
+
+sample output 1 :
+
+
+problem CHN16A https://www.codechef.com/api/contests/CHN16MOS/problems/CHN16A
+sample input 1 :
+4
+a
+b
+aa
+abaa
+
+sample output 1 :
+2
+
+problem CHN16C https://www.codechef.com/api/contests/CHN16MOS/problems/CHN16C
+sample input 1 :
+1
+2 3
+
+sample output 1 :
+2
+
+problem CHN16I https://www.codechef.com/api/contests/CHN16MOS/problems/CHN16I
+sample input 1 :
+3 2
+ac
+abd
+b
+ae
+bd
+
+sample output 1 :
+3
+
+problem CHN16J https://www.codechef.com/api/contests/CHN16MOS/problems/CHN16J
+sample input 1 :
+4 3
+1 2 1
+2 3 2
+1 4 3
+1 1
+2 1 2
+2 3 4
+
+sample output 1 :
+0
+2
+29
+
+problem CHN16B https://www.codechef.com/api/contests/CHN16MOS/problems/CHN16B
+sample input 1 :
+3
+4 2 1
+3 3 5
+2 4 10
+
+sample output 1 :
+11
+
+problem CHN16E https://www.codechef.com/api/contests/CHN16MOS/problems/CHN16E
+sample input 1 :
+
+
+sample output 1 :
+
+
+problem CHN16F https://www.codechef.com/api/contests/CHN16MOS/problems/CHN16F
+sample input 1 :
+2
+2 2 2
+2 2
+2 2 1
+4
+
+sample output 1 :
+1 2
+1 2
+1 1
+1 1
+
+contest COOK77
+problem CHEFSETC https://www.codechef.com/api/contests/COOK77/problems/CHEFSETC
+sample input 1 :
+3
+1 2 0 3
+1 2 4 -1
+1 2 3 4
+
+sample output 1 :
+Yes
+Yes
+No
+
+problem CHEFTRI4 https://www.codechef.com/api/contests/COOK77/problems/CHEFTRI4
+sample input 1 :
+4
+3 4 5
+5 4 3
+3 4 5
+4 3 5
+238 185 87
+109 87 28
+156 109 53
+303 156 153
+37 20 19
+80 60 100
+72 80 136
+37 136 164
+259 210 91  
+259 182 105   
+168 117 75   
+30 28 26
+
+sample output 1 :
+Yes
+Yes
+No
+Yes
+
+problem CHEFINS https://www.codechef.com/api/contests/COOK77/problems/CHEFINS
+sample input 1 :
+4 2 3
+2 4
+2
+8
+5
+
+sample output 1 :
+Yes
+Yes
+No
+
+problem CHEFARRB https://www.codechef.com/api/contests/COOK77/problems/CHEFARRB
+sample input 1 :
+2
+3 3
+1 2 3
+3 6
+3 4 5
+
+sample output 1 :
+4
+2
+
+contest KGP16MOS
+problem KGP16H https://www.codechef.com/api/contests/KGP16MOS/problems/KGP16H
+sample input 1 :
+
+
+sample output 1 :
+
+
+problem KGP16I https://www.codechef.com/api/contests/KGP16MOS/problems/KGP16I
+sample input 1 :
+2 4
+1 1
+1 2
+1 1
+1 1 1
+2 2 1
+1 2 2
+1 2 1
+
+sample output 1 :
+2
+3
+5
+1.6666666
+
+problem KGP16E https://www.codechef.com/api/contests/KGP16MOS/problems/KGP16E
+sample input 1 :
+2
+3 2
+1 2
+2 3
+3 3
+1 2
+2 3
+1 3
+
+sample output 1 :
+1
+2
+2
+1 2
+
+problem KGP16J https://www.codechef.com/api/contests/KGP16MOS/problems/KGP16J
+sample input 1 :
+
+
+sample output 1 :
+
+
+problem KGP16C https://www.codechef.com/api/contests/KGP16MOS/problems/KGP16C
+sample input 1 :
+4
+5
+00:00:00
+10:10:10
+11:11:11
+23:59:59
+00:00:00
+3
+00:00:00
+23:59:59
+23:59:58
+2
+00:00:00
+2?:??:?1
+3
+00:00:00
+23:59:59
+23:59:?8
+
+sample output 1 :
+86400
+172798
+72001
+172748
+
+problem KGP16K https://www.codechef.com/api/contests/KGP16MOS/problems/KGP16K
+sample input 1 :
+
+
+sample output 1 :
+
+
+problem KGP16G https://www.codechef.com/api/contests/KGP16MOS/problems/KGP16G
+sample input 1 :
+2 2
+RR
+RR
+
+sample output 1 :
+5
+
+sample input 2 :
+2 2
+R*
+RR
+
+sample output 2 :
+4.33
+
+problem KGP16F https://www.codechef.com/api/contests/KGP16MOS/problems/KGP16F
+sample input 1 :
+
+
+sample output 1 :
+
+
+problem KGP16A https://www.codechef.com/api/contests/KGP16MOS/problems/KGP16A
+sample input 1 :
+
+
+sample output 1 :
+
+
+problem KGP16D https://www.codechef.com/api/contests/KGP16MOS/problems/KGP16D
+sample input 1 :
+
+
+sample output 1 :
+
+
+problem KGP16B https://www.codechef.com/api/contests/KGP16MOS/problems/KGP16B
+sample input 1 :
+
+
+sample output 1 :
+
+
+contest DEC16
+problem SEAINCR https://www.codechef.com/api/contests/DEC16/problems/SEAINCR
+sample input 1 :
+
+
+sample output 1 :
+
+
+problem ALEXROSE https://www.codechef.com/api/contests/DEC16/problems/ALEXROSE
+sample input 1 :
+
+
+sample output 1 :
+
+
+problem THREECOL https://www.codechef.com/api/contests/DEC16/problems/THREECOL
+sample input 1 :
+4
+
+sample output 1 :
+6
+1 1 1 2
+1 3 2 3
+2 3 2 2
+3 2 2 2
+4 3 4 4
+1 4 1 3
+
+problem CHEFAFD https://www.codechef.com/api/contests/DEC16/problems/CHEFAFD
+sample input 1 :
+
+
+sample output 1 :
+
+
+problem ANKTRAIN https://www.codechef.com/api/contests/DEC16/problems/ANKTRAIN
+sample input 1 :
+
+
+sample output 1 :
+
+
+problem KIRLAB https://www.codechef.com/api/contests/DEC16/problems/KIRLAB
+sample input 1 :
+
+
+sample output 1 :
+
+
+problem BOUNCE https://www.codechef.com/api/contests/DEC16/problems/BOUNCE
+sample input 1 :
+
+
+sample output 1 :
+
+
+problem BASE https://www.codechef.com/api/contests/DEC16/problems/BASE
+sample input 1 :
+
+
+sample output 1 :
+
+
+problem KTHMAX https://www.codechef.com/api/contests/DEC16/problems/KTHMAX
+sample input 1 :
+
+
+sample output 1 :
+
+
+problem EDIT https://www.codechef.com/api/contests/DEC16/problems/EDIT
+sample input 1 :
+
+
+sample output 1 :
+
+
+contest GOGL2016
+problem GOGL16T8 https://www.codechef.com/api/contests/GOGL2016/problems/GOGL16T8
+sample input 1 :
+
+
+sample output 1 :
+
+
+problem GOGL16T7 https://www.codechef.com/api/contests/GOGL2016/problems/GOGL16T7
+sample input 1 :
+12 16
+1 2
+1 3
+3 1
+3 2
+2 8
+3 4
+8 9
+8 10
+9 11
+9 12
+10 12
+4 5
+5 6
+6 4
+6 7
+7 4
+
+sample output 1 :
+8 3
+
+problem GOGL16T6 https://www.codechef.com/api/contests/GOGL2016/problems/GOGL16T6
+sample input 1 :
+2 10
+10 3 6
+12 2 1
+
+sample output 1 :
+32
+
+problem GOGL16T3 https://www.codechef.com/api/contests/GOGL2016/problems/GOGL16T3
+sample input 1 :
+
+
+sample output 1 :
+
+
+sample input 2 :
+
+
+sample output 2 :
+
+
+problem GOGL16T2 https://www.codechef.com/api/contests/GOGL2016/problems/GOGL16T2
+sample input 1 :
+5 2
+1 4 2
+2 8 5
+
+sample output 1 :
+16
+
+problem GOGL16T5 https://www.codechef.com/api/contests/GOGL2016/problems/GOGL16T5
+sample input 1 :
+5 3
+3 7 6 8 1
+2 3 7
+1 5 10
+1 5 2
+
+sample output 1 :
+1
+5
+1
+
+contest LTIME42
+problem CHEFSTUD https://www.codechef.com/api/contests/LTIME42/problems/CHEFSTUD
+sample input 1 :
+4
+><
+*><*
+><><
+*><><><*
+
+sample output 1 :
+0
+0
+1
+2
+
+problem CHEFSSET https://www.codechef.com/api/contests/LTIME42/problems/CHEFSSET
+sample input 1 :
+3
+3
+2 2 2
+3
+1 2 2
+3
+2 4 6
+
+sample output 1 :
+0
+1
+2
+
+problem BALANPOL https://www.codechef.com/api/contests/LTIME42/problems/BALANPOL
+sample input 1 :
+2
+4 4
+0 0
+1 0
+1 1
+0 1
+0 0 0
+1 0 1
+1 1 0
+0 1 1
+6 6
+-1 1
+0 0
+1 0
+2 1
+1 2
+0 2
+-1 1 0
+0 0 1
+1 0 0
+2 1 1
+1 2 0 
+0 2 1
+
+sample output 1 :
+1
+10
+
+contest COOK76
+problem SEBIHWY https://www.codechef.com/api/contests/COOK76/problems/SEBIHWY
+sample input 1 :
+2
+100 180 200 20 60
+130 131 132 1 72
+
+sample output 1 :
+SEBI
+FATHER
+
+problem SECUBE https://www.codechef.com/api/contests/COOK76/problems/SECUBE
+sample input 1 :
+2
+2 5
+2 2
+
+sample output 1 :
+YES
+NO
+
+problem SETELE https://www.codechef.com/api/contests/COOK76/problems/SETELE
+sample input 1 :
+3
+1 2 3
+1 3 2
+
+sample output 1 :
+2.333333
+
+problem SELECT https://www.codechef.com/api/contests/COOK76/problems/SELECT
+sample input 1 :
+1 1
+2
+
+sample output 1 :
+w
+
+sample input 2 :
+1 2
+79
+
+sample output 2 :
+js
+
+sample input 3 :
+1 8
+48768961
+
+sample output 3 :
+anupklby
+
+sample input 4 :
+1 7
+2342822
+
+sample output 4 :
+adurysk
+
+problem SEQUAT2 https://www.codechef.com/api/contests/COOK76/problems/SEQUAT2
+sample input 1 :
+1
+1 1 4 9
+
+sample output 1 :
+12 12
+
+sample input 2 :
+1 
+1 1 3 5
+
+sample output 2 :
+7 7
+
+contest QCDJ2016
+contest NOV16
+problem FRIEMEET https://www.codechef.com/api/contests/NOV16/problems/FRIEMEET
+sample input 1 :
+
+
+sample output 1 :
+
+
+problem URBANDEV https://www.codechef.com/api/contests/NOV16/problems/URBANDEV
+sample input 1 :
+
+
+sample output 1 :
+
+
+problem SEAPERM3 https://www.codechef.com/api/contests/NOV16/problems/SEAPERM3
+sample input 1 :
+
+
+sample output 1 :
+
+
+problem CHSQR https://www.codechef.com/api/contests/NOV16/problems/CHSQR
+sample input 1 :
+
+
+sample output 1 :
+
+
+problem SEAWCU https://www.codechef.com/api/contests/NOV16/problems/SEAWCU
+sample input 1 :
+1
+2
+1 1
+1 1
+1 1
+1 1
+
+sample output 1 :
+4
+1 1 1
+1 1 2
+1 2 2
+2 2 2
+
+problem ALEXTASK https://www.codechef.com/api/contests/NOV16/problems/ALEXTASK
+sample input 1 :
+
+
+sample output 1 :
+
+
+problem GIFTCHEF https://www.codechef.com/api/contests/NOV16/problems/GIFTCHEF
+sample input 1 :
+
+
+sample output 1 :
+
+
+problem BIKE https://www.codechef.com/api/contests/NOV16/problems/BIKE
+sample input 1 :
+3 6 6
+1 2 0 0
+2 1 1 1
+1 3 1 2
+3 1 2 1
+2 3 5 5
+3 2 10 10
+
+sample output 1 :
+1 5
+0 10
+1 5
+1 5
+0 10
+1 5
+1 8
+0 10
+1 2
+
+problem CPERM https://www.codechef.com/api/contests/NOV16/problems/CPERM
+sample input 1 :
+2
+2
+3
+
+sample output 1 :
+0
+2
+
+problem KIRMEME https://www.codechef.com/api/contests/NOV16/problems/KIRMEME
+sample input 1 :
+
+
+sample output 1 :
+
+
+contest IEMCO16
+problem DON https://www.codechef.com/api/contests/IEMCO16/problems/DON
+sample input 1 :
+EMI
+
+sample output 1 :
+0
+
+problem RAMLEELA https://www.codechef.com/api/contests/IEMCO16/problems/RAMLEELA
+sample input 1 :
+1 2 5 1
+
+sample output 1 :
+1
+
+problem AWARA https://www.codechef.com/api/contests/IEMCO16/problems/AWARA
+sample input 1 :
+
+
+sample output 1 :
+None
+
+contest SMPX2016
+problem SMP162 https://www.codechef.com/api/contests/SMPX2016/problems/SMP162
+sample input 1 :
+1
+2
+
+sample output 1 :
+9
+
+problem SMP163 https://www.codechef.com/api/contests/SMPX2016/problems/SMP163
+sample input 1 :
+2
+3 3 1 2
+2 1
+0 1
+3 3 2 2
+2 1
+0 1
+
+sample output 1 :
+7
+-1
+
+problem SMP166 https://www.codechef.com/api/contests/SMPX2016/problems/SMP166
+sample input 1 :
+1
+3 4 5
+
+sample output 1 :
+4
+
+problem SMP164 https://www.codechef.com/api/contests/SMPX2016/problems/SMP164
+sample input 1 :
+5 3
+1 3 4
+1 2 1
+2 3 2
+2 4 2
+3 5 3
+
+sample output 1 :
+6
+
+problem SMP161 https://www.codechef.com/api/contests/SMPX2016/problems/SMP161
+sample input 1 :
+1
+4 2 3
+
+sample output 1 :
+3
+
+problem SMP165 https://www.codechef.com/api/contests/SMPX2016/problems/SMP165
+sample input 1 :
+2
+3 3
+
+sample output 1 :
+2
+
+contest LTIME41
+problem RESTPERM https://www.codechef.com/api/contests/LTIME41/problems/RESTPERM
+sample input 1 :
+
+
+sample output 1 :
+
+
+problem FFCOMB https://www.codechef.com/api/contests/LTIME41/problems/FFCOMB
+sample input 1 :
+
+
+sample output 1 :
+
+
+problem COUNTIES https://www.codechef.com/api/contests/LTIME41/problems/COUNTIES
+sample input 1 :
+
+
+sample output 1 :
+
+
+problem BOUQUET https://www.codechef.com/api/contests/LTIME41/problems/BOUQUET
+sample input 1 :
+
+
+sample output 1 :
+
+
+contest COOK75
+problem COUNTWAY https://www.codechef.com/api/contests/COOK75/problems/COUNTWAY
+sample input 1 :
+4 2
+3 2 2 3
+
+sample output 1 :
+3
+
+problem BOOKCHEF https://www.codechef.com/api/contests/COOK75/problems/BOOKCHEF
+sample input 1 :
+2 4
+1 2
+1 1 WhoDoesntLoveChefBook
+2 2 WinterIsComing
+3 10 TheseViolentDelightsHaveViolentEnds
+4 3 ComeAtTheKingBestNotMiss
+
+sample output 1 :
+WinterIsComing
+WhoDoesntLoveChefBook
+TheseViolentDelightsHaveViolentEnds
+ComeAtTheKingBestNotMiss
+
+problem SWINDOW https://www.codechef.com/api/contests/COOK75/problems/SWINDOW
+sample input 1 :
+5 3 3
+1 1 1 1 1
+2 3
+5 2
+3 2
+
+sample output 1 :
+-1
+4
+3
+
+problem UGLYF https://www.codechef.com/api/contests/COOK75/problems/UGLYF
+sample input 1 :
+2
+ABCDE
+XXBCZQ
+BBB
+BBBBBB
+
+sample output 1 :
+2
+6
+
+problem PERMEXIS https://www.codechef.com/api/contests/COOK75/problems/PERMEXIS
+sample input 1 :
+2
+4
+3 2 2 3 
+2
+1 5
+
+sample output 1 :
+YES
+NO
+
+contest CDVT2016
+problem VTAMASHA https://www.codechef.com/api/contests/CDVT2016/problems/VTAMASHA
+sample input 1 :
+6 6
+1 2
+3 4
+2 3
+4 5
+5 6
+5 3
+2
+1
+2
+
+sample output 1 :
+
+
+problem FNYGAME1 https://www.codechef.com/api/contests/CDVT2016/problems/FNYGAME1
+sample input 1 :
+7 7 5
+4 5 6 6 5 7 4
+5 5
+5 6
+3 5
+3 7
+1 7
+
+sample output 1 :
+
+
+problem HELPKSHV https://www.codechef.com/api/contests/CDVT2016/problems/HELPKSHV
+sample input 1 :
+4 4
+1 2 3 4
+1 1 4
+2 10 1 3
+4 2 2 4 
+1 1 4
+
+sample output 1 :
+10
+69
+
+contest IFCAMR16
+contest ACMIND16
+problem ICPC16D https://www.codechef.com/api/contests/ACMIND16/problems/ICPC16D
+sample input 1 :
+2
+2
+1 2
+3
+6 2 3
+
+sample output 1 :
+3
+5
+
+problem ICPC16B https://www.codechef.com/api/contests/ACMIND16/problems/ICPC16B
+sample input 1 :
+3
+2
+0 1
+2
+1 2
+2
+5 6
+
+sample output 1 :
+yes
+yes
+no
+
+problem ICPC16C https://www.codechef.com/api/contests/ACMIND16/problems/ICPC16C
+sample input 1 :
+1
+5
+
+sample output 1 :
+6
+
+problem ICPC16G https://www.codechef.com/api/contests/ACMIND16/problems/ICPC16G
+sample input 1 :
+3 1
+1 0 1
+0
+
+sample output 1 :
+2
+
+sample input 2 :
+4 2
+1 0 1 0
+1 3
+
+sample output 2 :
+2
+
+problem ICPC16A https://www.codechef.com/api/contests/ACMIND16/problems/ICPC16A
+sample input 1 :
+3
+0 0 1 0
+0 0 0 1
+0 0 1 1
+
+sample output 1 :
+right
+up
+sad
+
+problem ICPC16E https://www.codechef.com/api/contests/ACMIND16/problems/ICPC16E
+sample input 1 :
+2
+1 1
+1 2
+
+sample output 1 :
+1
+12
+
+problem ICPC16F https://www.codechef.com/api/contests/ACMIND16/problems/ICPC16F
+sample input 1 :
+2
+2 3 1 2
+2 3 1 1
+
+sample output 1 :
+1 1
+2 2
+1 2
+-1
+
+contest TSTIND16
+problem AMR15A https://www.codechef.com/api/contests/TSTIND16/problems/AMR15A
+sample input 1 :
+1
+1
+
+sample output 1 :
+NOT READY
+
+sample input 2 :
+1
+2
+
+sample output 2 :
+READY FOR BATTLE
+
+sample input 3 :
+4
+11 12 13 14
+
+sample output 3 :
+NOT READY
+
+sample input 4 :
+3
+2 3 4
+
+sample output 4 :
+READY FOR BATTLE
+
+sample input 5 :
+5
+1 2 3 4 5
+
+sample output 5 :
+NOT READY
+
+problem KOL15A https://www.codechef.com/api/contests/TSTIND16/problems/KOL15A
+sample input 1 :
+1
+ab1231da
+
+sample output 1 :
+7
+
+problem AMR15B https://www.codechef.com/api/contests/TSTIND16/problems/AMR15B
+sample input 1 :
+3
+1
+1
+2
+1 2
+3
+1 2 2
+
+sample output 1 :
+1
+2
+8
+
+problem CHN15E https://www.codechef.com/api/contests/TSTIND16/problems/CHN15E
+sample input 1 :
+2
+4 5
+1 2
+1 3
+3 4
+2 3
+1 4
+5 7
+1 2
+2 3
+3 4
+4 5
+1 3
+2 4
+3 5
+
+sample output 1 :
+1 2
+1 3
+3 4
+1 2
+2 3
+3 4
+4 5
+
+problem CHN15F https://www.codechef.com/api/contests/TSTIND16/problems/CHN15F
+sample input 1 :
+2
+2 2 100
+2 3 100
+
+sample output 1 :
+5
+12
+
+problem KOL15B https://www.codechef.com/api/contests/TSTIND16/problems/KOL15B
+sample input 1 :
+4
+3 3
+1 2 3
+4 -10 5
+6 7 8
+3 3
+1 -10 3
+-13 -12 -11
+7 8 9
+3 3
+1 -2 3
+-4 5 -6
+7 -8 9
+4 4
+1 2 3 4
+5 6 -7 8
+-9 -10 -11 -12
+13 14 -15 16
+
+sample output 1 :
+-10
+-46
+-15
+-64
+
+contest NPLQ1602
+problem NPLFLD https://www.codechef.com/api/contests/NPLQ1602/problems/NPLFLD
+sample input 1 :
+5
+1 2 2 3 1
+1 1 1 2 3
+1 2 3 1 2
+1 2 2 2 2
+3 3 3 3 3
+1
+6 1
+
+sample output 1 :
+YES
+
+problem NPLFLA https://www.codechef.com/api/contests/NPLQ1602/problems/NPLFLA
+sample input 1 :
+2
+123
+1212
+
+sample output 1 :
+6
+3
+
+problem NPLFLF https://www.codechef.com/api/contests/NPLQ1602/problems/NPLFLF
+sample input 1 :
+9
+1 aba
+1 accba
+2 2 2
+2 2 3
+1 aaaa
+1 ababa
+2 3 2
+3 1
+2 3 2
+
+sample output 1 :
+YES
+NO
+YES
+NO
+
+problem NPLFLC https://www.codechef.com/api/contests/NPLQ1602/problems/NPLFLC
+sample input 1 :
+5
+10 1 9 8 11
+6
+2 19
+1 3 13
+2 28
+2 32
+1 1 100
+2 133
+
+sample output 1 :
+YES
+NO
+YES
+YES
+
+problem NPLFLE https://www.codechef.com/api/contests/NPLQ1602/problems/NPLFLE
+sample input 1 :
+5
+2 1 4 5 6
+1 1 2 1 3
+2
+1
+2
+
+sample output 1 :
+1
+1
+
+problem NPLFLB https://www.codechef.com/api/contests/NPLQ1602/problems/NPLFLB
+sample input 1 :
+5 5
+10 6 1 10 3
+1 2 5
+2 1 3
+1 3 2
+2 1 5
+2 4 5
+
+sample output 1 :
+11
+11
+11
+14
+14
+
+contest NPLQ1601
+problem NPLELF https://www.codechef.com/api/contests/NPLQ1601/problems/NPLELF
+sample input 1 :
+3
+3 2 5
+
+sample output 1 :
+2
+
+problem NPLELB https://www.codechef.com/api/contests/NPLQ1601/problems/NPLELB
+sample input 1 :
+8 5
+3
+2
+-1
+6
+-1
+2
+-1
+5
+
+sample output 1 :
+2 5
+6 11
+5 13
+18
+
+problem NPLELE https://www.codechef.com/api/contests/NPLQ1601/problems/NPLELE
+sample input 1 :
+5
+1 2 5
+1 3 4
+2 4 6
+4 5 7
+5
+1 1 4
+2 2 5
+2 3 4
+1 4 9
+2 1 5
+
+sample output 1 :
+1
+6
+11
+
+problem NPLELD https://www.codechef.com/api/contests/NPLQ1601/problems/NPLELD
+sample input 1 :
+5
+2 5 6 2 3
+5
+12
+20
+7
+10
+200
+
+sample output 1 :
+5
+3
+0
+2
+3
+
+problem NPLELA https://www.codechef.com/api/contests/NPLQ1601/problems/NPLELA
+sample input 1 :
+5
+1 3 5 5 10
+
+sample output 1 :
+Happy
+
+sample input 2 :
+5
+1 5 12 7 10
+
+sample output 2 :
+Angry
+
+problem RRTREGAM https://www.codechef.com/api/contests/NPLQ1601/problems/RRTREGAM
+sample input 1 :
+5
+10 6 7 19 3
+1 2
+1 3
+1 4
+2 5
+
+sample output 1 :
+Rachel
+
+problem NPLELG https://www.codechef.com/api/contests/NPLQ1601/problems/NPLELG
+sample input 1 :
+10 2 3 4
+
+sample output 1 :
+Happy
+
+sample input 2 :
+10 3 4 5
+
+sample output 2 :
+Sad
+
+contest OCT16
+problem BGQRS https://www.codechef.com/api/contests/OCT16/problems/BGQRS
+sample input 1 :
+1
+5 5
+2 4 3 5 5
+3 2 4
+3 2 5
+2 2 4 1
+1 3 3 10
+3 1 5
+
+sample output 1 :
+5
+
+problem SEASTONE https://www.codechef.com/api/contests/OCT16/problems/SEASTONE
+sample input 1 :
+2
+2 4
+7 8
+4 6
+7 7 10 10
+
+sample output 1 :
+0
+21
+
+problem CHDOGS https://www.codechef.com/api/contests/OCT16/problems/CHDOGS
+sample input 1 :
+2
+2 5
+1 1000000000
+
+sample output 1 :
+0.266667
+0.0000001
+
+problem TREEBAL https://www.codechef.com/api/contests/OCT16/problems/TREEBAL
+sample input 1 :
+1
+5
+1 2 5 4
+1 3 15 15
+2 4 3 2
+2 5 5 1
+
+sample output 1 :
+19
+5
+15
+10
+10
+
+problem GEOCHEAT https://www.codechef.com/api/contests/OCT16/problems/GEOCHEAT
+sample input 1 :
+5
+20 20
+40 30
+35 35
+0 10
+-170 1000000000
+
+sample output 1 :
+0
+500
+500
+2000
+999999980000029000
+
+problem FENWITER https://www.codechef.com/api/contests/OCT16/problems/FENWITER
+sample input 1 :
+4
+001 100 011 4
+1000 1101 100 3
+1010 001 101 4
+010 101 000 4
+
+sample output 1 :
+6
+12
+8
+10
+
+problem SEAARI https://www.codechef.com/api/contests/OCT16/problems/SEAARI
+sample input 1 :
+3 1 1
+1 2 3
+
+sample output 1 :
+0 1
+2 1
+1 2 3
+-1
+
+problem CHEFTWOS https://www.codechef.com/api/contests/OCT16/problems/CHEFTWOS
+sample input 1 :
+2
+1111
+2211
+222
+111
+
+sample output 1 :
+8
+0
+
+problem POWSUMS https://www.codechef.com/api/contests/OCT16/problems/POWSUMS
+sample input 1 :
+1
+4 3
+4 6 10 18
+5 6 30
+
+sample output 1 :
+34 66 73741819
+
+problem CHEFKEY https://www.codechef.com/api/contests/OCT16/problems/CHEFKEY
+sample input 1 :
+2
+4 6 12
+3 3 10
+
+sample output 1 :
+3
+0
+
+contest GMCO2016
+problem GMCO16AP https://www.codechef.com/api/contests/GMCO2016/problems/GMCO16AP
+sample input 1 :
+3
+	3
+	10000 0 0
+	0 10000 0
+	0 0 10000
+	3
+	5000 0 0
+	0 2000 0
+	0 0 4000
+	5
+	0 1250 0
+	3000 0 3000
+	1000 1000 1000
+	2000 1000 2000
+	1000 3000 2000
+
+sample output 1 :
+Case #1: 1
+	Case #2: 2
+	Case #3: 5
+
+problem GMCO16CV https://www.codechef.com/api/contests/GMCO2016/problems/GMCO16CV
+sample input 1 :
+2
+	5
+	3
+	1 1 1
+	2 1 0 2 0
+	1 5 0
+	1
+	2
+	1 1 0
+	1 1 1
+
+sample output 1 :
+Case #1: YES 1 0 0 0 0
+	Case #2: IMPOSSIBLE TO SATISFY  ALL
+
+problem GMCO16RI https://www.codechef.com/api/contests/GMCO2016/problems/GMCO16RI
+sample input 1 :
+3
+	Mofasan
+	AleSense
+	Stancotley
+
+sample output 1 :
+Case #1: Mofasan is ruled by a king.
+	Case #2: AleSense is ruled by a queen.
+	Case #3: Stancotley is ruled by nobody.
+
+problem GMCO16OG https://www.codechef.com/api/contests/GMCO2016/problems/GMCO16OG
+sample input 1 :
+3
+	4 1
+	1/2 3
+	1/5 2
+	2/5 1
+	2/2 2
+	3 2
+	1/2 2
+	1/3 2
+	3/4 2
+	3 3
+	99/100 1
+	1/2 2
+	1/50 3
+
+sample output 1 :
+Case #1: 0.00000000
+	Case #2: 0.08333333
+	Case #3: 0.01500000
+
+contest IPC15CMR
+problem LEMPLOY https://www.codechef.com/api/contests/IPC15CMR/problems/LEMPLOY
+sample input 1 :
+1
+5 5
+8 7 4 3 2 
+19 17 1 10 1 
+8 2 9 11 8 
+6 14 6 18 11 
+9 3 20 15 5 
+0 0 0 0 1 
+2 0 1 1 2 
+0 0 0 2 0 
+1 0 1 0 2 
+1 0 0 0 0
+
+sample output 1 :
+66
+
+problem MINWALK https://www.codechef.com/api/contests/IPC15CMR/problems/MINWALK
+sample input 1 :
+2
+4 3
+1 3 4
+1 2 1
+2 3 2
+2 4 3
+4 3
+1 1 4
+1 2 1
+2 3 2
+2 4 3
+
+sample output 1 :
+6
+4
+
+problem ALTREE https://www.codechef.com/api/contests/IPC15CMR/problems/ALTREE
+sample input 1 :
+3 4
+1 2 2 B
+1 2 3 W
+2 3 4 W
+2 3 5 B
+
+sample output 1 :
+6
+
+problem LBRACKET https://www.codechef.com/api/contests/IPC15CMR/problems/LBRACKET
+sample input 1 :
+7 5
+(()()))
+2 1
+2 2
+1 4 6
+2 2
+2 5
+
+sample output 1 :
+6
+4
+2
+0
+
+problem SURESH https://www.codechef.com/api/contests/IPC15CMR/problems/SURESH
+sample input 1 :
+2
+2
+5 0.438588
+5 0.515693
+1
+2 0.5
+
+sample output 1 :
+31.8022945983
+4.0000000000
+
+problem SVENGY https://www.codechef.com/api/contests/IPC15CMR/problems/SVENGY
+sample input 1 :
+5
+1 -1 2 2 2
+
+sample output 1 :
+14
+
+sample input 2 :
+4
+2 2 3 4
+
+sample output 2 :
+42
+
+problem LINES https://www.codechef.com/api/contests/IPC15CMR/problems/LINES
+sample input 1 :
+6 50
+0 0
+1 2
+2 4
+3 0
+0 3
+1 1
+
+sample output 1 :
+YES
+
+problem LPALIN https://www.codechef.com/api/contests/IPC15CMR/problems/LPALIN
+sample input 1 :
+3
+3
+aaa
+4
+abca
+2
+bc
+
+sample output 1 :
+0
+1
+1
+
+contest IPC15FLC
+problem LEMPLOY https://www.codechef.com/api/contests/IPC15FLC/problems/LEMPLOY
+sample input 1 :
+1
+5 5
+8 7 4 3 2 
+19 17 1 10 1 
+8 2 9 11 8 
+6 14 6 18 11 
+9 3 20 15 5 
+0 0 0 0 1 
+2 0 1 1 2 
+0 0 0 2 0 
+1 0 1 0 2 
+1 0 0 0 0
+
+sample output 1 :
+66
+
+problem MINWALK https://www.codechef.com/api/contests/IPC15FLC/problems/MINWALK
+sample input 1 :
+2
+4 3
+1 3 4
+1 2 1
+2 3 2
+2 4 3
+4 3
+1 1 4
+1 2 1
+2 3 2
+2 4 3
+
+sample output 1 :
+6
+4
+
+problem ALTREE https://www.codechef.com/api/contests/IPC15FLC/problems/ALTREE
+sample input 1 :
+3 4
+1 2 2 B
+1 2 3 W
+2 3 4 W
+2 3 5 B
+
+sample output 1 :
+6
+
+problem LBRACKET https://www.codechef.com/api/contests/IPC15FLC/problems/LBRACKET
+sample input 1 :
+7 5
+(()()))
+2 1
+2 2
+1 4 6
+2 2
+2 5
+
+sample output 1 :
+6
+4
+2
+0
+
+problem SURESH https://www.codechef.com/api/contests/IPC15FLC/problems/SURESH
+sample input 1 :
+2
+2
+5 0.438588
+5 0.515693
+1
+2 0.5
+
+sample output 1 :
+31.8022945983
+4.0000000000
+
+problem SVENGY https://www.codechef.com/api/contests/IPC15FLC/problems/SVENGY
+sample input 1 :
+5
+1 -1 2 2 2
+
+sample output 1 :
+14
+
+sample input 2 :
+4
+2 2 3 4
+
+sample output 2 :
+42
+
+problem LINES https://www.codechef.com/api/contests/IPC15FLC/problems/LINES
+sample input 1 :
+6 50
+0 0
+1 2
+2 4
+3 0
+0 3
+1 1
+
+sample output 1 :
+YES
+
+problem LPALIN https://www.codechef.com/api/contests/IPC15FLC/problems/LPALIN
+sample input 1 :
+3
+3
+aaa
+4
+abca
+2
+bc
+
+sample output 1 :
+0
+1
+1
+
+contest IPC15BMR
+problem CANGAME https://www.codechef.com/api/contests/IPC15BMR/problems/CANGAME
+sample input 1 :
+2
+1 1
+1 2
+
+sample output 1 :
+None
+
+contest IPC15FLB
+contest CDSP2016
+problem ABES05 https://www.codechef.com/api/contests/CDSP2016/problems/ABES05
+sample input 1 :
+2
+5 6
+1 3 
+1 2
+3 4
+2 4
+2 5
+4 5
+5 7
+1 3
+1 2 
+3 2
+3 4
+2 4
+4 5
+2 5
+
+sample output 1 :
+2 
+3
+
+problem ABES01 https://www.codechef.com/api/contests/CDSP2016/problems/ABES01
+sample input 1 :
+2
+124 234 
+2435 56789
+
+sample output 1 :
+0
+4
+
+problem ABES04 https://www.codechef.com/api/contests/CDSP2016/problems/ABES04
+sample input 1 :
+2
+5 4
+1 2 
+1 3
+3 4
+4 5
+8 9
+1 2 
+2 3
+3 1
+2 4
+3 4
+3 5
+6 8
+7 6
+7 8
+
+sample output 1 :
+NO
+YES
+
+problem ABES02 https://www.codechef.com/api/contests/CDSP2016/problems/ABES02
+sample input 1 :
+2
+8
+3 6 9 10 12 5 15 18
+6
+1 6 8 9 11 12
+
+sample output 1 :
+3 18 5 15 6 12 9 10
+1 12 6 11 8 9
+
+problem ABES03 https://www.codechef.com/api/contests/CDSP2016/problems/ABES03
+sample input 1 :
+1
+3
+1 0 0
+5 0 1
+0 1 0
+
+sample output 1 :
+5
+
+contest IPC15AMR
+problem LUFFY https://www.codechef.com/api/contests/IPC15AMR/problems/LUFFY
+sample input 1 :
+8 0 0
+-4 0 2
+-4 4 2
+0 4 2
+4 4 2
+4 0 2
+4 -4 2
+0 -4 2
+-4 -4 2
+
+sample output 1 :
+NO
+
+problem DIAGON https://www.codechef.com/api/contests/IPC15AMR/problems/DIAGON
+sample input 1 :
+10 3 100
+9 14 16 21 34 45 56 64 75 98
+9 6
+5 2
+5 4
+
+sample output 1 :
+200
+
+problem TREE02 https://www.codechef.com/api/contests/IPC15AMR/problems/TREE02
+sample input 1 :
+3 2
+5 10 2
+1 2 
+2 3
+
+sample output 1 :
+3 3
+5 10 2
+1 2
+1 3
+
+problem ENTRY https://www.codechef.com/api/contests/IPC15AMR/problems/ENTRY
+sample input 1 :
+5 6
+2 2 2
+1 4 5
+2 1 5
+1 1 2
+2 3 5
+1 2 4
+
+sample output 1 :
+0
+2
+2
+
+problem ASYA2 https://www.codechef.com/api/contests/IPC15AMR/problems/ASYA2
+sample input 1 :
+2 3
+ABCDEFGHIJKLMNOP
+ABCDEFGHIJKL
+QRSTUVWXYZ
+ZYXWVUTSRQ
+JKLMNOPQRSTUVWXYZ
+
+sample output 1 :
+4
+
+problem ASYAPATH https://www.codechef.com/api/contests/IPC15AMR/problems/ASYAPATH
+sample input 1 :
+1
+3 3 
+3
+1 1 1
+1 2 3
+
+sample output 1 :
+0 3 2 1
+
+problem BOBPRIME https://www.codechef.com/api/contests/IPC15AMR/problems/BOBPRIME
+sample input 1 :
+3 
+1
+2
+3
+
+sample output 1 :
+4
+8
+9
+
+problem HIKARU https://www.codechef.com/api/contests/IPC15AMR/problems/HIKARU
+sample input 1 :
+1
+2
+2 2
+
+sample output 1 :
+1
+3
+2 3 2
+
+contest IPC15FLA
+problem LUFFY https://www.codechef.com/api/contests/IPC15FLA/problems/LUFFY
+sample input 1 :
+8 0 0
+-4 0 2
+-4 4 2
+0 4 2
+4 4 2
+4 0 2
+4 -4 2
+0 -4 2
+-4 -4 2
+
+sample output 1 :
+NO
+
+problem DIAGON https://www.codechef.com/api/contests/IPC15FLA/problems/DIAGON
+sample input 1 :
+10 3 100
+9 14 16 21 34 45 56 64 75 98
+9 6
+5 2
+5 4
+
+sample output 1 :
+200
+
+problem TREE02 https://www.codechef.com/api/contests/IPC15FLA/problems/TREE02
+sample input 1 :
+3 2
+5 10 2
+1 2 
+2 3
+
+sample output 1 :
+3 3
+5 10 2
+1 2
+1 3
+
+problem ENTRY https://www.codechef.com/api/contests/IPC15FLA/problems/ENTRY
+sample input 1 :
+5 6
+2 2 2
+1 4 5
+2 1 5
+1 1 2
+2 3 5
+1 2 4
+
+sample output 1 :
+0
+2
+2
+
+problem ASYA2 https://www.codechef.com/api/contests/IPC15FLA/problems/ASYA2
+sample input 1 :
+2 3
+ABCDEFGHIJKLMNOP
+ABCDEFGHIJKL
+QRSTUVWXYZ
+ZYXWVUTSRQ
+JKLMNOPQRSTUVWXYZ
+
+sample output 1 :
+4
+
+problem ASYAPATH https://www.codechef.com/api/contests/IPC15FLA/problems/ASYAPATH
+sample input 1 :
+1
+3 3 
+3
+1 1 1
+1 2 3
+
+sample output 1 :
+0 3 2 1
+
+problem BOBPRIME https://www.codechef.com/api/contests/IPC15FLA/problems/BOBPRIME
+sample input 1 :
+3 
+1
+2
+3
+
+sample output 1 :
+4
+8
+9
+
+problem HIKARU https://www.codechef.com/api/contests/IPC15FLA/problems/HIKARU
+sample input 1 :
+1
+2
+2 2
+
+sample output 1 :
+1
+3
+2 3 2
+
+contest KJCS16
+contest LTIME40
+problem LTM40EF https://www.codechef.com/api/contests/LTIME40/problems/LTM40EF
+sample input 1 :
+
+
+sample output 1 :
+
+
+problem LTM40AB https://www.codechef.com/api/contests/LTIME40/problems/LTM40AB
+sample input 1 :
+
+
+sample output 1 :
+
+
+problem LTM40CD https://www.codechef.com/api/contests/LTIME40/problems/LTM40CD
+sample input 1 :
+
+
+sample output 1 :
+
+
+problem LTM40GH https://www.codechef.com/api/contests/LTIME40/problems/LTM40GH
+sample input 1 :
+
+
+sample output 1 :
+
+
+contest COWS2016
+contest COOK74
+problem TAASEQ https://www.codechef.com/api/contests/COOK74/problems/TAASEQ
+sample input 1 :
+3
+2
+3 4
+4
+1 5 3 4
+6
+2 4 6 7 8 10
+
+sample output 1 :
+3
+-1
+7
+
+problem TAPOINT https://www.codechef.com/api/contests/COOK74/problems/TAPOINT
+sample input 1 :
+2
+10 16
+12 1
+
+sample output 1 :
+9 4
+-1
+
+problem TACNTSTR https://www.codechef.com/api/contests/COOK74/problems/TACNTSTR
+sample input 1 :
+ZAZ
+
+sample output 1 :
+25
+
+problem TALAZY https://www.codechef.com/api/contests/COOK74/problems/TALAZY
+sample input 1 :
+2
+9 1 2
+123456 123456 123456
+
+sample output 1 :
+45
+131351258112
+
+problem TACTQUER https://www.codechef.com/api/contests/COOK74/problems/TACTQUER
+sample input 1 :
+4 3
+1 2 2
+2 3 3
+2 4 4
+2
+1 4
+4 3
+
+sample output 1 :
+6
+7
+
+contest GSTS1601
+contest SIC2016
+contest SEPT16
+problem CHFNFRN https://www.codechef.com/api/contests/SEPT16/problems/CHFNFRN
+sample input 1 :
+<tt>
+3
+3 2
+1 2
+2 3
+4 3
+1 2
+2 3
+2 4
+6 7
+1 2
+1 3
+2 3
+2 4
+4 5
+4 6
+5 6
+</tt>
+
+sample output 1 :
+<b>Output:</b>
+
+problem RESCALC https://www.codechef.com/api/contests/SEPT16/problems/RESCALC
+sample input 1 :
+<tt>
+3
+2
+6 1 2 3 4 5 6
+9 3 3 3 4 4 4 5 5 5
+2
+5 2 3 4 5 6
+7 1 1 2 2 3 3 4
+3
+4 1 1 2 3
+4 1 2 2 3
+4 1 2 3 3
+</tt>
+
+sample output 1 :
+<b>Output:</b>
+
+problem LONGSEQ https://www.codechef.com/api/contests/SEPT16/problems/LONGSEQ
+sample input 1 :
+2
+101
+11
+
+sample output 1 :
+Yes
+No
+
+problem CIRCLEQ https://www.codechef.com/api/contests/SEPT16/problems/CIRCLEQ
+sample input 1 :
+2 4
+5 5 2
+2 2 1
+2 2 5 5
+1 1 7 7
+2 3 8 4
+1 3 2 4
+
+sample output 1 :
+3.926990816987241
+15.707963267948966
+2.456739397217513
+0.000000000000000
+
+problem DIVMAC https://www.codechef.com/api/contests/SEPT16/problems/DIVMAC
+sample input 1 :
+<tt>
+2
+6 7
+2 5 8 10 3 44
+1 2 6
+0 2 3
+1 2 6
+0 4 6
+1 1 6
+0 1 6
+1 4 6
+2 2
+1 3
+0 2 2
+1 1 2
+</tt>
+
+sample output 1 :
+<b>Output:</b>
+
+problem JTREE https://www.codechef.com/api/contests/SEPT16/problems/JTREE
+sample input 1 :
+<tt>
+7 7
+3 1
+2 1
+7 6
+6 3
+5 3
+4 3
+7 2 3
+7 1 1
+2 3 5
+3 6 2
+4 2 4
+5 3 10
+6 1 20
+3
+5
+6
+7
+</tt>
+
+sample output 1 :
+<b>Output:</b>
+
+problem LEXOPAL https://www.codechef.com/api/contests/SEPT16/problems/LEXOPAL
+sample input 1 :
+3
+a.ba
+cb.bc
+a.b
+
+sample output 1 :
+abba
+cbabc
+-1
+
+problem CHMTDV https://www.codechef.com/api/contests/SEPT16/problems/CHMTDV
+sample input 1 :
+4 3
+1 1 2 2
+2 1 2 2
+3 1 4 2
+4 4 2 2
+
+sample output 1 :
+2 3
+1 3
+
+problem CHEFKC https://www.codechef.com/api/contests/SEPT16/problems/CHEFKC
+sample input 1 :
+4 8 2
+1 4
+1 2 4
+1 4 1
+2 3 4
+2 4 7
+3 2 10
+3 4 1
+4 1 7
+4 3 2
+
+sample output 1 :
+9
+
+sample input 2 :
+5 19 6
+1 5
+1 2 1
+1 3 4
+1 4 9
+1 5 8
+2 1 7
+2 3 2
+2 4 5
+2 5 1
+3 2 4
+3 4 1
+3 5 5
+4 1 4
+4 2 5
+4 3 1
+4 5 7
+5 1 8
+5 2 7
+5 3 2
+5 4 6
+
+sample output 2 :
+29
+
+problem CHEFSPAG https://www.codechef.com/api/contests/SEPT16/problems/CHEFSPAG
+sample input 1 :
+
+
+sample output 1 :
+
+
+contest CDTN2016
+contest LOCAUG16
+problem BSQUARE https://www.codechef.com/api/contests/LOCAUG16/problems/BSQUARE
+sample input 1 :
+2
+1
+2
+
+sample output 1 :
+2
+8
+
+problem CHEFBGNM https://www.codechef.com/api/contests/LOCAUG16/problems/CHEFBGNM
+sample input 1 :
+3
+4
+1 1
+1 2
+1 3
+1 4
+3
+1 1
+1 2
+2 3
+2
+6 3
+7 1
+
+sample output 1 :
+4
+6
+40
+
+problem CHEFCHSS https://www.codechef.com/api/contests/LOCAUG16/problems/CHEFCHSS
+sample input 1 :
+2
+30 50 70 10 40 30
+0.25 0.10 0.30 0.05
+50 36 80 38 65 32
+0.55 0.12 0.33 0.54
+
+sample output 1 :
+FIRST
+SECOND
+
+contest INSQ2016
+contest LTIME39
+problem AVGSHORT https://www.codechef.com/api/contests/LTIME39/problems/AVGSHORT
+sample input 1 :
+
+
+sample output 1 :
+
+
+problem LFSTACK https://www.codechef.com/api/contests/LTIME39/problems/LFSTACK
+sample input 1 :
+
+
+sample output 1 :
+
+
+problem TREEDIAM https://www.codechef.com/api/contests/LTIME39/problems/TREEDIAM
+sample input 1 :
+
+
+sample output 1 :
+
+
+problem ALPHABET https://www.codechef.com/api/contests/LTIME39/problems/ALPHABET
+sample input 1 :
+
+
+sample output 1 :
+
+
+contest COOK73
+problem MADHAT https://www.codechef.com/api/contests/COOK73/problems/MADHAT
+sample input 1 :
+<tt>
+2
+4
+0 2 1 0
+4
+0 2 1 1
+</tt>
+
+sample output 1 :
+<b>Output:</b>
+
+problem MCKTUR https://www.codechef.com/api/contests/COOK73/problems/MCKTUR
+sample input 1 :
+<tt>
+5 2
+4 6 2 4 8
+3 3 3 3 3
+2 4
+1 5</tt>
+
+sample output 1 :
+<b>Output:</b>
+
+problem QUEHEA https://www.codechef.com/api/contests/COOK73/problems/QUEHEA
+sample input 1 :
+<tt>
+9 3
+2 8 4 3 9 9 8 3 3
+1 6
+7 9
+3 6
+</tt>
+
+sample output 1 :
+<b>Output:</b>
+
+problem TWEED https://www.codechef.com/api/contests/COOK73/problems/TWEED
+sample input 1 :
+<tt>
+1
+2 Dee
+2 2
+</tt>
+
+sample output 1 :
+<b>Output:</b>
+
+contest CCWR2016
+contest AUG16
+problem TRICONT https://www.codechef.com/api/contests/AUG16/problems/TRICONT
+sample input 1 :
+
+
+sample output 1 :
+
+
+problem CHEFTRE https://www.codechef.com/api/contests/AUG16/problems/CHEFTRE
+sample input 1 :
+
+
+sample output 1 :
+
+
+problem MAXGRID https://www.codechef.com/api/contests/AUG16/problems/MAXGRID
+sample input 1 :
+
+
+sample output 1 :
+
+
+problem GOODPROB https://www.codechef.com/api/contests/AUG16/problems/GOODPROB
+sample input 1 :
+
+
+sample output 1 :
+
+
+problem CHEFCRUN https://www.codechef.com/api/contests/AUG16/problems/CHEFCRUN
+sample input 1 :
+
+
+sample output 1 :
+
+
+problem CHAHG https://www.codechef.com/api/contests/AUG16/problems/CHAHG
+sample input 1 :
+
+
+sample output 1 :
+
+
+problem EBOLA https://www.codechef.com/api/contests/AUG16/problems/EBOLA
+sample input 1 :
+
+
+sample output 1 :
+
+
+problem SHAIKHGN https://www.codechef.com/api/contests/AUG16/problems/SHAIKHGN
+sample input 1 :
+
+
+sample output 1 :
+
+
+problem CHEFRRUN https://www.codechef.com/api/contests/AUG16/problems/CHEFRRUN
+sample input 1 :
+
+
+sample output 1 :
+
+
+problem CHCHCL https://www.codechef.com/api/contests/AUG16/problems/CHCHCL
+sample input 1 :
+
+
+sample output 1 :
+
+
+contest CDJA2016
+problem MRXCHOC https://www.codechef.com/api/contests/CDJA2016/problems/MRXCHOC
+sample input 1 :
+4
+
+sample output 1 :
+None
+
+contest PROC2016
+problem PRCS16A https://www.codechef.com/api/contests/PROC2016/problems/PRCS16A
+sample input 1 :
+1
+2
+3
+7
+
+sample output 1 :
+NO
+
+problem PRCS16E https://www.codechef.com/api/contests/PROC2016/problems/PRCS16E
+sample input 1 :
+01010
+5
+1 1 5
+2 2 0
+1 1 5
+2 4 0
+1 1 5
+
+sample output 1 :
+1
+1
+5
+
+problem PRCS16B https://www.codechef.com/api/contests/PROC2016/problems/PRCS16B
+sample input 1 :
+3
+1 2 3
+
+sample output 1 :
+5
+
+sample input 2 :
+6
+1 1 2 2 3 3
+
+sample output 2 :
+10
+
+problem PRCS16D https://www.codechef.com/api/contests/PROC2016/problems/PRCS16D
+sample input 1 :
+5 1
+1 1 1 1 1
+1 1 1 1 1
+1 5 1
+
+sample output 1 :
+25
+
+problem PRCS16F https://www.codechef.com/api/contests/PROC2016/problems/PRCS16F
+sample input 1 :
+2
+1 2 3
+
+sample output 1 :
+3
+
+sample input 2 :
+4
+1 2 61
+1 3 -14
+3 4 -47
+
+sample output 2 :
+-75
+
+problem PRCS16C https://www.codechef.com/api/contests/PROC2016/problems/PRCS16C
+sample input 1 :
+5 5 1 1
+4
+100
+1 2
+2 3
+3 4
+3 5
+4 5
+1 5
+
+sample output 1 :
+100
+
+contest GSTS2016
+problem GSRM01B https://www.codechef.com/api/contests/GSTS2016/problems/GSRM01B
+sample input 1 :
+1
+5
+10 20 30 40 50
+5
+22 30 32 45 50
+
+sample output 1 :
+2
+
+problem GSRM01A https://www.codechef.com/api/contests/GSTS2016/problems/GSRM01A
+sample input 1 :
+2
+5 10
+-1 2 3 -1 3
+3 5
+4 4 4
+
+sample output 1 :
+NO
+YES
+
+contest CDGO2016
+problem CDGO1601 https://www.codechef.com/api/contests/CDGO2016/problems/CDGO1601
+sample input 1 :
+3
+2
+5 3
+4
+4 8
+1
+1 2
+
+sample output 1 :
+Yes 2
+No
+Yes 1
+
+problem CDGO1603 https://www.codechef.com/api/contests/CDGO2016/problems/CDGO1603
+sample input 1 :
+1
+3 3
+4 9 1
+1 6
+2 4
+3 3
+
+sample output 1 :
+51 23 9
+
+problem ORMNDST https://www.codechef.com/api/contests/CDGO2016/problems/ORMNDST
+sample input 1 :
+1
+3 4
+2 1 820
+1 3 20
+3 2 525
+2 3 507
+2
+
+sample output 1 :
+511 0 507
+
+problem SKMGMT https://www.codechef.com/api/contests/CDGO2016/problems/SKMGMT
+sample input 1 :
+1
+3 3
+2 4
+5 2
+3 3
+1 5 10
+
+sample output 1 :
+0 7 9
+
+contest LOCJUL16
+problem CHEFSPCL https://www.codechef.com/api/contests/LOCJUL16/problems/CHEFSPCL
+sample input 1 :
+3
+3 20 3
+4 15 7
+145 13974 5
+
+sample output 1 :
+7
+9
+6096
+
+problem FORALN https://www.codechef.com/api/contests/LOCJUL16/problems/FORALN
+sample input 1 :
+5
+
+sample output 1 :
+None
+
+sample input 2 :
+6
+
+sample output 2 :
+None
+
+problem NUMHOLMS https://www.codechef.com/api/contests/LOCJUL16/problems/NUMHOLMS
+sample input 1 :
+2
+12
+3 1 2 3 2 0 2 2 2 0 2 3
+11
+3 9 9 6 4 3 6 4 9 6 0
+
+sample output 1 :
+33322222200
+999666330
+
+problem LEVENSUB https://www.codechef.com/api/contests/LOCJUL16/problems/LEVENSUB
+sample input 1 :
+3
+3
+2 3 4
+2
+2 2
+2
+1 2
+
+sample output 1 :
+1
+2
+1
+
+problem PROGCOMP https://www.codechef.com/api/contests/LOCJUL16/problems/PROGCOMP
+sample input 1 :
+3
+aba
+aaa
+abc
+
+sample output 1 :
+4
+6
+6
+
+contest LTIME38
+problem LUMPYBUS https://www.codechef.com/api/contests/LTIME38/problems/LUMPYBUS
+sample input 1 :
+
+
+sample output 1 :
+
+
+problem STUDVOTE https://www.codechef.com/api/contests/LTIME38/problems/STUDVOTE
+sample input 1 :
+
+
+sample output 1 :
+
+
+problem CLOSEFAR https://www.codechef.com/api/contests/LTIME38/problems/CLOSEFAR
+sample input 1 :
+
+
+sample output 1 :
+
+
+problem CHEFCLOS https://www.codechef.com/api/contests/LTIME38/problems/CHEFCLOS
+sample input 1 :
+
+
+sample output 1 :
+
+
+contest PROC1601
+problem PRCN16H https://www.codechef.com/api/contests/PROC1601/problems/PRCN16H
+sample input 1 :
+3
+4
+5
+
+sample output 1 :
+YES
+
+problem PRCN16A https://www.codechef.com/api/contests/PROC1601/problems/PRCN16A
+sample input 1 :
+3
+1
+2
+4
+
+sample output 1 :
+1
+3
+7
+
+problem PRCN16G https://www.codechef.com/api/contests/PROC1601/problems/PRCN16G
+sample input 1 :
+5 1
+3 2
+
+sample output 1 :
+.....
+.....
+.x##.
+.....
+.....
+
+problem PRCN16D https://www.codechef.com/api/contests/PROC1601/problems/PRCN16D
+sample input 1 :
+3
+1 1
+R 1
+2 1
+B 1
+2 1
+R 1
+
+sample output 1 :
+Bhrigudov
+Bhrigudov
+Oj
+
+problem PRCN16B https://www.codechef.com/api/contests/PROC1601/problems/PRCN16B
+sample input 1 :
+3
+1
+2
+3
+
+sample output 1 :
+1
+1
+4
+
+problem PRCN16F https://www.codechef.com/api/contests/PROC1601/problems/PRCN16F
+sample input 1 :
+1
+15
+
+sample output 1 :
+6 9
+
+problem PRCN16E https://www.codechef.com/api/contests/PROC1601/problems/PRCN16E
+sample input 1 :
+3
+3
+1 3 5
+7
+1 2 3 5 6 7 9
+6
+1 2 3 4 5 7
+
+sample output 1 :
+2
+4
+3
+
+problem PRCN16C https://www.codechef.com/api/contests/PROC1601/problems/PRCN16C
+sample input 1 :
+1
+6
+3 1 6 2 8 27
+
+sample output 1 :
+7
+
+contest CYPH2016
+problem HITBIT https://www.codechef.com/api/contests/CYPH2016/problems/HITBIT
+sample input 1 :
+2
+1 5 2
+1 5 4
+
+sample output 1 :
+5
+0
+
+problem ANOSTR https://www.codechef.com/api/contests/CYPH2016/problems/ANOSTR
+sample input 1 :
+1
+4
+200 140 4 gaurav
+245 142 6 abhinesh
+245 142 8 abhinav
+245 140 15 akhil
+
+sample output 1 :
+None
+
+problem LOSTPW https://www.codechef.com/api/contests/CYPH2016/problems/LOSTPW
+sample input 1 :
+absdbads
+asdjenfef
+tyerbet
+abc564
+
+sample output 1 :
+Invalid
+Invalid
+Invalid
+Valid
+
+contest COOK72
+problem CHEFLKJ https://www.codechef.com/api/contests/COOK72/problems/CHEFLKJ
+sample input 1 :
+5 8
+1 2 3 2 1
+2 1 5
+2 2 4
+1 3 2
+2 1 5
+1 2 3
+2 1 5
+1 3 1
+2 1 5
+
+sample output 1 :
+No
+Yes
+Yes
+No
+Yes
+
+problem CHEFIHG https://www.codechef.com/api/contests/COOK72/problems/CHEFIHG
+sample input 1 :
+
+
+sample output 1 :
+
+
+sample input 2 :
+
+
+sample output 2 :
+
+
+problem CHEFCBA https://www.codechef.com/api/contests/COOK72/problems/CHEFCBA
+sample input 1 :
+1 2 4 2
+
+sample output 1 :
+Possible
+
+problem CHEFFED https://www.codechef.com/api/contests/COOK72/problems/CHEFFED
+sample input 1 :
+6
+
+sample output 1 :
+1
+
+sample input 2 :
+9939
+
+sample output 2 :
+4
+
+problem CHEFONM https://www.codechef.com/api/contests/COOK72/problems/CHEFONM
+sample input 1 :
+4
+2
+2 1
+3
+2 1 3
+4
+2 3 4 1
+6
+2 5 1 3 4 6
+
+sample output 1 :
+1.0000000
+5.0000000
+27.5000000
+781.0416667
+
+contest UEMK2016
+problem UEMP02 https://www.codechef.com/api/contests/UEMK2016/problems/UEMP02
+sample input 1 :
+5 15
+
+sample output 1 :
+possible
+
+sample input 2 :
+4 8
+
+sample output 2 :
+impossible
+
+problem UEMP01 https://www.codechef.com/api/contests/UEMK2016/problems/UEMP01
+sample input 1 :
+2
+4 5
+4 8
+3 4
+1 13
+-1 -5
+3 3
+1 5
+-3 4
+-4 -2
+
+sample output 1 :
+Available
+Not Available
+
+contest JULY16
+problem CLUSSCHE https://www.codechef.com/api/contests/JULY16/problems/CLUSSCHE
+sample input 1 :
+
+
+sample output 1 :
+2 2 2 2
+0 1
+1 0
+1 3
+2 4
+		1
+		2
+1 2
+2 3
+		2
+		1
+
+problem CHEFTET https://www.codechef.com/api/contests/JULY16/problems/CHEFTET
+sample input 1 :
+3
+1
+10
+20
+4
+15 7 10 10
+6 14 21 1
+3
+1 100 3
+1 2 3
+
+sample output 1 :
+30
+21
+-1
+
+problem WORKCHEF https://www.codechef.com/api/contests/JULY16/problems/WORKCHEF
+sample input 1 :
+3
+48 48 1
+48 48 2
+5 15 1
+
+sample output 1 :
+1
+1
+11
+
+problem ALLPOLY https://www.codechef.com/api/contests/JULY16/problems/ALLPOLY
+sample input 1 :
+
+
+sample output 1 :
+
+
+problem CHEFPOL https://www.codechef.com/api/contests/JULY16/problems/CHEFPOL
+sample input 1 :
+6 2
+4 2 3 4 5
+4 1 3 5 6
+4 1 2 4 6
+4 1 3 5 6
+4 1 2 4 6
+4 2 3 4 5
+
+sample output 1 :
+10
+
+sample input 2 :
+4 4
+3 2 3 4
+3 1 3 4
+3 1 2 4
+3 1 2 3
+
+sample output 2 :
+35
+
+problem CHSGMNTS https://www.codechef.com/api/contests/JULY16/problems/CHSGMNTS
+sample input 1 :
+2
+3
+1 2 3
+4
+1 2 1 2
+
+sample output 1 :
+5
+4
+
+problem CHEFELEC https://www.codechef.com/api/contests/JULY16/problems/CHEFELEC
+sample input 1 :
+2
+2
+01
+1 2
+3
+100
+1 5 6
+
+sample output 1 :
+1
+5
+
+problem EGRANDR https://www.codechef.com/api/contests/JULY16/problems/EGRANDR
+sample input 1 :
+2
+5
+3 5 4 4 3
+5
+3 4 4 4 5
+
+sample output 1 :
+No
+Yes
+
+problem POLYEVAL https://www.codechef.com/api/contests/JULY16/problems/POLYEVAL
+sample input 1 :
+
+
+sample output 1 :
+
+
+problem CHEFARC https://www.codechef.com/api/contests/JULY16/problems/CHEFARC
+sample input 1 :
+2
+4 4 1 1
+0 1 1 0
+0 1 1 0
+0 1 1 0
+0 0 0 0
+4 4 1 1
+0 1 1 0
+0 1 1 0
+0 1 1 0
+1 0 0 1
+
+sample output 1 :
+5
+-1
+
+contest SNFL16MR
+problem SUMPP https://www.codechef.com/api/contests/SNFL16MR/problems/SUMPP
+sample input 1 :
+
+
+sample output 1 :
+
+
+problem SBSTCNT https://www.codechef.com/api/contests/SNFL16MR/problems/SBSTCNT
+sample input 1 :
+5 2
+4 5 4 6 2
+0 3 1 1
+2 2 2 3
+
+sample output 1 :
+480
+1
+
+problem BIGTREE https://www.codechef.com/api/contests/SNFL16MR/problems/BIGTREE
+sample input 1 :
+
+
+sample output 1 :
+
+
+problem TREECAKE https://www.codechef.com/api/contests/SNFL16MR/problems/TREECAKE
+sample input 1 :
+
+
+sample output 1 :
+
+
+problem CATCHSM https://www.codechef.com/api/contests/SNFL16MR/problems/CATCHSM
+sample input 1 :
+
+
+sample output 1 :
+
+
+problem SEGTREE2 https://www.codechef.com/api/contests/SNFL16MR/problems/SEGTREE2
+sample input 1 :
+
+
+sample output 1 :
+
+
+problem EQUALIZE https://www.codechef.com/api/contests/SNFL16MR/problems/EQUALIZE
+sample input 1 :
+
+
+sample output 1 :
+
+
+problem JRNTREE https://www.codechef.com/api/contests/SNFL16MR/problems/JRNTREE
+sample input 1 :
+
+
+sample output 1 :
+
+
+problem GAMCOUNT https://www.codechef.com/api/contests/SNFL16MR/problems/GAMCOUNT
+sample input 1 :
+
+
+sample output 1 :
+
+
+problem BEAUTY https://www.codechef.com/api/contests/SNFL16MR/problems/BEAUTY
+sample input 1 :
+
+
+sample output 1 :
+
+
+problem RAINFALL https://www.codechef.com/api/contests/SNFL16MR/problems/RAINFALL
+sample input 1 :
+1
+1 2 1
+2 3
+1
+
+sample output 1 :
+3
+
+problem XORPATH https://www.codechef.com/api/contests/SNFL16MR/problems/XORPATH
+sample input 1 :
+
+
+sample output 1 :
+
+
+contest LOCJUN16
+problem EXAMCOPY https://www.codechef.com/api/contests/LOCJUN16/problems/EXAMCOPY
+sample input 1 :
+10 5
+1 2 1 2 1 2 2 1 2 3
+1 2
+3 4
+5 6
+7 8
+9 10
+2
+
+sample output 1 :
+-1
+-1
+2 1
+-1
+2 2
+-1
+-1
+3 1
+-1
+-1
+
+problem MXSUBARR https://www.codechef.com/api/contests/LOCJUN16/problems/MXSUBARR
+sample input 1 :
+3
+2
+3 4
+3
+1 2 2
+5
+1 1 2 2 2
+
+sample output 1 :
+1
+3
+18
+
+problem CHEFLIQD https://www.codechef.com/api/contests/LOCJUN16/problems/CHEFLIQD
+sample input 1 :
+3
+5 10 1
+9
+2 11 12 10 7
+10 9 13 2 8
+5 20 2
+9 12
+12 11 8 10 9
+10 9 13 7 8
+5 9 3
+12 8 4
+2 2 4 5 8
+6 3 8 10 15
+
+sample output 1 :
+8
+17
+19
+
+problem PEOPLOVE https://www.codechef.com/api/contests/LOCJUN16/problems/PEOPLOVE
+sample input 1 :
+2
+2 1
+1 2
+3 2
+1 2
+2 3
+
+sample output 1 :
+
+
+problem SKYSCR https://www.codechef.com/api/contests/LOCJUN16/problems/SKYSCR
+sample input 1 :
+1
+2 3
+
+sample output 1 :
+1
+
+problem CHSHIFU https://www.codechef.com/api/contests/LOCJUN16/problems/CHSHIFU
+sample input 1 :
+2
+3 3
+1 2
+2 3
+1 3
+4 3
+1 2
+2 3
+3 4
+
+sample output 1 :
+1
+2
+
+problem GOODNUMB https://www.codechef.com/api/contests/LOCJUN16/problems/GOODNUMB
+sample input 1 :
+2
+1 5
+6 10
+
+sample output 1 :
+6
+30
+
+contest COOK71
+problem RIGHTTRI https://www.codechef.com/api/contests/COOK71/problems/RIGHTTRI
+sample input 1 :
+
+
+sample output 1 :
+
+
+problem STICKS https://www.codechef.com/api/contests/COOK71/problems/STICKS
+sample input 1 :
+
+
+sample output 1 :
+
+
+problem CAKECUT https://www.codechef.com/api/contests/COOK71/problems/CAKECUT
+sample input 1 :
+
+
+sample output 1 :
+
+
+sample input 2 :
+
+
+sample output 2 :
+
+
+problem CHEFLAND https://www.codechef.com/api/contests/COOK71/problems/CHEFLAND
+sample input 1 :
+
+
+sample output 1 :
+
+
+problem ANDMIN https://www.codechef.com/api/contests/COOK71/problems/ANDMIN
+sample input 1 :
+
+
+sample output 1 :
+
+
+contest LTIME37
+problem TRAVTREE https://www.codechef.com/api/contests/LTIME37/problems/TRAVTREE
+sample input 1 :
+5
+1 2
+1 3
+3 4
+3 5
+4
+4 5
+4 2
+1 3
+1 2
+
+sample output 1 :
+0
+1
+2
+2
+
+problem LCOLLIS https://www.codechef.com/api/contests/LTIME37/problems/LCOLLIS
+sample input 1 :
+2
+4 3
+111
+100
+110
+000
+2 2
+10
+01
+
+sample output 1 :
+4
+0
+
+problem OMWG https://www.codechef.com/api/contests/LTIME37/problems/OMWG
+sample input 1 :
+1
+2 2
+
+sample output 1 :
+4
+
+problem SQNUMBF https://www.codechef.com/api/contests/LTIME37/problems/SQNUMBF
+sample input 1 :
+1
+3
+21 11 6
+
+sample output 1 :
+3
+
+contest SNCKEL16
+problem RWALK https://www.codechef.com/api/contests/SNCKEL16/problems/RWALK
+sample input 1 :
+
+
+sample output 1 :
+
+
+problem ARITHM https://www.codechef.com/api/contests/SNCKEL16/problems/ARITHM
+sample input 1 :
+
+
+sample output 1 :
+
+
+problem MAZETRAV https://www.codechef.com/api/contests/SNCKEL16/problems/MAZETRAV
+sample input 1 :
+
+
+sample output 1 :
+
+
+problem COLTREE https://www.codechef.com/api/contests/SNCKEL16/problems/COLTREE
+sample input 1 :
+3
+3 2
+1 2
+2 3
+3 1
+1 2
+2 3
+4 3
+1 2
+2 3
+2 4
+
+sample output 1 :
+6
+1
+39
+
+problem VCAKE https://www.codechef.com/api/contests/SNCKEL16/problems/VCAKE
+sample input 1 :
+
+
+sample output 1 :
+
+
+problem ALLIANCE https://www.codechef.com/api/contests/SNCKEL16/problems/ALLIANCE
+sample input 1 :
+
+
+sample output 1 :
+
+
+problem SEGSUMQ https://www.codechef.com/api/contests/SNCKEL16/problems/SEGSUMQ
+sample input 1 :
+
+
+sample output 1 :
+
+
+problem CUBTOWER https://www.codechef.com/api/contests/SNCKEL16/problems/CUBTOWER
+sample input 1 :
+
+
+sample output 1 :
+
+
+contest JUNE16
+problem DEVARRAY https://www.codechef.com/api/contests/JUNE16/problems/DEVARRAY
+sample input 1 :
+1 2
+1
+1
+2
+
+sample output 1 :
+Yes
+No
+
+problem CHEARMY https://www.codechef.com/api/contests/JUNE16/problems/CHEARMY
+sample input 1 :
+2
+2
+5
+
+sample output 1 :
+2
+8
+
+problem CHCOINSG https://www.codechef.com/api/contests/JUNE16/problems/CHCOINSG
+sample input 1 :
+2
+1
+8
+
+sample output 1 :
+Chef
+Chef
+
+problem CHEFARK https://www.codechef.com/api/contests/JUNE16/problems/CHEFARK
+sample input 1 :
+3
+1 3
+100
+3 1
+1 2 1
+3 2
+1 2 1
+
+sample output 1 :
+1
+3
+4
+
+problem SADPAIRS https://www.codechef.com/api/contests/JUNE16/problems/SADPAIRS
+sample input 1 :
+
+
+sample output 1 :
+
+
+problem FRJUMP https://www.codechef.com/api/contests/JUNE16/problems/FRJUMP
+sample input 1 :
+5
+1 2 3 4 5
+3
+2 1
+1 3 10
+2 2
+
+sample output 1 :
+1 120
+5 50
+
+problem CHSQARR https://www.codechef.com/api/contests/JUNE16/problems/CHSQARR
+sample input 1 :
+3 4
+1 8 3 4
+5 2 3 1
+3 6 2 2
+4
+1 1
+2 2
+2 3
+3 2
+
+sample output 1 :
+0
+4
+15
+9
+
+problem CHNWGM https://www.codechef.com/api/contests/JUNE16/problems/CHNWGM
+sample input 1 :
+8 3 11
+6 14 12
+5 10 11
+5 7 11
+16 19 1
+-1 -1 -1
+
+sample output 1 :
+3 6 5 2 2 2 1 10 8
+1 4 8 2 6 1 3 7 2
+1 5 8 3 4 8 2 6 8
+3 9 8 2 10 7 1 1 6
+3 10 8 2 8 3 -1 -1 -1
+
+problem MGCHGEOM https://www.codechef.com/api/contests/JUNE16/problems/MGCHGEOM
+sample input 1 :
+
+
+sample output 1 :
+
+
+problem BINOP https://www.codechef.com/api/contests/JUNE16/problems/BINOP
+sample input 1 :
+2
+101
+010
+1111
+1010
+
+sample output 1 :
+Lucky Chef
+2
+Unlucky Chef
+
+contest SNPB16RP
+problem ENTEXAM https://www.codechef.com/api/contests/SNPB16RP/problems/ENTEXAM
+sample input 1 :
+
+
+sample output 1 :
+
+
+problem LISLDS https://www.codechef.com/api/contests/SNPB16RP/problems/LISLDS
+sample input 1 :
+
+
+sample output 1 :
+
+
+problem MINSHIFT https://www.codechef.com/api/contests/SNPB16RP/problems/MINSHIFT
+sample input 1 :
+
+
+sample output 1 :
+
+
+problem FAIRPAIR https://www.codechef.com/api/contests/SNPB16RP/problems/FAIRPAIR
+sample input 1 :
+
+
+sample output 1 :
+
+
+problem MMPROD https://www.codechef.com/api/contests/SNPB16RP/problems/MMPROD
+sample input 1 :
+
+
+sample output 1 :
+
+
+problem REGIONS https://www.codechef.com/api/contests/SNPB16RP/problems/REGIONS
+sample input 1 :
+
+
+sample output 1 :
+
+
+contest SNCKPB16
+problem ENTEXAM https://www.codechef.com/api/contests/SNCKPB16/problems/ENTEXAM
+sample input 1 :
+
+
+sample output 1 :
+
+
+problem LISLDS https://www.codechef.com/api/contests/SNCKPB16/problems/LISLDS
+sample input 1 :
+
+
+sample output 1 :
+
+
+problem MINSHIFT https://www.codechef.com/api/contests/SNCKPB16/problems/MINSHIFT
+sample input 1 :
+
+
+sample output 1 :
+
+
+problem FAIRPAIR https://www.codechef.com/api/contests/SNCKPB16/problems/FAIRPAIR
+sample input 1 :
+
+
+sample output 1 :
+
+
+problem MMPROD https://www.codechef.com/api/contests/SNCKPB16/problems/MMPROD
+sample input 1 :
+
+
+sample output 1 :
+
+
+problem REGIONS https://www.codechef.com/api/contests/SNCKPB16/problems/REGIONS
+sample input 1 :
+
+
+sample output 1 :
+
+
+contest SNCKPA16
+problem NDIFFPAL https://www.codechef.com/api/contests/SNCKPA16/problems/NDIFFPAL
+sample input 1 :
+
+
+sample output 1 :
+
+
+problem MAKEART https://www.codechef.com/api/contests/SNCKPA16/problems/MAKEART
+sample input 1 :
+
+
+sample output 1 :
+
+
+problem GIVCANDY https://www.codechef.com/api/contests/SNCKPA16/problems/GIVCANDY
+sample input 1 :
+
+
+sample output 1 :
+
+
+problem CHSPARR https://www.codechef.com/api/contests/SNCKPA16/problems/CHSPARR
+sample input 1 :
+2
+3 1 1 5
+1 6 9
+3 2 6 7
+1 6 9
+
+sample output 1 :
+38
+36
+
+problem SUBSEG2 https://www.codechef.com/api/contests/SNCKPA16/problems/SUBSEG2
+sample input 1 :
+
+
+sample output 1 :
+
+
+problem MAKELIS https://www.codechef.com/api/contests/SNCKPA16/problems/MAKELIS
+sample input 1 :
+
+
+sample output 1 :
+
+
+contest SNCKQL16
+problem MMSUM https://www.codechef.com/api/contests/SNCKQL16/problems/MMSUM
+sample input 1 :
+
+
+sample output 1 :
+
+
+problem KGOOD https://www.codechef.com/api/contests/SNCKQL16/problems/KGOOD
+sample input 1 :
+4
+glaciological 1
+teammate 0
+possessions 3
+defenselessness 3
+
+sample output 1 :
+0
+0
+1
+2
+
+problem FDIVGAME https://www.codechef.com/api/contests/SNCKQL16/problems/FDIVGAME
+sample input 1 :
+
+
+sample output 1 :
+
+
+problem KTTABLE https://www.codechef.com/api/contests/SNCKQL16/problems/KTTABLE
+sample input 1 :
+
+
+sample output 1 :
+
+
+contest LOCMAY16
+problem MDOSA https://www.codechef.com/api/contests/LOCMAY16/problems/MDOSA
+sample input 1 :
+2 
+16 
+27
+
+sample output 1 :
+YES
+NO
+
+problem TEACHTR https://www.codechef.com/api/contests/LOCMAY16/problems/TEACHTR
+sample input 1 :
+5
+1 2
+3 4
+2 5
+2 3
+6
+1 2
+1 3
+4 2
+3 5
+5 1
+1 4
+
+sample output 1 :
+1 taught 2
+1 taught 3
+2 taught 4
+No idea
+1 taught 5
+1 taught 4
+
+problem VSQ3 https://www.codechef.com/api/contests/LOCMAY16/problems/VSQ3
+sample input 1 :
+
+
+sample output 1 :
+
+
+problem POSTIT https://www.codechef.com/api/contests/LOCMAY16/problems/POSTIT
+sample input 1 :
+mama
+2
+4
+
+sample output 1 :
+2
+aamm
+
+problem CRACE https://www.codechef.com/api/contests/LOCMAY16/problems/CRACE
+sample input 1 :
+3
+1
+2
+3
+
+sample output 1 :
+JENNY
+JACK
+JENNY
+
+contest LTIME36
+problem ASTRING https://www.codechef.com/api/contests/LTIME36/problems/ASTRING
+sample input 1 :
+2
+abdc
+3
+bacb
+2
+
+sample output 1 :
+abc
+ab
+
+problem ACBALL https://www.codechef.com/api/contests/LTIME36/problems/ACBALL
+sample input 1 :
+1
+WBWB
+WBBB
+
+sample output 1 :
+BWBW
+
+problem ALOST https://www.codechef.com/api/contests/LTIME36/problems/ALOST
+sample input 1 :
+3
+3
+2 4
+3
+3 3
+3
+0 6
+
+sample output 1 :
+2 1 2
+1 2 2
+-1
+
+problem AHWORK https://www.codechef.com/api/contests/LTIME36/problems/AHWORK
+sample input 1 :
+1
+4
+ab a b ba
+
+sample output 1 :
+1
+
+contest COOK70
+problem MAZE https://www.codechef.com/api/contests/COOK70/problems/MAZE
+sample input 1 :
+2
+4 4 2
+1 2 1 3
+2 1 3 1
+4 4 4
+1 2 1 3
+2 1 3 1
+2 2 2 3
+2 2 3 2
+
+sample output 1 :
+2
+0
+
+problem P1Z2S https://www.codechef.com/api/contests/COOK70/problems/P1Z2S
+sample input 1 :
+2
+3 1
+
+sample output 1 :
+2
+
+sample input 2 :
+4
+1 2 3 3
+
+sample output 2 :
+5
+
+problem EZNO https://www.codechef.com/api/contests/COOK70/problems/EZNO
+sample input 1 :
+2
+2 2
+10 3
+
+sample output 1 :
+1
+150
+
+problem EURO https://www.codechef.com/api/contests/COOK70/problems/EURO
+sample input 1 :
+2
+5 1
+50000 1
+
+sample output 1 :
+3
+3
+
+problem TANDEM https://www.codechef.com/api/contests/COOK70/problems/TANDEM
+sample input 1 :
+abaaabaaabaaabbbb
+
+sample output 1 :
+5 3
+
+contest MAY16
+problem SHOP2 https://www.codechef.com/api/contests/MAY16/problems/SHOP2
+sample input 1 :
+
+
+sample output 1 :
+
+
+problem SEAGCD2 https://www.codechef.com/api/contests/MAY16/problems/SEAGCD2
+sample input 1 :
+2
+1 1
+3 3
+
+sample output 1 :
+1
+13
+
+problem FORESTGA https://www.codechef.com/api/contests/MAY16/problems/FORESTGA
+sample input 1 :
+3 74 51
+2 2
+5 7
+2 9
+
+sample output 1 :
+7
+
+problem STARROAD https://www.codechef.com/api/contests/MAY16/problems/STARROAD
+sample input 1 :
+
+
+sample output 1 :
+
+
+sample input 2 :
+
+
+sample output 2 :
+
+
+sample input 3 :
+
+
+sample output 3 :
+
+
+problem CHEFSOC2 https://www.codechef.com/api/contests/MAY16/problems/CHEFSOC2
+sample input 1 :
+3
+3 2 2
+1 2 
+3 3 3
+1 1 1
+3 1 1
+3
+
+sample output 1 :
+1 0 1
+0 2 0
+0 0 0
+
+problem CHEFNUM https://www.codechef.com/api/contests/MAY16/problems/CHEFNUM
+sample input 1 :
+2
+1 5
+11 14
+
+sample output 1 :
+15
+23
+
+problem LADDU https://www.codechef.com/api/contests/MAY16/problems/LADDU
+sample input 1 :
+2
+4 INDIAN
+CONTEST_WON 1
+TOP_CONTRIBUTOR
+BUG_FOUND 100
+CONTEST_HOSTED
+4 NON_INDIAN
+CONTEST_WON 1
+TOP_CONTRIBUTOR
+BUG_FOUND 100
+CONTEST_HOSTED
+
+sample output 1 :
+3
+1
+
+problem DISTNUM2 https://www.codechef.com/api/contests/MAY16/problems/DISTNUM2
+sample input 1 :
+4 4
+3 2 1 2
+0 1 0 3 2
+2 0 0 3 4
+1 2 1 3 2
+2 0 0 3 3
+
+sample output 1 :
+2
+-1
+2
+3
+
+problem CHEFMATH https://www.codechef.com/api/contests/MAY16/problems/CHEFMATH
+sample input 1 :
+5
+12 1
+13 1
+13 2
+13 3
+13 4
+
+sample output 1 :
+0
+1
+1
+2
+4
+
+contest LOCAPR16
+problem VSQ2 https://www.codechef.com/api/contests/LOCAPR16/problems/VSQ2
+sample input 1 :
+2
+
+sample output 1 :
+2
+
+problem BLTOUR https://www.codechef.com/api/contests/LOCAPR16/problems/BLTOUR
+sample input 1 :
+2
+3
+1 2
+1 3
+1
+5
+1 2
+1 3
+2 4
+2 5
+1
+
+sample output 1 :
+2
+4
+
+problem RUNNING https://www.codechef.com/api/contests/LOCAPR16/problems/RUNNING
+sample input 1 :
+3
+5 1
+1 5 10 12 14
+5
+5 2
+5 8 13 16 21
+3 5
+5 3
+2 6 8 11 16
+2 3 5
+
+sample output 1 :
+1
+2
+1
+
+problem ROLLDEEP https://www.codechef.com/api/contests/LOCAPR16/problems/ROLLDEEP
+sample input 1 :
+((Never mind(I'll find(someone like you))))
+
+sample output 1 :
+someone like you
+
+problem ACDEMY https://www.codechef.com/api/contests/LOCAPR16/problems/ACDEMY
+sample input 1 :
+2
+5
+2 3 5 1 2
+3
+1 2 3
+
+sample output 1 :
+3
+3
+
+contest LTIME35
+contest SSC2016
+contest RECJ1601
+problem SIDSTR https://www.codechef.com/api/contests/RECJ1601/problems/SIDSTR
+sample input 1 :
+1
+abba
+
+sample output 1 :
+2
+
+problem ABHMNSTR https://www.codechef.com/api/contests/RECJ1601/problems/ABHMNSTR
+sample input 1 :
+2
+2 4
+1 4
+2 3
+3 15
+2 7 3
+4 1 5
+9 8 6
+
+sample output 1 :
+ALIVE
+DEAD
+
+problem SIDPRIME https://www.codechef.com/api/contests/RECJ1601/problems/SIDPRIME
+sample input 1 :
+5
+4 3 1 7 12
+2
+1 8
+4 13
+
+sample output 1 :
+2
+1
+
+problem DORAEMON https://www.codechef.com/api/contests/RECJ1601/problems/DORAEMON
+sample input 1 :
+2
+5
+2 3 5 1 4
+600 400 100 2000 250
+4
+7 9 11 12
+6000 7000 4000 102
+
+sample output 1 :
+YES
+NO
+
