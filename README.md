@@ -4,12 +4,12 @@ Made with :heart: by Divesh Uttamchandani
 
 ### The repo will remain private till beta version is completed and released. The repo will then be transfered to termicoder organization account and developement will be carried out from there
   
-Planned Platform support(in order of priority):   
+Planned Platform support(in order of priority):  
 [CodeChef](http://www.codechef.com)  
 [Iarcs Opc](http://opc.iarcs.org.in/index.php/problems/)  
-[Codeforces](http://codeforces.com/)   
+[Codeforces](http://codeforces.com/)  
 [SPOJ](http://www.spoj.com)  
-[Google Codejam](https://code.google.com/codejam)    
+[Google Codejam](https://code.google.com/codejam)  
 [Facebook Hacker Cup](https://www.facebook.com/hackercup/)  
 [Hackerrank](https://www.hackerrank.com/)  
 [Hackerearth](https://www.hackerearth.com)  
@@ -36,7 +36,7 @@ setup url
 2) add support for listing all problem folder and status(custom ls), quickly changeing to a unsolved problem folder
 3) use git like hidden file approach
 
-### All the following commands work based on folder i am in so no need to remember/type problem code again and again 
+### All the following commands work based on folder I am in, so no need to remember/type problem code again and again 
   
   
 ## View  
@@ -44,10 +44,10 @@ setup url
 2) Generating url corresponding to a problem code/name in an easy way for all the supported platform
 3) Display the problem in best way possible, try not to leave terminal also be sure to somehow display the important images
     options:
-    3.1) Use a terminal based browser such as w3m/elinks etc.
-    3.2) open the page in a browser (directly from terminal)
-    3.3) display as text on terminal
-    3.4) display a modified webpage on text based browser 
+    3.1) Use a terminal based browser such as w3m/elinks etc.  
+    3.2) open the page in a browser (directly from terminal)  
+    3.3) display as text on terminal  
+    3.4) display a modified webpage on text based browser  
 4) also open the links given in problem description
 5) Reminders about contests ( take help from [dhruvagarwal/codeforces_desktop_notifier](https://github.com/dhruvagarwal/codeforces_desktop_notifier))
   
@@ -87,7 +87,10 @@ general format : submit --options
 3) show suggestions to remove errors found using submit status
 4) Support for commonly encountered errors
 5) using a TODO list, notify users if editorials are out remind them in post solving the questions
+6) Add option for custom tags for my solutions which I can use later
   
+### Other useful Resources
+1) [kunyavskiy/polygon-cli](//github.com/kunyavskiy/polygon-cli)
 
 # Future Ideas (The feasiblity of ideas hasn't been verified and most ideas are vague/in budding stage)
 1) Save encrypted passwords confirm a common master password on submit
@@ -100,11 +103,12 @@ general format : submit --options
 8) Make Users use good techniques that I have learned also ask competetive coders for suggestions.
 9) It should improve with the user progress. Refer to his profiles and code for the type of coder he is(which language he codes in). Ask him ques like which language he uses does he have knowledge of vim etc. If he is a begginer make him use best tools if advanced user suggest him the tools but try also to support his tools. also ask him to start from basics and then introduce complexity like code templates etc. 
 10) Make it as good as a practical guide book for everyone it is a road with check points. One could start form check point confirming to his abilities.
-11) make a good website and improving markdowns
+11) Make a good website and improving markdowns
 12) Somewhere in the future try integrating this with github repositories.... Private repository for current contest Public for old contests etc.
 13) Try incorporating a settings webpage run on a local server
 14) Incorporate ML/AI to test case generator, problem categoriser, problem template(input output variables, loops etc)
 15) Integrating with stopstalk- trending problems, friends etc.
 16) Try integrating this with other applications that programmers use.
+17) A chrome extension for this project .. an editor, compiling system etc within chrome would be great
   
 ## Make people :heart: this :wink:
