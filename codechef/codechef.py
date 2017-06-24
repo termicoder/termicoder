@@ -30,6 +30,58 @@ def scope_err_print(*args, **kwargs):
     print(*args, file=out_of_scope, **kwargs)
     out_of_scope.flush()
 
+def extract_io(pre_tag_elements,url):
+    sample_inputs=[]
+    sample_outputs=[]
+    for sampleio in pre_tag_elements:
+        sibling=sampleio.previous_sibling
+        while(not str(sibling).strip()):
+            sibling=sibling.previous_sibling     
+        #standard codechef problems with input and output in same pre tag
+        if("input" in str(sampleio.text).lower() and "output" in str(sampleio.text).lower()):
+            # TODO remember to check for <tt> etc within this 
+            try:
+                sample_input=str(sampleio.b.next_sibling).strip()+"\n"
+                sample_output=str(sampleio.b.next_sibling.next_sibling.next_sibling).strip()+"\n"
+                
+                #fix for problems like https://www.codechef.com/JUNE17/problems/XENRANK 
+                #the fix is not working in this version apperantly have a look
+                if(sample_input[0] is ":"):
+                    sample_input=sample_input[1:].strip()+"\n"
+                if(sample_output[0] is ":"):
+                    sample_output=sample_output[1:].strip()+"\n"
+                #endfix
+                sample_inputs.append(sample_input)
+                sample_outputs.append(sample_output)
+            except:
+                eprint(url,"error in case 1")
+        #problem with input only or with seprate io
+        elif("input" in str(sampleio.text).lower()):
+            try:
+                sample_input=str(sampleio.b.next_sibling).strip()+"\n"
+            except:
+                eprint(url,"error in case 2")
+        elif("output" in str(sampleio.text).lower()):
+            try:
+                sample_output=str(sampleio.b.next_sibling).strip()+"\n"
+            except:
+                eprint(url,"error in case 3")
+
+        elif ("input" in str(sibling).lower()):
+            try:
+                sample_input=sampleio.text.strip()+"\n"
+                sample_inputs.append(sample_input)
+            except:
+                eprint(url,"error in case 3")
+        elif ("output" in str(sibling).lower()):
+            try:
+                sample_output=sampleio.text.strip()+"\n"
+                sample_outputs.append(sample_output)
+            except:
+               eprint(url,"error in case 3")
+    
+    return sample_inputs,sample_outputs
+
 def get_problem(contest_code,problem_code):
     global problem_count
     global correct_count
@@ -46,44 +98,12 @@ def get_problem(contest_code,problem_code):
         pre_tag_elements=soup.find_all('pre')
         pre_tag_count=len(pre_tag_elements)
         if pre_tag_count >= 1:
-            sample_inputs=[]
-            sample_outputs=[]
-            for sampleio in pre_tag_elements:
-                sibling=sampleio.previous_sibling
-                while(not str(sibling).strip()):
-                    sibling=sibling.previous_sibling
-                
-                if("sample" in str(sibling).lower()):       #zco inoi problems and similar
-                    try:
-                        if("input" in str(sibling).lower()):
-                            sample_input=sampleio.text.strip()+"\n"
-                            sample_inputs.append(sample_input)
-                        elif("output" in str(sibling).lower()):
-                            sample_output=sampleio.text.strip()+"\n"
-                            sample_outputs.append(sample_output)
-                    except:
-                        eprint(url,"error in case 2")
-                
-                elif("input" in str(sampleio.text).lower() and "output" in str(sampleio.text).lower()): #standard codechef problems with input and output in same pre tag
-                    try:
-                        sample_input=str(sampleio.b.next_sibling).strip()+"\n"
-                        sample_output=str(sampleio.b.next_sibling.next_sibling.next_sibling).strip()+"\n"
-                        
-                        #fix for problems like https://www.codechef.com/JUNE17/problems/XENRANK 
-                        #the fix is not working in this version apperantly have a look
-                        if(sample_input[0] is ":"):
-                            sample_input=sample_input[1:].strip()+"\n"
-                        if(sample_output[0] is ":"):
-                            sample_output=sample_output[1:].strip()+"\n"
-                        #endfix
-                        sample_inputs.append(sample_input)
-                        sample_outputs.append(sample_output)
-                    except:
-                        eprint(url,"error in case 2")
+            sample_inputs,sample_outputs = extract_io(pre_tag_elements,url)  
             if(len(sample_inputs)!=len(sample_outputs)):
                 eprint(url,"len of sampleio not equal")
             elif(len(sample_inputs)==0 or len(sample_outputs)==0):
                 eprint(url,"atleast one of input array or output array is empty")
+                # handle cases for interactive problems with no input and/or no output carefully
             else:
                 print("problem",problem_code,url)
                 correct_count+=1
@@ -94,6 +114,7 @@ def get_problem(contest_code,problem_code):
                     print(sample_outputs[i])
         else:
             scope_err_print(url)
+            problem_count-=1
 
     sys.stdout.flush()
 
@@ -115,7 +136,7 @@ def get_contest(contest_code):
             #print(contest_code,problems[problem]["code"],problems[problem]["name"],str(problems[problem]["successful_submissions"]))
             # try:
             get_problem(contest_code,problems[problem]["code"])
-        count_print("correct:\t",correct_count,"\tincorrect:\t",problem_count-correct_count,"\ttotal:\t",problem_count,"\tcorrect% =\t",correct_count*100//problem_count)
+        count_print(contest_code,"\tcorrect:\t",correct_count,"\tincorrect:\t",problem_count-correct_count,"\ttotal:\t",problem_count,"\tcorrect% =\t",correct_count*100//problem_count)
             # except:
                 # print("error geting problem",problems[problem]["code"])
 
