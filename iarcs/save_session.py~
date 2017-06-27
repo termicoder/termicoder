@@ -1,0 +1,13 @@
+import requests, pickle
+session = requests.session()
+session.get("http://opc.iarcs.org.in/index.php/problems/")
+# Make some calls
+with open('cookies', 'wb') as f:
+    print(session.cookies)
+    pickle.dump(session.cookies,file=f)
+    
+with open('cookies','rb') as f:
+    cookies = pickle.load(f)
+    session = requests.session()
+    session.cookies=cookies
+    print(session.cookies)

@@ -43,9 +43,6 @@ def extract_io(pre_tag_elements,url):
             try:
                 sample_input=str(sampleio.b.next_sibling).strip()+"\n"
                 sample_output=str(sampleio.b.next_sibling.next_sibling.next_sibling).strip()+"\n"
-                
-                #fix for problems like https://www.codechef.com/JUNE17/problems/XENRANK 
-                #the fix is not working in this version apperantly have a look
                 if(sample_input[0] is ":"):
                     sample_input=sample_input[1:].strip()+"\n"
                 if(sample_output[0] is ":"):

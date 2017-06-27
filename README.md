@@ -43,7 +43,7 @@ setup url
 1) Current contests, trending problems, live problems etc. (take help from [Coders Calender](https://github.com/nishanthvijayan/CoderCalendar) , [StopStalk](https://github.com/stopstalk/))
 2) Generating url corresponding to a problem code/name in an easy way for all the supported platform
 3) Display the problem in best way possible, try not to leave terminal also be sure to somehow display the important images
-    options:
+    options:  
     3.1) Use a terminal based browser such as w3m/elinks etc.  
     3.2) open the page in a browser (directly from terminal)  
     3.3) display as text on terminal  
@@ -109,6 +109,7 @@ general format : submit --options
 14) Incorporate ML/AI to test case generator, problem categoriser, problem template(input output variables, loops etc)
 15) Integrating with stopstalk- trending problems, friends etc.
 16) Try integrating this with other applications that programmers use.
-17) A chrome extension for this project .. an editor, compiling system etc within chrome would be great
+17) A chrome extension for this project .. an editor, compiling system etc within chrome would be great could use Ideone
+18) Integration with [Ideone](https://ideone.com/sphere-engine)
   
 ## Make people :heart: this :wink:
