@@ -50,7 +50,7 @@ def login():
     if_verbose_print("title: ",title)
 
     
-    # logout all other session
+    # logout all other sessions as codechef doesn't allows multiple sessions
     while "session/limit" in logged_page.url:
         print("sle")
         logout_other_session()
@@ -61,7 +61,7 @@ def login():
     # and matching with form data. trivially the following solution works
 
     logged_page=codechef_session.post(url,form_data)
-    if len(BeautifulSoup(logged_page.text,"html.parser").findAll("input"))>= 0:
+    if len(BeautifulSoup(logged_page.text,"html.parser").findAll("input"))> 0:
         print("you are/have tried to login to codechef while the script was running\n should i try to login again(Y/N)")
         if input()=="Y":
             login()
@@ -73,7 +73,7 @@ def login():
 
 def logout_other_session():
     global codechef_session
-    sess_url=url+session/limit
+    sess_url=url+"session/limit"
     session_page=codechef_session.get(sess_url)
     if_verbose_print("got the session page")
     form_feilds=BeautifulSoup(session_page.text,"html.parser").findAll("input")
@@ -87,13 +87,13 @@ def logout_other_session():
             else:
                 print(attrs)
 
-    print(form_data)
+    if_verbose_print(form_data)
     a=codechef_session.post(sess_url,data=form_data)
     title=BeautifulSoup(a.text,"html.parser").head.title.text
-    print(title)
+    if_verbose_print(title)
     
 def logout():
 	global codechef_session
 	logout_url=url+"/logout"
 	a=codechef_session.get(logout_url)
-	print(a.text)
+	print("you are logged out")
