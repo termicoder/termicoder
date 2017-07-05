@@ -2,6 +2,7 @@
   "contest_code": "JUNE17",
   "contest_name": "June Challenge 2017",
   "date_added": "2-06-2017",
+  "judge": "codechef",
   "languages_supported": "ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.4, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC",
   "max_timelimit": "1",
   "problem_author": "admin2",
@@ -15,7 +16,7 @@
   "status": "success",
   "tags": "<a class='problem-tag-small ' href='/tags/problems/admin2'>\n                    admin2\n                </a>",
   "time": {
-    "current": 1499257948,
+    "current": 1499258842,
     "end_date": 1497259800,
     "submit_start_date": 1496430262,
     "view_start_date": 1496430262,

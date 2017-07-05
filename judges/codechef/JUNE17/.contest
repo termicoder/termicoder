@@ -1,92 +1,116 @@
 {
-  "todos": [],
+  "announcements": "<ul>\r\n<li><b>The June Challenge 2017 has ended!</b></li>\r\n<li>\r\n<p><b>The editorials for the contest will be added soon.</b></p>\r\n</li>\r\n<li>\r\n<p><b>The problems have been moved to practice section.</b></p>\r\n</li>\r\n<li>\r\n<p><b>Solutions are public for all the problems.<br /><br /></b></p>\r\n</li>\r\n</ul>\r\n<p><b>16:51 HRS 3rd June 2017:</b> The problem\u00a0<b>NEO01 </b>is added to the contest now. Challenge\u00a0problem will be added soon. We regret the inconvenience.</p>",
   "status": "success",
+  "stats": null,
+  "rank_and_score": {
+    "rank": "NA",
+    "score": "NA"
+  },
+  "problems": {
+    "OAK": {
+      "accuracy": 2.77,
+      "allow_submission": false,
+      "type": "3",
+      "code": "OAK",
+      "name": "Persistent oak",
+      "successful_submissions": "38"
+    },
+    "ES": {
+      "accuracy": 1.39,
+      "allow_submission": false,
+      "type": "3",
+      "code": "ES",
+      "name": "Euler Sum",
+      "successful_submissions": "99"
+    },
+    "PRMQ": {
+      "accuracy": 3.93,
+      "allow_submission": false,
+      "type": "3",
+      "code": "PRMQ",
+      "name": "Chef and Prime Queries",
+      "successful_submissions": "1002"
+    },
+    "SUMQ": {
+      "accuracy": 7.04,
+      "allow_submission": false,
+      "type": "3",
+      "code": "SUMQ",
+      "name": "Triplets",
+      "successful_submissions": "3172"
+    },
+    "CLONEME": {
+      "accuracy": 2.8,
+      "allow_submission": false,
+      "type": "3",
+      "code": "CLONEME",
+      "name": "Cloning",
+      "successful_submissions": "242"
+    },
+    "XENRANK": {
+      "accuracy": 38.17,
+      "allow_submission": false,
+      "type": "3",
+      "code": "XENRANK",
+      "name": "Xenny and Coin Rankings",
+      "successful_submissions": "6994"
+    },
+    "NEO01": {
+      "accuracy": 15.27,
+      "allow_submission": false,
+      "type": "3",
+      "code": "NEO01",
+      "name": "Chef and the Feast",
+      "successful_submissions": "4445"
+    },
+    "GOODSET": {
+      "accuracy": 46.42,
+      "allow_submission": false,
+      "type": "3",
+      "code": "GOODSET",
+      "name": "A Good Set",
+      "successful_submissions": "8097"
+    },
+    "UNIONSET": {
+      "accuracy": 17.72,
+      "allow_submission": false,
+      "type": "3",
+      "code": "UNIONSET",
+      "name": "Pairwise union of sets",
+      "successful_submissions": "3177"
+    },
+    "SBTR": {
+      "accuracy": 58.7,
+      "allow_submission": false,
+      "type": "1",
+      "code": "SBTR",
+      "name": "Saboteur (Challenge)",
+      "successful_submissions": "356"
+    }
+  },
+  "judge": "codechef",
+  "ip": "101.59.235.149",
+  "isRanklistFrozen": false,
+  "autoRefresh": true,
+  "banner": "/download/small-banner/JUNE17/1496299996.jpg",
+  "problemsstats": {
+    "solved": [],
+    "partially_solved": [],
+    "attempted": []
+  },
   "user": {
     "username": null
   },
-  "problemsstats": {
-    "attempted": [],
-    "partially_solved": [],
-    "solved": []
+  "time": {
+    "start": 1496395800,
+    "end": 1497259800,
+    "current": 1499258828,
+    "freezing": 0
   },
-  "autoRefresh": true,
+  "todos": [],
+  "code": "JUNE17",
+  "name": "June Challenge 2017",
   "partial_scores": {
-    "SUMQ": [
-      {
-        "count": "1523",
-        "score": "30"
-      },
-      {
-        "count": "15",
-        "score": "70"
-      },
-      {
-        "count": "3172",
-        "score": "100"
-      }
-    ],
-    "UNIONSET": [
-      {
-        "count": "932",
-        "score": "40"
-      },
-      {
-        "count": "3177",
-        "score": "100"
-      }
-    ],
-    "NEO01": [
-      {
-        "count": "1619",
-        "score": "30"
-      },
-      {
-        "count": "2",
-        "score": "70"
-      },
-      {
-        "count": "4445",
-        "score": "100"
-      }
-    ],
-    "XENRANK": [
-      {
-        "count": "579",
-        "score": "40"
-      },
-      {
-        "count": "6994",
-        "score": "100"
-      }
-    ],
-    "GOODSET": [
-      {
-        "count": "476",
-        "score": "50"
-      },
-      {
-        "count": "8097",
-        "score": "100"
-      }
-    ],
-    "PRMQ": [
-      {
-        "count": "864",
-        "score": "10"
-      },
-      {
-        "count": "31",
-        "score": "20"
-      },
-      {
-        "count": "729",
-        "score": "30"
-      },
-      {
-        "count": "1002",
-        "score": "100"
-      }
-    ],
     "OAK": [
       {
         "count": "76",
@@ -119,6 +143,38 @@
         "score": "100"
       }
     ],
+    "PRMQ": [
+      {
+        "count": "864",
+        "score": "10"
+      },
+      {
+        "count": "31",
+        "score": "20"
+      },
+      {
+        "count": "729",
+        "score": "30"
+      },
+      {
+        "count": "1002",
+        "score": "100"
+      }
+    ],
+    "SUMQ": [
+      {
+        "count": "1523",
+        "score": "30"
+      },
+      {
+        "count": "15",
+        "score": "70"
+      },
+      {
+        "count": "3172",
+        "score": "100"
+      }
+    ],
     "CLONEME": [
       {
         "count": "1962",
@@ -132,105 +188,50 @@
         "count": "242",
         "score": "100"
       }
+    ],
+    "XENRANK": [
+      {
+        "count": "579",
+        "score": "40"
+      },
+      {
+        "count": "6994",
+        "score": "100"
+      }
+    ],
+    "NEO01": [
+      {
+        "count": "1619",
+        "score": "30"
+      },
+      {
+        "count": "2",
+        "score": "70"
+      },
+      {
+        "count": "4445",
+        "score": "100"
+      }
+    ],
+    "GOODSET": [
+      {
+        "count": "476",
+        "score": "50"
+      },
+      {
+        "count": "8097",
+        "score": "100"
+      }
+    ],
+    "UNIONSET": [
+      {
+        "count": "932",
+        "score": "40"
+      },
+      {
+        "count": "3177",
+        "score": "100"
+      }
     ]
-  },
-  "code": "JUNE17",
-  "rank_and_score": {
-    "rank": "NA",
-    "score": "NA"
-  },
-  "isRanklistFrozen": false,
-  "ip": "101.59.235.149",
-  "announcements": "<ul>\r\n<li><b>The June Challenge 2017 has ended!</b></li>\r\n<li>\r\n<p><b>The editorials for the contest will be added soon.</b></p>\r\n</li>\r\n<li>\r\n<p><b>The problems have been moved to practice section.</b></p>\r\n</li>\r\n<li>\r\n<p><b>Solutions are public for all the problems.<br /><br /></b></p>\r\n</li>\r\n</ul>\r\n<p><b>16:51 HRS 3rd June 2017:</b> The problem\u00a0<b>NEO01 </b>is added to the contest now. Challenge\u00a0problem will be added soon. We regret the inconvenience.</p>",
-  "stats": null,
-  "name": "June Challenge 2017",
-  "banner": "/download/small-banner/JUNE17/1496299996.jpg",
-  "time": {
-    "current": 1499257944,
-    "freezing": 0,
-    "start": 1496395800,
-    "end": 1497259800
-  },
-  "problems": {
-    "SUMQ": {
-      "code": "SUMQ",
-      "successful_submissions": "3172",
-      "allow_submission": false,
-      "accuracy": 7.04,
-      "name": "Triplets",
-      "type": "3"
-    },
-    "UNIONSET": {
-      "code": "UNIONSET",
-      "successful_submissions": "3177",
-      "allow_submission": false,
-      "accuracy": 17.72,
-      "name": "Pairwise union of sets",
-      "type": "3"
-    },
-    "NEO01": {
-      "code": "NEO01",
-      "successful_submissions": "4445",
-      "allow_submission": false,
-      "accuracy": 15.27,
-      "name": "Chef and the Feast",
-      "type": "3"
-    },
-    "XENRANK": {
-      "code": "XENRANK",
-      "successful_submissions": "6994",
-      "allow_submission": false,
-      "accuracy": 38.17,
-      "name": "Xenny and Coin Rankings",
-      "type": "3"
-    },
-    "GOODSET": {
-      "code": "GOODSET",
-      "successful_submissions": "8097",
-      "allow_submission": false,
-      "accuracy": 46.42,
-      "name": "A Good Set",
-      "type": "3"
-    },
-    "PRMQ": {
-      "code": "PRMQ",
-      "successful_submissions": "1002",
-      "allow_submission": false,
-      "accuracy": 3.93,
-      "name": "Chef and Prime Queries",
-      "type": "3"
-    },
-    "OAK": {
-      "code": "OAK",
-      "successful_submissions": "38",
-      "allow_submission": false,
-      "accuracy": 2.77,
-      "name": "Persistent oak",
-      "type": "3"
-    },
-    "SBTR": {
-      "code": "SBTR",
-      "successful_submissions": "356",
-      "allow_submission": false,
-      "accuracy": 58.7,
-      "name": "Saboteur (Challenge)",
-      "type": "1"
-    },
-    "ES": {
-      "code": "ES",
-      "successful_submissions": "99",
-      "allow_submission": false,
-      "accuracy": 1.39,
-      "name": "Euler Sum",
-      "type": "3"
-    },
-    "CLONEME": {
-      "code": "CLONEME",
-      "successful_submissions": "242",
-      "allow_submission": false,
-      "accuracy": 2.8,
-      "name": "Cloning",
-      "type": "3"
-    }
   }
 }
