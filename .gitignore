@@ -1,4 +1,4 @@
-.pyc
-.*~
-.dump
+*.pyc
+*.*~
+*.dump
 __pycache__

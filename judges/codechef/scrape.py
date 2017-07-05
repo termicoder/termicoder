@@ -6,6 +6,7 @@ import requests
 from bs4 import BeautifulSoup
 import json
 from time import strptime,strftime,mktime,gmtime,localtime
+import session
 
 def sanitize(io):
     """
@@ -70,11 +71,12 @@ def extract_io(pre_tag_elements,url):
     return sample_inputs,sample_outputs
 
 def get_problem(contest_code,problem_code):
+    codechef_session = session.codechef_session
     # works on the fact that sample io will be inside pre tag and if more than 1 sample than more than 1 pre tag
     url="https://www.codechef.com/api/contests/"+contest_code+"/problems/"+problem_code
     j={"error":None,"judge":"codechef","contest_code":contest_code,"problem_code":problem_code}
     try:
-        r = requests.get(url)
+        r = codechef_session.get(url)
         j.update(r.json())
         soup=BeautifulSoup(j['body'],"html.parser")
     except:
@@ -95,10 +97,11 @@ def get_problem(contest_code,problem_code):
         return j
 
 def get_contest(contest_code):
+    codechef_session = session.codechef_session
     url="https://www.codechef.com/api/contests/"+contest_code
     j={"error":None,"judge":"codechef","contest_code":contest_code}
     try:
-        r = requests.get(url)
+        r = codechef_session.get(url)
         j.update(r.json())
     except:
         j["error"]="urlerror"
@@ -129,10 +132,11 @@ def get_duration(duration):
 # now using problem code instead of url
 
 def  get_contest_list():
+    codechef_session = session.codechef_session
     url="http://www.codechef.com/contests"
     contests= {"ongoing":[] , "upcoming":[], "past":[],"error":None}
     try:
-        page = requests.get(url)
+        page = codechef_session.get(url)
     except:
         contests["error"]="urlerror"
     else:
@@ -163,10 +167,11 @@ def  get_contest_list():
     return contests
     
 def get_running_contests():
+    codechef_session = session.codechef_session
     url="https://www.codechef.com/api/runningUpcomingContests/data"
     j={"error":None,"judge":"codechef"}
     try:
-        page = requests.get(url)
+        page = codechef_session.get(url)
         j.update(page.json())
     except:
         j["error"]="urlerror"
