@@ -5,6 +5,7 @@ html problem statements and testcases
 
 for trial run run this as python3 setup.py
 """
+from __future__ import print_function
 import scrape
 import os
 import json
@@ -19,14 +20,14 @@ def setup_problem(contest_code,problem_code):
     
     problem=scrape.get_problem(contest_code,problem_code)
     
-    if not problem["error"]:
-        problem_html=problem.pop("body") 
+    if problem["error"]==None:
+        problem_html=problem.pop("body")
         sampleio=problem.pop("sampleio")
         # html problem statement
         if not problem["error"]:
             problem_html_file=os.path.join(problem_path,problem_code+".html")
             f2=open(problem_html_file,"w")
-            print(problem_html,file=f2)
+            print(problem_html.encode("utf-8"),file=f2)
 
         # sampleio files
         if(sampleio["error"]==""):
@@ -59,12 +60,14 @@ def setup_contest(contest_code):
     contest_setup_file=os.path.join(contest_path,".contest")
     f=open(contest_setup_file,"w")
     contest=scrape.get_contest(contest_code)
-    del contest["rules"]
+    if(contest["error"]==None):
+        del contest["rules"]
     print(json.dumps(contest,indent=2), file=f)
     
     # setup all problems for the contests
-    for problem_code in contest["problems"]:
-        setup_problem(contest_code,problem_code)
+    if(contest["error"]==None):
+        for problem_code in contest["problems"]:
+            setup_problem(contest_code,problem_code)
         
 if __name__ == "__main__":
     # trial setup of a contest

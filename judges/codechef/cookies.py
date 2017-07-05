@@ -7,7 +7,7 @@ cookie_file="codechefcookies.dump"
 
 def save(session):
     with open(cookie_file, 'wb') as f:
-        pickle.dump(session.cookies,file=f)
+        pickle.dump(session.cookies,file=f,protocol=2)
 
 def load_session():
     try:

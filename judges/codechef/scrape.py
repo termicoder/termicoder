@@ -80,7 +80,7 @@ def get_problem(contest_code,problem_code):
         j.update(r.json())
         soup=BeautifulSoup(j['body'],"html.parser")
     except:
-        error="urlerror"
+        j["error"]="urlerror"
     else:
         pre_tag_elements=soup.find_all('pre')
         pre_tag_count=len(pre_tag_elements)
@@ -94,7 +94,7 @@ def get_problem(contest_code,problem_code):
             sampleio["error"]="Out of Scope"
         j["sampleio"]=sampleio
         j["judge"]="codechef"
-        return j
+    return j
 
 def get_contest(contest_code):
     codechef_session = session.codechef_session
