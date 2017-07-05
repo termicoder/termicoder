@@ -1,0 +1,49 @@
+<span class="solution-visible-txt">All submissions for this problem are available.</span><h3>Read problems statements in <a target="_blank" 
+href="http://www.codechef.com/download/translated/JUNE17/mandarin/GOODSET.pdf">Mandarin Chinese</a>, <a target="_blank" 
+href="http://www.codechef.com/download/translated/JUNE17/russian/GOODSET.pdf">Russian</a> and <a target="_blank" 
+href="http://www.codechef.com/download/translated/JUNE17/vietnamese/GOODSET.pdf">Vietnamese</a> as well.</h3>
+
+<p>A set of integers is called <i>good</i> if there does not exist three distinct elements a, b, c in it such that a + b = c.</p>
+
+<p>Your task is simple. Just output any <i>good</i> set of <b>n</b> integers. All the elements in this set should be distinct and should lie between 1 and 500, both inclusive.</p>
+
+<h3>Input</h3>
+<ul>
+<li>The first line of the input contains an integer <b>T</b> denoting number of test cases. The descriptions of <b>T</b> test cases follow.</li>
+<li>The only line of each test case contains an integer <b>n</b>, denoting the size of the needed <i>good</i> set.</li>
+
+<h3>Output</h3>
+<p>For each test case, output a single line containing <b>n</b> integers denoting the elements of the <i>good</i> set, in any order. There can be more than one possible good set, and you can output any one of them.</p>
+
+<h3>Constraints</h3>
+<ul>
+<li>1 ≤ <b>T, n</b> ≤ 100</li>
+</ul>
+
+<h3>Subtasks</h3>
+<ul>
+<li><b>Subtask #1 (50 points)</b>: 1 ≤ <b>T, n</b> ≤ 10</li>
+<li><b>Subtask #2 (50 points)</b>: original constraints</li>
+</ul>
+
+<h3>Example</h3>
+<pre>
+<b>Input</b>
+5
+1
+2
+3
+4
+5
+
+<b>Output</b>
+7
+1 2
+1 2 4
+1 2 4 16
+3 2 15 6 10
+</pre>
+
+<h3>Explanation</h3>
+<p><b>Example 1 and 2.</b> Any set of size less than or equal to 2 is good by definition.</p>
+<p><b>Example 3 onwards.</b> For each pair of elements in the set, you can see that their sum doesn't exist in the set.</p>
