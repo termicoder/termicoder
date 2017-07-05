@@ -1,13 +1,15 @@
+"""
+This module contatins function for scraping contest list, contest, problem
+from codechef. The function return dictionaries with errors and data
+"""
 import requests
 from bs4 import BeautifulSoup
 import json
 from time import strptime,strftime,mktime,gmtime,localtime
-import sys
-import os
 
 def sanitize(io):
     """
-    this funtion removes ":" "1:" etc if any in front of the io
+    removes ":" "1:" etc if any in front of the io
     """
     # trim begining and ending spaces
     io = io.strip()
@@ -20,6 +22,9 @@ def sanitize(io):
     return io.strip()+"\n"
 
 def extract_io(pre_tag_elements,url):
+    """
+    extracts all input and output from pre tags and returns as tuple
+    """
     sample_inputs=[]
     sample_outputs=[]
     for sampleio in pre_tag_elements:
@@ -67,12 +72,13 @@ def extract_io(pre_tag_elements,url):
 def get_problem(contest_code,problem_code):
     # works on the fact that sample io will be inside pre tag and if more than 1 sample than more than 1 pre tag
     url="https://www.codechef.com/api/contests/"+contest_code+"/problems/"+problem_code
+    j={"error":None,"judge":"codechef","contest_code":contest_code,"problem_code":problem_code}
     try:
         r = requests.get(url)
-        j= json.loads(r.text)
+        j.update(r.json())
         soup=BeautifulSoup(j['body'],"html.parser")
     except:
-        print("error in fetching",url)
+        error="urlerror"
     else:
         pre_tag_elements=soup.find_all('pre')
         pre_tag_count=len(pre_tag_elements)
@@ -90,15 +96,13 @@ def get_problem(contest_code,problem_code):
 
 def get_contest(contest_code):
     url="https://www.codechef.com/api/contests/"+contest_code
+    j={"error":None,"judge":"codechef","contest_code":contest_code}
     try:
         r = requests.get(url)
-        j= json.loads(r.text)
+        j.update(r.json())
     except:
-        print("error in fetching",url)
-        raise "FetchError"
-    else:
-        j["judge"]="codechef"
-        return j
+        j["error"]="urlerror"
+    return j
 
 
 # The following function is derived from CoderCalender
@@ -126,92 +130,46 @@ def get_duration(duration):
 
 def  get_contest_list():
     url="http://www.codechef.com/contests"
-    page = requests.get(url)
-    print("got the list")
-    soup = BeautifulSoup(page.text, "html.parser")
+    contests= {"ongoing":[] , "upcoming":[], "past":[],"error":None}
+    try:
+        page = requests.get(url)
+    except:
+        contests["error"]="urlerror"
+    else:
+        soup = BeautifulSoup(page.text, "html.parser")
 
-    contest_tables = {"Future Contests": [], "Present Contests": [],"Past Contests":[]}
-    contests= {"ongoing":[] , "upcoming":[], "past":[]}
-    # links contest table to posts
-    links = {"Future Contests": "upcoming", "Present Contests": "ongoing" ,"Past Contests":"past"}
+        contest_tables = {"Future Contests": [], "Present Contests": [],"Past Contests":[]}
+        # links contest table to posts
+        links = {"Future Contests": "upcoming", "Present Contests": "ongoing" ,"Past Contests":"past"}
 
-    statusdiv = soup.findAll("table", attrs = {"class": "dataTable"})
-    headings = soup.findAll("h3")
+        statusdiv = soup.findAll("table", attrs = {"class": "dataTable"})
+        headings = soup.findAll("h3")
 
-    for i in range(len(headings)):
-        contest_tables[headings[i].text] = statusdiv[i].findAll("tr")[1:]
+        for i in range(len(headings)):
+            contest_tables[headings[i].text] = statusdiv[i].findAll("tr")[1:]
 
-    for tense in links:
-        for some_contest in contest_tables[tense]:
-            details = some_contest.findAll("td")
-            start_time = strptime(details[2].text, "%d %b %Y %H:%M:%S")
-            end_time = strptime(details[3].text, "%d %b %Y %H:%M:%S")
-            duration = get_duration(int((mktime(end_time) - mktime(start_time)) / 60))
-            contests[links[tense]].append({"Name":  details[1].text,
-                                      "code":  details[1].a["href"][1:],
-                                      "StartTime": strftime("%a, %d %b %Y %H:%M", start_time),
-                                      "EndTime": strftime("%a, %d %b %Y %H:%M", end_time),
-                                      "Duration": duration,
-                                      "Platform": "codefhef"})
+        for tense in links:
+            for some_contest in contest_tables[tense]:
+                details = some_contest.findAll("td")
+                start_time = strptime(details[2].text, "%d %b %Y %H:%M:%S")
+                end_time = strptime(details[3].text, "%d %b %Y %H:%M:%S")
+                duration = get_duration(int((mktime(end_time) - mktime(start_time)) / 60))
+                contests[links[tense]].append({"Name":  details[1].text,
+                                          "code":  details[1].a["href"][1:],
+                                          "StartTime": strftime("%a, %d %b %Y %H:%M", start_time),
+                                          "EndTime": strftime("%a, %d %b %Y %H:%M", end_time),
+                                          "Duration": duration,
+                                          "Platform": "codefhef"})
     return contests
-
-def setup_problem(contest_code,problem_code):
-    problem_path=os.path.join(".",contest_code,problem_code)
+    
+def get_running_contests():
+    url="https://www.codechef.com/api/runningUpcomingContests/data"
+    j={"error":None,"judge":"codechef"}
     try:
-        os.mkdir(problem_path)
+        page = requests.get(url)
+        j.update(page.json())
     except:
-        pass
-    problem=get_problem(contest_code,problem_code)
-
-    problem_html=problem["body"]
-    del problem["body"]
-    sampleio=problem["sampleio"]
-    del problem["sampleio"]
-
-    # the problem data
-    problem_setup_file=os.path.join(problem_path,".problem")
-    f1=open(problem_setup_file,"w")
-    print(json.dumps(problem,indent=2,sort_keys=True),file=f1)
-
-    # html problem statement
-    problem_html_file=os.path.join(problem_path,problem_code+".html")
-    f2=open(problem_html_file,"w")
-    print(problem_html,file=f2)
-
-    # sampleio files
-    if(sampleio["error"]==""):
-        testcases_path=os.path.join(problem_path,"testcases")
-        try:
-            os.mkdir(testcases_path)
-        except:
-            pass
-        for i in range(len(sampleio["inputs"])):
-            input_file=os.path.join(testcases_path,str(i+1)+".in")
-            ifile=open(input_file,"w")
-            print(sampleio["inputs"][i],file=ifile)
-        for o in range(len(sampleio["outputs"])):
-            output_file=os.path.join(testcases_path,str(o+1)+".out")
-            ofile=open(output_file,"w")
-            print(sampleio["outputs"][o],file=ofile)
-
-    
-def setup_contest(contest_code):
-    contest_path=os.path.join(".",contest_code)
-    try:
-        os.mkdir(contest_path)
-    except:
-        pass
-    contest_setup_file=os.path.join(contest_path,".contest")
-    f=open(contest_setup_file,"w")
-    contest=get_contest(contest_code)
-    del contest["rules"]
-    print(json.dumps(contest,indent=2),file=f)
-
-    for problem_code in contest["problems"]:
-        setup_problem(contest_code,problem_code)
+        j["error"]="urlerror"
+    return j
     
     
-
-if(__name__=="__main__"):
-    # trial contest setup in current dir
-    setup_contest("JUNE17")
