@@ -1,6 +1,6 @@
 """
 this module creates the required files of a contest/problem including
-json data of contest(.contest file), json data of problem(.problem file) 
+json data of contest(.contest file), json data of problem(.problem file)
 html problem statements and testcases
 
 for trial run run this as python3 setup.py
@@ -10,16 +10,16 @@ import scrape
 import os
 import json
 
-def setup_problem(contest_code,problem_code):
+def setup_problem(problem_code,contest_code="PRACTICE"):
     problem_path=os.path.join(".",contest_code,problem_code)
-      
+
     try:
         os.mkdir(problem_path)
     except:
         pass
-    
-    problem=scrape.get_problem(contest_code,problem_code)
-    
+
+    problem=scrape.get_problem(problem_code,contest_code)
+
     if problem["error"]==None:
         problem_html=problem.pop("body")
         sampleio=problem.pop("sampleio")
@@ -44,13 +44,13 @@ def setup_problem(contest_code,problem_code):
                 output_file=os.path.join(testcases_path,str(o+1)+".out")
                 ofile=open(output_file,"w")
                 print(sampleio["outputs"][o],file=ofile)
-                
+
     # the problem data
     problem_setup_file=os.path.join(problem_path,".problem")
     f1=open(problem_setup_file,"w")
     print(json.dumps(problem,indent=2,sort_keys=True),file=f1)
 
-    
+
 def setup_contest(contest_code):
     contest_path=os.path.join(".",contest_code)
     try:
@@ -63,12 +63,12 @@ def setup_contest(contest_code):
     if(contest["error"]==None):
         del contest["rules"]
     print(json.dumps(contest,indent=2), file=f)
-    
+
     # setup all problems for the contests
     if(contest["error"]==None):
         for problem_code in contest["problems"]:
-            setup_problem(contest_code,problem_code)
-        
+            setup_problem(problem_code,contest_code)
+
 if __name__ == "__main__":
     # trial setup of a contest
     setup_contest("JUNE17")

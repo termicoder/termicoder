@@ -7,6 +7,7 @@ from bs4 import BeautifulSoup
 import json
 from time import strptime,strftime,mktime,gmtime,localtime
 import session
+import console
 
 def sanitize(io):
     """
@@ -70,7 +71,7 @@ def extract_io(pre_tag_elements,url):
 
     return sample_inputs,sample_outputs
 
-def get_problem(contest_code,problem_code):
+def get_problem(problem_code,contest_code="PRACTICE"):
     codechef_session = session.codechef_session
     # works on the fact that sample io will be inside pre tag and if more than 1 sample than more than 1 pre tag
     url="https://www.codechef.com/api/contests/"+contest_code+"/problems/"+problem_code
@@ -165,7 +166,7 @@ def  get_contest_list():
                                           "Duration": duration,
                                           "Platform": "codefhef"})
     return contests
-    
+
 def get_running_contests():
     codechef_session = session.codechef_session
     url="https://www.codechef.com/api/runningUpcomingContests/data"
@@ -176,5 +177,10 @@ def get_running_contests():
     except:
         j["error"]="urlerror"
     return j
-    
-    
+
+
+def get_practice_problems(category):
+    categorylist=["school","easy","medium","hard","challenge","extcontest"]
+    codechef_session = session.codechef_session
+    url="https://www.codechef.com/problems"+category
+    console.log("Not implemented yet")

@@ -41,9 +41,9 @@ def login():
 
     console.ifverbose("The following is the form data that will be sent:\n",\
                      pprint.pformat(form_data,indent=2))
-    
+
     console.log("logging you into codechef... please wait...")
-    logged_page=codechef_session.post(login_url,form_data)    
+    logged_page=codechef_session.post(login_url,form_data)
     # logout all other sessions as codechef doesn't allows multiple sessions
     while "session/limit" in logged_page.url:
         console.ifverbose("sle")
@@ -56,7 +56,8 @@ def login():
 
     logged_page=codechef_session.post(url,form_data)
     if len(BeautifulSoup(logged_page.text,"html.parser").findAll("input"))> 0:
-        console.error("you are/have tried to login to codechef while the script was running\n should i try to login again(Y/N)")
+        console.error("you are/have tried to login to codechef while\
+         the script was running\n should i try to login again(Y/N)")
         if input()=="Y":
             login()
         else:
@@ -87,7 +88,7 @@ def logout_other_session():
     a=codechef_session.post(sess_url,data=form_data)
     title=BeautifulSoup(a.text,"html.parser").head.title.text
     console.ifverbose(title)
-    
+
 def logout():
 	global codechef_session
 	logout_url=url+"/logout"
@@ -95,10 +96,19 @@ def logout():
 	console.log("you are logged out")
 	cookies.delete()
 
-def load(forcelogin=False):
+def load(force_login=False):
     global codechef_session
     session=cookies.load_session()
     if(session!=None):
         codechef_session=session
-    elif(forcelogin==True):
+    elif(force_login==True):
         login()
+
+def is_logged_in():
+    user_url="https://www.codechef.com/api/user/me"
+    global codechef_session
+    a=codechef_session.get(user_url).json()
+    if(a["user"]["username"]==None):
+        return False
+    else:
+        return True
