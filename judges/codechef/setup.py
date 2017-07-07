@@ -27,7 +27,7 @@ def setup_problem(problem_code,contest_code="PRACTICE"):
         if not problem["error"]:
             problem_html_file=os.path.join(problem_path,problem_code+".html")
             f2=open(problem_html_file,"w")
-            print(problem_html.encode("utf-8"),file=f2)
+            print(problem_html,file=f2)     # TODO needs unicode fixture for python 2
 
         # sampleio files
         if(sampleio["error"]==""):
@@ -71,4 +71,4 @@ def setup_contest(contest_code):
 
 if __name__ == "__main__":
     # trial setup of a contest
-    setup_contest("JUNE17")
+    setup_contest("JULY17")
