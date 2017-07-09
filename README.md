@@ -3,9 +3,9 @@ View, Code, Debug, Submit, Learn directly from terminal
 Made with :heart: by Divesh Uttamchandani
 
 ### developer installation
-in the root folder of this repo run
-pip install --editable .
-notice the dot(.) in above command at the end
+in the root folder of this repo run  
+pip install --editable .  
+notice the dot(.) in above command at the end  
 
 ### The repo will remain private till beta version is completed and released. The repo will then be transfered to termicoder organization account and developement will be carried out from there
   
