@@ -2,3 +2,5 @@
 *.*~
 *.dump
 __pycache__
+ignore/
+.ropeproject/

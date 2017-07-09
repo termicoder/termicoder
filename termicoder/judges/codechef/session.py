@@ -8,8 +8,8 @@ from bs4 import BeautifulSoup
 import getpass
 import pprint
 import time
-import cookies
-import console
+from . import cookies
+from . import console
 
 url="https://www.codechef.com/"
 codechef_session=requests.session()

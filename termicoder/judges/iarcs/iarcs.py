@@ -2,7 +2,6 @@ import requests
 from bs4 import BeautifulSoup
 import re
 import sys
-sys.stdout = open('iarcslogs.txt', 'w')
 
 
 def get_problem_list():

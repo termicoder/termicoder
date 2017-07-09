@@ -1,6 +1,6 @@
 import requests
 import os
-import session
+from . import session
 import time
 
 def submit(problem_code,contest_code,solution_path,language_code):

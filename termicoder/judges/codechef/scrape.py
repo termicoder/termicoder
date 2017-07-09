@@ -6,8 +6,8 @@ import requests
 from bs4 import BeautifulSoup
 import json
 from time import strptime,strftime,mktime,gmtime,localtime
-import session
-import console
+from . import session
+from . import console
 
 def sanitize(io):
     """
