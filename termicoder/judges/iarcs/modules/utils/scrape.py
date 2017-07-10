@@ -1,25 +1,34 @@
+import click
 import requests
 from bs4 import BeautifulSoup
 import re
 import sys
-
+import termicoder.judges.iarcs.modules.utils.session as session
+import termicoder.utils.display as display
 
 def get_problem_list():
+    iarcs_session=session.iarcs_session()
+    logged_in=(session.is_logged_in())
     url = "http://opc.iarcs.org.in/index.php/problems/"
     try:
-        r = requests.get(url)
+        r = iarcs_session.get(url)
         soup = BeautifulSoup(r.text, "html.parser")
     except:
-        print("error in fetching url "+url)
+        display.url_error(url,abort=True)
     else:
-        print("got the list")
-        problem_list = []
+        assume_error=False
+        unsolved_list = []
         problem_rows = soup.find_all("tr")[1:-1]    # 0th row contains heading
         for problem in problem_rows:
-            problem_data = problem.find_all("td")
-            code_data, problem_name = problem_data[1], problem_data[2]
-            problem_list.append((code_data.a.text, problem_name.a.text))
-        return problem_list
+            row_data = problem.find_all("td")
+            code_data, problem_data = row_data[1], row_data[2]
+            status=None
+            if(logged_in):
+                status=row_data[3]
+            if(status==None):
+                unsolved_list.append({"problem_code":code_data.a.text,
+                                    "problem_name":problem_data.a.text})
+        return unsolved_list
 
 
 def get_problem(problem_code):
@@ -35,7 +44,7 @@ def get_problem(problem_code):
         iocandidate = soup.find_all("pre")
         for candidate in iocandidate:
             #print("prev")
-            sibling = candidate.previous_sibling  
+            sibling = candidate.previous_sibling
             while(not str(sibling).strip()):
                 sibling=sibling.previous_sibling
             if("sample" in str(sibling).lower()):
@@ -53,7 +62,3 @@ def get_problem(problem_code):
                 print(sample_output)
         print("----------------------------------------------------------------")
         sys.stdout.flush()
-
-problems = get_problem_list()   
-for problem in problems:
-    get_problem(str(problem[0]))

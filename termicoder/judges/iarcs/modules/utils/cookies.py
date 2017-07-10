@@ -1,8 +1,7 @@
 import requests, pickle
 
-# name of cookie file rem that it is a binary file
-
-cookie_file="cookies"
+# following is the cookie file rem that it is a binary file
+cookie_file="iarcs_cookies.dump"
 
 def save_cookies(session):
     global cookie_file
@@ -10,10 +9,14 @@ def save_cookies(session):
         print(session.cookies)
         pickle.dump(session.cookies,file=f)
 
-def load_cookies(session):
+def load_cookies():
     global cookie_file
-    with open(cookie_file,'rb') as f:
+    try:
+        f=(open(cookie_file,'rb')
         cookies = pickle.load(f)
         session = requests.session()
         session.cookies=cookies
-        print(session.cookies)
+    except:
+        return None
+    else:
+        return session

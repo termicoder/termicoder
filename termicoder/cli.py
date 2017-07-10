@@ -1,16 +1,18 @@
 # this file manages the basic cli of termicoder and calls the correct function
 import click
-# from utils import display, test
+import os
+from termicoder.utils import display, test
 
-# Only need to change this on adding new judges
+# Only need to change this on adding new judges if structure is followed
 OJs = [
     'iarcs',
     'codechef'
 ]
 OJs.sort()
+###############################################################################
 
 for OJ in OJs:
-    exec("import termicoder.judges."+OJ+".main as "+OJ)
+    exec("import termicoder.judges.%s.main as %s" % (OJ, OJ))
 
 
 @click.group()
@@ -37,32 +39,32 @@ def contests(judge):
     '''
     lists contests/categories running on a judge
     '''
-    eval(str(judge)+".view_contests()")
+    eval(judge).view_contests()
 
 
 @click.command()
 @click.option('-j', '--judge', type=click.Choice(OJs),
               prompt="Please provide a judge("+'|'.join(OJs)+")")
-@click.option('-c', '--contest', type=click.STRING)
+@click.option('-c', '--contest', type=click.STRING, help="contest code")
 def problems(judge, contest):
     '''
     lists problems of a contest/category on the judge
     '''
-    click.echo('view problems not implemented yet')
-    click.echo('params\n judge- %s' % judge)
-    click.echo('params\n contest %s ' % contest)
-    eval(str(judge)+".view_problems()")
+    eval(judge).view_problems(contest)
 
 
 @click.command()
-def this():
+@click.option("-r","--recursive",is_flag=True,default=False,
+              help="recursive display in current folder upto 1 level")
+@click.option("-f", "--folder", type=click.Path())
+def this(recursive, folder):
     '''
     display the termicoder contents in current/passed folder
     if it is a contest folder it displays the list of problems
     if a problem folder displays the problem in a browser
     '''
-    click.echo('view this not implemented yet')
-    click.echo('takes no params')
+    cwd = os.getcwd()
+    display.current_dir(cwd,recursive,folder)
 
 view.add_command(contests)
 view.add_command(problems)
@@ -136,16 +138,17 @@ def submit(code_file):
     click.echo('params\n code_file- %s' % code_file)
 
 
-# @click.command()
-# def debug():
-#     '''
-#     launches the debuger
-#     '''
-#     click.echo('debug not implemented yet')
+@click.command()
+def debug():
+    '''
+    launchs the debuger
+    '''
+    click.echo('this functionality is not availible in this version'+
+    'this option is only kept for avoiding hastles in future versions')
 
 main.add_command(view)
 main.add_command(setup)
 main.add_command(code)
 main.add_command(test)
 main.add_command(submit)
-# main.add_command(debug)
+main.add_command(debug)
