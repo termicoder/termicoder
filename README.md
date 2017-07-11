@@ -2,10 +2,26 @@
 View, Code, Debug, Submit, Learn directly from terminal  
 Made with :heart: by Divesh Uttamchandani
 
-### developer installation
+### developer installation  
+clone this repo  
 in the root folder of this repo run  
 pip install --editable .  
 notice the dot(.) in above command at the end  
+Note: it is better to use virtualenv  
+
+### autocomplete for bash  
+Method 1:  
+run the following command every time you use terminal  
+eval "$(_TERMICODER_COMPLETE=source termicoder)"  
+
+Method 2:  
+put the following command in your .bashrc  
+eval "$(_TERMICODER_COMPLETE=source termicoder)"  
+  
+Method 3:  
+Method 2 has a slow runtime so try:  
+eval "$(_TERMICODER_COMPLETE=source termicoder)" > autocomplete.sh  
+and put . path_to_autocompte.sh/autocomplete.sh in your .bashrc  
 
 ### The repo will remain private till beta version is completed and released. The repo will then be transfered to termicoder organization account and developement will be carried out from there
   
