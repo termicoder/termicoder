@@ -9,14 +9,13 @@ def division_line():
 
 def problems():
     display_strings=[]
+    display.normal("requesting problem list from server...")
     if(session.is_logged_in()==True):
         display_strings.append(style.normal(
         "only unsolved problems are being displayed"))
     else:
         display_strings.append(style.normal("you are not logged in\n"+
         "displaying all the problems"))
-
-    display.normal("requesting problem list from server...")
     # the following line involves a request
     # problems are unsolved ones if logged in
     problems=scrape.get_problem_list()

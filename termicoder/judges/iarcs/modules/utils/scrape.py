@@ -7,7 +7,7 @@ import termicoder.judges.iarcs.modules.utils.session as session
 import termicoder.utils.display as display
 
 def get_problem_list():
-    iarcs_session=session.iarcs_session()
+    iarcs_session=session.iarcs_session
     logged_in=(session.is_logged_in())
     url = "http://opc.iarcs.org.in/index.php/problems/"
     try:
@@ -24,8 +24,8 @@ def get_problem_list():
             code_data, problem_data = row_data[1], row_data[2]
             status=None
             if(logged_in):
-                status=row_data[3]
-            if(status==None):
+                status=row_data[3].text
+            if(not status):
                 unsolved_list.append({"problem_code":code_data.a.text,
                                     "problem_name":problem_data.a.text})
         return unsolved_list

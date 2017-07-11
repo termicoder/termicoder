@@ -4,6 +4,7 @@ import os
 from termicoder.utils import display, test
 
 # Only need to change this on adding new judges if structure is followed
+# take care of , (comma) while editing this list!
 OJs = [
     'iarcs',
     'codechef'
@@ -73,12 +74,13 @@ view.add_command(this)
 
 
 @click.command()
-@click.option('-j', '--judge', type=click.Choice(OJs))
+@click.option('-j', '--judge', type=click.Choice(OJs),
+                prompt="Please provide a judge("+'|'.join(OJs)+")")
 @click.option('-c', '--contest', type=click.STRING, help="contest code")
 @click.option('-p', '--problem', type=click.STRING, help="problem code")
 @click.option('--login', 'status', flag_value='login')
 @click.option('--logout', 'status', flag_value='logout')
-def setup(status, judge, contest, problem):
+def setup(judge, contest, problem,status):
     """
     prepares directories for termicoder to work.
 
@@ -91,11 +93,12 @@ def setup(status, judge, contest, problem):
     it sets up that problem all this happens in the current folder.\n
     of contest/category may vary amongst various online judges
     """
-    click.echo('setup not implemented yet')
-    click.echo('params\n status- %s' % status)
-    click.echo('params\n judge-%s' % judge)
-    click.echo('params\n contest-%s' % contest)
-    click.echo('params\n problem-%s' % problem)
+    eval(judge).setup(contest, problem,status)
+    # click.echo('setup not implemented yet')
+    # click.echo('params\n status- %s' % status)
+    # click.echo('params\n judge-%s' % judge)
+    # click.echo('params\n contest-%s' % contest)
+    # click.echo('params\n problem-%s' % problem)
 
 
 @click.command()
