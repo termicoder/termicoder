@@ -8,7 +8,7 @@ import sys
 import termicoder.utils.display as display
 import termicoder.judges.iarcs.modules.view as view_module
 import termicoder.judges.iarcs.modules.setup as setup_module
-import termicoder.judges.iarcs.modules.submit as setup_module
+import termicoder.judges.iarcs.modules.submit as submit_module
 import termicoder.judges.iarcs.modules.utils.session as session
 
 
@@ -46,22 +46,9 @@ def setup(contest, problem_code, status):
             setup_module.logout()
 
         if(problem_code is not None):
-            setup_module.problem(problem_code)
+            setup_module.stetup_problem(problem_code)
         else:
-            click.confirm("You have not passed any flag to iarcs.\n"+
-            "Do you want to setup all problems?",default=True,abort=True)
-            status=session.is_logged_in(ensure=True)
-            if(status==True):
-                display.normal("You are currently logged in, "+
-                "only solved problems will be setup")
-            elif(status==False):
-                display.normal("You are currently logged out, "+
-                "all problems will be setup")
-            else:
-                display.error("Cannot determine login status\n"+
-                "Pls check your internet connection")
-                sys.exit()
-            setup_module.setup_all_problems()
+            setup_module.setup_all_problems(confirm=True)
 
 def submit():
     display.normal("submit not implemeted yet")

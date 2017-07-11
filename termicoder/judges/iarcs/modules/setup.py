@@ -30,7 +30,6 @@ def logout():
 def setup_problem(problem_code):
     problem_path=os.path.join(".",problem_code)
     problem_code=problem_code.upper()
-    click.echo("working on problem %s from iarcs. pls wait..." % problem_code)
     j=scrape.get_problem(problem_code)
     if(j["error"]==None):
         problem_html=j.pop("body")
@@ -64,17 +63,35 @@ def setup_problem(problem_code):
         problem_file=open(problem_file_path,"w")
         click.echo(json.dumps(j,indent=2),file=problem_file)
 
-        display.normal("data for problem %s is now setup"%problem_code)
+def setup_all_problems(confirm=True):
+    if(confirm):
+        click.confirm("You have not passed any flag to iarcs.\n"+
+        "Do you want to setup all problems?",default=True,abort=True)
+    click.echo("trying to get your login status...",nl=False)
+    status=session.is_logged_in(ensure=True)
 
-def setup_all_problems():
+    if(status==True):
+        display.normal("\tDone\nYou are currently logged in, "+
+        "only solved problems will be setup")
+    elif(status==False):
+        display.normal("\tDone\nYou are currently logged out, "+
+        "all problems will be setup")
+    else:
+        display.error("Cannot determine login status\n"+
+        "Pls check your internet connection")
+        sys.exit()
+
     cwd=os.getcwd()
-    display.normal("setting up all problems from iarcs. pls wait...")
     try:
         os.mkdir("iarcs")
-        os.chdir("iarcs")
     except:
         pass
+    os.chdir("iarcs")
+    click.echo("fetching problem list... ",nl=False)
     problem_list=scrape.get_problem_list()
-    for problem in problem_list:
-        setup_problem(problem["problem_code"])
+    click.echo("\tDone")
+    display.normal("setting up %d problems from iarcs..."% len(problem_list))
+    with click.progressbar(problem_list) as bar:
+        for problem in bar:
+            setup_problem(problem["problem_code"])
     os.chdir(cwd)
