@@ -22,28 +22,28 @@ def setup_problem(problem_code,contest_code="PRACTICE"):
 
     if problem["error"]==None:
         problem_html=problem.pop("body")
-        sampleio=problem.pop("sampleio")
+        sample_io=problem.pop("sample_io")
         # html problem statement
         if not problem["error"]:
-            problem_html_file=os.path.join(problem_path,problem_code+".html")
-            f2=open(problem_html_file,"w")
-            print(problem_html,file=f2)     # TODO needs unicode fixture for python 2
+            problem_html_path=os.path.join(problem_path,problem_code+".html")
+            phfile=open(problem_html_path,"w")
+            print(problem_html,file=phfile)     # TODO needs unicode fixture for python 2
 
-        # sampleio files
-        if(sampleio["error"]==""):
+        # sample_io files
+        if(sample_io["error"]==""):
             testcases_path=os.path.join(problem_path,"testcases")
             try:
                 os.mkdir(testcases_path)
             except:
                 pass
-            for i in range(len(sampleio["inputs"])):
+            for i in range(len(sample_io["inputs"])):
                 input_file=os.path.join(testcases_path,str(i+1)+".in")
                 ifile=open(input_file,"w")
-                print(sampleio["inputs"][i],file=ifile)
-            for o in range(len(sampleio["outputs"])):
+                print(sample_io["inputs"][i],file=ifile)
+            for o in range(len(sample_io["outputs"])):
                 output_file=os.path.join(testcases_path,str(o+1)+".out")
                 ofile=open(output_file,"w")
-                print(sampleio["outputs"][o],file=ofile)
+                print(sample_io["outputs"][o],file=ofile)
 
     # the problem data
     problem_setup_file=os.path.join(problem_path,".problem")

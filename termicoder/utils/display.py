@@ -20,8 +20,29 @@ def current_dir(cwd):
     click.echo("display directory not implemented yet")
 
 def url_error(url,abort):
-    error("error in fetching:")
+    error("error in fetching url:")
     print_url(url)
     normal("please check your internet connection")
     if(abort):
+        sys.exit()
+
+def file_error(path,abort):
+    error("error in saving cookie file:")
+    print_path(path)
+    normal("please check the program has required permissions")
+    if(abort):
+        sys.exit()
+
+def credential_error(judge,abort):
+    error("error in logging into "+judge)
+    normal("please check your credtials")
+    if(abort):
+        sys.exit()
+
+def check_response_status(r,abort):
+    try:
+        r.raise_for_status()
+    except:
+        click.echo(style.error("error: the url ")+style.url(r.url))
+        error("exited with status "+str(r.status_code))
         sys.exit()

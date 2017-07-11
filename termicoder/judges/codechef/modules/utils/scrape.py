@@ -29,14 +29,14 @@ def extract_io(pre_tag_elements,url):
     """
     sample_inputs=[]
     sample_outputs=[]
-    for sampleio in pre_tag_elements:
+    for sample_io in pre_tag_elements:
         # finding heading / previous sibling of pre
-        sibling = sampleio.previous_sibling
+        sibling = sample_io.previous_sibling
         while(not str(sibling).strip()):
             sibling = sibling.previous_sibling
 
-        # converting sampleio to text
-        iotext=str(sampleio.text)
+        # converting sample_io to text
+        iotext=str(sample_io.text)
 
         # standard codechef problems with input and output in same pre tag
         # OR sometimes input just above pre tag and output in pretag
@@ -55,7 +55,7 @@ def extract_io(pre_tag_elements,url):
 
         # problem with input only like challenge problems
         # or input and output in seperate pre tags
-        elif("input" in str(sampleio.text).lower() or "input" in str(sibling).lower()):
+        elif("input" in str(sample_io.text).lower() or "input" in str(sibling).lower()):
             in_index = iotext.lower().find("input")
             ki=1 if (in_index == -1) else 5
             sample_input = sanitize(iotext[in_index+ki:])
@@ -63,7 +63,7 @@ def extract_io(pre_tag_elements,url):
 
         # problem with output only like printing 100! etc
         # or input and output in seperate pre tags
-        elif("output" in str(sampleio.text).lower() or "output" in str(sibling).lower()):
+        elif("output" in str(sample_io.text).lower() or "output" in str(sibling).lower()):
             out_index = iotext.lower().find("output")
             ko=1 if (out_index == -1) else 6
             sample_output = sanitize(iotext[out_index+ko:])
@@ -85,15 +85,15 @@ def get_problem(problem_code,contest_code="PRACTICE"):
     else:
         pre_tag_elements=soup.find_all('pre')
         pre_tag_count=len(pre_tag_elements)
-        sampleio={}
+        sample_io={}
         if pre_tag_count >= 1:
             sample_inputs,sample_outputs = extract_io(pre_tag_elements,url)
-            sampleio["inputs"]=sample_inputs
-            sampleio["outputs"]=sample_outputs
-            sampleio["error"]=""
+            sample_io["inputs"]=sample_inputs
+            sample_io["outputs"]=sample_outputs
+            sample_io["error"]=""
         else:
-            sampleio["error"]="Out of Scope"
-        j["sampleio"]=sampleio
+            sample_io["error"]="Out of Scope"
+        j["sample_io"]=sample_io
         j["judge"]="codechef"
     return j
 

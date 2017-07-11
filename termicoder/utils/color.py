@@ -33,3 +33,7 @@ url_bold=True
 sno_fg=None
 sno_bg=None
 sno_bold=True
+
+path_fg="cyan"
+path_bg=None
+path_bold=True

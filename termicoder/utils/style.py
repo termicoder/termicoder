@@ -8,7 +8,8 @@ style_types=["error",
             "problem_name",
             "contest_name",
             "url",
-            "sno"]
+            "sno",
+            "path"]
 
 # defining all the style_types functions in this loop
 # figure a better way out
