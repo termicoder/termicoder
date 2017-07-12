@@ -1,7 +1,7 @@
 # this file manages the basic cli of termicoder and calls the correct function
 import click
 import os
-from termicoder.utils import display, test
+from termicoder.utils import display, test, parse
 
 # Only need to change this on adding new judges if structure is followed
 # take care of , (comma) while editing this list!
@@ -113,19 +113,23 @@ def code(code_file):
 
 
 @click.command()
-@click.option('-f', '--file', 'code_file', type=click.File())
+@click.option('-f', '--file', 'code_file', type=click.File(),
+                help="the code file")
 def test(code_file):
     '''
     test code against the sample testcases.\n
     it (compiles and) runs your program\n
     and outputs the diff of expected and produced output
     '''
+    if(not code_file):
+        parse.get_code_file()
     click.echo('test not implemented yet')
     click.echo('params\n code_file-%s' % code_file)
 
 
 @click.command()
-@click.option('-f', '--file', 'code_file', type=click.File())
+@click.option('-f', '--file', 'code_file', type=click.File(),
+                help="the code file")
 def submit(code_file):
     '''
     submit a solution.
@@ -137,8 +141,10 @@ def submit(code_file):
     the settings of headers in code file dominate if different and valid,
     however if invalid, than the other one is tried
     '''
-    click.echo('submit not implemented yet')
-    click.echo('params\n code_file- %s' % code_file)
+    judge=parse.get_judge()
+    if(not code_file):
+        code_file=parse.get_code_file()
+    eval(judge).submit(code_file)
 
 
 @click.command()

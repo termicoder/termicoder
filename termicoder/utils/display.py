@@ -15,6 +15,9 @@ def normal(string):
 def print_url(string):
     click.echo(style.url(string))
 
+def print_path(string):
+    click.echo(style.path(string))
+
 def current_dir(cwd):
     click.echo("current working directory is: %s" % cwd)
     click.echo("display directory not implemented yet")
@@ -26,10 +29,18 @@ def url_error(url,abort):
     if(abort):
         sys.exit()
 
-def file_error(path,abort):
-    error("error in saving cookie file:")
+def file_save_error(path,abort):
+    error("error in saving file:")
     print_path(path)
     normal("please check the program has required permissions")
+    if(abort):
+        sys.exit()
+
+def file_read_error(path,abort):
+    error("error in reading file:")
+    print_path(path)
+    normal("please check that the file exists and\n"+
+    "you are in correct directory/folder")
     if(abort):
         sys.exit()
 

@@ -46,9 +46,13 @@ def setup(contest, problem_code, status):
             setup_module.logout()
 
         if(problem_code is not None):
-            setup_module.stetup_problem(problem_code)
+            click.echo("setting up problem "+problem_code.upper()+
+            " from iarcs...",nl=False)
+            setup_module.setup_problem(problem_code)
+            click.echo("\tDone")
+
         else:
             setup_module.setup_all_problems(confirm=True)
 
-def submit():
-    display.normal("submit not implemeted yet")
+def submit(code_file):
+    submit_module.submit(code_file)
