@@ -1,6 +1,7 @@
 # FIXME: poor error checking for this module
 import os
 import json
+import sys
 import click
 import requests
 from bs4 import BeautifulSoup
@@ -31,7 +32,11 @@ def check_status(code):
 
     status="compiling"
     while("running" in status.lower() or "compiling" in status.lower()):
-        r=iarcs_session.get(url)
+        try:
+            r=iarcs_session.get(url)
+        except:
+            display.url_error(url,abort=True)
+
         soup=BeautifulSoup(r.text,"html.parser")
         body=soup.find(id="maincontent")
         status=body.findAll("p")[1].text.split(' ',1) [1]
@@ -47,7 +52,13 @@ def submit(code_file):
 
     probid=j["problem_code"]
     source=open(code_file,"rb")
-    lang=lang_map[os.path.splitext(code_file)[1]]
+    extension=os.path.splitext(code_file)[1]
+    try:
+        lang=lang_map[extension]
+    except:
+        click.echo("the following extension is not supported:"
+                    +os.path.splitext(code_file)[1])
+        sys.exit()
 
     files={
     "source":source
@@ -68,15 +79,23 @@ def submit(code_file):
     "Are you sure?",default=True,abort=True)
 
     display.normal("checking your login...")
-    if(session.is_logged_in(ensure=True)==False):
+    login_status=session.is_logged_in(ensure=True)
+    if(login_status==False):
         display.normal("You are not already logged in. Redirecting to login...")
         setup_module.login()
-    else:
+    elif(login_status==True):
         display.normal("You are logged in")
-    #confirm submit
+    else:
+        display.error("cannot determine login status\n"+
+        "please check your internet connection")
+        sys.exit()
     click.echo("submitting your solution...",nl=False)
-    # TODO: test before submit
-    r=iarcs_session.post(submit_url,files=files,data=data)
+    # TODO: test before submit and confirm
+    try:
+        r=iarcs_session.post(submit_url,files=files,data=data)
+    except:
+        display.url_error(submit_url,abort=True)
+
     display.normal("\tDone")
     click.echo("retriving status (you can continue your work in another tab)...",
                 nl=False)
