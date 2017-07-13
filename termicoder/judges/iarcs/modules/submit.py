@@ -51,7 +51,7 @@ def submit(code_file):
     submit_url="http://opc.iarcs.org.in/index.php/submit/upload"
 
     probid=j["problem_code"]
-    source=open(code_file,"rb")
+    source=open(str(code_file),"rb")
     extension=os.path.splitext(code_file)[1]
     try:
         lang=lang_map[extension]
