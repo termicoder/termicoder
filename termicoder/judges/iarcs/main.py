@@ -51,7 +51,7 @@ def setup(contest, problem_code, status):
             setup_module.setup_problem(problem_code)
             click.echo("\tDone")
 
-        else:
+        elif(status is None  and problem_code is None):
             setup_module.setup_all_problems(confirm=True)
 
 def submit(code_file):
