@@ -3,9 +3,11 @@ import click
 import os
 from termicoder.utils import display, parse
 import termicoder.utils.test as test_module
+import termicoder.utils.code as code_module
 
 # Only need to change this on adding new judges if structure is followed
-# take care of , (comma) while editing this list!
+# take care of ',' (comma) while editing this list!
+# for default structure visit https://termicoder.github.io
 OJs = [
     'iarcs',
     'codechef'
@@ -20,7 +22,7 @@ for OJ in OJs:
 @click.group()
 def main():
     '''
-    view, code, submit problems directly from terminal.
+    view, code & submit problems directly from terminal.
     '''
     pass
 
@@ -56,8 +58,6 @@ def problems(judge, contest):
 
 
 @click.command()
-@click.option("-r","--recursive",is_flag=True,default=False,
-              help="recursive display in current folder upto 1 level")
 @click.option("-f", "--folder", type=click.Path())
 def this(recursive, folder):
     '''
@@ -65,13 +65,12 @@ def this(recursive, folder):
     if it is a contest folder it displays the list of problems
     if a problem folder displays the problem in a browser
     '''
-    cwd = os.getcwd()
-    display.current_dir(cwd,recursive,folder)
+    display.current_dir(folder)
 
 view.add_command(contests)
 view.add_command(problems)
 view.add_command(this)
-#######################################################
+###############################################################################
 
 
 @click.command()
@@ -83,7 +82,7 @@ view.add_command(this)
 @click.option('--logout', 'status', flag_value='logout')
 def setup(judge, contest, problem,status):
     """
-    prepares directories for termicoder to work.
+    sets up problem, contests and login.
 
     if you pass judge and --login/--logout, it logs you in and out of the judge
 
@@ -95,20 +94,28 @@ def setup(judge, contest, problem,status):
     of contest/category may vary amongst various online judges
     """
     eval(judge).setup(contest, problem,status)
-    # click.echo('setup not implemented yet')
-    # click.echo('params\n status- %s' % status)
-    # click.echo('params\n judge-%s' % judge)
-    # click.echo('params\n contest-%s' % contest)
-    # click.echo('params\n problem-%s' % problem)
 
 
 @click.command()
-@click.option('-f', '--file', 'code_file', type=click.File())
-def code(code_file):
+@click.option('-f', '--file', 'code_file',
+                type=click.Path(writable=True,readable=False, dir_okay=False),
+                help="the filename to code into with preloaded template"
+                )
+@click.option('-et',"--edittemplates", is_flag=True, default=False,
+            help="open templates folder")
+@click.option('-ed',"--editdefaults", is_flag=True, default=False,
+            help="edit defaults for editors")
+def code(code_file,edittemplates):
     '''
     creates file with template code.\n
     you need to be in a problem directory.
     '''
+    if(edittemplates==True):
+        code_module.edit_templates()
+
+    elif(codedefaults==True):
+        code_module.edit_defaults()
+
     click.echo('code not implemented yet')
     click.echo('params\n code_file-%s' % code_file)
 
@@ -116,12 +123,17 @@ def code(code_file):
 @click.command()
 @click.option('-f', '--file', 'code_file', type=click.File(),
                 help="the code file")
-def test(code_file):
+@click.option('-es',"--editscripts",is_flag=True,default=False)
+def test(code_file,editscripts):
     '''
     test code against the sample testcases.\n
-    it (compiles and) runs your program\n
-    and outputs the diff of expected and produced output
+    it (compiles and) runs your program
+    and outputs the diff of expected and produced outputs.
+    It also outputs time for particular
     '''
+    if(editscripts==True):
+        test_module.edit_scripts()
+
     judge=parse.get_judge()
     if(not code_file):
         code_file=parse.get_code_file()
@@ -153,10 +165,15 @@ def submit(code_file):
 @click.command()
 def debug():
     '''
-    launchs the debuger
+    launches custom debug interface (in future)
+    where you can use testcase generator,
+    launch debugger for the particular language
+    and visualize the output
     '''
-    click.echo('this functionality is not availible in this version'+
-    'this option is only kept for avoiding hastles in future versions')
+    click.echo('This functionality is not implemented in this version\n'+
+    'The command is only kept for compactiblity with future versions\n'+
+    'If you want to contribute to its developement visit:\n'+
+    'https://termicoder.github.io/')
 
 main.add_command(view)
 main.add_command(setup)
