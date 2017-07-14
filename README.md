@@ -132,5 +132,9 @@ general format : submit --options
 16) Try integrating this with other applications that programmers use.
 17) A chrome extension for this project .. an editor, compiling system etc within chrome would be great could use Ideone
 18) Integration with [Ideone](https://ideone.com/sphere-engine)
+19) **Setup 'n' random problems with a given tag(category ex #dp etc may be take help of stopstalk(maybe)).**
+20) **Setup a random contest with 'n' problems and predict ranks(sort of)**
+21) serving a daily random contest later on can be a great idea, the problems will be atleast a year old from other judges(practice problems) and we can have some internal rating also an algo can be developed for choosing good and varied problems
+22) try to extend this project to emacs lisp, vim script etc.
   
 ## Make people :heart: this :wink:
