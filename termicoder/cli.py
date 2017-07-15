@@ -99,40 +99,39 @@ def setup(judge, contest, problem,status):
 @click.command()
 @click.option('-f', '--file', 'code_file',
                 type=click.Path(writable=True,readable=False, dir_okay=False),
-                help="the filename to code into with preloaded template"
-                )
-@click.option('-et',"--edittemplates", is_flag=True, default=False,
+                help="the filename to code into with preloaded template",
+                prompt=True)
+@click.option('-et',"--edit_templates", is_flag=True, default=False,
             help="open templates folder")
-@click.option('-ed',"--editdefaults", is_flag=True, default=False,
+@click.option('-ed',"--edit_defaults", is_flag=True, default=False,
             help="edit defaults for editors")
-def code(code_file,edittemplates,editdefaults):
+def code(code_file,edit_templates,edit_defaults):
     '''
     creates file with template code.\n
     you need to be in a problem directory.
     '''
-    if(edittemplates==True):
+    if(edit_templates==True):
         code_module.edit_templates()
 
-    elif(editdefaults==True):
+    elif(edit_defaults==True):
         code_module.edit_defaults()
 
-    click.echo('code not implemented yet')
-    click.echo('params\n code_file-%s' % code_file)
+    code_module.code(code_file)
 
 
 @click.command()
 @click.option('-f', '--file', 'code_file', type=click.File(),
                 help="the code file")
-@click.option('-es',"--editscripts",is_flag=True,default=False)
+@click.option('-es',"--edit_scripts",is_flag=True,default=False)
 @click.option('-tl','--timelimit',type=float,help="the max time per testcase")
-def test(code_file,editscripts,timelimit):
+def test(code_file,edit_scripts,timelimit):
     '''
     test code against the sample testcases.\n
     it (compiles and) runs your program
     and outputs the diff of expected and produced outputs.
     It also outputs time for particular
     '''
-    if(editscripts==True):
+    if(edit_scripts==True):
         test_module.edit_scripts()
 
     judge=parse.get_judge()
