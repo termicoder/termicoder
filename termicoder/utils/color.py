@@ -37,3 +37,7 @@ sno_bold=True
 path_fg="cyan"
 path_bg=None
 path_bold=True
+
+correct_fg="green"
+correct_bg=None
+correct_bold=True

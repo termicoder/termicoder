@@ -9,7 +9,8 @@ style_types=["error",
             "contest_name",
             "url",
             "sno",
-            "path"]
+            "path",
+            "correct"]
 
 # defining all the style_types functions in this loop
 # figure a better way out

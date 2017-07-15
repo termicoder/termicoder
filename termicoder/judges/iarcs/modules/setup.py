@@ -28,8 +28,8 @@ def logout():
 
 
 def setup_problem(problem_code):
-    problem_path=os.path.join(".",problem_code)
     problem_code=problem_code.upper()
+    problem_path=os.path.join(".",problem_code)
     j=scrape.get_problem(problem_code)
     if(j["error"]==None):
         problem_html=j.pop("body")

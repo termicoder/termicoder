@@ -47,7 +47,19 @@ def get_code_file():
 
 def get_time_limit():
     time_limit=None
-    click.echo("tle not implemeted yet")
+    problem_file_path=".problem"
+
+    try:
+        f=open(problem_file_path,"r")
+    except:
+        pass
+    else:
+        j=json.load(f)
+        try:
+            time_limit=j["max_timelimit"]
+        except:
+            pass
+
     if(time_limit is None):
         return 3.0
     else:

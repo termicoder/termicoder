@@ -124,7 +124,8 @@ def code(code_file,edittemplates,editdefaults):
 @click.option('-f', '--file', 'code_file', type=click.File(),
                 help="the code file")
 @click.option('-es',"--editscripts",is_flag=True,default=False)
-def test(code_file,editscripts):
+@click.option('-tl','--timelimit',type=float,help="the max time per testcase")
+def test(code_file,editscripts,timelimit):
     '''
     test code against the sample testcases.\n
     it (compiles and) runs your program
@@ -138,7 +139,7 @@ def test(code_file,editscripts):
     if(not code_file):
         code_file=parse.get_code_file()
     code_file=parse.get_file_name(code_file)
-    test_module.test(code_file)
+    test_module.test(code_file,timelimit)
 
 
 @click.command()
