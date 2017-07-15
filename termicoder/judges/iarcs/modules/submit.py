@@ -57,7 +57,7 @@ def submit(code_file):
         lang=lang_map[extension]
     except:
         click.echo("the following extension is not supported:"
-                    +os.path.splitext(code_file)[1])
+                    +extension)
         sys.exit()
 
     files={

@@ -59,7 +59,7 @@ def problems(judge, contest):
 
 @click.command()
 @click.option("-f", "--folder", type=click.Path())
-def this(recursive, folder):
+def this(folder):
     '''
     display the termicoder contents in current/passed folder
     if it is a contest folder it displays the list of problems
@@ -105,7 +105,7 @@ def setup(judge, contest, problem,status):
             help="open templates folder")
 @click.option('-ed',"--editdefaults", is_flag=True, default=False,
             help="edit defaults for editors")
-def code(code_file,edittemplates):
+def code(code_file,edittemplates,editdefaults):
     '''
     creates file with template code.\n
     you need to be in a problem directory.
@@ -113,7 +113,7 @@ def code(code_file,edittemplates):
     if(edittemplates==True):
         code_module.edit_templates()
 
-    elif(codedefaults==True):
+    elif(editdefaults==True):
         code_module.edit_defaults()
 
     click.echo('code not implemented yet')

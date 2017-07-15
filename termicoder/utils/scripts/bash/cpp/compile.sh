@@ -7,4 +7,5 @@
 
 PRG=$1
 OUT=$2
+
 g++ -g -Wall -D ONLINE_JUDGE -o $OUT $PRG
