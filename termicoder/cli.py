@@ -99,8 +99,7 @@ def setup(judge, contest, problem,status):
 @click.command()
 @click.option('-f', '--file', 'code_file',
                 type=click.Path(writable=True,readable=False, dir_okay=False),
-                help="the filename to code into with preloaded template",
-                prompt=True)
+                help="the filename to code into with preloaded template")
 @click.option('-et',"--edit_templates", is_flag=True, default=False,
             help="open templates folder")
 @click.option('-ed',"--edit_defaults", is_flag=True, default=False,
@@ -116,15 +115,22 @@ def code(code_file,edit_templates,edit_defaults):
     elif(edit_defaults==True):
         code_module.edit_defaults()
 
-    code_module.code(code_file)
+    elif(code_file is None):
+        code_file=click.prompt("Please provide a code file",
+        type=click.Path(writable=True,readable=False, dir_okay=False))
 
+    if(code_file is not None):
+        code_module.code(code_file)
 
+#TODO: Add an option to not to use testcases and try it live
 @click.command()
 @click.option('-f', '--file', 'code_file', type=click.File(),
                 help="the code file")
 @click.option('-es',"--edit_scripts",is_flag=True,default=False)
 @click.option('-tl','--timelimit',type=float,help="the max time per testcase")
-def test(code_file,edit_scripts,timelimit):
+@click.option('-l','--live',is_flag=True,default=False,
+help="test the code live and dont use testcases")
+def test(code_file,edit_scripts,timelimit,live):
     '''
     test code against the sample testcases.\n
     it (compiles and) runs your program
@@ -134,11 +140,10 @@ def test(code_file,edit_scripts,timelimit):
     if(edit_scripts==True):
         test_module.edit_scripts()
 
-    judge=parse.get_judge()
     if(not code_file):
         code_file=parse.get_code_file()
     code_file=parse.get_file_name(code_file)
-    test_module.test(code_file,timelimit)
+    test_module.test(code_file,timelimit,live)
 
 
 @click.command()

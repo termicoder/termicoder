@@ -3,7 +3,5 @@
 # USAGE . run.sh <python file name> <infile> <outfile>
 
 code=$1
-infile=$2
-outfile=$3
 
-(python3 $code < $infile > $outfile)
+(python3 $code)

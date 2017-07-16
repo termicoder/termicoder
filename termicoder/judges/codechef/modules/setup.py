@@ -6,7 +6,7 @@ html problem statements and testcases
 for trial run run this as python3 setup.py
 """
 from __future__ import print_function
-from . import scrape
+import termicoder.judges.codechef.modules.utils.scrape as scrape
 import os
 import json
 

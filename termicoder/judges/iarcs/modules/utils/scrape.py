@@ -65,6 +65,7 @@ def get_problem(problem_code,abort_on_error=False):
         sys.exit()
     except:
         display.url_error(url,abort=abort_on_error)
+        j["error"]="urlerror"
     else:
         j["body"]=str(soup.find(id='maincontent'))
         iocandidate = soup.find_all("pre")

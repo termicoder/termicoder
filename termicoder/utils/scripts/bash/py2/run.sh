@@ -3,7 +3,5 @@
 # USAGE . run.sh <binary file name> <infile> <outfile>
 
 code=$1
-infile=$2
-outfile=$3
 
-(python2 $code < $infile > $outfile)
+(python2 $code)

@@ -16,9 +16,11 @@ typedef long long int lli;
 #define tr(c,i) for(typeof((c).begin()) i = (c).begin(); i != (c).end(); i++)
 #define present(c,x) ((c).find(x) != (c).end())
 #define cpresent(c,x) (find(all(c),x) != (c).end())
+#define FAST_IO ios::sync_with_stdio(false); cin.tie(0); cout.tie(0);
 
 int main()
 {
+    FAST_IO
     lli i,j,t,n;
     cin>>t;
     
@@ -29,5 +31,5 @@ int main()
 	return 0;
 }
 
-//Coded using termicoder: 
+//<> with <3 using termicoder: 
 //https://temricoder.github.io

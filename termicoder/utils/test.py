@@ -72,13 +72,12 @@ def diff(ansfile,outfile):
 
     return '\n'.join(a)
 
-def test(code_file,time_limit):
+def test(code_file,time_limit,live):
     # TODO: check for testcase folder if not found then exit
     # TODO: check if the answer file exists
     # code file will exist; thanks to 'click'
     if(time_limit is None):
         time_limit = parse.get_time_limit()
-    memory_limit = parse.get_memory_limit()
 
     extension=os.path.splitext(code_file)[1]
     try:
@@ -118,9 +117,9 @@ def test(code_file,time_limit):
             executable_name=os.path.splitext(code_file)[0]
             compilecall=["bash",compile_script,code_file,executable_name]
             click.echo("compiling...",nl=False)
-            start=time.clock()
+            start=time.time()
             a=subprocess.call(compilecall)
-            stop=time.clock()
+            stop=time.time()
             tdiff=stop-start
 
             # if process return a non zero exit code
@@ -135,57 +134,65 @@ def test(code_file,time_limit):
         else:
             executable_name=code_file
 
-        # run on testcases
-        #call scripts to output to a file ; then print time
-        #script takes arguments as in_filename and out_filename
-        global diff_strings
-
-        testcase_dir="testcases"
-        testcase_files=sorted(os.listdir(testcase_dir))
-        click.echo("running...")
-        for testcase_file in testcase_files:
-            filename=os.path.splitext(testcase_file)[0]
-            file_extension=os.path.splitext(testcase_file)[1]
-
-            #TODO print time and diff
-            if(file_extension == ".in"):
-                status=None
-                infile=os.path.join("testcases",testcase_file)
-                outfile=os.path.join("testcases",filename+".outx")
-                runcall=[get_shell(),run_script,executable_name,infile,outfile]
-
-                click.echo("testcase "+filename,nl=False)
-                start=time.clock()
-                try:
-                    a=subprocess.call(runcall,timeout=time_limit)
-                except subprocess.TimeoutExpired:
-                    status=style.error("TLE")
-                except:
-                    status="RTE"
-                if(a):  # runtime error
-                    status=style.error("RTE")
-                stop=time.clock()
-                tdiff=stop-start
-
-                if(status is None):
-                    #check output and append create diff strings
-                    ansfile=os.path.join("testcases",filename+".out")
-                    if(is_same(ansfile,outfile)):
-                        status=style.correct("AC")
-                    else:
-                        status=style.error("WA")
-                        diff_strings.append("\nTestcase "+filename+"\n")
-                        diff_strings.append(diff(ansfile,outfile))
-
-                click.echo("\t %s"%status,nl=False)
-                click.echo("\t Time: %.4fs" % tdiff)
-
-        if(len(diff_strings)>1):
-            click.confirm("There were some WA's\n"+
-            "Do you want to view the diff page?",default=True,abort=True)
-            click.echo_via_pager('\n'.join(diff_strings))
+        if(live==True):
+            runcall=[get_shell(),run_script,executable_name]
+            click.echo("The program is now running:")
+            a=subprocess.call(runcall)
+            click.echo("\nTermicoder:\nthe process exited with status code "+str(a)+
+            "\none \\n was added after your code's output by Termicoder")
         else:
-            click.echo("\nYour program passed all the sample testcases :-)")
+            # run on testcases
+            #call scripts to output to a file ; then print time
+            #script takes arguments as in_filename and out_filename
+            global diff_strings
+
+            testcase_dir="testcases"
+            testcase_files=sorted(os.listdir(testcase_dir))
+            click.echo("running...")
+            for testcase_file in testcase_files:
+                filename=os.path.splitext(testcase_file)[0]
+                file_extension=os.path.splitext(testcase_file)[1]
+
+                if(file_extension == ".in"):
+                    status=None
+                    infile=os.path.join("testcases",testcase_file)
+                    outfile=os.path.join("testcases",filename+".outx")
+                    stdin=open(infile,"r")
+                    stdout=open(outfile,"w")
+                    runcall=[get_shell(),run_script,executable_name]
+
+                    # TODO: use a better function then time.clock()
+                    start=time.time()
+                    try:
+                        a=subprocess.call(runcall,timeout=time_limit,stdin=stdin,stdout=stdout)
+                    except subprocess.TimeoutExpired:
+                        status=style.error("TLE")
+                    except:
+                        click.echo("")
+                        status="RTE"
+                    if(a):  # runtime error
+                        status=style.error("RTE")
+                    stop=time.time()
+                    tdiff=stop-start
+
+                    if(status is None):
+                        #check output and append create diff strings
+                        ansfile=os.path.join("testcases",filename+".out")
+                        if(is_same(ansfile,outfile)):
+                            status=style.correct("AC")
+                        else:
+                            status=style.error("WA")
+                            diff_strings.append("\nTestcase "+filename+"\n")
+                            diff_strings.append(diff(ansfile,outfile))
+
+                    click.echo("testcase "+filename,nl=False)
+                    click.echo("\t %s"%status,nl=False)
+                    click.echo("\t Time: %.4fs" % tdiff)
+
+            if(len(diff_strings)>1):
+                click.confirm("There were some WA's\n"+
+                "Do you want to view the diff page?",default=True,abort=True)
+                click.echo_via_pager('\n'.join(diff_strings))
 
 
 def edit_scripts():

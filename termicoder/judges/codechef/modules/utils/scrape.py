@@ -6,8 +6,8 @@ import requests
 from bs4 import BeautifulSoup
 import json
 from time import strptime,strftime,mktime,gmtime,localtime
-from . import session
-from . import console
+from termicoder.judges.codechef.modules.utils import session
+from termicoder.utils import  display
 
 def sanitize(io):
     """
@@ -183,4 +183,4 @@ def get_practice_problems(category):
     categorylist=["school","easy","medium","hard","challenge","extcontest"]
     codechef_session = session.codechef_session
     url="https://www.codechef.com/problems"+category
-    console.log("Not implemented yet")
+    display.log("Not implemented yet")

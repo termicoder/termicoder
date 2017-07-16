@@ -1,6 +1,6 @@
 {
   "cpp": "vim",
-  "c": null,
-  "python": null,
+  "c": "vim",
+  "python": "vim",
   "java": null
 }

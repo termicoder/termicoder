@@ -3,7 +3,5 @@
 # USAGE . run.sh <binary file name> <infile> <outfile>
 
 PRG=$1
-infile=$2
-outfile=$3
 
-(./$PRG < $infile > $outfile)
+(./$PRG)
