@@ -31,4 +31,4 @@ def pad(string,length):
     if(len(string)<=length):
         return string+((" ")*(length-len(string)))
     else:
-        return string[:-2]+".."
+        return string[:length-2]+".."

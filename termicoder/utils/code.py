@@ -11,7 +11,8 @@ lang_map={
 ".c":"c",
 ".cpp":"cpp",
 ".cc":"cpp",
-".c++":"cpp"
+".c++":"cpp",
+".java":"java"
 }
 
 def edit_templates():
@@ -42,10 +43,6 @@ def code(code_file):
         if(os.path.exists(code_file)==False):
             templates_folder=os.path.join(os.path.dirname(__file__),"templates")
             lang_folder=lang_map[ext]
-            if(ext==".py"):
-                ver=click.prompt("enter python version",type=click.Choice([2,3]),
-                default=3)
-                lang_folder="py"+str(ver)
             lang_folder=os.path.join(templates_folder,lang_folder)
             try:
                 template_file=os.path.join(lang_folder,"template"+ext)
@@ -57,7 +54,10 @@ def code(code_file):
                 pass
         app=defaults[lang_map[ext]]
 
-    if(app is None):
-        click.launch(code_file)
+        if(app is None):
+            click.launch(code_file)
+        else:
+            subprocess.call([app,code_file])
+
     else:
-        subprocess.call([app,code_file])
+        display.error("termicoder doesn't support extension: "+ext)

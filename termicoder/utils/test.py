@@ -39,20 +39,34 @@ def get_shell():
         return "bash"
 
 def is_same(ansfile,outfile):
-    return filecmp.cmp(ansfile,outfile)
+    a=False
+    try:
+        a=filecmp.cmp(ansfile,outfile)
+    except:
+        display.error("error in infile/outfile")
+    return a
 
 def diff(ansfile,outfile):
     pad=style.pad
-    s1=open(ansfile,"r").readlines()
-    s2=open(outfile,"r").readlines()
-    l=min(len(s1),len(s2))
     a=[]
-    lno_pad=max(len(str(l)),3)
+    error=False
+    try:
+        s1=open(ansfile,"r").readlines()
+        s2=open(outfile,"r").readlines()
+    except:
+        error=True
+
+    if(not error):
+        l=min(len(s1),len(s2))
+        lno_pad=max(len(str(l)),3)
+    else:
+        l=0
+        lno_pad=3
     a.append('|' + pad("lno",lno_pad) +
     '|' + pad(ansfile,25) + '|'+pad(outfile,25)+'|')
-
     a.append('+' + '-'*lno_pad +
     '+' + '-'*25 + '+'+ '-'*25+'+')
+
     for i in range(l):
         line1=s1[i]
         line2=s2[i]
@@ -70,6 +84,8 @@ def diff(ansfile,outfile):
             if(len(a)>=12):
                 break
 
+    if(error):
+        a.append("error in opening files")
     return '\n'.join(a)
 
 def test(code_file,time_limit,live):
@@ -91,12 +107,7 @@ def test(code_file,time_limit,live):
         # retriving the correct bash and batch scripts #######################
         scripts_folder=os.path.join(os.path.dirname(__file__),"scripts")
         os_scripts=os.path.join(scripts_folder,get_script_folder())
-        if(lang == "python"):
-            ver=click.prompt("please provide python version",
-            type=click.Choice([2,3]),default=3)
-            lang_folder="py"+str(ver)
-        else:
-            lang_folder=lang
+        lang_folder=lang
         lang_folder=os.path.join(os_scripts,lang_folder)
         compile_script=None
         run_script=None

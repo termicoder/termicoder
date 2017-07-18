@@ -8,4 +8,4 @@
 PRG=$1
 OUT=$2
 
-g++ -g -Wall -D ONLINE_JUDGE -o $OUT $PRG
+g++ -O2 -g -Wall -D ONLINE_JUDGE -o $OUT $PRG

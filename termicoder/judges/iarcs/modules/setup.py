@@ -53,11 +53,11 @@ def setup_problem(problem_code):
             for i in range(len(sample_io["inputs"])):
                 input_file=os.path.join(testcases_path,str(i+1)+".in")
                 ifile=open(input_file,"w")
-                print(sample_io["inputs"][i],file=ifile)
+                click.echo(sample_io["inputs"][i],file=ifile,nl=False)
             for o in range(len(sample_io["outputs"])):
                 output_file=os.path.join(testcases_path,str(o+1)+".out")
                 ofile=open(output_file,"w")
-                print(sample_io["outputs"][o],file=ofile)
+                click.echo(sample_io["outputs"][o],file=ofile,nl=False)
 
         problem_file_path=os.path.join(problem_path,".problem")
         problem_file=open(problem_file_path,"w")
@@ -72,7 +72,7 @@ def setup_all_problems(confirm=True):
 
     if(status==True):
         display.normal("\tDone\nYou are currently logged in, "+
-        "only solved problems will be setup")
+        "only unsolved problems will be setup")
     elif(status==False):
         display.normal("\tDone\nYou are currently logged out, "+
         "all problems will be setup")
