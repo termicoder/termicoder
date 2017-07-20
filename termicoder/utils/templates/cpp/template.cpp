@@ -1,5 +1,5 @@
-//Author: YourName
-//Institution: YourInstitution
+//Author:      YourName
+//Institution: YourInstitute
 
 #include<bits/stdc++.h>
 using namespace std;
@@ -31,5 +31,5 @@ int main()
 	return 0;
 }
 
-//<> with <3 using termicoder: 
+//<> with <3 using termicoder:
 //https://temricoder.github.io

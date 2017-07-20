@@ -10,17 +10,13 @@ error_fg="red"
 error_bg=None
 error_bold=True
 
-problem_code_fg="green"
+problem_code_fg="blue"
 problem_code_bg=None
 problem_code_bold=True
 
-contest_code="yellow"
+contest_code_fg="yellow"
 contest_code_bg=None
 contest_code_bold=True
-
-problem_name_fg=None
-problem_name_bg=None
-problem_name_bold=True
 
 contest_name_fg=None
 contest_name_bg=None
@@ -41,3 +37,24 @@ path_bold=True
 correct_fg="green"
 correct_bg=None
 correct_bold=True
+
+submissions_fg="green"
+submissions_bg=None
+submissions_bold=True
+
+# problem name
+unsolved_fg=None
+unsolved_bg=None
+unsolved_bold=True
+
+incorrect_fg="red"
+incorrect_bg=None
+incorrect_fg=True
+
+partially_solved_fg="yellow"
+partially_solved_bg=None
+partially_solved_bold=True
+
+challenge_fg="magenta"
+challenge_bg=None
+challenge_bold=True

@@ -69,6 +69,8 @@ def setup_contest(contest_code):
         for problem_code in contest["problems"]:
             setup_problem(problem_code,contest_code)
 
-if __name__ == "__main__":
-    # trial setup of a contest
-    setup_contest("JULY17")
+def login(status):
+    print("setup login not implemented")
+
+def logout(status):
+    print("setup logout not implemented")

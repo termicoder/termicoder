@@ -1,6 +1,6 @@
 import requests
 import os
-import termicoder.judges.codechef.utils.session as session
+import termicoder.judges.codechef.modules.utils.session as session
 import time
 
 def submit(problem_code,contest_code,solution_path,language_code):

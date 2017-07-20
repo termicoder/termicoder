@@ -3,6 +3,7 @@ This module contatins function for scraping contest list, contest, problem
 from codechef. The function return dictionaries with errors and data
 """
 import requests
+import sys
 from bs4 import BeautifulSoup
 import json
 from time import strptime,strftime,mktime,gmtime,localtime
@@ -97,7 +98,7 @@ def get_problem(problem_code,contest_code="PRACTICE"):
         j["judge"]="codechef"
     return j
 
-def get_contest(contest_code):
+def get_contest(contest_code,abort=True):
     codechef_session = session.codechef_session
     url="https://www.codechef.com/api/contests/"+contest_code
     j={"error":None,"judge":"codechef","contest_code":contest_code}
@@ -106,6 +107,11 @@ def get_contest(contest_code):
         j.update(r.json())
     except:
         j["error"]="urlerror"
+        display.url_error(url,abort=abort)
+    if("error" in j["status"]):
+        display.error(j["message"])
+        if(abort==True):
+            sys.exit()
     return j
 
 

@@ -5,12 +5,16 @@ style_types=["error",
             "command",
             "problem_code",
             "contest_code",
-            "problem_name",
             "contest_name",
             "url",
             "sno",
             "path",
-            "correct"]
+            "correct",
+            "submissions",
+            "unsolved",
+            "incorrect",
+            "challenge",
+            "partially_solved"]
 
 # defining all the style_types functions in this loop
 # figure a better way out
