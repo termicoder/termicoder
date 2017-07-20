@@ -26,10 +26,11 @@ def problems(contest):
     display_strings.append(style.normal("\nContest: ")+
     style.contest_code(contest_data["code"])+" "+
     style.contest_name("("+contest_data["name"]+")"))
-    if(contest_data["user"]["username"]):
+    #print(contest_data)
+    if(contest_data["rank_and_score"] and contest_data["user"]["username"]):
         display_strings.append(style.normal("Rank: "+
         contest_data["rank_and_score"]["rank"]+"\t"+
-        "Score: "+contest_data["rank_and_score"]["rank"]))
+        "Score: "+contest_data["rank_and_score"]["score"]))
 
     display_strings.append(division_line())
     display_strings.append("|"+style.sno("SNo",3)+
@@ -40,7 +41,8 @@ def problems(contest):
     problems=[]
     for i in contest_data["problems"]:
         if(i not in contest_data["problemsstats"]["solved"] or
-        contest_data["problems"][i]["type"]!="3"):
+        contest_data["problems"][i]["type"]!="3" or
+        i in contest_data["problemsstats"]["partially_solved"]):
             problems.append(contest_data["problems"][i])
     problems.sort(key=lambda p: int(p["successful_submissions"]),reverse=True)
 
@@ -48,16 +50,16 @@ def problems(contest):
         name_style=style.unsolved
         if(contest_data["problems"][problem["code"]]["type"]!="3"):
             name_style=style.challenge
-        elif(problem in contest_data["problemsstats"]["partially_solved"]):
+        elif(problem["code"] in contest_data["problemsstats"]["partially_solved"]):
             name_style=style.partially_solved
-        elif(problem in contest_data["problemsstats"]["attempted"]):
+        elif(problem["code"] in contest_data["problemsstats"]["attempted"]):
             name_style=style.incorrect
 
         display_strings.append(
-                    "|"+style.sno(str(sno+1),3)+
-                    "|"+style.problem_code(problem["code"],10)+
-                    "|"+name_style(problem["name"],25)+
-                    "|"+style.submissions(problem["successful_submissions"],7)+"|")
+                "|"+style.sno(str(sno+1),3)+
+                "|"+style.problem_code(problem["code"],10)+
+                "|"+name_style(problem["name"],25)+
+                "|"+style.submissions(problem["successful_submissions"],7)+"|")
     display_strings.append(division_line())
     click.echo_via_pager('\n'.join(display_strings))
 

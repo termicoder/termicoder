@@ -5,10 +5,32 @@ html problem statements and testcases
 
 for trial run run this as python3 setup.py
 """
-from __future__ import print_function
+import click
+import termicoder.utils.display as display
+import termicoder.judges.codechef.modules.utils.session as session
 import termicoder.judges.codechef.modules.utils.scrape as scrape
 import os
 import json
+
+def login():
+    if(session.is_logged_in(ensure=True)==True):
+        display.normal("You are already logged in")
+    else:
+        username=click.prompt('enter username', type=click.STRING)
+        password=click.prompt('enter password', type=click.STRING,
+                                hide_input=True)
+        display.normal("logging you into codechef. please wait...")
+        session.login(username,password)
+        display.normal("you were logged in successfully. cookies saved")
+
+def logout():
+    if(session.is_logged_in(ensure=False) == False):
+        display.normal("invalid option --logout")
+        display.normal("you are already logged out of iarcs")
+    else:
+        display.normal("logging you out of codechef. please wait...")
+        session.logout()
+        display.normal("you were logged out sucessfully. cookies deleted")
 
 def setup_problem(problem_code,contest_code="PRACTICE"):
     problem_path=os.path.join(".",contest_code,problem_code)
@@ -68,9 +90,3 @@ def setup_contest(contest_code):
     if(contest["error"]==None):
         for problem_code in contest["problems"]:
             setup_problem(problem_code,contest_code)
-
-def login(status):
-    print("setup login not implemented")
-
-def logout(status):
-    print("setup logout not implemented")

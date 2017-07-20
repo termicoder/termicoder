@@ -49,7 +49,7 @@ unsolved_bold=True
 
 incorrect_fg="red"
 incorrect_bg=None
-incorrect_fg=True
+incorrect_bold=True
 
 partially_solved_fg="yellow"
 partially_solved_bg=None

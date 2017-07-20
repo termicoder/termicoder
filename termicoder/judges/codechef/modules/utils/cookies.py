@@ -1,30 +1,39 @@
 import requests
 import pickle
 import os
-
-# name of cookie file rem that it is a binary file
-cookie_file="codechefcookies.dump"
+import termicoder.utils.display as display
+# following is the cookie file rem that it is a binary file
+dir_name=os.path.dirname(__file__)
+cookie_file_path=dir_name+"/codechef_cookies.dump"
 
 def save(session):
-    with open(cookie_file, 'wb') as f:
-        pickle.dump(session.cookies,file=f,protocol=2)
-
-def load_session():
+    global cookie_file_path
     try:
-        f=open(cookie_file,'rb')
+        f=open(cookie_file_path, 'wb')
+        pickle.dump(session.cookies,file=f)
     except:
-        return None
+        display.file_error(cookie_file_path,abort=True)
+        return False
     else:
+        return True
+
+def load():
+    global cookie_file_path
+    try:
+        f=(open(cookie_file_path,'rb'))
         cookies = pickle.load(f)
         session = requests.session()
         session.cookies=cookies
+    except:
+        return None
+    else:
         return session
 
 def delete():
+    global cookie_file_path
     try:
-        f=open(cookie_file,'wb')
-        os.remove(cookie_file)
+        os.remove(cookie_file_path)
     except:
-        pass
-        
-
+        return False
+    else:
+        return True

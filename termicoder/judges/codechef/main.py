@@ -23,4 +23,17 @@ def view_problems(contest):
     view_module.problems(contest)
 
 def setup(contest, problem, status):
-    click.echo("setup not implemented yet")
+    if(status=="login"):
+        setup_module.login()
+    elif(status=="logout"):
+        setup_module.logout()
+
+
+    # if(problem_code is not None):
+    #     click.echo("setting up problem "+problem_code.upper()+
+    #     " from codechef...",nl=False)
+    #     setup_module.setup_problem(problem_code)
+    #     click.echo("\tDone")
+
+    #elif(status is None  and problem_code is None):
+    #    setup_module.setup_all_problems(confirm=True)

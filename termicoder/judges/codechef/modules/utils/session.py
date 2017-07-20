@@ -1,78 +1,74 @@
-# WARNING
-# this script assumes everything to go well and doesn't check
-# username pass are correct, connection yet
-# TODO fix error checking soon
-
+import click
 import requests
 from bs4 import BeautifulSoup
-import getpass
-import pprint
+import termicoder.utils.style
 import time
 from termicoder.judges.codechef.modules.utils import cookies
 from termicoder.utils import display
 
-url="https://www.codechef.com/"
+url="https://www.codechef.com"
 codechef_session=requests.session()
 
-# this function is significantly general for filling forms try to make it more general
-# use the value attribute of forms
-def login():
-    login_url=url
+def login(username,password):
     global codechef_session
-    login_page=codechef_session.get(login_url)
-    display.ifverbose("got the login page")
+    login_url=url+"/"
+    try:
+        login_page=codechef_session.get(login_url)
+    except:
+        display.url_error(login_url,abort=True)
+
     form_feilds=BeautifulSoup(login_page.text,"html.parser").findAll("input")
-    form_data={}
+
+    form_data={"pass":password,
+    "name":username}
 
     for i in form_feilds:
         attrs=i.attrs
-        display.ifverbose(i)
         if "name" in attrs:
             if "value" in attrs and attrs["value"]:
                 form_data[attrs["name"]]=attrs["value"]
-            else:
-                if "type" in attrs:
-                    display.ifverbose("Field type:",str(attrs["type"]).lower())
-                    if str(attrs["type"]).lower() == "password":
-                        form_data[attrs["name"]]=getpass.getpass("Enter "+ attrs["placeholder"] +": ")
+    try:
+        logged_page=codechef_session.post(login_url,form_data)
+    except:
+        display.url_error(login_url,abort=True)
+    else:
+        # logout all other sessions as codechef doesn't allows multiple sessions
+        if("session/limit" in logged_page.url):
+            click.confirm("Session limit exceeded\n"+
+            "Do you want to logout of other sessions",
+            default=True,abort=True)
+            display.normal("logging you out of all other sessions\n"+
+            "this may take some time...")
+        while "session/limit" in logged_page.url:
+            logout_other_session()
+            logged_page=codechef_session.post(url,form_data)
 
-                if attrs["name"] not in form_data:
-                    form_data[attrs["name"]]=input("Enter " + attrs["placeholder"] +": ")
+        # codechef doesn't check cookies and trivially displays the latest as current session
+        # handle this using modifying logout_other_session by logging out after checking session cookies
+        # and matching with form data. trivially the following solution works
 
-    display.ifverbose("The following is the form data that will be sent:\n",\
-                     pprint.pformat(form_data,indent=2))
-
-    display.log("logging you into codechef... please wait...")
-    logged_page=codechef_session.post(login_url,form_data)
-    # logout all other sessions as codechef doesn't allows multiple sessions
-    while "session/limit" in logged_page.url:
-        display.ifverbose("sle")
-        logout_other_session()
         logged_page=codechef_session.post(url,form_data)
-
-    # codechef doesn't check cookies and trivially displays the latest as current session
-    # handle this using modifying logout_other_session by logging out after checking session cookies
-    # and matching with form data. trivially the following solution works
-
-    logged_page=codechef_session.post(url,form_data)
-    if len(BeautifulSoup(logged_page.text,"html.parser").findAll("input"))> 0:
-        display.error("you are/have tried to login to codechef while\
-         the script was running\n should i try to login again(Y/N)")
-        if input()=="Y":
+        if len(BeautifulSoup(logged_page.text,"html.parser").findAll("input"))>0 and is_logged_in(ensure=True)==True:
+            click.confirm(style.error("You are/have tried to login to codechef while"+
+            "the script was running\nDo you want to try login again?"),default=True,
+            abort=True)
             login()
         else:
-            display.error("You chose not to login")
-    else:
-        display.ifverbose("saving cookies")
-        cookies.save(codechef_session)
-        display.log("logged in to codechef")
+            if(is_logged_in(ensure=True) == True):
+                if(cookies.save(codechef_session)==True):
+                    return True
+            else:
+                display.credential_error("codechef",abort=True)
 
 
 def logout_other_session():
     global codechef_session
-    sess_url=url+"session/limit"
-    session_page=codechef_session.get(sess_url)
-    display.ifverbose("got the session page")
+    sess_url=url+"/session/limit"
+    try:
+        session_page=codechef_session.get(sess_url)
+    except:
+        display.url_error(sess_url,abort=True)
+
     form_feilds=BeautifulSoup(session_page.text,"html.parser").findAll("input")
     form_data={}
     for j in [0,-1,-2,-3,-4]:
@@ -81,34 +77,46 @@ def logout_other_session():
         if "name" in attrs:
             if "value" in attrs and attrs["value"]:
                 form_data[attrs["name"]]=attrs["value"]
-            else:
-                display.ifverbose(attrs)
-
-    display.ifverbose(form_data)
-    a=codechef_session.post(sess_url,data=form_data)
-    title=BeautifulSoup(a.text,"html.parser").head.title.text
-    display.ifverbose(title)
+    try:
+        a=codechef_session.post(sess_url,data=form_data)
+    except:
+        display.url_error(sess_url,abort=True)
 
 def logout():
-	global codechef_session
-	logout_url=url+"/logout"
-	a=codechef_session.get(logout_url)
-	display.log("you are logged out")
-	cookies.delete()
+    global codechef_session
+    logout_url=url+"/logout"
+    try:
+        a=codechef_session.get(logout_url)
+    except:
+        display.url_error(logout_url,abort=True)
+    else:
+        if(cookies.delete()==True):
+            return True
+        else:
+            return None
 
 def load(force_login=False):
     global codechef_session
-    session=cookies.load_session()
+    session=cookies.load()
     if(session!=None):
         codechef_session=session
-    elif(force_login==True):
+    elif(force_login):
         login()
 
-def is_logged_in():
-    user_url="https://www.codechef.com/api/user/me"
+def is_logged_in(ensure=True):
     global codechef_session
-    a=codechef_session.get(user_url).json()
-    if(a["user"]["username"]==None):
-        return False
+    user_url="https://www.codechef.com/api/user/me"
+    if(ensure==True):
+        try:
+            page=codechef_session.get(user_url).json()
+        except:
+            return None
+        if(page["user"]["username"]==None):
+            return False
+        else:
+            return True
     else:
-        return True
+        if(cookies.load()== None):
+            return False
+        else:
+            return True
