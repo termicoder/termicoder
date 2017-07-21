@@ -132,56 +132,28 @@ def get_duration(duration):
     if minutes!=0: ans += str(minutes)+"m"
     return ans.strip()
 
-# The following function is derived from CoderCalender
-# https://github.com/nishanthvijayan/CoderCalendar
-# published under GNU GPL 3.0
-# functionality for past contests is added.
-# now using problem code instead of url
-
-def  get_contest_list():
-    codechef_session = session.codechef_session
-    url="http://www.codechef.com/contests"
-    contests= {"ongoing":[] , "upcoming":[], "past":[],"error":None}
-    try:
-        page = codechef_session.get(url)
-    except:
-        contests["error"]="urlerror"
-    else:
-        soup = BeautifulSoup(page.text, "html.parser")
-
-        contest_tables = {"Future Contests": [], "Present Contests": [],"Past Contests":[]}
-        # links contest table to posts
-        links = {"Future Contests": "upcoming", "Present Contests": "ongoing" ,"Past Contests":"past"}
-
-        statusdiv = soup.findAll("table", attrs = {"class": "dataTable"})
-        headings = soup.findAll("h3")
-
-        for i in range(len(headings)):
-            contest_tables[headings[i].text] = statusdiv[i].findAll("tr")[1:]
-
-        for tense in links:
-            for some_contest in contest_tables[tense]:
-                details = some_contest.findAll("td")
-                start_time = strptime(details[2].text, "%d %b %Y %H:%M:%S")
-                end_time = strptime(details[3].text, "%d %b %Y %H:%M:%S")
-                duration = get_duration(int((mktime(end_time) - mktime(start_time)) / 60))
-                contests[links[tense]].append({"Name":  details[1].text,
-                                          "code":  details[1].a["href"][1:],
-                                          "StartTime": strftime("%a, %d %b %Y %H:%M", start_time),
-                                          "EndTime": strftime("%a, %d %b %Y %H:%M", end_time),
-                                          "Duration": duration,
-                                          "Platform": "codefhef"})
-    return contests
-
-def get_running_contests():
+def get_contest_list():
     codechef_session = session.codechef_session
     url="https://www.codechef.com/api/runningUpcomingContests/data"
-    j={"error":None,"judge":"codechef"}
+    j={"error":None,"judge":"codechef","others":None}
     try:
         page = codechef_session.get(url)
         j.update(page.json())
     except:
         j["error"]="urlerror"
+        display.url_error(url,abort=True)
+
+    #try to add other contests (PRACTICE,ZCO etc)
+    #(for which submissions are allowed)
+    others=None
+    try:
+        url="https://www.codechef.com/api/allowed/contests"
+        page = codechef_session.get(url)
+        others=page.json()
+        j["others"]=others
+    except:
+        pass
+
     return j
 
 
