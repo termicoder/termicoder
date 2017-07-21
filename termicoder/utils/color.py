@@ -58,3 +58,7 @@ partially_solved_bold=True
 challenge_fg="magenta"
 challenge_bg=None
 challenge_bold=True
+
+time_fg="blue"
+time_bg=None
+time_bold=True

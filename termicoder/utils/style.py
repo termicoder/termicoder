@@ -14,7 +14,8 @@ style_types=["error",
             "unsolved",
             "incorrect",
             "challenge",
-            "partially_solved"]
+            "partially_solved",
+            "time"]
 
 # defining all the style_types functions in this loop
 # figure a better way out
