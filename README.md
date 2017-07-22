@@ -16,15 +16,15 @@ notice the dot(.) in above command at the end
 Note: it is better to use virtualenv and pip3 (python3)
 
 ### Autocomplete for bash  
-Method 1:  
+**Method 1:**  
 run the following command every time you use terminal  
 `eval "$(_TERMICODER_COMPLETE=source termicoder)"`  
 
-Method 2:  
+**Method 2:**  
 put the following command in your .bashrc  
 `eval "$(_TERMICODER_COMPLETE=source termicoder)"`  
 
-Method 3:  
+**Method 3:**  
 Method 2 makes bash to load up slowly, so try:  
 `eval "$(_TERMICODER_COMPLETE=source termicoder)" > autocomplete.sh`  
 and put . path_to_autocompte.sh/autocomplete.sh in your .bashrc  
