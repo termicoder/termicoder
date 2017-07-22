@@ -43,6 +43,16 @@ NOTE: the file `autocomplete.sh` is also availible in this repo's home directory
 4. Python2/3
 
 ## Usage
+Only basic usage highlighted here,  
+for details of a particular command use:  
+
+```
+termicoder --help  
+termicoder <COMMAND> --help  
+```  
+
+or you can have a look at [manual](manual.md) which contains the output of all help commands
+
 ```
 Usage: termicoder [OPTIONS] COMMAND [ARGS]...
 
@@ -54,12 +64,6 @@ Commands:
   submit  submit a solution.  
   test    test code against the sample testcases.  
   view    view contests, problems and problem statement
-```
-Only basic usage highlighted here,  
-for details of a particular command use:  
-```
-termicoder --help  
-termicoder <COMMAND> --help  
 ```
 
 ## Contributing to Termicoder
