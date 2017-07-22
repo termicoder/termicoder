@@ -1,5 +1,5 @@
 '''
-this file first handles error/input with respet to this
+this file first handles error/input with respect to this
 judge and then forwards the request to correct module/function
 '''
 
@@ -22,18 +22,24 @@ def view_problems(contest):
         contest=click.prompt("Please enter a contest code",default="PRACTICE")
     view_module.problems(contest)
 
-def setup(contest, problem, status):
+def setup(contest_code, problem_code, status):
     if(status=="login"):
         setup_module.login()
     elif(status=="logout"):
         setup_module.logout()
 
 
-    # if(problem_code is not None):
-    #     click.echo("setting up problem "+problem_code.upper()+
-    #     " from codechef...",nl=False)
-    #     setup_module.setup_problem(problem_code)
-    #     click.echo("\tDone")
+    if(contest_code is None and status is None):
+        contest_code=click.prompt("please enter a contest code",
+        type=click.STRING,default="PRACTICE")
 
-    #elif(status is None  and problem_code is None):
-    #    setup_module.setup_all_problems(confirm=True)
+    if(contest_code is not None):
+        if(contest_code is not None and problem_code is not None):
+            setup_module.setup_problem(problem_code,contest_code,abort=True)
+        elif(contest_code.upper()=="PRACTICE" and problem_code is None):
+            setup_module.setup_practice()
+        elif(contest_code is not None and contest_code is not "PRACTICE" and problem_code is None):
+            setup_module.setup_contest(contest_code,abort=True)
+
+def submit(code_file):
+    click.echo("submit not implemted yet")

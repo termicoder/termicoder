@@ -41,7 +41,7 @@ def check_status(upid):
 a trial main function to test submit
 """
 if __name__ == "__main__":
-    wait_time=2
+    wait_time=1
     session.load(force_login=True)
     a=submit("TEST","PRACTICE","./test.cpp",44)
     print(a)

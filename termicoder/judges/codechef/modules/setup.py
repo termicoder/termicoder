@@ -13,6 +13,7 @@ import os
 import json
 
 def login():
+    click.echo("trying to get your login page...")
     if(session.is_logged_in(ensure=True)==True):
         display.normal("You are already logged in")
     else:
@@ -32,16 +33,19 @@ def logout():
         session.logout()
         display.normal("you were logged out sucessfully. cookies deleted")
 
-def setup_problem(problem_code,contest_code="PRACTICE"):
-    problem_path=os.path.join(".",contest_code,problem_code)
+def setup_problem(problem_code,contest_code,abort):
+    problem_code=problem_code.upper()
+    contest_code=contest_code.upper()
+    problem_path=os.path.join(".",problem_code)
 
     try:
         os.mkdir(problem_path)
     except:
         pass
 
-    problem=scrape.get_problem(problem_code,contest_code)
-
+    click.echo("requesting problem %s. please wait..."%problem_code,nl=False)
+    problem=scrape.get_problem(problem_code,contest_code,abort=abort)
+    click.echo("\tdone")
     if problem["error"]==None:
         problem_html=problem.pop("body")
         sample_io=problem.pop("sample_io")
@@ -49,10 +53,10 @@ def setup_problem(problem_code,contest_code="PRACTICE"):
         if not problem["error"]:
             problem_html_path=os.path.join(problem_path,problem_code+".html")
             phfile=open(problem_html_path,"w")
-            print(problem_html,file=phfile)     # TODO needs unicode fixture for python 2
+            click.echo(problem_html,file=phfile)
 
         # sample_io files
-        if(sample_io["error"]==""):
+        if(sample_io["error"]==None):
             testcases_path=os.path.join(problem_path,"testcases")
             try:
                 os.mkdir(testcases_path)
@@ -61,32 +65,61 @@ def setup_problem(problem_code,contest_code="PRACTICE"):
             for i in range(len(sample_io["inputs"])):
                 input_file=os.path.join(testcases_path,str(i+1)+".in")
                 ifile=open(input_file,"w")
-                print(sample_io["inputs"][i],file=ifile)
+                click.echo(sample_io["inputs"][i],file=ifile)
             for o in range(len(sample_io["outputs"])):
                 output_file=os.path.join(testcases_path,str(o+1)+".out")
                 ofile=open(output_file,"w")
-                print(sample_io["outputs"][o],file=ofile)
+                click.echo(sample_io["outputs"][o],file=ofile)
 
     # the problem data
     problem_setup_file=os.path.join(problem_path,".problem")
     f1=open(problem_setup_file,"w")
-    print(json.dumps(problem,indent=2,sort_keys=True),file=f1)
+    click.echo(json.dumps(problem,indent=2,sort_keys=True),file=f1)
 
 
-def setup_contest(contest_code):
+def setup_contest(contest_code,abort):
+    contest_code=contest_code.upper()
     contest_path=os.path.join(".",contest_code)
+    click.echo("requesting data for contest %s. Please wait..."%contest_code,nl=False)
+    contest_data=scrape.get_contest(contest_code,abort=abort)
+
+    if(contest_data["error"] is None):
+        click.echo("\t Done")
+
+    if(contest_data["user"]["username"] is not None):
+        click.echo("you are currently logged in."+
+        "\ncompletely solved problems will not be setup"+
+        "\nthough if you want you can set them up individually later")
+    else:
+        click.echo("you are currently NOT logged in."+
+        "\nALL problems of the contest will be setup")
+
+    problems_to_setup=[]
+    for i in contest_data["problems"]:
+        if(i not in contest_data["problemsstats"]["solved"] or
+        contest_data["problems"][i]["type"]!="3" or
+        i in contest_data["problemsstats"]["partially_solved"]):
+            problems_to_setup.append(contest_data["problems"][i])
+
     try:
         os.mkdir(contest_path)
     except:
         pass
+
     contest_setup_file=os.path.join(contest_path,".contest")
     f=open(contest_setup_file,"w")
-    contest=scrape.get_contest(contest_code)
-    if(contest["error"]==None):
-        del contest["rules"]
-    print(json.dumps(contest,indent=2), file=f)
+    if(contest_data["error"]==None):
+        del contest_data["rules"]
+    click.echo(json.dumps(contest_data,indent=2), file=f)
 
     # setup all problems for the contests
-    if(contest["error"]==None):
-        for problem_code in contest["problems"]:
-            setup_problem(problem_code,contest_code)
+    directory=os.getcwd()
+    os.chdir(contest_path)
+    if(contest_data["error"]==None):
+        for problem in problems_to_setup:
+            setup_problem(problem["code"],contest_code,abort=False)
+    os.chdir(directory)
+
+def setup_practice():
+    click.echo("setup PRACTICE not implemted yet")
+    return None

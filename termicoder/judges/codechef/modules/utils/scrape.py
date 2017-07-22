@@ -1,9 +1,10 @@
 """
 This module contatins function for scraping contest list, contest, problem
-from codechef. The function return dictionaries with errors and data
+from codechef. The functions return dictionaries with errors and data
 """
 import requests
 import sys
+import click
 from bs4 import BeautifulSoup
 import json
 from time import strptime,strftime,mktime,gmtime,localtime
@@ -72,7 +73,7 @@ def extract_io(pre_tag_elements,url):
 
     return sample_inputs,sample_outputs
 
-def get_problem(problem_code,contest_code="PRACTICE"):
+def get_problem(problem_code,contest_code,abort):
     codechef_session = session.codechef_session
     # works on the fact that sample io will be inside pre tag and if more than 1 sample than more than 1 pre tag
     url="https://www.codechef.com/api/contests/"+contest_code+"/problems/"+problem_code
@@ -80,25 +81,37 @@ def get_problem(problem_code,contest_code="PRACTICE"):
     try:
         r = codechef_session.get(url)
         j.update(r.json())
-        soup=BeautifulSoup(j['body'],"html.parser")
     except:
         j["error"]="urlerror"
+        click.echo('')
+        display.url_error(url,abort=abort)
     else:
-        pre_tag_elements=soup.find_all('pre')
-        pre_tag_count=len(pre_tag_elements)
-        sample_io={}
-        if pre_tag_count >= 1:
-            sample_inputs,sample_outputs = extract_io(pre_tag_elements,url)
-            sample_io["inputs"]=sample_inputs
-            sample_io["outputs"]=sample_outputs
-            sample_io["error"]=""
+        if(j["status"]=="error"):
+            click.echo('')
+            click.echo("codechef returned following error:")
+            display.error(j["message"])
+            display.normal("There may be a problem with the problem code/contest code.\nPlease check and try again")
+            if(abort):
+                sys.exit()
         else:
-            sample_io["error"]="Out of Scope"
-        j["sample_io"]=sample_io
-        j["judge"]="codechef"
+            soup=BeautifulSoup(j['body'],"html.parser")
+
+            pre_tag_elements=soup.find_all('pre')
+            pre_tag_count=len(pre_tag_elements)
+            sample_io={}
+            if pre_tag_count >= 1:
+                sample_inputs,sample_outputs = extract_io(pre_tag_elements,url)
+                sample_io["inputs"]=sample_inputs
+                sample_io["outputs"]=sample_outputs
+                sample_io["error"]=None
+            else:
+                sample_io["error"]="Out of Scope"
+                display.error("WARNING: the sample testcases of problem "+problem_code+
+                " could not be extrated properly,\nplease have a look at the testcases folder")
+            j["sample_io"]=sample_io
     return j
 
-def get_contest(contest_code,abort=True):
+def get_contest(contest_code,abort):
     codechef_session = session.codechef_session
     url="https://www.codechef.com/api/contests/"+contest_code
     j={"error":None,"judge":"codechef","contest_code":contest_code}
@@ -107,30 +120,13 @@ def get_contest(contest_code,abort=True):
         j.update(r.json())
     except:
         j["error"]="urlerror"
+        click.echo("")
         display.url_error(url,abort=abort)
     if("error" in j["status"]):
-        display.error(j["message"])
+        display.error("\n"+j["message"])
         if(abort==True):
             sys.exit()
     return j
-
-
-# The following function is derived from CoderCalender
-# https://github.com/nishanthvijayan/CoderCalendar
-# published under GNU GPL 3.0
-
-def get_duration(duration):
-    days = duration/(60*24)
-    duration %= 60*24
-    hours = duration/60
-    duration %= 60
-    minutes = duration
-    ans=""
-    if days==1: ans += str(days)+" day "
-    elif days!=0: ans +=str(days)+" days "
-    if hours!=0: ans += str(hours)+"h "
-    if minutes!=0: ans += str(minutes)+"m"
-    return ans.strip()
 
 def get_contest_list():
     codechef_session = session.codechef_session

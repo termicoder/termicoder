@@ -6,6 +6,7 @@ import os
 import json
 
 def login():
+    click.echo("trying to get your login page...")
     if(session.is_logged_in(ensure=True)==True):
         display.normal("You are already logged in")
     else:
