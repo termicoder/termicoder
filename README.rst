@@ -3,7 +3,7 @@ Termicoder
 
 View, Code, Submit directly from terminal
 
-Made with 💖 by Divesh Uttamchandani
+Made with 💖 by `Divesh Uttamchandani <https://github.com/diveshuttam>`_
 
 Installation
 ------------
