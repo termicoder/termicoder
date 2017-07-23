@@ -1,7 +1,0 @@
-click.File() has a different str function i guess,
-so don't use default for it,
-also be careful while taking it as input actually we may only require its name
-use click.File().name attrbute finally for help see parse codefile function
-
-use click.echo() to print to files also replace all occurences of print
-also rem to remove the extra newline at the end
