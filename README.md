@@ -69,4 +69,4 @@ Commands:
 see [CONTRIBUTE](documentation/contribute.md) and [GUIDELINES](documentation/guidelines.md)
 
 ## LICENCE
-[MIT] (LICENCE.txt)
+[MIT](LICENCE.txt)
