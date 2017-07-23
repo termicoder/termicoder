@@ -13,7 +13,9 @@ clone this repo
 in the root folder of this repo run  
 `pip install --editable . `  
 notice the dot(.) in above command at the end  
-Note: it is better to use virtualenv and pip3 (python3)
+Note: it is better to use virtualenv and pip3 (python3)  
+to remove this package in root folder if reporun  
+`python setup.py develop --uninstall`
 
 ### Autocomplete for bash  
 **Method 1:**  

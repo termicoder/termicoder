@@ -12,7 +12,7 @@ def save(session):
         f=open(cookie_file_path, 'wb')
         pickle.dump(session.cookies,file=f)
     except:
-        display.file_error(cookie_file_path,abort=True)
+        display.file_save_error(cookie_file_path,abort=True)
         return False
     else:
         return True
