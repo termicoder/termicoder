@@ -1,1 +1,0 @@
-#write man page inspired by man page of git
