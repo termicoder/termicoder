@@ -33,6 +33,7 @@ for style in style_types:
 
 
 def pad(string,length):
+    string=str(string)
     if(len(string)<=length):
         return string+((" ")*(length-len(string)))
     else:
