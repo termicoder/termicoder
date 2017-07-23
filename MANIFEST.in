@@ -1,0 +1,8 @@
+include LICENSE.txt
+recursive-include termicoder/utils/scripts *
+recursive-include termicoder/utils/templates *
+include termicoder/utils/*.json
+global-exclude *.dump 
+prune termicoder/judges/spoj
+prune .ropeproject
+graft documentation
