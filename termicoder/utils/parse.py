@@ -63,7 +63,7 @@ def get_time_limit():
     if(time_limit is None):
         return 3.0
     else:
-        return time_limit
+        return float(time_limit)
 
 def get_memory_limit():
     click.echo("memory_limit not implemented yet")
