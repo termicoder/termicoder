@@ -4,4 +4,4 @@
 
 code=$1
 
-(python2 $code)
+(python3 $code)
