@@ -28,7 +28,6 @@ put the following command in your .bashrc
 Method 2 makes bash to load up slowly, so try:  
 `eval "$(_TERMICODER_COMPLETE=source termicoder)" > autocomplete.sh`  
 and put . path_to_autocompte.sh/autocomplete.sh in your .bashrc  
-NOTE: the file `autocomplete.sh` is also availible in this repo's home directory
 
 ## Current Support
 
@@ -51,7 +50,7 @@ termicoder --help
 termicoder <COMMAND> --help  
 ```  
 
-or you can have a look at [manual](manual.md) which contains the output of all help commands
+or you can have a look at [manual](documentation/manual.md) which contains the output of all help commands
 
 ```
 Usage: termicoder [OPTIONS] COMMAND [ARGS]...
@@ -67,5 +66,7 @@ Commands:
 ```
 
 ## Contributing to Termicoder
+see [CONTRIBUTE](documentation/contribute.md) and [GUIDELINES](documentation/guidelines.md)
 
 ## LICENCE
+[MIT] (LICENCE.txt)
