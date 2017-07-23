@@ -36,17 +36,20 @@ def view():
     pass
 
 
-@click.command()
+@click.command(short_help="display contest list of a judge")
 @click.option('-j', '--judge', type=click.Choice(OJs),
               prompt="Please provide a judge("+'|'.join(OJs)+")")
 def contests(judge):
     '''
-    lists contests/categories running on a judge
+    lists current and upcoming contests on a judge.
+
+    depending on judge it may give a list of categories also
+    such as PRACTICE etc.
     '''
     eval(judge).view_contests()
 
 
-@click.command()
+@click.command(short_help="list problems of a contest/category")
 @click.option('-j', '--judge', type=click.Choice(OJs),
               prompt="Please provide a judge("+'|'.join(OJs)+")")
 @click.option('-c', '--contest', type=click.STRING, help="contest code")
@@ -57,13 +60,15 @@ def problems(judge, contest):
     eval(judge).view_problems(contest)
 
 
-@click.command()
+@click.command(short_help="view contents of current folder")
 @click.option("-f", "--folder", type=click.Path())
 def this(folder):
     '''
     display the termicoder contents in current/passed folder
-    if it is a contest folder it displays the list of problems
-    if a problem folder displays the problem in a browser
+
+    \b
+    if it is a contest folder it displays the list of problems.
+    if its a problem folder, displays the problem in a browser.
     '''
     display.current_dir(folder)
 
@@ -84,14 +89,16 @@ def setup(judge, contest, problem,status):
     """
     sets up problem, contests and login.
 
-    if you pass judge and --login/--logout, it logs you in and out of the judge
+    1. if you pass judge and --login/--logout, it logs you in and out of the judge
 
-    if you pass judge (and/or contest/category)
+    2. if you pass judge and contest/category
     it downloads all the problems of that contest.
 
-    if you pass a particular problem , with judge (and/or contest/category),
-    it sets up that problem all this happens in the current folder.\n
-    of contest/category may vary amongst various online judges
+    3. if you pass a particular problem, with judge and contest/category,
+    it sets up that problem.
+
+    all this happens in the current folder.
+    option of contest/category may vary amongst various online judges
     """
     eval(judge).setup(contest, problem,status)
 
@@ -106,8 +113,9 @@ def setup(judge, contest, problem,status):
             help="edit defaults for editors")
 def code(code_file,edit_templates,edit_defaults):
     '''
-    creates file with template code.\n
-    you need to be in a problem directory.
+    creates & open code file with template code.
+
+    you can edit template code and default editors using flags -et and -ed respectively
     '''
     if(edit_templates==True):
         code_module.edit_templates()
@@ -122,20 +130,24 @@ def code(code_file,edit_templates,edit_defaults):
     if(code_file is not None):
         code_module.code(code_file)
 
-#TODO: Add an option to not to use testcases and try it live
 @click.command()
 @click.option('-f', '--file', 'code_file', type=click.File(),
                 help="the code file")
-@click.option('-es',"--edit_scripts",is_flag=True,default=False)
 @click.option('-tl','--timelimit',type=float,help="the max time per testcase")
 @click.option('-l','--live',is_flag=True,default=False,
-help="test the code live and dont use testcases")
+help="test the code live and don't use testcases")
+@click.option('-es',"--edit_scripts",is_flag=True,default=False)
 def test(code_file,edit_scripts,timelimit,live):
     '''
-    test code against the sample testcases.\n
-    it (compiles and) runs your program
-    and outputs the diff of expected and produced outputs.
-    It also outputs time for particular
+    test code against the sample testcases.
+
+    \b
+    this command (compiles and) runs passed code file.
+    the code is run against all [.in] files in ./testcases folder.
+    the output is produced in [.outx] files and checked against [.out] files
+
+    it displays time for each testcase,status
+    and diff of expected and produced outputs.
     '''
     if(edit_scripts==True):
         test_module.edit_scripts()
@@ -153,12 +165,11 @@ def submit(code_file):
     '''
     submit a solution.
 
-    you should be in a problem directory to submit\n
-    script will prompt you to login into the judge (if not already logged in)\n
-    this submits the problem using .problem file in current directory(if exists)
-    or the headers in the code file.\n
-    the settings of headers in code file dominate if different and valid,
-    however if invalid, than the other one is tried
+    you should be in a problem directory to submit
+
+    \b
+    script will prompt you to login into the judge(if not already).
+    this submits the problem using data in [.problem] file in current directory
     '''
     judge=parse.get_judge()
     if(not code_file):
