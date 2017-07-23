@@ -20,8 +20,8 @@ setup(
     classifiers=[
         'Development Status :: 3 - Alpha',
         
-        'Intended Audience :: Programmers',
-        'Topic :: Competetive Programming :: Automation',
+        'Intended Audience :: Education',
+        'Topic :: Education',
         
         'License :: OSI Approved :: MIT License',
         
