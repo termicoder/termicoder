@@ -84,4 +84,4 @@ or you can have a look at manual which contains the output of all help commands
 
 Contribute
 ----------
-Visit https://github.com/diveshuttam/termicoder for information on how to contribute
+Visit project's homepage for information on how to contribute
