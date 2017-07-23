@@ -1,7 +1,6 @@
 Termicoder
 ==========
 
-
 View, Code, Submit directly from terminal
 
 Made with 💖 by Divesh Uttamchandani
@@ -11,15 +10,19 @@ Installation
 
 User installation
 ~~~~~~~~~~~~~~~~~
+Run the following commands in terminal/command prompt
 ::
   pip install termicoder
   use sudo -H if required. preferably use pip3 (python3)
 
 Developer installation
 ~~~~~~~~~~~~~~~~~~~~~~
+clone termicoder's repository
 ::
-  clone this repo
-  in the root folder of this repo run
+  git clone https://github.com/diveshuttam/termicoder.git
+
+in the root folder of repo run
+::
   pip install --editable .
   notice the dot(.) in above command at the end
   Note: it is better to use virtualenv and pip3 (python3)
@@ -81,3 +84,4 @@ or you can have a look at manual which contains the output of all help commands
 
 Contribute
 ----------
+Visit https://github.com/diveshuttam/termicoder for information on how to contribute
