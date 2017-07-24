@@ -2,8 +2,6 @@
 this module creates the required files of a contest/problem including
 json data of contest(.contest file), json data of problem(.problem file)
 html problem statements and testcases
-
-for trial run run this as python3 setup.py
 """
 import click
 import termicoder.utils.display as display
@@ -65,10 +63,10 @@ def setup_problem(problem_code,contest_code,abort):
             for i in range(len(sample_io["inputs"])):
                 input_file=os.path.join(testcases_path,str(i+1)+".in")
                 ifile=open(input_file,"w")
-                click.echo(sample_io["inputs"][i],file=ifile)
+                click.echo(sample_io["inputs"][i],file=ifile,nl=False)
             for o in range(len(sample_io["outputs"])):
                 output_file=os.path.join(testcases_path,str(o+1)+".out")
-                ofile=open(output_file,"w")
+                ofile=open(output_file,"w",nl=False)
                 click.echo(sample_io["outputs"][o],file=ofile)
 
     # the problem data
