@@ -66,8 +66,8 @@ def setup_problem(problem_code,contest_code,abort):
                 click.echo(sample_io["inputs"][i],file=ifile,nl=False)
             for o in range(len(sample_io["outputs"])):
                 output_file=os.path.join(testcases_path,str(o+1)+".out")
-                ofile=open(output_file,"w",nl=False)
-                click.echo(sample_io["outputs"][o],file=ofile)
+                ofile=open(output_file,"w")
+                click.echo(sample_io["outputs"][o],file=ofile,nl=False)
 
     # the problem data
     problem_setup_file=os.path.join(problem_path,".problem")

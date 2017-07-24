@@ -42,4 +42,4 @@ def setup(contest_code, problem_code, status):
             setup_module.setup_contest(contest_code,abort=True)
 
 def submit(code_file):
-    click.echo("submit not implemted yet")
+    submit_module.submit(code_file)
