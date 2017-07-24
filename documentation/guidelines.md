@@ -1,4 +1,5 @@
 ## GUIDELINES:
+### This document is still being worked out
 ### Basic things to keep in mind
 1. This should be designed so that it can be later made availible as a package in pip etc.  
 2. This should be able to be extended to other judges easily so modularity is a priority  
