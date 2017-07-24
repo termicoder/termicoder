@@ -5,12 +5,12 @@ Made with :heart: by Divesh Uttamchandani
 Planned Platform support(in order of priority):  
 - [x] [Iarcs Opc](http://opc.iarcs.org.in/index.php/problems/)  
 - [x] [CodeChef](http://www.codechef.com)  
-- [] [SPOJ](http://www.spoj.com)  
-- [] [Codeforces](http://codeforces.com/)  
-- [] [Google Codejam](https://code.google.com/codejam)  
-- [] [Hackerrank](https://www.hackerrank.com/)  
-- [] [Hackerearth](https://www.hackerearth.com)  
-- [] [Facebook Hacker Cup](https://www.facebook.com/hackercup/)  
+- [ ] [SPOJ](http://www.spoj.com)  
+- [ ] [Codeforces](http://codeforces.com/)  
+- [ ] [Google Codejam](https://code.google.com/codejam)  
+- [ ] [Hackerrank](https://www.hackerrank.com/)  
+- [ ] [Hackerearth](https://www.hackerearth.com)  
+- [ ] [Facebook Hacker Cup](https://www.facebook.com/hackercup/)  
 
 
 Planned Language Support(in order of priority):  
@@ -21,9 +21,9 @@ Planned Language Support(in order of priority):
 # Current Ideas 
 ## Setup
 format:  
-- [x] setup judge problem code  
+- [x] setup judge problem code contest code 
 - [x] setup judge contest code  
-- [] setup url  
+- [ ] setup url  
 
 1) Creates a folder for each problem with data of that problem (url, problem statement(try pdf, html, txt etc), sample I/O, submit status/last time errors)
 2) add support for listing all problem folder and status(custom ls), quickly changeing to a unsolved problem folder
