@@ -1,3 +1,4 @@
+import sys
 from setuptools import setup,find_packages
 
 def readme():
@@ -40,7 +41,7 @@ setup(
         'Click',
         'requests',
         'beautifulsoup4'
-    ],
+    ]+ (["colorama==0.3.3"] if "win" in sys.platform else []),
     entry_points='''
         [console_scripts]
         termicoder=termicoder.cli:main
