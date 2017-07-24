@@ -4,6 +4,15 @@
 __pycache__
 ignore/
 .ropeproject/
+
+# setuptools dist
 /dist/
 /*.egg
 /*.egg-info
+
+# virtualenv
+/bin/
+/lib/
+/include/
+pip-selfcheck.json
+
