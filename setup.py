@@ -10,7 +10,7 @@ def readme():
 
 setup(
     name='termicoder',
-    version='0.1.5.3',
+    version='0.1.6',
     url='https://github.com/diveshuttam/termicoder',
     author='Divesh Uttamchandani',
     author_email='diveshuttamchandani@gmail.com',
