@@ -5,6 +5,8 @@ import termicoder.judges.codechef.modules.utils.session as session
 import termicoder.judges.codechef.modules.utils.scrape as scrape
 import termicoder.judges.codechef.modules.utils.date as date_utility
 
+normal_problem_types=["3","0"]
+
 def problem_divison_line():
     return("+"+"+".join(["-"*3,"-"*10,"-"*25,"-"*7])+"+")
 
@@ -48,14 +50,14 @@ def problems(contest):
     problems=[]
     for i in contest_data["problems"]:
         if(i not in contest_data["problemsstats"]["solved"] or
-        contest_data["problems"][i]["type"]!="3" or
+        contest_data["problems"][i]["type"] not in normal_problem_types or
         i in contest_data["problemsstats"]["partially_solved"]):
             problems.append(contest_data["problems"][i])
     problems.sort(key=lambda p: int(p["successful_submissions"]),reverse=True)
 
     for (sno,problem) in zip(range(len(problems)),problems):
         name_style=style.unsolved
-        if(contest_data["problems"][problem["code"]]["type"]!="3"):
+        if(contest_data["problems"][problem["code"]]["type"] not in normal_problem_types):
             name_style=style.challenge
         elif(problem["code"] in contest_data["problemsstats"]["partially_solved"]):
             name_style=style.partially_solved
@@ -110,7 +112,7 @@ def contests():
     display_strings.append('')
     if(contest_list["others"]!=None):
         others=[other for other in contest_list["others"] if other["code"] not in running_future_contests]
-        display_strings.append("codechef is also accepting solutions for following      :")
+        display_strings.append("codechef is also accepting solutions for following:")
         display_strings.append(contest_divison_line2())
         for sno,contest in zip(range(len(running_future_contests),len(running_future_contests)+len(others)),others):
             display_strings.append("|"+style.sno(str(sno+1),3)+
@@ -125,3 +127,6 @@ def contests():
     click.echo_via_pager('\n'.join(display_strings))
     #display_strings.append("Following contests are running on codechef")
     #display_strings.append("Following contests will be hosted on codechef")
+
+def practice_problems():
+    click.echo("view practice problems not implemented yet")

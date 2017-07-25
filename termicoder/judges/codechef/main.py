@@ -17,10 +17,19 @@ session.load()
 def view_contests():
     view_module.contests()
 
-def view_problems(contest):
-    if(contest is None):
-        contest=click.prompt("Please enter a contest code",default="PRACTICE")
-    view_module.problems(contest)
+def view_problems(contest_code):
+    if(contest_code is None):
+        contest_code=click.prompt("Please enter a contest code",default="PRACTICE")
+
+    if(contest_code is None):
+        contest_code=click.prompt("please enter a contest code",
+        type=click.STRING,default="PRACTICE")
+
+    if(contest_code is not None):
+        if(contest_code.upper()=="PRACTICE"):
+            view_module.practice_problems()
+        elif(contest_code is not None and contest_code is not "PRACTICE"):
+            view_module.problems(contest_code)
 
 def setup(contest_code, problem_code, status):
     if(status=="login"):

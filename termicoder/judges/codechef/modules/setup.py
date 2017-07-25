@@ -9,6 +9,7 @@ import termicoder.judges.codechef.modules.utils.session as session
 import termicoder.judges.codechef.modules.utils.scrape as scrape
 import os
 import json
+normal_problem_types=["3","0"]
 
 def login():
     click.echo("trying to get your login page...")
@@ -95,7 +96,7 @@ def setup_contest(contest_code,abort):
     problems_to_setup=[]
     for i in contest_data["problems"]:
         if(i not in contest_data["problemsstats"]["solved"] or
-        contest_data["problems"][i]["type"]!="3" or
+        contest_data["problems"][i]["type"] not in normal_problem_types or
         i in contest_data["problemsstats"]["partially_solved"]):
             problems_to_setup.append(contest_data["problems"][i])
 
