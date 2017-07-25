@@ -35,7 +35,7 @@ say we want to begin with **PROB1**
 so we run  
 `cd PROB1`  
 `termicoder view this`  
-`termicoder view this` opens the problem statement (which is saved as html file by termicoder in a problems directory) in your default browser. You can change defaults using `termicoder view this -ed` we recommend use of a commandline browser such as **w3m**/**elinks**  
+this opens the problem statement (which is saved as html file by termicoder in a problems directory) in your default browser. You can change defaults using `termicoder view this -ed` we recommend use of a commandline browser such as **w3m**/**elinks**  
 
 ### NOTE from now we will assume we are in the folder PROB1 untill we say otherwise  
 
