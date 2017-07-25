@@ -86,7 +86,7 @@ ex. `termicoder test -f a.cpp -tl 0.1` makes timelimit 0.1 second per testcase
 to not use testcases files and run the program live use `termicoder test --live`   
 it just compiles and runs the program normally taking from stdin and producing to stdout  
 
-5. after testing program and say producing correct output we need to submit our solution  
+6. after testing program and say producing correct output we need to submit our solution  
 for that we need to login first.    
 to login use `termicoder setup --login -j codechef`  
 it prompts you for username and password and logs you in.  
@@ -97,7 +97,7 @@ it can be limited to a few hours to say a month so you will have to login again 
 also you can logout anytime using `termicoder setup --logout -j codechef` which deletes the cookies.  
 also the cookies may become invalid if you login from some other browser  
 
-6. After we login we can submit a solution using  
+7. After we login we can submit a solution using  
 `termicoder submit -f a.cpp`  
 it gives a confirmation prompt and submits the solution based on data in `.problem` file  
 after the judge has evaluated we show you the response.  
