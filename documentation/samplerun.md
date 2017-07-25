@@ -11,7 +11,6 @@ this command creates a directory structure for contests and problems with detail
 All the happens in your current directory.  
 e.g. `termicoder setup -j codechef -c cook84` will **setup** all the problems from contest cook84 form codechef  
 after this command you will have a structure similar to following in your current directory:   
-
 .contest  
 COOK84\  
 |---PROB1\  
@@ -32,13 +31,11 @@ you can view the directory using `ls` on bash or using `DIR` on command prompt
 **Note that most commands such as `view this`, `submit`, `test` work on the basis of your current folder  
 so first change your folder to the desired problem folder.**  
 on bash you can do this using `cd foldername` for command prompt use `chdir folder name` for the following example we will assume using bash  
-
 say we want to begin with **PROB1**  
 so we run  
-```
-cd PROB1
-termicoder view this
-```
+`cd PROB1`  
+`termicoder view this`  
+
 `termicoder view this` opens the problem statement (which is saved as html file by termicoder in a problems directory) in your default browser. You can change defaults using `termicoder view this -ed` we recommend use of a commandline browser such as **w3m**/**elinks**  
 
 ### NOTE from now we will assume we are in the folder PROB1 untill we say otherwise  
