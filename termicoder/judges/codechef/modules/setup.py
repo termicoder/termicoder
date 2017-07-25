@@ -120,5 +120,5 @@ def setup_contest(contest_code,abort):
     os.chdir(directory)
 
 def setup_practice():
-    click.echo("setup PRACTICE not implemted yet")
+    click.echo("setup PRACTICE not implemted in this version")
     return None

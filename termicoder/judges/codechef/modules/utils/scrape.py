@@ -157,4 +157,4 @@ def get_practice_problems(category):
     categorylist=["school","easy","medium","hard","challenge","extcontest"]
     codechef_session = session.codechef_session
     url="https://www.codechef.com/problems"+category
-    display.log("Not implemented yet")
+    display.log("get practice problems not implemented in this version")

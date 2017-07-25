@@ -129,4 +129,4 @@ def contests():
     #display_strings.append("Following contests will be hosted on codechef")
 
 def practice_problems():
-    click.echo("view practice problems not implemented yet")
+    click.echo("view practice problems not implemented in this version")

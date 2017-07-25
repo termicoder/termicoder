@@ -66,4 +66,4 @@ def get_time_limit():
         return float(time_limit)
 
 def get_memory_limit():
-    click.echo("memory_limit not implemented yet")
+    click.echo("memory_limit not implemented in this version")

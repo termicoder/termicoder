@@ -18,10 +18,6 @@ def print_url(string):
 def print_path(string):
     click.echo(style.path(string))
 
-def current_dir(cwd):
-    click.echo("current working directory is: %s" % cwd)
-    click.echo("display directory not implemented yet")
-
 def url_error(url,abort):
     error("error in fetching url:")
     print_url(url)

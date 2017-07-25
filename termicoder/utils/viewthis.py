@@ -11,7 +11,7 @@ def view_contest(folder):
         contest_file_path=".contest"
     else:
         contest_file_path=os.path.join(folder,".contest")
-    click.echo("You are in a contest folder\nview contest is not implemnted yet")
+    click.echo("You are in a contest folder\nview contest is not implemnted in this version")
 
 
 def edit_browser_defaults():
