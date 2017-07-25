@@ -4,6 +4,7 @@ import os
 from termicoder.utils import display, parse
 import termicoder.utils.test as test_module
 import termicoder.utils.code as code_module
+import termicoder.utils.viewthis as viewthis_module
 
 # Only need to change this on adding new judges if structure is followed
 # take care of ',' (comma) while editing this list!
@@ -62,7 +63,9 @@ def problems(judge, contest):
 
 @click.command(short_help="view contents of current folder")
 @click.option("-f", "--folder", type=click.Path())
-def this(folder):
+@click.option("-ed", "--edit_defaults", is_flag=True, default=False,
+help="edit default web browser")
+def this(folder,edit_defaults):
     '''
     display the termicoder contents in current/passed folder
 
@@ -70,7 +73,7 @@ def this(folder):
     if it is a contest folder it displays the list of problems.
     if its a problem folder, displays the problem in a browser.
     '''
-    display.current_dir(folder)
+    viewthis_module.view(folder,edit_defaults)
 
 view.add_command(contests)
 view.add_command(problems)
