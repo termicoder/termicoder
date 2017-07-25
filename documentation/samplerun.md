@@ -1,5 +1,5 @@
 # Sample Run
-### this is by no means exausive show of termicoder's features. this demonstrates just basic use
+### Though this demonstrates most commands of Termicoder; This is by no means exausive show of termicoder's features. 
 
 1. we start our journey with `termicoder view contests` and `termicoder view problems`  
 they give you a list of contests running on a judge and problems of a contest respectively  
@@ -35,7 +35,6 @@ say we want to begin with **PROB1**
 so we run  
 `cd PROB1`  
 `termicoder view this`  
-
 `termicoder view this` opens the problem statement (which is saved as html file by termicoder in a problems directory) in your default browser. You can change defaults using `termicoder view this -ed` we recommend use of a commandline browser such as **w3m**/**elinks**  
 
 ### NOTE from now we will assume we are in the folder PROB1 untill we say otherwise  
@@ -53,17 +52,13 @@ you can edit default editor using `termicoder code -ed`
 for this we use command `termicoder test`  
 this command requires us for a code file to test if we don't pass a code file it will automatically look for code files(files with extension .c, .cpp, .py, .java) in the current folder and suggest the latest edited file as default we just have to press enter as in following example.  
 after supplying a code file this command (compiles and) runs your code on all testcases and produces diff of reqired and produced outputs  
-
-e.g.
-```
-termicoder test
-Please provide a code file[a.cpp]:
-```
+e.g.  
+`termicoder test`  
+`Please provide a code file[a.cpp]:`  
 after pressing enter, a.cpp is taken as the file, after this termicoder should compile the code(if required).  
 We are aware that people use different compilers and systems and hence compile commannds may vary so instead of hard coding them we are using bash/batch scripts for compiling and running your code  
 we have bundeled a sample script for each language but there is quite high chance that they might not work so you need to edit them first.For more details have a look at [CONFIGURE](configure.md).  
-To edit scripts run `termicoder test -et`  
-  
+To edit scripts run `termicoder test -et`   
 after compiling, termicoder runs your code against all `.in` files in testcases folder  
 and produces output as a corresponding `.outx` file.   
 for example if input is `1.in`, output is produces as `1.outx`  
@@ -75,11 +70,9 @@ there is no restriction on file name except that they should be same for corresp
 The output should match exactly(including spaces) for termicoder to produce AC.  
 We do exact check to support accross various judges and problems.  
 If we evaluate WA does not always mean that judge will also give WA; You should have a look at diff and .out/.outx files  
-
 test command also has options like timelimit which can be used to set time limit per testcase  
 by default it is the timelimit specified in `.problem file`. if not specified it is 3 seconds  
 ex. `termicoder test -f a.cpp -tl 0.1` makes timelimit 0.1 second per testcase  
-
 to not use testcases files and run the program live use `termicoder test --live`   
 it just compiles and runs the program normally taking from stdin and producing to stdout  
 
