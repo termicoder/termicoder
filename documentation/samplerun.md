@@ -14,7 +14,7 @@ after this command you will have a structure similar to following in your curren
 
 .contest  
 COOK84\  
-|---PROB1\
+|---PROB1\  
 |---|---.problem  
 |---|---PROB1.html  
 |---|---testcases\  
