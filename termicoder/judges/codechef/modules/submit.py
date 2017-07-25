@@ -81,6 +81,7 @@ def submit(code_file):
         lang=lang_map[extension]
         if(lang=="python"):
             ver=click.prompt("Enter python version",click.choice(["2","3"]),default="3")
+            lang=lang+ver
         lang_code=lang_code_map[lang]
     except:
         click.echo("the following extension is not supported:"
