@@ -76,5 +76,5 @@ Commands:
 ## Contributing to Termicoder
 see [CONTRIBUTE](documentation/contribute.md) and [GUIDELINES](documentation/guidelines.md)
 
-## LICENCE
-[MIT](LICENCE.txt)
+## LICENSE
+[MIT](LICENSE.txt)
