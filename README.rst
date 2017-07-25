@@ -5,6 +5,9 @@ View, Code, Submit directly from terminal
 
 Made with love by `Divesh Uttamchandani <https://github.com/diveshuttam/>`_
 
+**Note: Termicoder is in its alpha stage and has only been tested on Ubuntu + python3 . Support for other configurations is being worked on, if you are using some other platform and encounter errors, do create a issue for them on** `github <https://github.com/diveshuttam/Termicoder/issues>`_
+
+
 Installation
 ------------
 
@@ -75,7 +78,9 @@ Languages Supported Currently:
 
 Usage
 -----
-Only basic usage highlighted here,
+Only commands highlighted here,
+for details we reccommend going through `sample run <https://github.com/diveshuttam/termicoder/blob/master/documentation/samplerun.md>`_ which contains detailed usage
+
 for details of a particular command use
 
     ::
@@ -83,7 +88,7 @@ for details of a particular command use
         termicoder --help
         termicoder <COMMAND> --help  
 	
-or you can have a look at manual which contains the output of all help commands
+or you can have a look at `helptext <https://github.com/diveshuttam/termicoder/blob/master/documentation/helptext.md>`_ which contains the output of all help commands
 
     ::
 
@@ -100,4 +105,5 @@ or you can have a look at manual which contains the output of all help commands
 
 Contribute
 ----------
-Visit project's homepage for information on how to contribute
+Visit `Termicoder's homepage <https://github.com/diveshuttam/Termicoder>`_ for information on how to contribute
+
