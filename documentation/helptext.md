@@ -1,6 +1,6 @@
 # Help Texts
 ### output of all termicoder help commads is pasted here just for reference before you download.
-### after downloading you can always run the [HELP](#Help) command
+### after downloading you can always run the [HELP](#help) command
 
 ## Help
 ```
