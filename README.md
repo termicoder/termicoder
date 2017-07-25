@@ -2,6 +2,8 @@
 View, Code, Submit directly from terminal  
 Made with :heart: by Divesh Uttamchandani
 
+### Note: Termicoder has only been tested on Ubuntu + python3 . Support for other configurations is being worked on if you are using some other platform and encounter errors, do create a issue for them.
+
 ## Installation
 
 ### User installation
