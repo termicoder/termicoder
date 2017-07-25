@@ -46,7 +46,11 @@ and put . path_to_autocompte.sh/autocomplete.sh in your .bashrc
 4. Python2/3
 
 ## Usage
-Only basic usage highlighted here,  
+Only highlighting commands here,  
+
+For a sample we reccommend going through [sample run](documentation/samplerun.md)  
+which contains the details  
+
 for details of a particular command use:  
 
 ```
@@ -54,7 +58,7 @@ termicoder --help
 termicoder <COMMAND> --help  
 ```  
 
-or you can have a look at [manual](documentation/manual.md) which contains the output of all help commands
+or you can have a look at [helptext](documentation/helptext.md) which contains the output of all help commands
 
 ```
 Usage: termicoder [OPTIONS] COMMAND [ARGS]...

@@ -1,6 +1,6 @@
 #!/bin/bash
-# this script runs PRG with reading from infile and writing to outfile
-# USAGE . run.sh <python file name> <infile> <outfile>
+# this script runs PRG with reading
+# USAGE . run.sh <python file name>
 
 code=$1
 

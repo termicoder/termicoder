@@ -1,4 +1,6 @@
-# Manual
+# Help Texts
+### output of all termicoder help commads is pasted here just for reference before you download.
+### after downloading you can always run the [HELP](#Help) command
 
 ## Help
 ```
@@ -144,7 +146,7 @@ Options:
   -j, --judge [codechef|iarcs]
   --help                        Show this message and exit.
 ```
-  
+
 ### problems
 ```
 Usage: termicoder view problems [OPTIONS]
