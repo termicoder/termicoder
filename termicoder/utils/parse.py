@@ -27,7 +27,7 @@ def get_file_name(file):
 # this helps is reducing time as intelligently handling default
 def get_code_file():
     probable_files=[]
-    for f in os.listdir():
+    for f in os.listdir(os.getcwd()):
         if(os.path.isfile(f) and os.path.splitext(f)[1] in supported_extensions):
             probable_files.append(f)
 
