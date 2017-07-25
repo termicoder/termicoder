@@ -41,10 +41,7 @@ def setup_problem(problem_code,contest_code,abort):
         os.mkdir(problem_path)
     except:
         pass
-
-    click.echo("requesting problem %s. please wait..."%problem_code,nl=False)
     problem=scrape.get_problem(problem_code,contest_code,abort=abort)
-    click.echo("\tdone")
     if problem["error"]==None:
         problem_html=problem.pop("body")
         sample_io=problem.pop("sample_io")
@@ -112,11 +109,13 @@ def setup_contest(contest_code,abort):
     click.echo(json.dumps(contest_data,indent=2), file=f)
 
     # setup all problems for the contests
+    problem_list=[problem["code"] for problem in problems_to_setup]
     directory=os.getcwd()
     os.chdir(contest_path)
     if(contest_data["error"]==None):
-        for problem in problems_to_setup:
-            setup_problem(problem["code"],contest_code,abort=False)
+        with click.progressbar(problem_list) as bar:
+            for problem_code in bar:
+                setup_problem(problem_code,contest_code,abort=False)
     os.chdir(directory)
 
 def setup_practice():

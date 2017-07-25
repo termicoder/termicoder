@@ -44,7 +44,10 @@ def setup(contest_code, problem_code, status):
 
     if(contest_code is not None):
         if(contest_code is not None and problem_code is not None):
+            click.echo("requesting problem %s from contest %s. please wait..."%(problem_code.upper(),contest_code.upper()),
+            nl=False)
             setup_module.setup_problem(problem_code,contest_code,abort=True)
+            click.echo("\t Done")
         elif(contest_code.upper()=="PRACTICE" and problem_code is None):
             setup_module.setup_practice()
         elif(contest_code is not None and contest_code is not "PRACTICE" and problem_code is None):
