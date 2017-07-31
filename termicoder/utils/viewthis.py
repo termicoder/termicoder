@@ -66,6 +66,9 @@ def view(folder,edit_defaults):
     else:
         contest_file_path=os.path.join(folder,".contest")
 
+    if (folder is none):
+        folder=os.getcwd()
+
     if(".contest" in os.listdir(folder)):
         view_contest(folder)
     elif(".problem" in os.listdir(folder)):
