@@ -107,7 +107,7 @@ def submit(code_file):
     display.normal("checking your login...")
     login_status=session.is_logged_in(ensure=True)
     if(login_status==False):
-        display.normal("You are not logged in. Redirecting to login...")
+        display.normal("You are NOT logged in. Redirecting to login...")
         setup_module.login()
     elif(login_status==True):
         display.normal("You are logged in")

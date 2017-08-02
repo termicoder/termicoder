@@ -127,8 +127,7 @@ def code(code_file,edit_templates,edit_defaults):
         code_module.edit_defaults()
 
     elif(code_file is None):
-        code_file=click.prompt("Please provide a code file",
-        type=click.Path(writable=True,readable=False, dir_okay=False))
+        code_file=code_module.get_file_name()
 
     if(code_file is not None):
         code_module.code(code_file)

@@ -61,3 +61,21 @@ def code(code_file):
 
     else:
         display.error("termicoder doesn't support extension: "+ext)
+
+def get_file_name():
+    code_defaults_file=os.path.join(os.path.dirname(__file__),"code_defaults.json")
+    f=open(code_defaults_file,"r")
+    ext=json.load(f)["default_extension"]
+    problem_file_path=".problem"
+
+    file_name=None
+    try:
+        f=open(problem_file_path,"r")
+    except:
+        pass
+    else:
+        j=json.load(f)
+        file_name=j["problem_code"]+"."+ext
+    code_file=click.prompt("Please provide a code file",
+    type=click.Path(writable=True,readable=False, dir_okay=False),default=file_name)
+    return code_file
