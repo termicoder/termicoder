@@ -2,7 +2,8 @@
 View, Code, Submit directly from terminal  
 Made with :heart: by Divesh Uttamchandani
 
-### Note: Termicoder is in its alpha stage and has only been tested on Ubuntu + python3 . Support for other configurations is being worked on, if you are using some other platform and encounter errors, do create an [issue](https://github.com/diveshuttam/termicoder/issues) for them.
+### Note: Termicoder is in its alpha stage and has only been tested on Ubuntu + python3 . Support for other configurations is being worked on, if you are using some other platform and encounter errors, do create an [issue](https://github.com/diveshuttam/termicoder/issues) for them.  
+### For windows one can also try [Bash on Ubuntu on Windows](https://msdn.microsoft.com/en-us/commandline/wsl/about) most features have been tested out there.
 
 ## Installation
 
