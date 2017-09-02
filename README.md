@@ -43,8 +43,8 @@ and put . path_to_autocompte.sh/autocomplete.sh in your .bashrc
 ### Languages Supported Currently:
 1. C  
 2. C++  
-3. Java  
-4. Python2/3
+3. Python2/3
+4. Java (is still being worked on)
 
 ## Usage
 Only highlighting commands here,  
