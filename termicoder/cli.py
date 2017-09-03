@@ -16,6 +16,7 @@ OJs = [
 OJs.sort()
 ###############################################################################
 
+# importing OJ's Modules
 for OJ in OJs:
     exec("import termicoder.judges.%s.main as %s" % (OJ, OJ))
 
