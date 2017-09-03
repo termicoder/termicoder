@@ -2,8 +2,7 @@
 View, Code, Submit directly from terminal  
 Made with :heart: by Divesh Uttamchandani  
   
-### A python based command line interface for helping in competitive programming.  
-### The project aims at automating the process of coding, testing and submitting problems to Online Judges so that one can concentrate only on algorithms  
+### A python based command line interface for helping in competitive programming. Termicoder aims at automating and simplifying the process of coding, testing and submitting problems to Online Judges so that one can concentrate only on algorithms  
   
 **Note: Termicoder is in its alpha stage and has only been tested on Ubuntu + python3. Support for other configurations is being worked on, if you are using some other platform and encounter errors, do create an [issue](https://github.com/diveshuttam/termicoder/issues) for them.**  
 **For windows one can also try using [Bash on Ubuntu on Windows](https://msdn.microsoft.com/en-us/commandline/wsl/about) ; most features have been tested out there and work as expected.**  
