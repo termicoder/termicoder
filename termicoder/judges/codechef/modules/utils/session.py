@@ -5,6 +5,7 @@ import termicoder.utils.style
 import time
 from termicoder.judges.codechef.modules.utils import cookies
 from termicoder.utils import display
+from termicoder.utils import style
 
 url="https://www.codechef.com"
 codechef_session=requests.session()
@@ -52,7 +53,7 @@ def login(username,password):
             click.confirm(style.error("You are/have tried to login to codechef while"+
             "the script was running\nDo you want to try login again?"),default=True,
             abort=True)
-            login()
+            login(username,password)
         else:
             if(is_logged_in(ensure=True) == True):
                 if(cookies.save(codechef_session)==True):
