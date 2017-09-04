@@ -76,6 +76,10 @@ def get_file_name():
     else:
         j=json.load(f)
         file_name=j["problem_code"]+"."+ext
+
+    if(ext=="java"):
+        file_name="Main.java"
+
     code_file=click.prompt("Please provide a code file",
     type=click.Path(writable=True,readable=False, dir_okay=False),default=file_name)
     return code_file

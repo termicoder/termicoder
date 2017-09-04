@@ -20,7 +20,8 @@ lang_map={
 ".c":"c",
 ".cpp":"cpp",
 ".cc":"cpp",
-".c++":"cpp"
+".c++":"cpp",
+".java":"java"
 }
 
 interpreted=["python"]

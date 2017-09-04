@@ -80,7 +80,7 @@ def submit(code_file):
     try:
         lang=lang_map[extension]
         if(lang=="python"):
-            ver=click.prompt("Enter python version",click.choice(["2","3"]),default="3")
+            ver=click.prompt("Enter python version",type=click.Choice(["2","3"]),default="3")
             lang=lang+ver
         lang_code=lang_code_map[lang]
     except:
