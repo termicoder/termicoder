@@ -1,9 +1,8 @@
 # Termicoder  
 View, Code, Submit directly from terminal  
-Made with :heart: by Divesh Uttamchandani
-
-### Note: Termicoder is in its alpha stage and has only been tested on Ubuntu + python3 . Support for other configurations is being worked on, if you are using some other platform and encounter errors, do create an [issue](https://github.com/diveshuttam/termicoder/issues) for them.  
-### For windows one can also try using [Bash on Ubuntu on Windows](https://msdn.microsoft.com/en-us/commandline/wsl/about) ; most features have been tested out there and work as expected.
+Made with :heart: by Divesh Uttamchandani  
+  
+### A python based command line interface for helping in competitive programming. Termicoder aims at automating and simplifying the process of coding, testing and submitting problems to Online Judges so that one can concentrate only on algorithms    
 
 ## Installation
 
@@ -20,6 +19,9 @@ Note: it is better to use virtualenv and pip3 (python3)
 to remove this package in root folder of repo run  
 `python setup.py develop --uninstall`
 
+**Note: Termicoder is in its alpha stage and has only been tested on Ubuntu + python3. Support for other configurations is being worked on, if you are using some other platform and encounter errors, do create an [issue](https://github.com/diveshuttam/termicoder/issues) for them. For windows one can also try using [Bash on Ubuntu on Windows](https://msdn.microsoft.com/en-us/commandline/wsl/about) ; most features have been tested out there and work as expected.**
+  
+  
 ### Autocomplete for bash  
 **Method 1:**  
 run the following command every time you use terminal  
