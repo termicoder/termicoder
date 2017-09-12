@@ -1,6 +1,6 @@
 # Termicoder  
 View, Code, Submit directly from terminal  
-Made with :heart: by Divesh Uttamchandani  
+Made with :heart: by [Divesh Uttamchandani](https://github.com/diveshuttam)  
   
 ### A python based command line interface for helping in competitive programming. Termicoder aims at automating and simplifying the process of coding, testing and submitting problems to Online Judges so that one can concentrate only on algorithms    
 
