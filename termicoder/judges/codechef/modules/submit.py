@@ -60,7 +60,7 @@ def check_status(upid):
         return status
 
 
-def submit(code_file):
+def submit(code_file,submit_to_practice=False):
     # TODO check if it is able to submit(allowed)
     codechef_session=session.codechef_session
     submit_url="https://www.codechef.com/api/ide/submit"
@@ -69,6 +69,10 @@ def submit(code_file):
     j=json.load(problem_file)
     problem_code=j["problem_code"]
     contest_code=j["contest_code"]
+
+    if(submit_to_practice):
+        contest_code="PRACTICE"
+
     extension=os.path.splitext(code_file)[1]
 
     try:
@@ -125,9 +129,15 @@ def submit(code_file):
     except:
         display.url_error(submit_url,abort=True)
 
-    display.normal("\tDone")
-    click.echo("retriving status (you can continue your work in another tab)...",
+    if(j['status']=="error"):
+        display.normal("\nCodechef returned following errors:")
+        display.error("\n".join(j['errors']))
+        click.confirm("Do you want to try to submitting to practice section instead?",default=True)
+        submit(code_file,submit_to_practice=True)
+    else:
+        display.normal("\tDone")
+        click.echo("retriving status (you can continue your work in another tab)...",
                 nl=False)
-    status=check_status(j["upid"])
-    click.echo("\tDone")
-    click.echo("status: "+json.dumps(status,indent=2))
+        status=check_status(j["upid"])
+        click.echo("\tDone")
+        click.echo("status: "+json.dumps(status,indent=2))
