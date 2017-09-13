@@ -1,4 +1,6 @@
 # Termicoder  
+[![Build Status](https://travis-ci.org/termicoder/termicoder.svg?branch=master)](https://travis-ci.org/termicoder/termicoder)   
+
 View, Code, Submit directly from terminal  
 Made with :heart: by [Divesh Uttamchandani](https://github.com/diveshuttam)  
   
