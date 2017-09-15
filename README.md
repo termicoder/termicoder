@@ -1,5 +1,10 @@
 # Termicoder  
-[![Build Status](https://travis-ci.org/termicoder/termicoder.svg?branch=master)](https://travis-ci.org/termicoder/termicoder)   
+[![Build Status](https://travis-ci.org/termicoder/termicoder.svg?branch=master)](https://travis-ci.org/termicoder/termicoder)
+[![PyPI](https://img.shields.io/pypi/v/termicoder.svg)](https://pypi.python.org/pypi/termicoder)
+[![PyPI](https://img.shields.io/pypi/l/termicoder.svg)](https://github.com/termicoder/termicoder/blob/master/LICENSE.txt)
+[![Requirements Status](https://requires.io/github/termicoder/termicoder/requirements.svg?branch=master)](https://requires.io/github/termicoder/termicoder/requirements/?branch=master)
+
+
 
 View, Code, Submit directly from terminal  
 Made with :heart: by [Divesh Uttamchandani](https://github.com/diveshuttam)  
