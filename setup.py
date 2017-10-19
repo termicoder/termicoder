@@ -20,12 +20,12 @@ setup(
     keywords='competetive iarcs codechef oj',
     classifiers=[
         'Development Status :: 3 - Alpha',
-        
+
         'Intended Audience :: Education',
         'Topic :: Education',
-        
+
         'License :: OSI Approved :: MIT License',
-        
+
         'Programming Language :: Python',
         'Programming Language :: Python :: 2',
         'Programming Language :: Python :: 2.6',
@@ -46,4 +46,8 @@ setup(
         [console_scripts]
         termicoder=termicoder.cli:main
     '''
+    # can use this nose for tests later
+
+    #test_suite='nose.collector',
+    #tests_require=['nose']
 )

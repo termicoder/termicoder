@@ -1,6 +1,15 @@
 # Termicoder  
+[![Build Status](https://travis-ci.org/termicoder/termicoder.svg?branch=master)](https://travis-ci.org/termicoder/termicoder)
+[![PyPI](https://img.shields.io/pypi/status/termicoder.svg)](https://pypi.python.org/pypi/termicoder)
+[![PyPI](https://img.shields.io/pypi/pyversions/termicoder.svg)]()
+[![PyPI](https://img.shields.io/pypi/v/termicoder.svg)](https://pypi.python.org/pypi/termicoder)
+[![Requirements Status](https://requires.io/github/termicoder/termicoder/requirements.svg?branch=master)](https://requires.io/github/termicoder/termicoder/requirements/?branch=master)
+[![PyPI](https://img.shields.io/github/license/termicoder/termicoder.svg)](https://github.com/termicoder/termicoder/blob/master/LICENSE.txt)
+
+
+
 View, Code, Submit directly from terminal  
-Made with :heart: by Divesh Uttamchandani  
+Made with :heart: by [Divesh Uttamchandani](https://github.com/diveshuttam)  
   
 ### A python based command line interface for helping in competitive programming. Termicoder aims at automating and simplifying the process of coding, testing and submitting problems to Online Judges so that one can concentrate only on algorithms    
 
