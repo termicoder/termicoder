@@ -19,7 +19,7 @@ def edit_browser_defaults():
     "where you can edit default web browser\n"
     "Do you want to conitnue?",default=True,abort=True)
     code_defaults_file=os.path.join(os.path.dirname(__file__),"browser_defaults.json")
-    click.launch(code_defaults_file)
+    click.edit(filename=code_defaults_file)
     sys.exit()
 
 def view_problem(folder):

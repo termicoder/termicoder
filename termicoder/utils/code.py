@@ -28,7 +28,7 @@ def edit_defaults():
     "where you can edit default editors for various languages\n"
     "Do you want to conitnue?",default=True,abort=True)
     code_defaults_file=os.path.join(os.path.dirname(__file__),"code_defaults.json")
-    click.launch(code_defaults_file)
+    click.edit(filename=code_defaults_file)
     sys.exit()
 
 # TODO: a default name for code file
@@ -55,7 +55,7 @@ def code(code_file):
         app=defaults[lang_map[ext]]
 
         if(app is None):
-            click.launch(code_file)
+            click.edit(filename=code_file)
         else:
             subprocess.call([app,code_file])
 
