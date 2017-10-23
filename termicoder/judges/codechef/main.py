@@ -18,18 +18,16 @@ def view_contests():
     view_module.contests()
 
 def view_problems(contest_code):
-    if(contest_code is None):
-        contest_code=click.prompt("Please enter a contest code",default="PRACTICE")
-
-    if(contest_code is None):
+    # if empty contest code, get one here
+    if(not contest_code):
         contest_code=click.prompt("please enter a contest code",
         type=click.STRING,default="PRACTICE")
 
-    if(contest_code is not None):
-        if(contest_code.upper()=="PRACTICE"):
-            view_module.practice_problems()
-        elif(contest_code is not None and contest_code is not "PRACTICE"):
-            view_module.problems(contest_code)
+    if(contest_code):
+        view_module.problems(contest_code)
+    else:
+        # TODO remove this later
+        display.error("some error with contest code... It shouldn't be empty")
 
 def setup(contest_code, problem_code, status):
     if(status=="login"):
@@ -43,14 +41,12 @@ def setup(contest_code, problem_code, status):
         type=click.STRING,default="PRACTICE")
 
     if(contest_code is not None):
-        if(contest_code is not None and problem_code is not None):
+        if(problem_code is not None):
             click.echo("requesting problem %s from contest %s. please wait..."%(problem_code.upper(),contest_code.upper()),
             nl=False)
             setup_module.setup_problem(problem_code,contest_code,abort=True)
             click.echo("\t Done")
-        elif(contest_code.upper()=="PRACTICE" and problem_code is None):
-            setup_module.setup_practice()
-        elif(contest_code is not None and contest_code is not "PRACTICE" and problem_code is None):
+        elif(problem_code is None):
             setup_module.setup_contest(contest_code,abort=True)
 
 def submit(code_file):

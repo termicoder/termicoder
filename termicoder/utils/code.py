@@ -7,12 +7,12 @@ import termicoder.utils.parse as parse
 import json
 
 lang_map={
-".py":"python",
-".c":"c",
-".cpp":"cpp",
-".cc":"cpp",
-".c++":"cpp",
-".java":"java"
+    ".py":"python",
+    ".c":"c",
+    ".cpp":"cpp",
+    ".cc":"cpp",
+    ".c++":"cpp",
+    ".java":"java"
 }
 
 def edit_templates():

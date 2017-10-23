@@ -1,4 +1,6 @@
 import click
+import os
+import json
 import termicoder.utils.display as display
 import termicoder.utils.style as style
 import termicoder.judges.codechef.modules.utils.session as session
@@ -19,10 +21,23 @@ def contest_divison_line2():
 def problems(contest):
     contest=contest.upper()
     display_strings=[]
-    click.echo("requesting problem list from server...")
 
-    #the following statement returns data of the contest
-    contest_data=scrape.get_contest(contest,abort=True)
+    if contest=="PRACTICE":
+        try:
+            catagory_list_path=os.path.join(os.path.dirname(os.path.dirname(__file__)), "catagories.json")
+            catagory_file = open(catagory_list_path)
+            catagory_list = json.load(catagory_file)["catagorylist"]
+        except:
+            display.error("INTERNAL ERROR: catagorylist for codechef not found")
+            raise click.Abort
+        chosen_catagory = click.prompt("Please choose a catagory"+"(" + "|".join(catagory_list) + ")", type=click.Choice(catagory_list))
+        click.echo("requesting problem list from server...")
+        contest_data=scrape.get_practice_problems(chosen_catagory,abort=True)
+    else:
+        click.echo("requesting problem list from server...")
+        #the following statement returns data of the contest
+        contest_data=scrape.get_contest(contest,abort=True)
+
     click.echo("Done")
 
     if(contest_data["user"]["username"]):
@@ -127,6 +142,3 @@ def contests():
     click.echo_via_pager('\n'.join(display_strings))
     #display_strings.append("Following contests are running on codechef")
     #display_strings.append("Following contests will be hosted on codechef")
-
-def practice_problems():
-    click.echo("view practice problems not implemented in this version")

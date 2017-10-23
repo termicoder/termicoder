@@ -39,7 +39,7 @@ def setup_problem(problem_code,contest_code,abort):
 
     try:
         os.mkdir(problem_path)
-    except:
+    except FileExistsError:
         pass
     problem=scrape.get_problem(problem_code,contest_code,abort=abort)
     if problem["error"]==None:
@@ -76,48 +76,65 @@ def setup_problem(problem_code,contest_code,abort):
 def setup_contest(contest_code,abort):
     contest_code=contest_code.upper()
     contest_path=os.path.join(".",contest_code)
-    click.echo("requesting data for contest %s. Please wait..."%contest_code,nl=False)
-    contest_data=scrape.get_contest(contest_code,abort=abort)
+    if contest_code=="PRACTICE":
+        try:
+            catagory_list_path=os.path.join(os.path.dirname(os.path.dirname(__file__)), "catagories.json")
+            catagory_file = open(catagory_list_path)
+            catagory_list = json.load(catagory_file)["catagorylist"]
+        except:
+            display.error("INTERNAL ERROR: catagorylist for codechef not found")
+            raise click.Abort
+        else:
+            chosen_catagory = click.prompt("Please choose a catagory"+"(" + "|".join(catagory_list) + ")", type=click.Choice(catagory_list))
+            click.echo("requesting problem list from server...")
+            contest_data=scrape.get_practice_problems(chosen_catagory,abort=abort)
+            contest_path=os.path.join(contest_path,contest_data["practice_catagory"])
+    else:
+        click.echo("requesting data for contest %s. Please wait..."%contest_code,nl=False)
+        contest_data=scrape.get_contest(contest_code,abort=abort)
 
     if(contest_data["error"] is None):
         click.echo("\t Done")
 
-    if(contest_data["user"]["username"] is not None):
-        click.echo("you are currently logged in."+
-        "\ncompletely solved problems will not be setup"+
-        "\nthough if you want you can set them up individually later")
+        if(contest_data["user"]["username"] is not None):
+            click.echo("you are currently logged in."+
+            "\ncompletely solved problems will not be setup"+
+            "\nthough if you want you can set them up individually later")
+        else:
+            click.echo("you are currently NOT logged in."+
+            "\nALL problems of the contest will be setup")
+
+        problems_to_setup=[]
+        for i in contest_data["problems"]:
+            if(i not in contest_data["problemsstats"]["solved"] or
+            contest_data["problems"][i]["type"] not in normal_problem_types or
+            i in contest_data["problemsstats"]["partially_solved"]):
+                problems_to_setup.append(contest_data["problems"][i])
+
+        try:
+            os.makedirs(contest_path)
+        except FileExistsError:
+            pass
+
+        contest_setup_file=os.path.join(contest_path,".contest")
+        f=open(contest_setup_file,"w")
+        if(contest_data["error"]==None):
+            del contest_data["rules"]
+        click.echo(json.dumps(contest_data,indent=2), file=f)
+
+        # setup all problems for the contests
+        problem_list=[problem["code"] for problem in problems_to_setup]
+        if(len(problem_list)>=0):
+            directory=os.getcwd()
+            os.chdir(contest_path)
+            display.normal("setting up %s problems"%len(problem_list))
+            if(contest_data["error"]==None):
+                with click.progressbar(problem_list) as bar:
+                    for problem_code in bar:
+                        setup_problem(problem_code,contest_code,abort=False)
+            os.chdir(directory)
+        else:
+            display.error("There are no problems to setup in this contest/Category")
+            display.normal("Possibly you have solved all the problems")
     else:
-        click.echo("you are currently NOT logged in."+
-        "\nALL problems of the contest will be setup")
-
-    problems_to_setup=[]
-    for i in contest_data["problems"]:
-        if(i not in contest_data["problemsstats"]["solved"] or
-        contest_data["problems"][i]["type"] not in normal_problem_types or
-        i in contest_data["problemsstats"]["partially_solved"]):
-            problems_to_setup.append(contest_data["problems"][i])
-
-    try:
-        os.mkdir(contest_path)
-    except:
-        pass
-
-    contest_setup_file=os.path.join(contest_path,".contest")
-    f=open(contest_setup_file,"w")
-    if(contest_data["error"]==None):
-        del contest_data["rules"]
-    click.echo(json.dumps(contest_data,indent=2), file=f)
-
-    # setup all problems for the contests
-    problem_list=[problem["code"] for problem in problems_to_setup]
-    directory=os.getcwd()
-    os.chdir(contest_path)
-    if(contest_data["error"]==None):
-        with click.progressbar(problem_list) as bar:
-            for problem_code in bar:
-                setup_problem(problem_code,contest_code,abort=False)
-    os.chdir(directory)
-
-def setup_practice():
-    click.echo("setup PRACTICE not implemted in this version")
-    return None
+        display.error("error in fetching contest:\n"+contest_data['error'])
