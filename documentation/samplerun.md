@@ -1,7 +1,8 @@
 # Sample Run
-### Though this demonstrates most commands of Termicoder; This is by no means exausive show of termicoder's features. 
 
-1. we start our journey with `termicoder view contests` and `termicoder view problems`  
+**NOTE: In some of these commands you may require `sudo` depending on your systems configuration**
+
+1. We start our journey with `termicoder view contests` and `termicoder view problems`  
 they give you a list of contests running on a judge and problems of a contest respectively  
 e.g. `termicoder view contest -j codechef` will list running and future contests on codechef
 `termicoder view problems -j codechef -c cook84` will list all the problems of contest cook84 sorted in descending order of no of submissions
@@ -40,7 +41,7 @@ this opens the problem statement (which is saved as html file by termicoder in a
 ### NOTE from now we will assume we are in the folder PROB1 untill we say otherwise  
 
 4. Now we have viewed the problem and say we are ready to code.  
-**termicoder currently only supports c,c++,java,python (you can choose any one of python 2/3 clarified in [configure](configure.md))**  
+**termicoder currently only supports c,c++,java,python**  
 so we use the command `termicoder code`.  
 this command helps us in coding the solution.  
 it puts the template for a language into the given file and opens the problem form editing in the default editor
@@ -56,22 +57,22 @@ e.g.
 `termicoder test`  
 `Please provide a code file[a.cpp]:`  
 after pressing enter, a.cpp is taken as the file, after this termicoder should compile the code(if required).  
-We are aware that people use different compilers and systems and hence compile commannds may vary so instead of hard coding them we are using bash/batch scripts for compiling and running your code  
-we have bundeled a sample script for each language but there is quite high chance that they might not work so you need to edit them first.For more details have a look at [CONFIGURE](configure.md).  
+Since people use different compilers and systems, compile commannds may vary so instead of hard coding them termicoder uses bash/batch scripts for compiling and running your code  
+Some sample scripts have been bundeled for each language but there is quite high chance that they might not work so you need to edit them first. For more details have a look at [CONFIGURE](configure.md).  
 To edit scripts run `termicoder test -et`   
-after compiling, termicoder runs your code against all `.in` files in testcases folder  
+After compiling, termicoder runs your code against all `.in` files in testcases folder  
 and produces output as a corresponding `.outx` file.   
 for example if input is `1.in`, output is produces as `1.outx`  
 now the file is compared with corresponding `.out` file which have the expected(correct) output  
 i.e. `1.outx` is compared against `1.out`   
-after running on all `.in` files we produce status of each case and diff of the outputs.
+after running on all `.in` files it produces status of each case and diff of the outputs.
 You can simply add your own testcase by creating a `.in` file and corresponding `.out` file in testcases folder.  
 there is no restriction on file name except that they should be same for corresponding `.in` and `.out` files  
 The output should match exactly(including spaces) for termicoder to produce AC.  
 We do exact check to support accross various judges and problems.  
-If we evaluate WA does not always mean that judge will also give WA; You should have a look at diff and .out/.outx files  
+If it evaluates WA does not always mean that judge will also give WA; You should have a look at diff and .out/.outx files  
 test command also has options like timelimit which can be used to set time limit per testcase  
-by default it is the timelimit specified in `.problem file`. if not specified it is 3 seconds  
+by default it is the timelimit specified in `.problem` file. if not specified it is 3 seconds by default 
 ex. `termicoder test -f a.cpp -tl 0.1` makes timelimit 0.1 second per testcase  
 to not use testcases files and run the program live use `termicoder test --live`   
 it just compiles and runs the program normally taking from stdin and producing to stdout  
@@ -83,9 +84,9 @@ it prompts you for username and password and logs you in.
 we currently don't support saving username and passwords.  
 but we do save cookies and maintain session which help reducing trouble to user,  
 though the cookies become invalid soon; the limit depends on judge  
-it can be limited to a few hours to say a month so you will have to login again after that time period.  
-also you can logout anytime using `termicoder setup --logout -j codechef` which deletes the cookies.  
-also the cookies may become invalid if you login from some other browser  
+You will have to login again after cookies expire.  
+Also you can logout anytime using `termicoder setup --logout -j codechef` which deletes the cookies.  
+The cookies may become invalid if you login from some other browser  
 
 7. After we login we can submit a solution using  
 `termicoder submit -f a.cpp`  
@@ -93,3 +94,6 @@ it gives a confirmation prompt and submits the solution based on data in `.probl
 after the judge has evaluated we show you the response.  
 Note that if we don't provide option `-f a.cpp`,  
 termicoder prompts for a code file similar as the test prompt defaulting to latest code file you edited.  
+
+
+### Though this run demonstrates most commands of Termicoder, This is by no means exaustive show of termicoder's features. 
