@@ -1,12 +1,14 @@
 import sys
-from setuptools import setup,find_packages
+from setuptools import setup, find_packages
+
 
 def readme():
     try:
         with open('README.rst') as f:
             return f.read()
-    except:
+    except BaseException:
         pass
+
 
 setup(
     name='termicoder',
@@ -41,13 +43,13 @@ setup(
         'Click',
         'requests',
         'beautifulsoup4'
-    ]+ (["colorama==0.3.3"] if "win" in sys.platform else []),
+    ] + (["colorama==0.3.3"] if "win" in sys.platform else []),
     entry_points='''
         [console_scripts]
         termicoder=termicoder.cli:main
     '''
     # can use this nose for tests later
 
-    #test_suite='nose.collector',
-    #tests_require=['nose']
+    # test_suite='nose.collector',
+    # tests_require=['nose']
 )

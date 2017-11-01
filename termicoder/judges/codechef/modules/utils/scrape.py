@@ -102,8 +102,8 @@ def get_problem(problem_code, contest_code, abort):
             click.echo("codechef returned following error:")
             display.error(j["message"])
             display.normal(
-                "There may be a problem with the problem code/contest code.\n" +
-                "Please check and try again")
+                "There may be a problem with the problem code/contest code." +
+                "\nPlease check and try again")
             if(abort):
                 sys.exit()
         else:
@@ -121,7 +121,7 @@ def get_problem(problem_code, contest_code, abort):
             else:
                 sample_io["error"] = "Out of Scope"
                 display.error(
-                    "WARNING: the sample testcases of problem " + problem_code +
+                    "WARNING:the sample testcases of problem " + problem_code +
                     " could not be extrated properly,\n" +
                     "please have a look at the testcases folder")
             j["sample_io"] = sample_io
@@ -201,7 +201,7 @@ def get_practice_problems(catagory, abort):
             problem = {
                 'code': problem_data[1].get_text(strip=True),
                 'name': problem_data[0].get_text(strip=True),
-                'type': "1" if catagory.lower()=="challenge" else "3",
+                'type': "1" if catagory.lower() == "challenge" else "3",
                 'successful_submissions': problem_data[2].get_text(strip=True),
                 'allow_submissions': True,
                 'accuracy': problem_data[3].get_text(strip=True),
@@ -226,14 +226,14 @@ def get_practice_problems(catagory, abort):
         # TODO partially implimented dictionary... may lead to error
 
         # find username next
-        tempindex=practice_page.text.find("username")
-        ustart=practice_page.text.find(":",tempindex)
-        uend=practice_page.text.find("}",ustart)
-        username=practice_page.text[ustart+1:uend]
-        if(username=="null"):
-            username=None
+        tempindex = practice_page.text.find("username")
+        ustart = practice_page.text.find(":", tempindex)
+        uend = practice_page.text.find("}", ustart)
+        username = practice_page.text[ustart+1:uend]
+        if(username == "null"):
+            username = None
         else:
-            username=username[1:-1]
+            username = username[1:-1]
 
         j.update({
             'status': 'success',
@@ -246,6 +246,6 @@ def get_practice_problems(catagory, abort):
             'problemsstats': problemsstats,
             'rank_and_score': None,
             'practice_catagory': catagory,
-            'rules':None
+            'rules': None
         })
     return j

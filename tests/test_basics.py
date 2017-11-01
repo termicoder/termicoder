@@ -12,4 +12,4 @@ class test_cli_help(unittest.TestCase):
 
     def test_initial(self):
         result = self.runner.invoke(termicoder.cli.main, ['--help'])
-        assert result.exit_code==0
+        assert result.exit_code == 0
