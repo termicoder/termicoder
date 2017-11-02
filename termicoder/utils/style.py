@@ -1,3 +1,5 @@
+import click
+import termicoder.utils.color as color
 style_types = ["error",
                "normal",
                "command",

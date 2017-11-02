@@ -1,5 +1,5 @@
-import click
 import termicoder.utils.display as display
+import click
 import json
 import subprocess
 import os
@@ -10,7 +10,7 @@ def view_contest(folder):
     if(folder is None):
         contest_file_path = ".contest"
     else:
-        contest_file_path = os.path.join(folder, ".contest")
+        os.path.join(folder, ".contest")
     click.echo(
         "You are in a contest folder\n" +
         "view contest is not implemnted in this version")
