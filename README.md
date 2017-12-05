@@ -59,21 +59,7 @@ and put . path_to_autocompte.sh/autocomplete.sh in your .bashrc
 3. Python2/3
 4. Java (is still being worked on)
 
-## Usage
-Only highlighting commands here,  
-
-For a sample we reccommend going through [sample run](documentation/samplerun.md)  
-which contains the details  
-
-for details of a particular command use:  
-
-```
-termicoder --help  
-termicoder <COMMAND> --help  
-```  
-
-or you can have a look at [helptext](documentation/helptext.md) which contains the output of all help commands
-
+## Highlights
 ```
 Usage: termicoder [OPTIONS] COMMAND [ARGS]...
 
@@ -87,8 +73,40 @@ Commands:
   view    view contests, problems and problem statement
 ```
 
+## Detailed Command Help
+For details of a particular command use:  
+
+```
+termicoder --help  
+termicoder <COMMAND> --help  
+```  
+
+or you can have a look at [helptext](documentation/helptext.md) which contains the output of all help commands
+
+## Sample Run 
+For a sample we reccommend going through [sample run](documentation/samplerun.md)  
+which contains the details  
+
+## ChangeLog
+ChangeLog for termicoder since v0.2.0 is availible in the [wiki](https://github.com/termicoder/termicoder/wiki/Change-Log) .
+
 ## Contributing to Termicoder
-see [CONTRIBUTING](CONTRIBUTING.md) and [GUIDELINES](documentation/guidelines.md)
+Termicoder is mostly written in python.  
+If you are looking towards contributing to the code base, you should begin with reading the following:
+- [CONTRIBUTING](CONTRIBUTING.md) 
+- [GUIDELINES](documentation/guidelines.md)
+- [IDEAS](https://github.com/termicoder/termicoder/blob/master/documentation/ideas.md). 
+
+You can also contribute otherwise by
+* Improving the Documentation.
+  - Most of the documentation lies in the [documentation](https://github.com/termicoder/termicoder/tree/master/documentation) folder. To start fork this repo, change and create a pull request
+  
+* reporting a bug or requesting a feature.
+  - Please create an [issue](https://github.com/termicoder/termicoder/issues) about the bug/feature.
+
+* Giving feedback about the work. (both praise and criticism are equally appreciated).
+  - mail : diveshuttamchandani@gmail.com
+
 
 ## LICENSE
 [MIT](LICENSE.txt)
