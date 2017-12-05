@@ -3,6 +3,7 @@ import click
 import os
 import sys
 import subprocess
+import signal
 import filecmp
 import termicoder.utils.display as display
 import termicoder.utils.parse as parse
@@ -153,7 +154,7 @@ def test(code_file, time_limit, live):
             executable_name = code_file
 
         if(live):
-            runcall = [get_shell(), run_script, executable_name]
+            runcall = [shell_command, run_script, executable_name]
             click.echo("The program is now running:")
             a = subprocess.call(runcall)
             click.echo(
@@ -179,21 +180,28 @@ def test(code_file, time_limit, live):
                     outfile = os.path.join("testcases", filename+".outx")
                     stdin = open(infile, "r")
                     stdout = open(outfile, "w")
-                    runcall = [get_shell(), run_script, executable_name]
+                    runcall = [shell_command, run_script, executable_name]
 
                     # TODO: use a better function then time.clock()
                     start = time.time()
                     try:
-                        a = subprocess.call(
-                            runcall, timeout=time_limit,
-                            stdin=stdin, stdout=stdout)
+                        a = subprocess.Popen(
+                            runcall,
+                            stdin=stdin, stdout=stdout,
+                            preexec_fn=os.setsid)
+                        a.wait(timeout=time_limit)
                     except subprocess.TimeoutExpired:
                         status = style.error("TLE")
                     except BaseException:
                         click.echo("")
-                        status = "RTE"
-                    if(a):  # runtime error
+                        status = "Internal Error"  #some other error!! in this
+                    return_code=a.poll()
+                    if(return_code==None): #process not terminated
+                        status = style.error("TLE")
+                        os.killpg(os.getpgid(a.pid), signal.SIGTERM) #kills all
+                    elif(return_code!=0):  # runtime error
                         status = style.error("RTE")
+
                     stop = time.time()
                     tdiff = stop-start
 
