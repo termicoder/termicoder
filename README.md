@@ -4,7 +4,7 @@
 [![PyPI](https://img.shields.io/pypi/pyversions/termicoder.svg)]()
 [![PyPI](https://img.shields.io/pypi/v/termicoder.svg)](https://pypi.python.org/pypi/termicoder)
 [![Requirements Status](https://requires.io/github/termicoder/termicoder/requirements.svg?branch=master)](https://requires.io/github/termicoder/termicoder/requirements/?branch=master)
-[![PyPI](https://img.shields.io/github/license/termicoder/termicoder.svg)](https://github.com/termicoder/termicoder/blob/master/LICENSE.txt)
+[![Licence](https://img.shields.io/github/license/termicoder/termicoder.svg)](https://github.com/termicoder/termicoder/blob/master/LICENSE.txt)
 
 
 
@@ -20,12 +20,14 @@ Made with :heart: by [Divesh Uttamchandani](https://github.com/diveshuttam)
 use sudo -H if required. preferably use pip3 (python3)
 
 ### Developer installation  
-clone this repo
-in the root folder of this repo run  
+- clone this repo  
+- in the root folder of this repo run  
 `pip install --editable . `  
-notice the dot(.) in above command at the end  
+notice the dot(.) in above command at the end   
+  
 Note: it is better to use virtualenv and pip3 (python3)  
-to remove this package in root folder of repo run  
+
+- to remove this package, in the root folder of the repo run  
 `python setup.py develop --uninstall`
 
 **Note: Termicoder is in its alpha stage and has only been tested on Ubuntu + python3. Support for other configurations is being worked on, if you are using some other platform and encounter errors, do create an [issue](https://github.com/diveshuttam/termicoder/issues) for them. For windows one can also try using [Bash on Ubuntu on Windows](https://msdn.microsoft.com/en-us/commandline/wsl/about) ; most features have been tested out there and work as expected.**
