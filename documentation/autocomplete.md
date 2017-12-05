@@ -1,3 +1,5 @@
+## Setup Autocomplete on Bash
+
 **Method 1:**  
 run the following command every time you use terminal  
 `eval "$(_TERMICODER_COMPLETE=source termicoder)"`  
