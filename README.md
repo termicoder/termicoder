@@ -32,20 +32,9 @@ Note: it is better to use virtualenv and pip3 (python3)
 
 **Note: Termicoder is in its alpha stage and has only been tested on Ubuntu + python3. Support for other configurations is being worked on, if you are using some other platform and encounter errors, do create an [issue](https://github.com/diveshuttam/termicoder/issues) for them. For windows one can also try using [Bash on Ubuntu on Windows](https://msdn.microsoft.com/en-us/commandline/wsl/about) ; most features have been tested out there and work as expected.**
   
-  
+
 ### Autocomplete for bash  
-**Method 1:**  
-run the following command every time you use terminal  
-`eval "$(_TERMICODER_COMPLETE=source termicoder)"`  
-
-**Method 2:**  
-put the following command in your .bashrc  
-`eval "$(_TERMICODER_COMPLETE=source termicoder)"`  
-
-**Method 3:**  
-Method 2 makes bash to load up slowly, so try:  
-`eval "$(_TERMICODER_COMPLETE=source termicoder)" > autocomplete.sh`  
-and put . path_to_autocompte.sh/autocomplete.sh in your .bashrc  
+To setup tab autocompetion for termicoder commands have a look at [Autocomplete Setup](documentation/autocomplete).
 
 ## Current Support
 
