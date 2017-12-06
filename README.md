@@ -77,7 +77,7 @@ For a sample we reccommend going through [sample run](documentation/samplerun.md
 which contains the details  
 
 ## ChangeLog
-ChangeLog for termicoder since v0.2.0 is availible in the [wiki](https://github.com/termicoder/termicoder/wiki/Change-Log) .
+ChangeLog and Older Releases are availible under [Releases](https://github.com/termicoder/termicoder/releases) .
 
 ## Contributing to Termicoder
 Termicoder is mostly written in python.  
