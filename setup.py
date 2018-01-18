@@ -1,4 +1,3 @@
-import sys
 from setuptools import setup, find_packages
 
 
@@ -17,7 +16,8 @@ setup(
     author='Divesh Uttamchandani',
     author_email='diveshuttamchandani@gmail.com',
     license='MIT',
-    description='a CLI to view, code and submit problems directly from terminal',
+    description='a CLI to view, code and submit problems' +
+                ' directly from terminal',
     long_description=readme(),
     keywords='competetive iarcs codechef oj',
     classifiers=[
@@ -27,6 +27,7 @@ setup(
         'Topic :: Education',
 
         'License :: OSI Approved :: MIT License',
+        'OS'
 
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.3',
@@ -39,7 +40,7 @@ setup(
         'Click',
         'requests',
         'beautifulsoup4'
-    ] + (["colorama==0.3.3"] if "win" in sys.platform else []),
+        'colorama==0.3.3;platform_system=="Windows"'],
     entry_points='''
         [console_scripts]
         termicoder=termicoder.cli:main
