@@ -4,9 +4,18 @@ script:
   - touch .gitignore
   - >
     docker run --volume=$(pwd):/app --workdir=/app coala/base:0.9 /bin/bash -c
-    "coala-quickstart --ci;
-    printf '# Quickstart generated .coafile: ';
-    cat .coafile | curl -F 'clbin=<-' https://clbin.com 2>/dev/null;
-    cat .coafile;
-    echo '# End of .coafile';
-    coala --ci"
+    "
+    coala-quickstart --ci;
+    coala --ci --apply-patches --no-orig >coala-ci.log
+    "
+  - git add --all
+  # Create two diff files, and upload to https://clbin.com
+  - >
+    git diff --cached --find-renames \
+      --ignore-all-space --ignore-blank-lines \
+      > sans-whitespace.diff
+  - cat sans-whitespace.diff | curl -F 'clbin=<-' https://clbin.com
+  - git diff --cached --find-renames > with-whitespace.diff
+  - cat with-whitespace.diff | curl -F 'clbin=<-' https://clbin.com
+  # Upload logs to https://clbin.com
+  - cat coala-ci.log | curl -F 'clbin=<-' https://clbin.com
