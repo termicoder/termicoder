@@ -1,9 +1,12 @@
 language: generic
-addons:
-  apt:
-    sources: debian-sid
-    packages: file
+services: docker
 script:
-  - file --version || true
-  - find . -not \( -path ./.git -prune \) -type f -exec file -N {} + > file.list
-  - sed 's/^\.\/\(.*\):/\1:/;s/^.*\/\(.*\):/\1:/;/^[^:]*\..*:/{s/^.*\(\.[^. ]*\):/\1:/;}' file.list | sort | uniq -c | sort -nr
+  - touch .gitignore
+  - >
+    docker run --volume=$(pwd):/app --workdir=/app coala/base:0.9 /bin/bash -c
+    "coala-quickstart --ci;
+    printf '# Quickstart generated .coafile: ';
+    cat .coafile | curl -F 'clbin=<-' https://clbin.com 2>/dev/null;
+    cat .coafile;
+    echo '# End of .coafile';
+    coala --ci"
