@@ -8,6 +8,8 @@ script:
     coala-quickstart --ci;
     coala --ci --apply-patches --no-orig >coala-ci.log
     "
+  - cat .coafile
+  - cat /app/.coafile
   - git add --all
   # Create two diff files, and upload to https://clbin.com
   - >
