@@ -73,7 +73,7 @@ termicoder <COMMAND> --help
 or you can have a look at [helptext](documentation/helptext.md) which contains the output of all help commands
 
 ## Sample Run 
-For a sample we reccommend going through [sample run](documentation/samplerun.md)  
+For a sample we reccommend going through [sample run](documentation/samplerun.md)
 which contains the details  
 
 ## ChangeLog
