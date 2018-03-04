@@ -127,7 +127,7 @@ def is_logged_in(ensure=True):
             page = codechef_session.get(user_url).json()
         except BaseException:
             return None
-        if(page["user"]["username"] is None):
+        if(not page["user"]["username"]):
             return False
         else:
             return True

@@ -151,12 +151,12 @@ def contests():
                     len(running_future_contests),
                     len(running_future_contests) + len(others)),
                 others):
-            display_strings.append("",
-                                   "|".join(
+            display_strings.append("|".join(
+                                       ["",
                                        style.sno(str(sno+1), 3),
                                        style.contest_code(contest["code"], 10),
                                        style.contest_name(contest["name"], 25),
-                                       "")
+                                       ""])
                                    )
         display_strings.append(contest_divison_line2())
     else:
