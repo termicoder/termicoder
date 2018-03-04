@@ -90,13 +90,17 @@ def problems(contest):
             name_style = style.partially_solved
         elif(problem["code"] in contest_data["problemsstats"]["attempted"]):
             name_style = style.incorrect
+        problem_string = "|".join(["",
+                                   style.sno(str(sno+1), 3),
+                                   style.problem_code(problem["code"], 10),
+                                   name_style(problem["name"], 25),
+                                   style.submissions(problem["successful_submissions"], 7),
+                                   ""])
 
-        display_strings.append(
-                "|"+style.sno(str(sno+1), 3) +
-                "|"+style.problem_code(problem["code"], 10) +
-                "|"+name_style(problem["name"], 25) +
-                "|"+style.submissions(problem["successful_submissions"], 7) +
-                "|")
+        if problem["category_name"] == "unscored":
+            problem_string+=style.incorrect("unscored")
+        print(problems)
+        display_strings.append(problem_string)
     display_strings.append(problem_divison_line())
     click.echo_via_pager('\n'.join(display_strings))
 
