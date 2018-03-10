@@ -99,7 +99,6 @@ def problems(contest):
 
         if problem["category_name"] == "unscored":
             problem_string+=style.incorrect("unscored")
-        print(problems)
         display_strings.append(problem_string)
     display_strings.append(problem_divison_line())
     click.echo_via_pager('\n'.join(display_strings))
