@@ -13,6 +13,15 @@ Made with :heart: by [Divesh Uttamchandani](https://github.com/diveshuttam)
   
 ### A python based command line interface for helping in competitive programming. Termicoder aims at automating and simplifying the process of coding, testing and submitting problems to Online Judges so that one can concentrate only on algorithms    
 
+
+<h3 align="center">
+Inspiration behind Termicoder  
+</h3>
+<p align="center">
+  <img src="./images/inspiration.png">
+</p>
+  
+
 ## Installation
 
 ### User installation
