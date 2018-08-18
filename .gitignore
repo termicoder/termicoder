@@ -16,3 +16,4 @@ ignore/
 /include/
 pip-selfcheck.json
 
+venv/
