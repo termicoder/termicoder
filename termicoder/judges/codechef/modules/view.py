@@ -58,7 +58,6 @@ def problems(contest):
     display_strings.append(style.normal("\nContest: ") +
                            style.contest_code(contest_data["code"])+" " +
                            style.contest_name("("+contest_data["name"]+")"))
-    # print(contest_data)
     if(contest_data["rank_and_score"] and contest_data["user"]["username"]):
         display_strings.append(
             style.normal(
@@ -97,13 +96,13 @@ def problems(contest):
                                    style.submissions(
                                        problem["successful_submissions"], 7),
                                    ""])
-        #print(problem)
+        
         try:
             if problem["category_name"] == "unscored":
                 problem_string += style.incorrect("unscored")
-            display_strings.append(problem_string)
-        except BaseException:
+        except KeyError:
             pass
+            display_strings.append(problem_string)
 
     display_strings.append(problem_divison_line())
     click.echo_via_pager('\n'.join(display_strings))
