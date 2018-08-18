@@ -5,15 +5,28 @@ import subprocess
 import os
 import sys
 
+browser_defaults_path = os.path.join(
+    os.path.dirname(__file__), "browser_defaults.json")
+browser_defaults_file = open(browser_defaults_path, "r")
+browser_defaults = json.load(browser_defaults_file)
+
 
 def view_contest(folder):
-    if(folder is None):
-        contest_file_path = ".contest"
+    contest_file_path = os.path.expanduser(folder)
+    PORT = browser_defaults["port"]
+    browser = browser_defaults["browser"]
+
+    server_url = "http://localhost:" + PORT
+    if(browser is None):
+        click.launch(server_url)
+        sys.exit()
     else:
-        os.path.join(folder, ".contest")
-    click.echo(
-        "You are in a contest folder\n" +
-        "view contest is not implemnted in this version")
+        subprocess.call([browser, server_url])
+    os.chdir(contest_file_path)
+    try:
+        subprocess.call(["python", "-m", "http.server", PORT])
+    except Exception:
+        click.echo("Unable to setup a server on localhost:" + PORT)
 
 
 def edit_browser_defaults():
@@ -28,11 +41,6 @@ def edit_browser_defaults():
 
 
 def view_problem(folder):
-    browser_defaults_path = os.path.join(
-        os.path.dirname(__file__),
-        "browser_defaults.json")
-    browser_defaults_file = open(browser_defaults_path, "r")
-    browser_defaults = json.load(browser_defaults_file)
     browser = browser_defaults["browser"]
 
     if(folder is None):
