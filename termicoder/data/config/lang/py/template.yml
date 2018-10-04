@@ -1,0 +1,17 @@
+# you can define custom variables here and use them kind of like
+# jinja templates in setting
+# specifically row_no can be used while defining editor to open the editor
+# at a specific row
+row_no: 6
+col_no: 19
+code: |
+  # Author:      YourName
+  # Institution: YourInstitute
+  t = int(input().strip())
+
+  for i in range(t):
+      # do something
+      pass
+
+  # <> with <3 using Termicoder:
+  # https://termicoder.github.io

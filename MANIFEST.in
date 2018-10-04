@@ -1,0 +1,15 @@
+include LICENSE.txt
+include README.md
+recursive-exclude * __pycache__
+recursive-exclude * *.pyc
+recursive-include termicoder/data *.yml
+recursive-include termicoder/ *.js
+recursive-include termicoder/utils/scripts *
+recursive-include termicoder/utils/templates *
+include termicoder/utils/*.json
+include termicoder/judges/codechef/*.json
+global-exclude *.dump 
+global-exclude __pycache__ 
+prune termicoder/judges/spoj
+prune .ropeproject
+graft documentation

@@ -1,0 +1,2 @@
+class JudgeNotFoundError(Exception):
+    pass

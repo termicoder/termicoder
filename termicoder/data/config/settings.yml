@@ -1,0 +1,79 @@
+# # Browser to launch a local problem/contest file after setup
+# # null => default
+# # use {{FILE}} for getting the file url
+# # example:
+# browser_local: elinks
+# # or
+# browser_local: /usr/bin/some_browser
+browser_local: null
+
+
+# # Browser to launch a an online url
+# # null => default
+# # use {{URL}} for getting the url
+# # example:
+# browser_online: google-chrome
+# # or
+# browser_local: /usr/bin/some_browser
+browser_online: null
+
+# # Default file name extension for code
+default_extension: cpp
+
+# # Default code file name for non problem directories
+default_code_file: a.cpp
+
+# # Editor to launch a problem null => default
+editor: null
+
+# # Sample configs
+# # TODO separate this as .patch files on termicoder-config repo
+
+# # Jinja style argument list substitutions are supported while
+# # launching CODE_FILE in editor.
+
+# # example for vim
+# editor:
+#   - vim
+#   - +{{row_no}}
+
+# # example for sublime
+# editor:
+#   - subl
+#   - "{{CODE_FILE}}:{{row_no}}:{{col_no}}"
+
+# # example for vscode
+# editor:
+#   - code
+#   - "--reuse-window"
+#   - "--goto"
+#   - "{{CODE_FILE}}:{{row_no}}:{{col_no}}"
+# # above is assuming: row_no OR col_no is defined with each of the templates.
+# # You can also define variable on your own in code templates and use here
+# # CODE_FILE is a special variable which can be used if CODE_FILE is not the
+# # last argument. By default termicoder passes CODE_FILE as the last argument.
+# # if {{CODE_FILE}} is used here it is just replaced and not PASSED extra.
+
+# # Use the following config for using vscode as browser with
+# # extension for html preview such as:
+# # https://github.com/searKing/preview-vscode
+# # html preview is not enabled by default
+# # so sending key strokes ctrl+shift+v to vscode
+# # but in terminal this is paste so ctrl+p Escape first to change focus
+# browser_local:
+#   -
+#     - code
+#     - "--reuse-window"
+#     - "{{FILE}}"
+#   -
+#     - sleep
+#     - "1"
+#   -
+#     - xdotool
+#     - key
+#     - ctrl+p
+#     - Escape
+#     - ctrl+shift+v
+
+
+

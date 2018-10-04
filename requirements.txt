@@ -1,0 +1,15 @@
+Click
+requests
+beautifulsoup4
+flask
+flake8
+click-man
+sphinx
+sphinx-click
+pyyaml
+requests_oauthlib
+click-default-group
+click-repl
+click_completion
+Markdown
+python-markdown-mathjax

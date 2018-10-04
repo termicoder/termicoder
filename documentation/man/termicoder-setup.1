@@ -1,0 +1,36 @@
+.TH "TERMICODER SETUP" "1" "22-Sep-2018" "" "termicoder setup Manual"
+.SH NAME
+termicoder\-setup \- sets up problem, contests and login.
+.SH SYNOPSIS
+.B termicoder setup
+[OPTIONS] COMMAND [ARGS]...
+.SH DESCRIPTION
+sets up problem, contests and login.
+.PP
+1. if you pass judge and --login/--logout,
+it logs you in and out of the judge
+.PP
+2. if you pass judge and contest/category
+it downloads all the problems of that contest.
+.PP
+3. if you pass a particular problem, with judge and contest/category,
+it sets up that problem.
+.PP
+all this happens in the current folder.
+option of contest/category may vary amongst various online judges
+.SH OPTIONS
+.TP
+\fB\-j,\fP \-\-judge []
+.PP
+.TP
+\fB\-c,\fP \-\-contest TEXT
+contest code
+.TP
+\fB\-p,\fP \-\-problem TEXT
+problem code
+.TP
+\fB\-\-login\fP
+.PP
+.TP
+\fB\-\-logout\fP
+.PP

@@ -1,0 +1,16 @@
+# # build, run are a list of commands,
+# # each command is a list of arguments
+
+# # if you use {{FILE_NAME}} and {{BUILD_NAME}}
+# # {{FILE_NAME}} is replaced with name of the
+# # code file (with extension) {{BUILD_NAME}} is replaced
+# # with name of the target build (i.e code file name without extension)
+
+build: null
+
+# # IO Redirection from testcase files (or stdin/stdout on --live)
+# # Time limits etc.
+# # is handled by termicoder internally
+run:
+  - python3
+  - "{{FILE_NAME}}"

@@ -1,0 +1,388 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>termicoder &#8212; termicoder 0.2.2 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="termicoder">
+<h1>termicoder<a class="headerlink" href="#termicoder" title="Permalink to this headline">¶</a></h1>
+<p>view, code &amp; submit problems directly from terminal.</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>termicoder <span class="o">[</span>OPTIONS<span class="o">]</span> COMMAND <span class="o">[</span>ARGS<span class="o">]</span>...
+</pre></div>
+</div>
+<div class="section" id="termicoder-main">
+<h2>main<a class="headerlink" href="#termicoder-main" title="Permalink to this headline">¶</a></h2>
+<p>creates &amp; open code file with template code.</p>
+<p>you can edit template code and default editors
+using flags -et and -ed respectively</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>termicoder main <span class="o">[</span>OPTIONS<span class="o">]</span>
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<dl class="option">
+<dt id="cmdoption-termicoder-main-f">
+<code class="descname">-f</code><code class="descclassname"></code><code class="descclassname">, </code><code class="descname">--file</code><code class="descclassname"> &lt;code_file&gt;</code><a class="headerlink" href="#cmdoption-termicoder-main-f" title="Permalink to this definition">¶</a></dt>
+<dd><p>the filename to code into with preloaded template</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-termicoder-main-et">
+<code class="descname">-et</code><code class="descclassname"></code><code class="descclassname">, </code><code class="descname">--edit_templates</code><code class="descclassname"></code><a class="headerlink" href="#cmdoption-termicoder-main-et" title="Permalink to this definition">¶</a></dt>
+<dd><p>open templates folder</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-termicoder-main-ed">
+<code class="descname">-ed</code><code class="descclassname"></code><code class="descclassname">, </code><code class="descname">--edit_defaults</code><code class="descclassname"></code><a class="headerlink" href="#cmdoption-termicoder-main-ed" title="Permalink to this definition">¶</a></dt>
+<dd><p>edit defaults for editors</p>
+</dd></dl>
+
+</div>
+<div class="section" id="termicoder-main">
+<h2>main<a class="headerlink" href="#termicoder-main" title="Permalink to this headline">¶</a></h2>
+<p>Start an interactive shell. All commands and subcommands are available
+in it.</p>
+<p>If stdin is not a TTY, no prompt will be printed, but only commands read
+from stdin.</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>termicoder main <span class="o">[</span>OPTIONS<span class="o">]</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="termicoder-main">
+<h2>main<a class="headerlink" href="#termicoder-main" title="Permalink to this headline">¶</a></h2>
+<p>view contests, problems and problem statement</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>termicoder main <span class="o">[</span>OPTIONS<span class="o">]</span> COMMAND <span class="o">[</span>ARGS<span class="o">]</span>...
+</pre></div>
+</div>
+<div class="section" id="termicoder-main-main">
+<h3>main<a class="headerlink" href="#termicoder-main-main" title="Permalink to this headline">¶</a></h3>
+<p>display the termicoder contents in current/passed folder</p>
+<p>
+if it is a contest folder it displays the list of problems.
+if its a problem folder, displays the problem in a browser.</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>termicoder main main <span class="o">[</span>OPTIONS<span class="o">]</span> <span class="o">[</span>DIR<span class="o">]</span>
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<dl class="option">
+<dt id="cmdoption-termicoder-main-main-ed">
+<code class="descname">-ed</code><code class="descclassname"></code><code class="descclassname">, </code><code class="descname">--edit_defaults</code><code class="descclassname"></code><a class="headerlink" href="#cmdoption-termicoder-main-main-ed" title="Permalink to this definition">¶</a></dt>
+<dd><p>edit default web browser</p>
+</dd></dl>
+
+<p class="rubric">Arguments</p>
+<dl class="option">
+<dt id="cmdoption-termicoder-main-main-arg-dir">
+<code class="descname">DIR</code><code class="descclassname"></code><a class="headerlink" href="#cmdoption-termicoder-main-main-arg-dir" title="Permalink to this definition">¶</a></dt>
+<dd><p>Optional argument</p>
+</dd></dl>
+
+</div>
+<div class="section" id="termicoder-main-main">
+<h3>main<a class="headerlink" href="#termicoder-main-main" title="Permalink to this headline">¶</a></h3>
+<p>lists current and upcoming contests on a judge.</p>
+<p>depending on judge it may give a list of categories also
+such as PRACTICE etc.</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>termicoder main main <span class="o">[</span>OPTIONS<span class="o">]</span>
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<dl class="option">
+<dt id="cmdoption-termicoder-main-main-j">
+<code class="descname">-j</code><code class="descclassname"></code><code class="descclassname">, </code><code class="descname">--judge</code><code class="descclassname"> &lt;judge&gt;</code><a class="headerlink" href="#cmdoption-termicoder-main-main-j" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="termicoder-main-main">
+<h3>main<a class="headerlink" href="#termicoder-main-main" title="Permalink to this headline">¶</a></h3>
+<p>lists problems of a contest/category on the judge</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>termicoder main main <span class="o">[</span>OPTIONS<span class="o">]</span>
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<dl class="option">
+<dt id="cmdoption-termicoder-main-main-judge">
+<code class="descname">-j</code><code class="descclassname"></code><code class="descclassname">, </code><code class="descname">--judge</code><code class="descclassname"> &lt;judge&gt;</code><a class="headerlink" href="#cmdoption-termicoder-main-main-judge" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-termicoder-main-main-c">
+<code class="descname">-c</code><code class="descclassname"></code><code class="descclassname">, </code><code class="descname">--contest</code><code class="descclassname"> &lt;contest&gt;</code><a class="headerlink" href="#cmdoption-termicoder-main-main-c" title="Permalink to this definition">¶</a></dt>
+<dd><p>contest code</p>
+</dd></dl>
+
+</div>
+</div>
+<div class="section" id="termicoder-main">
+<h2>main<a class="headerlink" href="#termicoder-main" title="Permalink to this headline">¶</a></h2>
+<p>submit a solution.</p>
+<p>you should be in a problem directory to submit</p>
+<p>
+script will prompt you to login into the judge(if not already).
+this submits the problem using data in [.problem] file in current directory</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>termicoder main <span class="o">[</span>OPTIONS<span class="o">]</span>
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<dl class="option">
+<dt id="cmdoption-termicoder-main-file">
+<code class="descname">-f</code><code class="descclassname"></code><code class="descclassname">, </code><code class="descname">--file</code><code class="descclassname"> &lt;code_file&gt;</code><a class="headerlink" href="#cmdoption-termicoder-main-file" title="Permalink to this definition">¶</a></dt>
+<dd><p>the code file</p>
+</dd></dl>
+
+</div>
+<div class="section" id="termicoder-main">
+<h2>main<a class="headerlink" href="#termicoder-main" title="Permalink to this headline">¶</a></h2>
+<p>launches custom debug interface (in future)
+where you can use testcase generator,
+launch debugger for the particular language
+and visualize the output</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>termicoder main <span class="o">[</span>OPTIONS<span class="o">]</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="termicoder-main">
+<h2>main<a class="headerlink" href="#termicoder-main" title="Permalink to this headline">¶</a></h2>
+<p>sets up problem, contests and login.</p>
+<p>1. if you pass judge and –login/–logout,
+it logs you in and out of the judge</p>
+<p>2. if you pass judge and contest/category
+it downloads all the problems of that contest.</p>
+<p>3. if you pass a particular problem, with judge and contest/category,
+it sets up that problem.</p>
+<p>all this happens in the current folder.
+option of contest/category may vary amongst various online judges</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>termicoder main <span class="o">[</span>OPTIONS<span class="o">]</span> COMMAND <span class="o">[</span>ARGS<span class="o">]</span>...
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<dl class="option">
+<dt id="cmdoption-termicoder-main-j">
+<code class="descname">-j</code><code class="descclassname"></code><code class="descclassname">, </code><code class="descname">--judge</code><code class="descclassname"> &lt;judge&gt;</code><a class="headerlink" href="#cmdoption-termicoder-main-j" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-termicoder-main-c">
+<code class="descname">-c</code><code class="descclassname"></code><code class="descclassname">, </code><code class="descname">--contest</code><code class="descclassname"> &lt;contest&gt;</code><a class="headerlink" href="#cmdoption-termicoder-main-c" title="Permalink to this definition">¶</a></dt>
+<dd><p>contest code</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-termicoder-main-p">
+<code class="descname">-p</code><code class="descclassname"></code><code class="descclassname">, </code><code class="descname">--problem</code><code class="descclassname"> &lt;problem&gt;</code><a class="headerlink" href="#cmdoption-termicoder-main-p" title="Permalink to this definition">¶</a></dt>
+<dd><p>problem code</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-termicoder-main-login">
+<code class="descname">--login</code><code class="descclassname"></code><a class="headerlink" href="#cmdoption-termicoder-main-login" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-termicoder-main-logout">
+<code class="descname">--logout</code><code class="descclassname"></code><a class="headerlink" href="#cmdoption-termicoder-main-logout" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="termicoder-main">
+<h2>main<a class="headerlink" href="#termicoder-main" title="Permalink to this headline">¶</a></h2>
+<p>configure termicoder settings, autocomplete etc.</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>termicoder main <span class="o">[</span>OPTIONS<span class="o">]</span> COMMAND <span class="o">[</span>ARGS<span class="o">]</span>...
+</pre></div>
+</div>
+<div class="section" id="termicoder-main-main">
+<h3>main<a class="headerlink" href="#termicoder-main-main" title="Permalink to this headline">¶</a></h3>
+<p>Shell completion for termicoder.</p>
+<p>Available shell types:</p>
+<dl class="docutils">
+<dt></dt>
+<dd>bash         Bourne again shell
+fish         Friendly interactive shell
+powershell   Windows PowerShell
+zsh          Z shell</dd>
+</dl>
+<p>Default type: auto</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>termicoder main main <span class="o">[</span>OPTIONS<span class="o">]</span> COMMAND <span class="o">[</span>ARGS<span class="o">]</span>...
+</pre></div>
+</div>
+<div class="section" id="termicoder-main-main-main">
+<h4>main<a class="headerlink" href="#termicoder-main-main-main" title="Permalink to this headline">¶</a></h4>
+<p>Show the click-completion-command completion code</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>termicoder main main main <span class="o">[</span>OPTIONS<span class="o">]</span> <span class="o">[</span>SHELL<span class="o">]</span>
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<dl class="option">
+<dt id="cmdoption-termicoder-main-main-main-i">
+<code class="descname">-i</code><code class="descclassname"></code><code class="descclassname">, </code><code class="descname">--case-insensitive</code><code class="descclassname"></code><code class="descclassname">, </code><code class="descname">--no-case-insensitive</code><code class="descclassname"></code><a class="headerlink" href="#cmdoption-termicoder-main-main-main-i" title="Permalink to this definition">¶</a></dt>
+<dd><p>Case insensitive completion</p>
+</dd></dl>
+
+<p class="rubric">Arguments</p>
+<dl class="option">
+<dt id="cmdoption-termicoder-main-main-main-arg-shell">
+<code class="descname">SHELL</code><code class="descclassname"></code><a class="headerlink" href="#cmdoption-termicoder-main-main-main-arg-shell" title="Permalink to this definition">¶</a></dt>
+<dd><p>Optional argument</p>
+</dd></dl>
+
+</div>
+<div class="section" id="termicoder-main-main-main">
+<h4>main<a class="headerlink" href="#termicoder-main-main-main" title="Permalink to this headline">¶</a></h4>
+<p>Install the click-completion-command completion</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>termicoder main main main <span class="o">[</span>OPTIONS<span class="o">]</span> <span class="o">[</span>SHELL<span class="o">]</span> <span class="o">[</span>PATH<span class="o">]</span>
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<dl class="option">
+<dt id="cmdoption-termicoder-main-main-main-append">
+<code class="descname">--append</code><code class="descclassname"></code><code class="descclassname">, </code><code class="descname">--overwrite</code><code class="descclassname"></code><a class="headerlink" href="#cmdoption-termicoder-main-main-main-append" title="Permalink to this definition">¶</a></dt>
+<dd><p>Append the completion code to the file</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-termicoder-main-main-main-case-insensitive">
+<code class="descname">-i</code><code class="descclassname"></code><code class="descclassname">, </code><code class="descname">--case-insensitive</code><code class="descclassname"></code><code class="descclassname">, </code><code class="descname">--no-case-insensitive</code><code class="descclassname"></code><a class="headerlink" href="#cmdoption-termicoder-main-main-main-case-insensitive" title="Permalink to this definition">¶</a></dt>
+<dd><p>Case insensitive completion</p>
+</dd></dl>
+
+<p class="rubric">Arguments</p>
+<dl class="option">
+<dt id="id1">
+<code class="descname">SHELL</code><code class="descclassname"></code><a class="headerlink" href="#id1" title="Permalink to this definition">¶</a></dt>
+<dd><p>Optional argument</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-termicoder-main-main-main-arg-path">
+<code class="descname">PATH</code><code class="descclassname"></code><a class="headerlink" href="#cmdoption-termicoder-main-main-main-arg-path" title="Permalink to this definition">¶</a></dt>
+<dd><p>Optional argument</p>
+</dd></dl>
+
+</div>
+</div>
+</div>
+<div class="section" id="termicoder-main">
+<h2>main<a class="headerlink" href="#termicoder-main" title="Permalink to this headline">¶</a></h2>
+<p>test code against the sample testcases.</p>
+<p>
+this command (compiles and) runs passed code file.
+the code is run against all [.in] files in ./testcases folder.
+the output is produced in [.outx] files and checked against [.out] files</p>
+<p>it displays time for each testcase,status
+and diff of expected and produced outputs.</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>termicoder main <span class="o">[</span>OPTIONS<span class="o">]</span>
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<dl class="option">
+<dt id="id2">
+<code class="descname">-f</code><code class="descclassname"></code><code class="descclassname">, </code><code class="descname">--file</code><code class="descclassname"> &lt;code_file&gt;</code><a class="headerlink" href="#id2" title="Permalink to this definition">¶</a></dt>
+<dd><p>the code file</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-termicoder-main-tl">
+<code class="descname">-tl</code><code class="descclassname"></code><code class="descclassname">, </code><code class="descname">--timelimit</code><code class="descclassname"> &lt;timelimit&gt;</code><a class="headerlink" href="#cmdoption-termicoder-main-tl" title="Permalink to this definition">¶</a></dt>
+<dd><p>the max time per testcase</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-termicoder-main-l">
+<code class="descname">-l</code><code class="descclassname"></code><code class="descclassname">, </code><code class="descname">--live</code><code class="descclassname"></code><a class="headerlink" href="#cmdoption-termicoder-main-l" title="Permalink to this definition">¶</a></dt>
+<dd><p>test the code live and don’t use testcases</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-termicoder-main-es">
+<code class="descname">-es</code><code class="descclassname"></code><code class="descclassname">, </code><code class="descname">--edit_scripts</code><code class="descclassname"></code><a class="headerlink" href="#cmdoption-termicoder-main-es" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">termicoder</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2018, Divesh Uttamchandani.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.11</a>
+      
+      |
+      <a href="_sources/termicoder.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

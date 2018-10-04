@@ -1,0 +1,35 @@
+# # build, run are a list of commands,
+# # each command is a list of arguments
+
+# # if you use {{FILE_NAME}} and {{BUILD_NAME}}
+# # {{FILE_NAME}} is replaced with name of the
+# # code file (with extension) {{BUILD_NAME}} is replaced
+# # with name of the target build (i.e code file name without extension)
+
+build:
+  - gcc
+  - --std=c99
+  - "{{FILE_NAME}}"
+  - "-o"
+  - "{{BUILD_NAME}}"
+
+# # build config using make
+# build:
+#   - make {{BUILD_NAME}}
+
+# # build config using make with specific Makefile
+# # you can use env variables: TERMICODER_BUILD_NAME
+# # TERMICODER_FILE_NAME, TERMICODER_EXTENSION in
+# # your Makefile
+# build:
+#   - make
+#   - -f
+#   - ~/.config/termicoder/lang/cpp/Makefile
+#   - {{BUILD_NAME}}
+
+
+# # IO Redirection from testcase files (or stdin/stdout on --live)
+# # Time limits etc.
+# # is handled by termicoder internally
+run:
+  - "./{{BUILD_NAME}}"
