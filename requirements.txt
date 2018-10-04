@@ -1,3 +1,0 @@
-Click
-requests
-beautifulsoup4
