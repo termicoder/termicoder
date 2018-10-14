@@ -25,6 +25,8 @@ CONTEXT_SETTINGS = dict(help_option_names=['-h', '--help'])
 @handle_exceptions(BaseException)
 def main():
     '''
+    A complete toolbox for competitive programers
+
     \b
     __       __                      _                __
     \ \     / /____  _________ ___  (_)________  ____/ /__  _____
@@ -32,7 +34,7 @@ def main():
      / /  / /_/  __/ /  / / / / / / / /__/ /_/ / /_/ /  __/ /
     /_/   \__/\___/_/  /_/ /_/ /_/_/\___/\____/\__,_/\___/_/
 
-    view, code & submit problems directly from terminal.
+    view, code & submit problems directly from terminal
     '''
     if(check_config_path() is False):
         # TODO remove repetitive warning in REPL
