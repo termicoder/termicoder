@@ -16,7 +16,11 @@ def main():
     if sys.platform == "linux":
         try:
             usr_page_dir = '/usr/local/share/man/man1/'
-            logger.info('')
+            usr_page_dir = click.prompt(
+                "Enter manpage dir for your system", default=usr_page_dir,
+                type=click.Path(
+                    exists=True, readable=True, file_okay=False))
+            logger.info('copying pages to %s', usr_page_dir)
             manpage_dir = os.path.join(os.path.dirname(__file__), 'pages')
             for manpage in os.listdir(manpage_dir):
                 manpage_src = os.path.join(manpage_dir, manpage)
