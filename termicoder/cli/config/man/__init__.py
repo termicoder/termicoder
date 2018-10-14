@@ -7,6 +7,7 @@ import os
 import shutil
 from builtins import PermissionError
 
+
 @click.command()
 @handle_exceptions(BaseException)
 def main():
