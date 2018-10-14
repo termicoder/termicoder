@@ -25,6 +25,12 @@ class CodechefContest(Contest):
 
     def __str__(self):
         problems = self.problems
+        concerned_data = self.data['result']['data']['content']
+        submissions = {
+            x['problemCode']: x['successfulSubmissions'] for x in concerned_data['problemsList']}
+        for problem in problems:
+            problem.submissions_count = submissions[problem.code]
+
         table = BeautifulTable()
         table.width_exceed_policy = BeautifulTable.WEP_WRAP
         # TODO: use map style.headers instead of str
@@ -39,4 +45,5 @@ class CodechefContest(Contest):
                     problem.code, problem.name, problem.submissions_count
                 ]
             )
+        table.sort('submissions', reverse=True)
         return str(table)

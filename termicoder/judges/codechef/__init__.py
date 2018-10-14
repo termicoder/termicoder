@@ -179,7 +179,11 @@ class Codechef(Judge):
         try:
             with self.session as s:
                 r = s.get(url)
-                logger.debug(r)
+                if(r.status_code == 401):
+                    logger.error("Authentication failed trying refreshing token")
+                    self._refresh_token()
+                    logger.debug(r)
+                    r = s.get(url)
                 r.raise_for_status()
             return r.json()
         except AttributeError:
@@ -190,8 +194,15 @@ class Codechef(Judge):
 
     def _refresh_token(self):
         logger.debug('refreshing token')
-        url = 'http://termicoder.diveshuttam.me/refresh_token/'
-        raise NotImplementedError
+        url = 'http://termicoder.diveshuttam.me/refresh_token'
         # TODO implement this on server side
-        r = requests.get(url, data=self.session_data)
-        logger.debug(r.json())
+        print(self.session_data)
+        try:
+            r = requests.get(url, params={'data': json.dumps(self.session_data)})
+            logger.debug(r.text)
+            r.raise_for_status()
+            self.session_data = r.json()
+        except requests.exceptions.HTTPError:
+            self.session_data = None
+            logger.error("Refreshing token failed, please try :"
+                         "`termicoder setup -j codechef --login`")

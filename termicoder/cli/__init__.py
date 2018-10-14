@@ -21,7 +21,7 @@ CONTEXT_SETTINGS = dict(help_option_names=['-h', '--help'])
 # and use single exception
 @click.group(context_settings=CONTEXT_SETTINGS)
 @click.version_option()
-@click_log.simple_verbosity_option(logger, envvar='TERMICODER_VERBOSE', default='info')
+@click_log.simple_verbosity_option(logger, envvar='TERMICODER_VERBOSITY', default='info')
 @handle_exceptions(BaseException)
 def main():
     '''
