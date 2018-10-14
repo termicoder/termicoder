@@ -31,11 +31,7 @@ use sudo -H if required. preferably use pip3 (python3)
 
 - clone this repo
 - in the root folder of this repo run
-  - `pip install --editable .`
-
-notice the dot(.) in above command at the end
-
-Note: it is better to use virtualenv and pip3 (python3)
+  - `pip3 install --editable .`
 
 - to remove this package, in the root folder of the repo run
   - `python setup.py develop --uninstall`
