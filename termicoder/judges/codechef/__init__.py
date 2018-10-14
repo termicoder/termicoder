@@ -113,7 +113,7 @@ class Codechef(Judge):
                     "Please contact them to support this.\n"
                     "You can also try codechef-web implementation.\n"
                     "https://github.com/termicoder/termicoder-codechef-web\n"
-        )
+                    )
         import pyperclip
         pyperclip.copy(code_text)
         if(problem.contest_code != 'PRACTICE'):
@@ -181,7 +181,7 @@ class Codechef(Judge):
                 r = s.get(url)
                 if(r.status_code == 401):
                     logger.error("Authentication failed trying refreshing token")
-                    self._refresh_token()
+                    self.refresh_login()
                     logger.debug(r)
                     r = s.get(url)
                 r.raise_for_status()
@@ -192,16 +192,18 @@ class Codechef(Judge):
                 'Try `termicoder setup --login -j codechef` first'
                 'and grant appropriate rights' % url)
 
-    def _refresh_token(self):
+    def refresh_login(self):
         logger.debug('refreshing token')
         url = 'http://termicoder.diveshuttam.me/refresh_token'
         # TODO implement this on server side
-        print(self.session_data)
+        logger.debug(self.session_data)
         try:
             r = requests.get(url, params={'data': json.dumps(self.session_data)})
+            logger.debug("response for refresh:")
             logger.debug(r.text)
             r.raise_for_status()
             self.session_data = r.json()
+            logger.debug(r.text)
         except requests.exceptions.HTTPError:
             self.session_data = None
             logger.error("Refreshing token failed, please try :"

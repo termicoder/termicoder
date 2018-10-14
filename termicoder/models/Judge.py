@@ -27,6 +27,10 @@ class Judge(ABC):
         pass
 
     @abstractmethod
+    def refresh_login(self):
+        pass
+
+    @abstractmethod
     def logout(self):
         # logout also controls all the messages displayed to the user
         pass

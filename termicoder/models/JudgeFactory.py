@@ -32,6 +32,8 @@ class JudgeFactory:
                     judge.name)(judge_class.login)
                 judge_class.logout = self._write_session_data(
                     judge.name)(judge_class.logout)
+                judge_class.refresh_login = self._write_session_data(
+                    judge.name)(judge_class.refresh_login)
 
                 self._judge_classes[judge.name] = judge_class
 
