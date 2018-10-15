@@ -183,7 +183,8 @@ class Codechef(Judge):
                     logger.error("Authentication failed trying refreshing token")
                     self.refresh_login()
                     logger.debug(r)
-                    r = s.get(url)
+                    # s is still bound to older session object so use self.session
+                    r = self.session.get(url)
                 r.raise_for_status()
             return r.json()
         except AttributeError:
@@ -203,6 +204,7 @@ class Codechef(Judge):
             logger.debug(r.text)
             r.raise_for_status()
             self.session_data = r.json()
+            self._update_session()
             logger.debug(r.text)
         except requests.exceptions.HTTPError:
             self.session_data = None
