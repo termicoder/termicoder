@@ -17,7 +17,7 @@ def handle_exceptions(*exceptions):
             try:
                 function(*args, **kwargs)
             except (exceptions) as e:
-                if(logger.level == 10):
+                if(logger.level == 10 or isinstance(e, click.Abort)):
                     raise
                 else:
                     logger.error("in module %s:function %s:line %s" % (

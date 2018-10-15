@@ -18,7 +18,7 @@ class CodechefProblem(Problem):
         self.submission_count = 0
         self.testcases = None
         self.judge_name = "codechef"
-        self.timelimit = 3.0
+        self.timelimit = float(3.0)
         if(data is not None):
             self._initialize()
 
@@ -32,7 +32,9 @@ class CodechefProblem(Problem):
         self.text = problem_content.body
         self.html = self._get_html(problem_content.body)
         self.testcases = self._extract_testcases(self.html)
-        self.timelimit = problem_content.maxTimeLimit
+        self.timelimit = float(problem_content.maxTimeLimit)
+        if(self.timelimit == 0):
+            self.timelimit = 3.0
 
     def _get_html(self, body):
         newbody = body.replace('<br>', '\n')
