@@ -22,6 +22,11 @@ Inspiration behind Termicoder
 
 ## Installation
 
+### Requirements:
+Python3.5+
+
+**Note: Termicoder is in its development stage and has only been tested on Ubuntu + python3.5.2. Support for other configurations is being worked on. If you are using some other platform and encounter errors, do create an [issue](https://github.com/diveshuttam/termicoder/issues) about them. For windows one can also try using [Bash on Ubuntu on Windows](https://msdn.microsoft.com/en-us/commandline/wsl/about)**
+
 ### User installation
 
 `pip3 install termicoder`  
@@ -36,7 +41,7 @@ Inspiration behind Termicoder
 - to remove this package, in the root folder of the repo run
   - `python setup.py develop --uninstall`
 
-**Note: Termicoder is in its development stage and has only been tested on Ubuntu + python3. Support for other configurations is being worked on, if you are using some other platform and encounter errors, do create an [issue](https://github.com/diveshuttam/termicoder/issues) for them. For windows one can also try using [Bash on Ubuntu on Windows](https://msdn.microsoft.com/en-us/commandline/wsl/about) ; most features have been tested out there and work as expected.**
+
 
 ### Autocomplete for bash
 
@@ -49,11 +54,13 @@ see `termicoder config autocomplete --help`
 
 1. [CodeChef](http://www.codechef.com)
 
-### Languages Support Included
+### Language Support
 
 1. C
 2. C++
-3. Python2/3
+3. Python3
+
+Though it is very easy to configure termicoder to work with other languages.
 
 ## Highlights
 
@@ -96,7 +103,7 @@ termicoder --help
 termicoder <COMMAND> --help
 ```
 
-or you can have a look at [helptext](documentation/helptext.md) which contains the output of all help commands
+You can have a look at [helptext](documentation/helptext.md) which contains the output of all help commands.
 
 ## Sample Run
 
@@ -114,7 +121,7 @@ If you are looking towards contributing to the code base, you should begin with 
 
 - [CONTRIBUTING](CONTRIBUTING.md)
 - [GUIDELINES](documentation/guidelines.md)
-- [IDEAS](https://github.com/termicoder/termicoder/blob/master/documentation/ideas.md).
+- [IDEAS](https://github.com/termicoder/termicoder/blob/master/documentation/ideas.md)
 
 You can also contribute otherwise by
 
