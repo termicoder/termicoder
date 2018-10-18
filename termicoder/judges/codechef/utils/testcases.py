@@ -15,7 +15,6 @@ def extract(html):
         io = _extract_io(pre_tag_elements)
         logger.debug(io)
     except BaseException:
-        raise
         logger.error("Extraction of testcase for the problem failed")
         return []
 
