@@ -120,8 +120,8 @@ Termicoder is mostly written in python.
 If you are looking towards contributing to the code base, you should begin with reading the following:
 
 - [CONTRIBUTING](CONTRIBUTING.md)
-- [GUIDELINES](documentation/guidelines.md)
-- [IDEAS](https://github.com/termicoder/termicoder/blob/master/documentation/ideas.md)
+- [GUIDELINES](documentation/GUIDELINES.md)
+- [IDEAS](documentation/IDEAS.md)
 
 You can also contribute otherwise by
 
