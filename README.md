@@ -24,8 +24,8 @@ Inspiration behind Termicoder
 
 ### User installation
 
-`pip install termicoder`
-use sudo -H if required. preferably use pip3 (python3)
+`pip3 install termicoder`  
+`pip` with sudo if you get a permission error.
 
 ### Developer installation
 
