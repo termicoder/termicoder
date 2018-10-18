@@ -12,13 +12,14 @@ import subprocess
 @handle_exceptions(BaseException)
 def main(folder):
     '''
-    display the termicoder contents in current/passed folder
+    Display the termicoder contents in current/passed folder.
+    Current folder is the default.
 
     \b
-    if it is a contest folder it displays the list of problems.
-    if its a problem folder, displays the problem in a browser.
+    If it is a contest folder it displays the list of problems in the browser.
+    If its a problem folder, displays the problem in a browser.
     '''
-    logger.warn('Dummy list in this version')
+    logger.warn('list is not colored in this version')
     p_or_c = get_problem_or_contest(folder)
     assert(isinstance(p_or_c, Problem) or isinstance(p_or_c, Contest))
     if(p_or_c is None):

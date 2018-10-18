@@ -16,10 +16,10 @@ def main():
     This functionality is not implemented in this version.
     This option is only included for compatibility purposes.
     If you want to contribute to its development visit:
-    https://termicoder.github.io/
+    https://github.com/termicoder/termicoder
     '''
     logger.info(
         'This functionality is not implemented in this version\n' +
         'The command is only kept for compatibility with future versions\n' +
         'If you want to contribute to its development visit:\n' +
-        'https://termicoder.github.io/')
+        'https://github.com/termicoder/termicoder')

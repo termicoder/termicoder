@@ -15,7 +15,7 @@ from ...utils.exceptions import handle_exceptions
 @handle_exceptions(BaseException)
 def main():
     '''
-    List the contents of current folder.
+    List problem/contests in terminal.
     '''
     pass
 

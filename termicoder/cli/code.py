@@ -19,8 +19,8 @@ def main(code_file, editor):
     '''
     Creates and opens CODE_FILE with template code.
 
-    If CODE_FILE already exists, 'code' just opens it in the default
-    default/supplied editor without any change.
+    If CODE_FILE already exists, 'code' just opens it in the default/
+    supplied editor without any change.
 
     If CODE_FILE is not passed, a default name of file is suggested
     based on current directory, language preferences and existing
