@@ -114,6 +114,11 @@ which contains the details
 
 ChangeLog and Older Releases are availible under [Releases](https://github.com/termicoder/termicoder/releases) .
 
+
+## Special Thanks to Contributors
+- [@apb7](https://github.com/apb7)
+- [@twitu](https://github.com/twittu)
+
 ## Contributing to Termicoder
 
 Termicoder is mostly written in python.
