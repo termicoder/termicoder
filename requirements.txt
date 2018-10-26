@@ -2,7 +2,6 @@ Click
 requests
 beautifulsoup4
 flask
-flake8
 pylint
 pylint-quotes
 click-man
